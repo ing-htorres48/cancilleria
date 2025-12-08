@@ -1,0 +1,22 @@
+uuid: 1f6d6371-09ac-4f0c-aee0-78a8aa7c0ee1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.feed_item.field_feed_item_description
+    - node.type.feed_item
+  module:
+    - user
+id: node.feed_item.default
+targetEntityType: node
+bundle: feed_item
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_feed_item_description: true
+  langcode: true

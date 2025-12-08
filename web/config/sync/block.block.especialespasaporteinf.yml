@@ -1,0 +1,30 @@
+uuid: d997ddd4-3490-4330-b691-e214bdf2c1f5
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7bf98a7d-8aa6-44b7-9b4c-04b34e2eba8e'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: especialespasaporteinf
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 169
+provider: null
+plugin: 'block_content:7bf98a7d-8aa6-44b7-9b4c-04b34e2eba8e'
+settings:
+  id: 'block_content:7bf98a7d-8aa6-44b7-9b4c-04b34e2eba8e'
+  label: 'especiales pasaporte inf'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /especial-pasaporte-2

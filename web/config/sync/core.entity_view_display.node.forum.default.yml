@@ -1,0 +1,29 @@
+uuid: 0af71623-917d-454b-b1e8-cf171e55260c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.forum.body
+    - node.type.forum
+  module:
+    - text
+    - user
+id: node.forum.default
+targetEntityType: node
+bundle: forum
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

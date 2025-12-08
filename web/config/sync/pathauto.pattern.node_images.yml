@@ -1,0 +1,21 @@
+uuid: da9165a4-92a9-437d-9274-141f462dec69
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_images
+label: 'Contenido - Imágenes'
+type: 'canonical_entities:node'
+pattern: 'newsroom/images/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      images: images
+selection_logic: and
+weight: 0
+relationships: {  }

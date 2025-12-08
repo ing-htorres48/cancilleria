@@ -1,0 +1,23 @@
+uuid: 0ffa0392-20a1-4585-8959-6e397615658e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_viceministra_multilaterales
+  module:
+    - text
+id: node.flex_viceministra_multilaterales.body
+field_name: body
+entity_type: node
+bundle: flex_viceministra_multilaterales
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

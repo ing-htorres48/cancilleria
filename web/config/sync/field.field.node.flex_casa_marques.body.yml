@@ -1,0 +1,23 @@
+uuid: 3085d62c-1d07-4e01-8642-0f26b6c374bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_casa_marques
+  module:
+    - text
+id: node.flex_casa_marques.body
+field_name: body
+entity_type: node
+bundle: flex_casa_marques
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

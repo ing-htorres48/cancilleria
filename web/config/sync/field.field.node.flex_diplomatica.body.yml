@@ -1,0 +1,23 @@
+uuid: 6b694af7-80af-4d62-977e-e59013ae168e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_diplomatica
+  module:
+    - text
+id: node.flex_diplomatica.body
+field_name: body
+entity_type: node
+bundle: flex_diplomatica
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

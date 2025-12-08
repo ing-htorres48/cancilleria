@@ -1,0 +1,11 @@
+uuid: ba1e9bb5-f4cc-4c74-9595-f8ec0b3bbbd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.instrumentos_internacionales
+id: node.instrumentos_internacionales
+target_entity_type_id: node
+target_bundle: instrumentos_internacionales
+default_langcode: site_default
+language_alterable: false

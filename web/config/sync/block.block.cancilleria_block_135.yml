@@ -1,0 +1,30 @@
+uuid: 99b36cee-b324-4c13-b010-6e65c24863f5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_135
+theme: bartik
+region: content
+weight: -16
+provider: null
+plugin: 'block_content:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+settings:
+  id: 'block_content:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/novedades

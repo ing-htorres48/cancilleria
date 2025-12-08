@@ -1,0 +1,29 @@
+uuid: c27478c7-7928-4a6d-8fda-16680be82fa8
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.flex_politica_asuntos_migratorios
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__flex_politica_asuntos_migratorios_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 3
+provider: null
+plugin: 'views_block:flex_politica_asuntos_migratorios-block_1'
+settings:
+  id: 'views_block:flex_politica_asuntos_migratorios-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/politica_asuntos_migratorios\r\n/colombia/migracion/politica"

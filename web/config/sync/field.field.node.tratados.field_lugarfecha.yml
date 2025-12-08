@@ -1,0 +1,22 @@
+uuid: dcd9cf1f-6fd3-4517-ad2a-1b920a8739b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugarfecha
+    - node.type.tratados
+id: node.tratados.field_lugarfecha
+field_name: field_lugarfecha
+entity_type: node
+bundle: tratados
+label: 'Lugar y fecha de adopción'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_lugarfecha][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 07f3bcb6-54b9-4e87-bbab-da6fe6425799
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_8
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 38
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 3
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /international/politics/right/universal

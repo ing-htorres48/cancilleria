@@ -1,0 +1,19 @@
+uuid: 0037359f-0df4-40d1-b52f-157dfec63196
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_heart_government_url
+field_name: field_heart_government_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

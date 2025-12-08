@@ -1,0 +1,11 @@
+uuid: 9808a417-4e95-49bc-b018-404b8493738a
+langcode: es
+status: true
+dependencies: {  }
+name: 'Entrada de blog'
+type: blog
+description: 'Úselo para blogs multi-usuarios. Cada usuario obtiene un blog personal.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

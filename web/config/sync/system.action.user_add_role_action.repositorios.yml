@@ -1,0 +1,14 @@
+uuid: 451897eb-545d-49ea-ba3e-9fb99174bc04
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.repositorios
+  module:
+    - user
+id: user_add_role_action.repositorios
+label: 'Añade el rol repositorios al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: repositorios

@@ -1,0 +1,21 @@
+uuid: 89cd5470-332e-4893-9bac-36f1e3963ce5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opciones_de_titulo
+    - node.type.news
+  module:
+    - options
+id: node.news.field_opciones_de_titulo
+field_name: field_opciones_de_titulo
+entity_type: node
+bundle: news
+label: 'Opciones de título'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

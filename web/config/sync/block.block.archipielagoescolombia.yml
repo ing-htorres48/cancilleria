@@ -1,0 +1,30 @@
+uuid: 2b58c7fa-f328-4d6d-8299-6e868f0ac0e7
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a9989e07-35f6-4972-aff5-abd28cd2d81c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: archipielagoescolombia
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 171
+provider: null
+plugin: 'block_content:a9989e07-35f6-4972-aff5-abd28cd2d81c'
+settings:
+  id: 'block_content:a9989e07-35f6-4972-aff5-abd28cd2d81c'
+  label: 'Archipielago es Colombia'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/el-archipielago-es-colombia/video1\r\n/el-archipielago-es-colombia/video1\r\n/el-archipielago-es-colombia/video2\r\n/el-archipielago-es-colombia/revista\r\n/el-archipielago-es-colombia/imagen\r\n/el-archipielago-es-colombia/glosario\r\n/el-archipielago-es-colombia/historico"

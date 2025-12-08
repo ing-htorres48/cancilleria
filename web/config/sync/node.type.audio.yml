@@ -1,0 +1,16 @@
+uuid: b72a9008-5600-4ebd-8f34-31d0a90ec9aa
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Audio
+type: audio
+description: 'Subir un audio para la galería de multimedia.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

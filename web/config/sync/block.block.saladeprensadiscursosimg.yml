@@ -1,0 +1,30 @@
+uuid: 150d2fce-6ac1-44d9-903c-53cfb0d8d1df
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8b475673-a67f-4e6e-9e8f-8faea04516d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensadiscursosimg
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 46
+provider: null
+plugin: 'block_content:8b475673-a67f-4e6e-9e8f-8faea04516d6'
+settings:
+  id: 'block_content:8b475673-a67f-4e6e-9e8f-8faea04516d6'
+  label: 'Sala de prensa - discursos img'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/speeches

@@ -1,0 +1,23 @@
+uuid: c1f45c1a-38c6-410c-8738-b951a30b7116
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_viceministra
+  module:
+    - text
+id: node.flex_viceministra.body
+field_name: body
+entity_type: node
+bundle: flex_viceministra
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

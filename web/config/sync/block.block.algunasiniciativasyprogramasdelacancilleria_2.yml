@@ -1,0 +1,29 @@
+uuid: ddea0643-6645-458e-8b9d-0df7489e1109
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.algunas-iniciativas-y-programas-
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: algunasiniciativasyprogramasdelacancilleria_2
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 41
+provider: null
+plugin: 'system_menu_block:algunas-iniciativas-y-programas-'
+settings:
+  id: 'system_menu_block:algunas-iniciativas-y-programas-'
+  label: 'Acerca de la Estrategia Caribe'
+  label_display: visible
+  provider: system
+  level: 2
+  depth: 1
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/caribe\r\n/caribe/camino_recorrido\r\n/caribe/resultados\r\n/caribe/areas-y-modalidades-cooperacion\r\n/caribe/galeria\r\n/caribe/publicaciones"

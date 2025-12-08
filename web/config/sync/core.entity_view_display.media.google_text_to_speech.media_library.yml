@@ -1,0 +1,41 @@
+uuid: a82a7151-9953-4f20-abff-549e10aea99c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.google_text_to_speech.field_gtts_language
+    - field.field.media.google_text_to_speech.field_gtts_text
+    - field.field.media.google_text_to_speech.field_gtts_voice
+    - field.field.media.google_text_to_speech.field_media_audio_file
+    - image.style.medium
+    - media.type.google_text_to_speech
+  module:
+    - image
+_core:
+  default_config_hash: Bi2vHRYeyfDbmRphnXrmUvvmJiXpvZhmNZu2-N77S5I
+id: media.google_text_to_speech.media_library
+targetEntityType: media
+bundle: google_text_to_speech
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_gtts_language: true
+  field_gtts_text: true
+  field_gtts_voice: true
+  field_media_audio_file: true
+  langcode: true
+  name: true
+  uid: true

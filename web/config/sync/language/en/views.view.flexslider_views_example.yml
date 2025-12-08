@@ -1,0 +1,71 @@
+label: 'FlexSlider Views Example'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        field_flexslider_example_image:
+          separator: ', '
+      title: 'Basic Slider'
+  embed_1:
+    display_title: 'Thumbnail Controls'
+    display_options:
+      display_description: 'Controls another FlexSlider instance'
+  page_1:
+    display_title: 'Basic Slider'
+    display_options:
+      menu:
+        title: 'Basic Slider (Views)'
+      fields:
+        field_flexslider_example_image:
+          separator: ', '
+        title:
+          separator: ', '
+  page_2:
+    display_title: 'Slide with thumbnail controls'
+    display_options:
+      menu:
+        title: 'slider w/thumbnail controlnav pattern (Views)'
+      fields:
+        field_flexslider_example_image:
+          separator: ', '
+      title: 'slider w/thumbnail controlnav pattern'
+  page_3:
+    display_title: 'Slide with thumbnail slider'
+    display_options:
+      menu:
+        title: 'slider w/thumbnail slider (Views)'
+      display_description: 'Slider controlled by another instance of FlexSlider'
+      title: 'Slider w/thumbnail slider'
+  page_4:
+    display_title: 'Basic Carousel'
+    display_options:
+      title: 'Basic Carousel'
+      menu:
+        title: 'basic carousel (Views)'
+  page_5:
+    display_title: 'Carousel with min and max ranges'
+    display_options:
+      title: 'carousel with min and max ranges'
+      menu:
+        title: 'carousel with min and max ranges (Views)'
+  page_6:
+    display_title: 'Basic Slider with Thumbnail Caption'
+    display_options:
+      menu:
+        title: 'Thumbnail Captions (Views)'
+        description: 'Basic slider with thumbnail captions'
+      fields:
+        field_flexslider_example_image:
+          separator: ', '
+        title:
+          separator: ', '
+      display_description: 'To use thumbnail captions, use the "caption field" option in the style settings.'
+      title: 'Basic Slider with Thumbnail captions'

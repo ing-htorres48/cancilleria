@@ -1,0 +1,18 @@
+uuid: 51913d27-c291-4533-bede-1e41c112c5a8
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:652:'
+name: 'Trámites y Servicios'
+type: services
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

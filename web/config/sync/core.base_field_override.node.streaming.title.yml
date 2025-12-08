@@ -1,0 +1,18 @@
+uuid: 931706ac-164c-41fd-bcc9-b07beec17275
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.streaming
+id: node.streaming.title
+field_name: title
+entity_type: node
+bundle: streaming
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

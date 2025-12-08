@@ -1,0 +1,25 @@
+uuid: e9b6374c-1e6a-447d-812e-704de1b36bcc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:696b4e8c-018b-4bb3-80a8-2bf4c7d87373'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: encabezadoimgder
+theme: bootstrap_barrio_subtheme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:696b4e8c-018b-4bb3-80a8-2bf4c7d87373'
+settings:
+  id: 'block_content:696b4e8c-018b-4bb3-80a8-2bf4c7d87373'
+  label: encabezadoimgder
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

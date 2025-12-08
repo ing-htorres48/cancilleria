@@ -1,0 +1,35 @@
+uuid: e27bbc58-35ae-4760-bd15-1680f2d7f84c
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f3d73757-0efb-448c-9feb-73cab890f120'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_cancilleria_block_127
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 193
+provider: null
+plugin: 'block_content:f3d73757-0efb-448c-9feb-73cab890f120'
+settings:
+  id: 'block_content:f3d73757-0efb-448c-9feb-73cab890f120'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /ministry/contracting/procesos
+      /ministry/contracting/subastainversa
+      /ministry/contracting/menorcuantia
+      /ministry/contracting/concurso
+      /ministry/contracting/minima

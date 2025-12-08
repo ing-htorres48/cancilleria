@@ -1,0 +1,23 @@
+uuid: 60c3f18b-4ac5-431a-b9e9-322f51146ccb
+langcode: es
+status: true
+dependencies:
+  module:
+    - cancilleria_form
+_core:
+  default_config_hash: D3F0QVXW5lOyzHU7eFg_US_2E5YNBBqbdW5-W5BxmlQ
+id: costs_means.field_usd_study
+field_name: field_usd_study
+entity_type: costs_means
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

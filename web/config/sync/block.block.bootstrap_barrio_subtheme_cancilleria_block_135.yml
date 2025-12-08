@@ -1,0 +1,30 @@
+uuid: c70b9d1c-64cd-4463-b857-475996c83273
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_cancilleria_block_135
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 67
+provider: null
+plugin: 'block_content:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+settings:
+  id: 'block_content:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/novedades

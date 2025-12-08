@@ -1,0 +1,30 @@
+uuid: 697a3a6c-ca4f-4ed7-8c22-b0713ae6bec4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:97fc3148-db07-434e-a7ca-1023a7b89d01'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: glosariodeterminos
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 5
+provider: null
+plugin: 'block_content:97fc3148-db07-434e-a7ca-1023a7b89d01'
+settings:
+  id: 'block_content:97fc3148-db07-434e-a7ca-1023a7b89d01'
+  label: 'Glosario de Terminos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/help/glossary\r\n/help/glossary/*"

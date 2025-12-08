@@ -1,0 +1,8 @@
+uuid: 2cef215a-c884-49ad-a40e-dc0a1da25b2a
+langcode: es
+status: true
+dependencies: {  }
+name: Acordeones
+vid: acordeones
+description: 'Indicadores de Gestion'
+weight: 0

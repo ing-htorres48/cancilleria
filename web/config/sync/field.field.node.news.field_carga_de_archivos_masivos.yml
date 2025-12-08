@@ -1,0 +1,27 @@
+uuid: d22cbfe4-c4ec-4faa-95f9-c8fcd701d15c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carga_de_archivos_masivos
+    - node.type.news
+  module:
+    - file
+id: node.news.field_carga_de_archivos_masivos
+field_name: field_carga_de_archivos_masivos
+entity_type: node
+bundle: news
+label: 'Carga de archivos masivos'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

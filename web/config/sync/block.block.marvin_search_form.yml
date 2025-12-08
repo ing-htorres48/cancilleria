@@ -1,0 +1,21 @@
+uuid: a0b8bf8c-5de4-4c2d-99f0-303b5fa79aff
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - marvin
+id: marvin_search_form
+theme: marvin
+region: ''
+weight: -43
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

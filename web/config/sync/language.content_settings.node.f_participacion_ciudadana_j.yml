@@ -1,0 +1,11 @@
+uuid: bb2a0285-4463-4cd9-bac7-f09625ba3deb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.f_participacion_ciudadana_j
+id: node.f_participacion_ciudadana_j
+target_entity_type_id: node
+target_bundle: f_participacion_ciudadana_j
+default_langcode: site_default
+language_alterable: false

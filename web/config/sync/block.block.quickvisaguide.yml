@@ -1,0 +1,30 @@
+uuid: a3b6890a-04d4-4eee-99a7-c8e0e0c571de
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b1317641-fa4b-4260-b054-73030d511882'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: quickvisaguide
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 133
+provider: null
+plugin: 'block_content:b1317641-fa4b-4260-b054-73030d511882'
+settings:
+  id: 'block_content:b1317641-fa4b-4260-b054-73030d511882'
+  label: 'QUICK VISA GUIDE'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /en/procedures_services/visa/quick-visa-guide

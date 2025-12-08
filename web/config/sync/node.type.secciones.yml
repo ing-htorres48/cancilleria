@@ -1,0 +1,16 @@
+uuid: 214d3480-96ea-4b3a-8dcb-5159fd919544
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Secciones
+type: secciones
+description: 'Se guardan las secciones del sitio web de la Cancillería.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

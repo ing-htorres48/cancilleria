@@ -1,0 +1,23 @@
+uuid: f519d6c2-a2e6-4bd8-97ca-beb819bf923d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_tramites_visa
+  module:
+    - text
+id: node.flex_tramites_visa.body
+field_name: body
+entity_type: node
+bundle: flex_tramites_visa
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

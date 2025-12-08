@@ -1,0 +1,23 @@
+uuid: c88cf867-edcd-41b3-b3b8-643615dd275c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.diary
+  module:
+    - text
+id: node.diary.body
+field_name: body
+entity_type: node
+bundle: diary
+label: Cuerpo
+description: 'Agrega un acontecimiento en la Agenda.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

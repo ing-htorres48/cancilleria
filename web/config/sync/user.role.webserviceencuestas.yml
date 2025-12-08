@@ -1,0 +1,15 @@
+uuid: 07586e3f-142e-4ff6-84b9-5f83b54561d1
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+    - system
+id: webserviceencuestas
+label: webserviceencuestas
+weight: 8
+is_admin: null
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'use advanced search'

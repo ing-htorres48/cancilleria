@@ -1,0 +1,29 @@
+uuid: 0aaa6bf1-ac0a-47aa-af81-722667aa96e8
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.proyectos_normativos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__proyectos_normativos_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 173
+provider: null
+plugin: 'views_block:proyectos_normativos-block_1'
+settings:
+  id: 'views_block:proyectos_normativos-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/proyectos-normativos\r\n/form/proyectos-normativos-0"

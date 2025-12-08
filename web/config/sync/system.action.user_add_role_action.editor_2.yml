@@ -1,0 +1,14 @@
+uuid: 59737eef-ca6c-4d67-985e-0b20875735bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_2
+  module:
+    - user
+id: user_add_role_action.editor_2
+label: 'Añade el rol Editor 2 al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_2

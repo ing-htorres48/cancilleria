@@ -1,0 +1,35 @@
+uuid: 0fa78acf-34f4-4dc7-8ce4-2d06c2f845b6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:83d27b5f-ef91-4f74-ac69-a0eeb652e68b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_101
+theme: bootstrap_barrio
+region: content
+weight: 22
+provider: null
+plugin: 'block_content:83d27b5f-ef91-4f74-ac69-a0eeb652e68b'
+settings:
+  id: 'block_content:83d27b5f-ef91-4f74-ac69-a0eeb652e68b'
+  label: 'Contenido relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /newsroom/news/colombianos-exterior-siguen-ejerciendo-su-derecho-voto
+      /newsroom/news/colombianos-exterior-ejercieron-su-derecho-voto
+      /newsroom/news/palabras-presidente-republica-juan-manuel-santos-luego-conocerse-resultados-plebiscito
+      /newsroom/images/imagenes-colombianos-exterior-iniciaron-jornada-plebiscito
+      /newsroom/news/colombianos-exterior-fueron-primeros-participar-jornada-electoral-plebiscito

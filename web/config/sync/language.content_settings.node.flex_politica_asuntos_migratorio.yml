@@ -1,0 +1,11 @@
+uuid: bbc16890-79d5-4e3c-9db4-f6fd91aa15a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_politica_asuntos_migratorio
+id: node.flex_politica_asuntos_migratorio
+target_entity_type_id: node
+target_bundle: flex_politica_asuntos_migratorio
+default_langcode: site_default
+language_alterable: false

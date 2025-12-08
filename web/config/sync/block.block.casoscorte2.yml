@@ -1,0 +1,30 @@
+uuid: a2f85694-36d4-4709-81a8-cb721d97a0e6
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:de49969b-ef92-4e1f-a2e9-a9c50a4c4e10'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: casoscorte2
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 160
+provider: null
+plugin: 'block_content:de49969b-ef92-4e1f-a2e9-a9c50a4c4e10'
+settings:
+  id: 'block_content:de49969b-ef92-4e1f-a2e9-a9c50a4c4e10'
+  label: casos-corte2
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /casos-corte

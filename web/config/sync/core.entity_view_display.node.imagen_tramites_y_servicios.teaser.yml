@@ -1,0 +1,27 @@
+uuid: 252e6837-c1c8-4989-a7ed-61a811575abb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.imagen_tramites_y_servicios.field_body
+    - field.field.node.imagen_tramites_y_servicios.field_enlace_tramite
+    - field.field.node.imagen_tramites_y_servicios.field_imagen_t
+    - node.type.imagen_tramites_y_servicios
+  module:
+    - user
+id: node.imagen_tramites_y_servicios.teaser
+targetEntityType: node
+bundle: imagen_tramites_y_servicios
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_enlace_tramite: true
+  field_imagen_t: true
+  langcode: true

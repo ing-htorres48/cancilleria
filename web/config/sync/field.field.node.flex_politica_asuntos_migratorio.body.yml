@@ -1,0 +1,23 @@
+uuid: 532744c8-aa71-4885-ae3d-4219a43a84ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_politica_asuntos_migratorio
+  module:
+    - text
+id: node.flex_politica_asuntos_migratorio.body
+field_name: body
+entity_type: node
+bundle: flex_politica_asuntos_migratorio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

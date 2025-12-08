@@ -1,0 +1,14 @@
+uuid: 143d970c-9dc6-4ffe-8700-3c55f2f93dfd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.filetree
+  module:
+    - user
+id: user_add_role_action.filetree
+label: 'Añade el rol filetree al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: filetree

@@ -1,0 +1,34 @@
+uuid: aa1306d6-f122-4747-ae85-877697bcb93f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: bootstrap_barrio_subtheme_breadcrumbs
+theme: bootstrap_barrio_subtheme
+region: breadcrumb
+weight: -49
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/tramites_servicios"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      diary: diary

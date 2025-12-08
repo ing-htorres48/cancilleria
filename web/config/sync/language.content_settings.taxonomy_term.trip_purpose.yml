@@ -1,0 +1,11 @@
+uuid: 6c247793-e186-4079-a959-81f4e8d0d5d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trip_purpose
+id: taxonomy_term.trip_purpose
+target_entity_type_id: taxonomy_term
+target_bundle: trip_purpose
+default_langcode: site_default
+language_alterable: false

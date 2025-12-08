@@ -1,0 +1,51 @@
+uuid: f000125f-6351-436a-9f71-92374b30733e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c53afda9-3b41-489c-8623-bdb80f463ac0'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_100
+theme: bootstrap_barrio
+region: content
+weight: 20
+provider: null
+plugin: 'block_content:c53afda9-3b41-489c-8623-bdb80f463ac0'
+settings:
+  id: 'block_content:c53afda9-3b41-489c-8623-bdb80f463ac0'
+  label: 'Contenido relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /newsroom/news/presidente-republica-dominicana-danilo-medina-sanchez-llego-cartagena-asistir-firma
+      /newsroom/news/presidente-ecuador-destaca-su-llegada-cartagena-firma-paz-colombia-mejor-noticia
+      /newsroom/news/panama-aqui-respaldando-esfuerzo-presidente-santos-su-gobierno-presidente-juan-carlos
+      /newsroom/news/secretario-general-onu-llego-cartagena-acompanar-firma-acuerdo-paz
+      /newsroom/news/presidente-mexico-enrique-pena-nieto-llego-cartagena-acompanar-firma-acuerdo-paz
+      /newsroom/news/firma-paz-cualquier-parte-mundo-siempre-sera-buena-noticia-presidente-guatemala-jimmy
+      /newsroom/news/secretario-estado-john-kerry-llego-cartagena-participar-firma-acuerdo-final
+      /newsroom/news/presidenta-chile-michelle-bachelet-espera-colombia-ratifique-espiritu-acuerdo-final
+      /newsroom/news/viceministro-asuntos-exteriores-italia-mario-giro-llego-cartagena-acompanar-firma
+      /newsroom/news/participacion-comunidad-internacional-ha-sido-masiva-canciller-maria-angela-holguin
+      /newsroom/news/canciller-holguin-acompano-presidente-santos-reunion-secretario-general-naciones
+      /newsroom/news/viceministra-relaciones-exteriores-recibio-aeropuerto-cartagena-su-majestad-rey-don
+      /newsroom/news/estamos-aqui-acompanar-presidente-juan-manuel-santos-firma-acuerdo-paz-presidente-peru
+      /newsroom/news/colombia-genera-esperanza-mundo-presidente-salvador-salvador-sanchez-su-llegada
+      /newsroom/news/ministros-relaciones-exteriores-suecia-paises-bajos-llegaron-cartagena-asistir-firma
+      /newsroom/news/presidente-cuba-raul-castro-aterrizo-cartagena
+      /newsroom/news/cancilleres-noruega-cuba-paraguay-espana-ya-encuentran-cartagena-asistir-firma-acuerdo
+      /newsroom/news/presidente-costa-rica-luis-guillermo-solis-primer-mandatario-llegar-cartagena
+      /newsroom/news/venimos-compartir-momento-paz-colombia-donde-paz-vencio-conflicto-horacio-cartes
+      /newsroom/news/llego-dia-paz-presidente-venezuela-nicolas-maduro-su-llegada-cartagena-asistir
+      /newsroom/news/presidente-argentina-desea-proceso-paz-colombia-sea-exito

@@ -1,0 +1,25 @@
+uuid: c9912a41-35e2-4889-a437-ecb4aae20090
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_peso
+    - node.type.secciones
+id: node.secciones.field_peso
+field_name: field_peso
+entity_type: node
+bundle: secciones
+label: Peso
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: -50
+  max: 50
+  prefix: ''
+  suffix: ''
+field_type: integer

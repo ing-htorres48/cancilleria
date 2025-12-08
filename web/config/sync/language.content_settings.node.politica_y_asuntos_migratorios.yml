@@ -1,0 +1,11 @@
+uuid: c3421fa6-b473-4701-9bc0-8459fb651226
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.politica_y_asuntos_migratorios
+id: node.politica_y_asuntos_migratorios
+target_entity_type_id: node
+target_bundle: politica_y_asuntos_migratorios
+default_langcode: site_default
+language_alterable: false

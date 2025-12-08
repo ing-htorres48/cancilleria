@@ -1,0 +1,29 @@
+uuid: b8599936-5bd9-44d7-b8b8-2a40654d3fc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.regiones.body
+    - node.type.regiones
+  module:
+    - text
+    - user
+id: node.regiones.default
+targetEntityType: node
+bundle: regiones
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

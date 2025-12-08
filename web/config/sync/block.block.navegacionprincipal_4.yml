@@ -1,0 +1,25 @@
+uuid: e4866574-a3f3-46c5-832e-154e8e8e427d
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_4
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 34
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 4
+  depth: 0
+  expand_all_items: true
+visibility: {  }

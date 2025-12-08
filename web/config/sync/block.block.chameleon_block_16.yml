@@ -1,0 +1,25 @@
+uuid: e4ec1442-c8bb-4555-aea1-356b2973773e
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:dbb1cb8c-0134-4d44-97c7-29109da1ce9b'
+  module:
+    - block_content
+  theme:
+    - chameleon
+id: chameleon_block_16
+theme: chameleon
+region: ''
+weight: -40
+provider: null
+plugin: 'block_content:dbb1cb8c-0134-4d44-97c7-29109da1ce9b'
+settings:
+  id: 'block_content:dbb1cb8c-0134-4d44-97c7-29109da1ce9b'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

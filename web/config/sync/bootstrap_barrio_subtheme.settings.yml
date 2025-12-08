@@ -1,0 +1,97 @@
+_core:
+  default_config_hash: w2HQYJGLG4-Mmk19eIIKgoXCiXEJm-NVSNhhv-VdpUI
+langcode: es
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: 'public://favicon.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+bootstrap_barrio_library: producción
+bootstrap_barrio_source: '0'
+bootstrap_barrio_fluid_container: 0
+bootstrap_barrio_region_clean_header: 1
+bootstrap_barrio_region_class_header: ''
+bootstrap_barrio_region_clean_breadcrumb: 1
+bootstrap_barrio_region_class_breadcrumb: ''
+bootstrap_barrio_region_clean_content: 1
+bootstrap_barrio_region_class_content: ''
+bootstrap_barrio_region_clean_sidebar_second: 1
+bootstrap_barrio_region_class_sidebar_second: ''
+bootstrap_barrio_sidebar_position: left
+bootstrap_barrio_content_offset: 0
+bootstrap_barrio_sidebar_collapse: 0
+bootstrap_barrio_sidebar_first_width: 4
+bootstrap_barrio_sidebar_first_offset: 0
+bootstrap_barrio_sidebar_second_width: 3
+bootstrap_barrio_sidebar_second_offset: 0
+bootstrap_barrio_button: 1
+bootstrap_barrio_button_size: ''
+bootstrap_barrio_button_outline: 0
+bootstrap_barrio_navbar_container: '0'
+bootstrap_barrio_navbar_toggle: navbar-toggleable-lg
+bootstrap_barrio_navbar_top_navbar: 0
+bootstrap_barrio_navbar_top_class: ''
+bootstrap_barrio_navbar_class: ''
+bootstrap_barrio_navbar_top_position: ''
+bootstrap_barrio_navbar_top_color: ''
+bootstrap_barrio_navbar_top_background: ''
+bootstrap_barrio_navbar_position: ''
+bootstrap_barrio_navbar_color: ''
+bootstrap_barrio_navbar_background: ''
+bootstrap_barrio_navbar_flyout: false
+bootstrap_barrio_navbar_slide: false
+bootstrap_barrio_messages_widget: alerts
+bootstrap_barrio_navbar_top_affix: 0
+bootstrap_barrio_navbar_affix: 0
+bootstrap_barrio_sidebar_first_affix: 0
+bootstrap_barrio_sidebar_second_affix: 0
+bootstrap_barrio_scroll_spy: ''
+bootstrap_barrio_google_fonts: ''
+bootstrap_barrio_bootstrap_icons: 0
+bootstrap_barrio_icons: ''
+bootstrap_barrio_system_messages: messages_white
+bootstrap_barrio_table_style: table-striped
+bootstrap_barrio_table_hover: 1
+bootstrap_barrio_table_head: ''
+bootstrap_barrio_image_fluid: false
+bootstrap_barrio_tabs_style: ''
+bootstrap_barrio_region_clean_govco: 1
+bootstrap_barrio_region_class_govco: ''
+bootstrap_barrio_region_clean_nav_main: 0
+bootstrap_barrio_region_class_nav_main: ''
+bootstrap_barrio_region_clean_banner_principal: 1
+bootstrap_barrio_region_class_banner_principal: ''
+bootstrap_barrio_region_clean_enlaces_principales: 0
+bootstrap_barrio_region_class_enlaces_principales: row
+bootstrap_barrio_region_clean_multimedia: 0
+bootstrap_barrio_region_class_multimedia: ''
+bootstrap_barrio_region_clean_redes_sociales: 0
+bootstrap_barrio_region_class_redes_sociales: row
+bootstrap_barrio_region_clean_pausa_presidencial: 0
+bootstrap_barrio_region_class_pausa_presidencial: row
+bootstrap_barrio_region_clean_footer: 0
+bootstrap_barrio_region_class_footer: row
+bootstrap_barrio_hide_node_label: 0
+bootstrap_barrio_navbar_offcanvas: ''
+bootstrap_barrio_region_clean_ultimenu_main_inicio: 0
+bootstrap_barrio_region_class_ultimenu_main_inicio: row
+bootstrap_barrio_region_clean_ultimenu_main_transparencia_y_acceso_a_la: 0
+bootstrap_barrio_region_class_ultimenu_main_transparencia_y_acceso_a_la: row
+bootstrap_barrio_region_clean_ultimenu_main_atencion_y_servicio_al: 0
+bootstrap_barrio_region_class_ultimenu_main_atencion_y_servicio_al: row
+bootstrap_barrio_region_clean_ultimenu_main_participa: 0
+bootstrap_barrio_region_class_ultimenu_main_participa: row
+bootstrap_barrio_region_clean_ultimenu_main_el_ministerio: 0
+bootstrap_barrio_region_class_ultimenu_main_el_ministerio: row
+bootstrap_barrio_region_clean_ultimenu_main_la_ministra: 0
+bootstrap_barrio_region_class_ultimenu_main_la_ministra: row
+bootstrap_barrio_region_clean_ultimenu_main_politica_exterior: 0
+bootstrap_barrio_region_class_ultimenu_main_politica_exterior: row
+bootstrap_barrio_region_clean_ultimenu_main_tramites: 0
+bootstrap_barrio_region_class_ultimenu_main_tramites: row

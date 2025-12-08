@@ -1,0 +1,23 @@
+uuid: a324858d-fa9c-4833-87c8-0d45aaded549
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.heart_of_government
+  module:
+    - text
+id: node.heart_of_government.body
+field_name: body
+entity_type: node
+bundle: heart_of_government
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

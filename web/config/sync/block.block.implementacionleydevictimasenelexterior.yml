@@ -1,0 +1,30 @@
+uuid: 59a730c5-9cc6-4419-a41c-92c7982be2a1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:85936d61-1b5a-4284-b72b-436f5ff4e573'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: implementacionleydevictimasenelexterior
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 13
+provider: null
+plugin: 'block_content:85936d61-1b5a-4284-b72b-436f5ff4e573'
+settings:
+  id: 'block_content:85936d61-1b5a-4284-b72b-436f5ff4e573'
+  label: 'Implementación Ley de Victimas en el Exterior'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /victimas/implementacion-ley-de-victimas-en-el-exterior

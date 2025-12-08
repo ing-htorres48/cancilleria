@@ -1,0 +1,18 @@
+uuid: 8d42a377-3f23-4f7c-9410-b8b09c58c61b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Galeria Individual'
+type: galeria_individual
+description: 'Galeria individual de imagenes '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

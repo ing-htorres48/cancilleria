@@ -1,0 +1,22 @@
+uuid: 3c13e2b1-fe13-4a78-9c1b-35b3c0676fc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vigor
+    - node.type.tratados
+id: node.tratados.field_vigor
+field_name: field_vigor
+entity_type: node
+bundle: tratados
+label: 'Fecha de entrada en vigor del tratado'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_vigor][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

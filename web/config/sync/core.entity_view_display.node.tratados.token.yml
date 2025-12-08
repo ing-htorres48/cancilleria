@@ -1,0 +1,80 @@
+uuid: c343affe-65b5-4df9-84ec-a6091bd06870
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.tratados.body
+    - field.field.node.tratados.field_clausula
+    - field.field.node.tratados.field_depositario
+    - field.field.node.tratados.field_fechaactualizacion
+    - field.field.node.tratados.field_lugarfecha
+    - field.field.node.tratados.field_textosautenticos
+    - field.field.node.tratados.field_vigor
+    - node.type.tratados
+  module:
+    - datetime
+    - file
+    - user
+id: node.tratados.token
+targetEntityType: node
+bundle: tratados
+mode: token
+content:
+  field_clausula:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_depositario:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_fechaactualizacion:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lugarfecha:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_textosautenticos:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vigor:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true

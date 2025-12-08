@@ -1,0 +1,42 @@
+uuid: 0266b955-b30b-4056-8615-2a11db847c5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.flex_unesco.body
+    - field.field.node.flex_unesco.field_img_unesco
+    - node.type.flex_unesco
+  module:
+    - image
+    - text
+    - user
+id: node.flex_unesco.default
+targetEntityType: node
+bundle: flex_unesco
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_img_unesco:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

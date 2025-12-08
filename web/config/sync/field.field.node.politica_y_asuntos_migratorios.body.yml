@@ -1,0 +1,23 @@
+uuid: 071fd7e7-4049-4391-a885-58be9409d556
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.politica_y_asuntos_migratorios
+  module:
+    - text
+id: node.politica_y_asuntos_migratorios.body
+field_name: body
+entity_type: node
+bundle: politica_y_asuntos_migratorios
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

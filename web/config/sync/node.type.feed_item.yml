@@ -1,0 +1,11 @@
+uuid: e34bc4ff-a0d6-4398-9f53-1d5943767639
+langcode: es
+status: true
+dependencies: {  }
+name: 'Elemento de canal de noticias'
+type: feed_item
+description: 'Este tipo de contenido está siendo usado para la agrupación automática de contenido de fuentes web.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

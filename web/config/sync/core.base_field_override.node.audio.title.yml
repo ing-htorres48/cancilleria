@@ -1,0 +1,18 @@
+uuid: 71809edc-20c5-415d-bfe3-320600475eb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.audio
+id: node.audio.title
+field_name: title
+entity_type: node
+bundle: audio
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

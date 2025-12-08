@@ -1,0 +1,26 @@
+uuid: 32757bc4-7ffc-44fb-92e0-2796c84033e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_5
+    - node.type.news
+    - taxonomy.vocabulary.vocabulary_5
+id: node.news.taxonomy_vocabulary_5
+field_name: taxonomy_vocabulary_5
+entity_type: node
+bundle: news
+label: 'Clasificación de noticias'
+description: 'Este campo es utilizado para clasificar las noticias para futuras busquedas o posicionarlas en las diferentes secciones del sitio.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_5: vocabulary_5
+    sort:
+      field: _none
+field_type: entity_reference

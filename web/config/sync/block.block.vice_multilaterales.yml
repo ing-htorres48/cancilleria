@@ -1,0 +1,30 @@
+uuid: 05711929-d22f-48b3-bb8d-38bd39e39cb9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9df4ba65-4595-4c83-a16d-007d1e77e6c7'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: vice_multilaterales
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 142
+provider: null
+plugin: 'block_content:9df4ba65-4595-4c83-a16d-007d1e77e6c7'
+settings:
+  id: 'block_content:9df4ba65-4595-4c83-a16d-007d1e77e6c7'
+  label: vice_multilaterales
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ministerio/viceministra-asuntos-multilaterales

@@ -1,0 +1,29 @@
+uuid: fbfe8d67-4266-4398-9108-e72bcda1f9a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.eventos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__eventos_block_eventos_cumbre_amazonica
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 158
+provider: null
+plugin: 'views_block:eventos-block_eventos_cumbre_amazonica'
+settings:
+  id: 'views_block:eventos-block_eventos_cumbre_amazonica'
+  label: Agenda
+  label_display: visible
+  provider: views
+  views_label: Agenda
+  items_per_page: '48'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/30855\r\n/node/30874\r\n/node/30875"

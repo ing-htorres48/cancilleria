@@ -1,0 +1,23 @@
+uuid: 724a2893-ca6f-4c71-8f42-a94c17de58ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_caribe_galeria
+  module:
+    - text
+id: node.flex_caribe_galeria.body
+field_name: body
+entity_type: node
+bundle: flex_caribe_galeria
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

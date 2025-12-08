@@ -1,0 +1,18 @@
+uuid: 6ff7d9aa-787b-48b4-a448-284be8cca875
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.speeches
+id: node.speeches.title
+field_name: title
+entity_type: node
+bundle: speeches
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,33 @@
+uuid: 0403de6c-9608-423a-9776-f3325ac2d515
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flex_tramites_visa.body
+    - field.field.node.flex_tramites_visa.field_image_visa
+    - node.type.flex_tramites_visa
+  module:
+    - text
+    - user
+id: node.flex_tramites_visa.teaser
+targetEntityType: node
+bundle: flex_tramites_visa
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_visa: true
+  langcode: true

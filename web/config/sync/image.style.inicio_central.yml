@@ -1,0 +1,15 @@
+uuid: 206a5dbe-b136-4ac1-813b-cc285faa9df7
+langcode: es
+status: true
+dependencies: {  }
+name: inicio_central
+label: inicio_central
+effects:
+  d16ad0d7-356d-4dfc-b5e9-dc65309ce30d:
+    uuid: d16ad0d7-356d-4dfc-b5e9-dc65309ce30d
+    id: image_scale
+    weight: 1
+    data:
+      width: 239
+      height: null
+      upscale: false

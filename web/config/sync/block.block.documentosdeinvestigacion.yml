@@ -1,0 +1,30 @@
+uuid: ce23f554-70c5-4eed-8690-199e346dad56
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:07c2866c-3ea4-429d-8211-1399907d43c0'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: documentosdeinvestigacion
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 35
+provider: null
+plugin: 'block_content:07c2866c-3ea4-429d-8211-1399907d43c0'
+settings:
+  id: 'block_content:07c2866c-3ea4-429d-8211-1399907d43c0'
+  label: 'Documentos de Investigación'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /footer/academy/publications

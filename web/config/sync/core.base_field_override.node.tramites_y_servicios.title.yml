@@ -1,0 +1,18 @@
+uuid: 500502fe-9089-4ce9-8c2a-1d43f96b8bac
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramites_y_servicios
+id: node.tramites_y_servicios.title
+field_name: title
+entity_type: node
+bundle: tramites_y_servicios
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

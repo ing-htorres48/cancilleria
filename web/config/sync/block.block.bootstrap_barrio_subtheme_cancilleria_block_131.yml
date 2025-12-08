@@ -1,0 +1,30 @@
+uuid: 618be9c8-9165-459e-8201-83bd52728b9d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d6763b98-bbe2-4884-9827-3aab1c07b151'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_cancilleria_block_131
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 68
+provider: null
+plugin: 'block_content:d6763b98-bbe2-4884-9827-3aab1c07b151'
+settings:
+  id: 'block_content:d6763b98-bbe2-4884-9827-3aab1c07b151'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/presentacion

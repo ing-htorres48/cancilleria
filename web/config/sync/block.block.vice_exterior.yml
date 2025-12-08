@@ -1,0 +1,30 @@
+uuid: 7a800ed8-7723-42a0-8911-6a0080cae098
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b0d898dd-6117-4128-b634-2273052919da'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: vice_exterior
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 141
+provider: null
+plugin: 'block_content:b0d898dd-6117-4128-b634-2273052919da'
+settings:
+  id: 'block_content:b0d898dd-6117-4128-b634-2273052919da'
+  label: vice_exterior
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ministerio/viceministro-relaciones-exteriores

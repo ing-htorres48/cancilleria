@@ -1,0 +1,291 @@
+uuid: cc3b4171-a809-4e59-8970-fb8b59187637
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: encuesta_de_medicion_para_el_pro
+title: 'Encuesta de medición para el Proceso de Evaluación de Rendición de Cuentas'
+description: ''
+category: ''
+elements: |-
+  fecha:
+    '#type': date
+    '#title': Fecha
+    '#required': true
+    '#required_error': 'diligenciar con fecha actual '
+    '#default_value': '[current-date:long]'
+  index:
+    '#type': webform_markup
+    '#markup': |-
+      <p><strong>MINISTERIO DE RELACIONES EXTERIORES</strong></p>
+      <p>Los campos marcados con asterisco (<span style="color:#ff0000;">*</span>) son de carácter obligatorio&nbsp;</p>
+  ciudad_:
+    '#type': textfield
+    '#title': 'Ciudad:'
+    '#required': true
+  sexo_:
+    '#type': radios
+    '#title': 'Sexo:'
+    '#options':
+      f): F
+      m): M
+  1_cual_o_cuales_de_los_siguientes_mecanismos_de_rendicion_de_cue:
+    '#type': webform_likert
+    '#title': '1. ¿Cuál o cuáles de los siguientes mecanismos de Rendición de Cuentas que tiene el Ministerio de Relaciones Exteriores conoce usted?'
+    '#description': '<p>Califique los que conozca de 1 a 5, siendo 5 excelente y 1 p&eacute;simo.</p>'
+    '#questions':
+      a: 'A. Audiencias Públicas'
+      b: 'B. Memorias al Congreso'
+      c: 'C. Veeduría Ciudadana'
+      d: 'D. Correo electrónico'
+      e: 'E. Vía telefónica'
+      f: 'F. Chat'
+      g: 'G. Videollamada (Disponible en la página)'
+      h: 'H. Llamada en línea (Disponible en la plataforma telefónica)'
+      i: 'I. Urna de cristal'
+      j: 'J. Encuestas de satisfacción'
+      k: 'K. Redes sociales (Twitter, Facebook, flirck, Instagram, YouTube)'
+      l: 'I. Foros virtuales para colombianos en el exterior'
+      m: 'M. Feria de servicios para colombianos en el exterior'
+      'n': 'N. Página Web de la Entidad'
+    '#answers':
+      5: '5'
+      4: '4'
+      3: '3'
+      2: '2'
+      1: '1'
+  2_de_los_espacios_que_se_utilizan_para_rendicion_de_cuentas_cual:
+    '#type': radios
+    '#title': '2. De los espacios que se utilizan para rendición  de cuentas, ¿cuál le gustaría que se utilizara para brindar información?'
+    '#options':
+      'A. Reuniones zonales': 'A. Reuniones zonales'
+      'B. Foros virtuales de discusión': 'B. Foros virtuales de discusión'
+      'C. Mesas de trabajo de acuerdo al tema especifico': 'C. Mesas de trabajo de acuerdo al tema especifico'
+      'D. Ferias de la gestión': 'D. Ferias de la gestión'
+      'E. Redes sociales: Twitter, Facebook, Flickr, Instagram, Youtube': 'E. Redes sociales: Twitter, Facebook, Flickr, Instagram, Youtube'
+      'F. Audiencia pública de rendición de cuentas': 'F. Audiencia pública de rendición de cuentas'
+    '#required': true
+  3_de_los_medios_de_divulgacion_y_comunicacion_por_favor_seleccio:
+    '#type': radios
+    '#title': '3. De los medios de divulgación y comunicación, por favor seleccione ¿cuál le gustaría que se utilizara para brindar información en 2016? '
+    '#options':
+      'A. Cartillas didácticas virtuales ': 'A. Cartillas didácticas virtuales '
+      'B. Boletines mensuales virtuales': 'B. Boletines mensuales virtuales'
+      'C. Murales o carteleras didácticas en quioscos': 'C. Murales o carteleras didácticas en quioscos'
+      'D. Perifoneo': 'D. Perifoneo'
+      'E. Emisoras locales o comunitarias': 'E. Emisoras locales o comunitarias'
+      'F. Noticias permanentes en prensa local y nacional ': 'F. Noticias permanentes en prensa local y nacional '
+      'G. Interacción en línea a través de: chat, videoclips, foros, diapositivas': 'G. Interacción en línea a través de: chat, videoclips, foros, diapositivas'
+    '#required': true
+  4_marque_los_temas_del_ministerio_que_sean_de_su_interes_para_se:
+    '#type': webform_checkboxes_other
+    '#title': '4. Marque los temas del Ministerio que sean de su interés para ser tratados en la rendición de cuentas:'
+    '#options':
+      'Trámites y servicios': 'Trámites y servicios'
+      'Procesos de convocatoria y contratación': 'Procesos de convocatoria y contratación'
+      'Ingreso a la Academia Diplomática': 'Ingreso a la Academia Diplomática'
+      'Asistencia a connacionales': 'Asistencia a connacionales'
+      'Relaciones bilaterales': 'Relaciones bilaterales'
+      'Relaciones multilaterales': 'Relaciones multilaterales'
+      'Plan Promoción de Colombia en el Exterior': 'Plan Promoción de Colombia en el Exterior'
+      'Programa de Diplomacia Deportiva y Cultural': 'Programa de Diplomacia Deportiva y Cultural'
+      Presupuesto: Presupuesto
+      'Política migratoria': 'Política migratoria'
+      'Canales de atención en el país y en el exterior': 'Canales de atención en el país y en el exterior'
+      'Mecanismos de integración regional': 'Mecanismos de integración regional'
+      'Plan Fronteras para la Prosperidad': 'Plan Fronteras para la Prosperidad'
+    '#required': true
+  si_tiene_observaciones_o_sugerencias_e_ideas_para_mejorar_el_pro:
+    '#type': textfield
+    '#title': 'Si tiene observaciones o sugerencias e ideas para mejorar el proceso de Rendición de Cuentas del Ministerio de Relaciones Exteriores, escríbalas aquí:'
+  index1:
+    '#type': webform_markup
+    '#markup': '<p><strong>¡GRACIAS POR SU COLABORACIÓN!</strong></p>'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

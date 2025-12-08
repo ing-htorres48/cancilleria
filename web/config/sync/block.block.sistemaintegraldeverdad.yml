@@ -1,0 +1,30 @@
+uuid: 359d11f9-5d37-4c03-bfe1-39a72f544b8a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:04b2dfc4-561a-4ea9-8ab1-1eea880cc712'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: sistemaintegraldeverdad
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 16
+provider: null
+plugin: 'block_content:04b2dfc4-561a-4ea9-8ab1-1eea880cc712'
+settings:
+  id: 'block_content:04b2dfc4-561a-4ea9-8ab1-1eea880cc712'
+  label: 'Sistema integral de verdad'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /victimas/sistema-integral

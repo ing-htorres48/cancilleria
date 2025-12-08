@@ -1,0 +1,27 @@
+uuid: 18dfb7f4-e99f-4ec3-9e38-02a6178b52b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_local
+    - node.type.video
+  module:
+    - file
+id: node.video.field_video_local
+field_name: field_video_local
+entity_type: node
+bundle: video
+label: 'Video local'
+description: 'Adjunte el archivo mp4, webm, ogv o flv que contiene el video correctamente codificado para la web.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'mp4 webm ogv flv mpeg mpg avi mov zip rar'
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,29 @@
+uuid: 6ea01c93-c406-405f-906d-7a4288478d49
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.comision-unesco
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: comisionunesco_3
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 2
+provider: null
+plugin: 'system_menu_block:comision-unesco'
+settings:
+  id: 'system_menu_block:comision-unesco'
+  label: 'Comisión unesco'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/unesco/news\r\n/unesco/about\r\n/normatividad-comision-colombiana-cooperacion-unesco\r\n/delegacion-colombia-unesco\r\n/proyectos\r\n/relacion-unesco\r\n/areas-tematicas\r\n/unesco/empleo\r\n/unesco/call\r\n/catedra-unesco\r\n/convocatorias-cerradas\r\n/unesco/call/premios"

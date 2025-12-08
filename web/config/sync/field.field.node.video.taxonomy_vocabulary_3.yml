@@ -1,0 +1,26 @@
+uuid: 8ab5645d-670d-4f2d-8988-ce04a29a4875
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_3
+    - node.type.video
+    - taxonomy.vocabulary.vocabulary_3
+id: node.video.taxonomy_vocabulary_3
+field_name: taxonomy_vocabulary_3
+entity_type: node
+bundle: video
+label: 'Galería de Video'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_3: vocabulary_3
+    sort:
+      field: _none
+field_type: entity_reference

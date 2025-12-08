@@ -1,0 +1,33 @@
+uuid: 99c8c4f3-a6b2-4422-885f-7e2ca91a27af
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flex_cultura.body
+    - field.field.node.flex_cultura.field_img_cult
+    - node.type.flex_cultura
+  module:
+    - text
+    - user
+id: node.flex_cultura.teaser
+targetEntityType: node
+bundle: flex_cultura
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_img_cult: true
+  langcode: true

@@ -1,0 +1,16 @@
+uuid: bbf6150c-fd74-4bd9-a8ae-ad88f4a51bc9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.audio.field_tags
+  module:
+    - file
+id: file.audio.default
+targetEntityType: file
+bundle: audio
+mode: default
+content: {  }
+hidden:
+  field_tags: true
+  langcode: true

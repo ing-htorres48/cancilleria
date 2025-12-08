@@ -1,0 +1,36 @@
+uuid: a5faa567-1274-4064-883a-3e7053c3a0c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.blog.body
+    - field.field.node.blog.field_blog_imagen_post
+    - node.type.blog
+  module:
+    - image
+    - user
+id: node.blog.token
+targetEntityType: node
+bundle: blog
+mode: token
+content:
+  field_blog_imagen_post:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true

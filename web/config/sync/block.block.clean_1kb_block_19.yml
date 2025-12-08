@@ -1,0 +1,25 @@
+uuid: 7fca5a06-eb7a-42df-b707-09d289fbbeb5
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b30cd980-f388-4662-90e0-387cfc025bed'
+  module:
+    - block_content
+  theme:
+    - clean_1kb
+id: clean_1kb_block_19
+theme: clean_1kb
+region: ''
+weight: -34
+provider: null
+plugin: 'block_content:b30cd980-f388-4662-90e0-387cfc025bed'
+settings:
+  id: 'block_content:b30cd980-f388-4662-90e0-387cfc025bed'
+  label: '<none>'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

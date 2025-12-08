@@ -1,0 +1,30 @@
+uuid: d255485c-c0e3-4073-940b-8f66c7765afb
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:246fa30d-ce16-43d6-a7c8-bac21f4c7cef'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: apostillaylegalizacionenlinea
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 175
+provider: null
+plugin: 'block_content:246fa30d-ce16-43d6-a7c8-bac21f4c7cef'
+settings:
+  id: 'block_content:246fa30d-ce16-43d6-a7c8-bac21f4c7cef'
+  label: 'Apostilla y legalización en línea'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/apostilla_legalizacion_en_linea

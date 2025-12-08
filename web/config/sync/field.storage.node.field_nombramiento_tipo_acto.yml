@@ -1,0 +1,27 @@
+uuid: c4d8dada-bc60-4c0c-b371-13fe9415c222
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_nombramiento_tipo_acto
+field_name: field_nombramiento_tipo_acto
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Resolucion
+      label: Resolución
+    -
+      value: Decreto
+      label: Decreto
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

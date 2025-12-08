@@ -1,0 +1,29 @@
+uuid: fd9858de-227a-4357-8c14-0115fcec90ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.asuntos-culturales-educativos-y-
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: asuntosculturaleseducativosydeportivos
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 10
+provider: null
+plugin: 'system_menu_block:asuntos-culturales-educativos-y-'
+settings:
+  id: 'system_menu_block:asuntos-culturales-educativos-y-'
+  label: 'Asuntos Culturales, Educativos y Deportivos'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/diplomacy/news\r\n/diplomacy/presentation\r\n/diplomacy/cooperation\r\n/accion-cultural-colombia-exterior\r\n/diplomacy/diplomacia-deportiva-cultural-enfoque-social\r\n/diplomacy/convocatory\r\n/links-relacionados\r\n"

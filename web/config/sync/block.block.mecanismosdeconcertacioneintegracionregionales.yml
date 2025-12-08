@@ -1,0 +1,29 @@
+uuid: 87b2d963-e6ec-4443-bca3-7ddf4f7990ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mecanismos-de-concertacion-e-int
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: mecanismosdeconcertacioneintegracionregionales
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 18
+provider: null
+plugin: 'system_menu_block:mecanismos-de-concertacion-e-int'
+settings:
+  id: 'system_menu_block:mecanismos-de-concertacion-e-int'
+  label: 'Mecanismos de Concertación e Integración Regionales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/consensus/pacific-alliance\r\n/international/consensus/prosur\r\n/international/consensus/unasur\r\n/international/consensus/clacs\r\n/international/consensus/ibero-america\r\n/international/regional/can\r\n/international/consensus/mesoamerica\r\n/international/consensus/acs\r\n/international/consensus/aladi\r\n/international/consensus/eu-latc\r\n/international/consensus/mercosur\r\n/international/consensus/sica\r\n/international/consensus/caricom\r\n/international/consensus\r\n/international/consensus/celac-china\r\n/international/consensus/consensobrasilia\r\n"

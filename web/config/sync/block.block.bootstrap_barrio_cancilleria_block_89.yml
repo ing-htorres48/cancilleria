@@ -1,0 +1,30 @@
+uuid: 60845fe1-8357-49f6-b3c9-5468e2db27be
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08ba4049-03eb-42d6-aba9-8953ce013705'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_89
+theme: bootstrap_barrio
+region: content
+weight: 7
+provider: null
+plugin: 'block_content:08ba4049-03eb-42d6-aba9-8953ce013705'
+settings:
+  id: 'block_content:08ba4049-03eb-42d6-aba9-8953ce013705'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/audio

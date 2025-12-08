@@ -1,0 +1,8 @@
+uuid: 72493427-17e6-4ea6-a68a-20575c955b22
+langcode: es
+status: true
+dependencies: {  }
+id: atencion-al-ciudadano
+label: 'Atención al ciudadano'
+description: ''
+locked: false

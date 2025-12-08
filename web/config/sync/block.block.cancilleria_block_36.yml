@@ -1,0 +1,43 @@
+uuid: 023db399-fe06-437f-a962-2d696a5134f0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4fb071f0-e06c-48a2-a206-d83120f57a2a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_36
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:4fb071f0-e06c-48a2-a206-d83120f57a2a'
+settings:
+  id: 'block_content:4fb071f0-e06c-48a2-a206-d83120f57a2a'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /tramites_servicios
+      /procedures_services
+      /tramites_servicios/pasaportes/*
+      /tramites_servicios/visas/*
+      /tramites_servicios/cooperacion_judicial/*
+      /tramites_servicios/nacionalidad/*
+      /tramites_servicios/tramites_exterior/*
+      /tramites_servicios/pasaportes
+      /tramites_servicios/visas
+      /tramites_servicios/cooperacion_judicial
+      /tramites_servicios/nacionalidad
+      /tramites_servicios/tramites_exterior
+      /tramites_servicios/noticias

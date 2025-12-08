@@ -1,0 +1,18 @@
+uuid: eeea6f3b-b5c7-4951-b151-53bd585b8a80
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Imagen Trámites y servicios'
+type: imagen_tramites_y_servicios
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

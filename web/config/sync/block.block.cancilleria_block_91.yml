@@ -1,0 +1,30 @@
+uuid: b55ad513-8b24-4542-8c22-39775466d4a4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b3b6d45d-eab6-4057-add3-d15ba0f552af'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_91
+theme: bartik
+region: content
+weight: 9
+provider: null
+plugin: 'block_content:b3b6d45d-eab6-4057-add3-d15ba0f552af'
+settings:
+  id: 'block_content:b3b6d45d-eab6-4057-add3-d15ba0f552af'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/publiques

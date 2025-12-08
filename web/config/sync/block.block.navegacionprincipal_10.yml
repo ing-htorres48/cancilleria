@@ -1,0 +1,18 @@
+uuid: fd4b3f2b-f81f-4d8c-a556-585f2bb817f7
+langcode: es
+status: false
+dependencies:
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_10
+theme: bootstrap_barrio_subtheme
+region: nav_main
+weight: 0
+provider: null
+plugin: 'tb_megamenu_menu_block:main'
+settings:
+  id: 'tb_megamenu_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

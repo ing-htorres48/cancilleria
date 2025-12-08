@@ -1,0 +1,24 @@
+uuid: 26ec4c88-28fc-4604-a95b-5249cd0e5403
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.news
+  module:
+    - datetime
+id: node.news.field_date
+field_name: field_date
+entity_type: node
+bundle: news
+label: Fecha
+description: 'Fecha de la Noticia'
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

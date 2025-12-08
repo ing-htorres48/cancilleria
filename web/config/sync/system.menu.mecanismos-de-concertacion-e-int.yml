@@ -1,0 +1,8 @@
+uuid: 479bdf02-5baa-47c5-be02-7e9ebe91b756
+langcode: es
+status: true
+dependencies: {  }
+id: mecanismos-de-concertacion-e-int
+label: 'Mecanismos de Concertación e Integración Regionales'
+description: ''
+locked: false

@@ -1,0 +1,11 @@
+uuid: 1933dc7b-1bae-4120-a513-c6da4eb2f531
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_unesco
+id: node.flex_unesco
+target_entity_type_id: node
+target_bundle: flex_unesco
+default_langcode: site_default
+language_alterable: false

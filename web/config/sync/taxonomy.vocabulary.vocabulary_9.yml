@@ -1,0 +1,8 @@
+uuid: 5cfaae3b-e5e6-4c8e-bad5-dfc475f951cd
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorias FAQ'
+vid: vocabulary_9
+description: ''
+weight: 0

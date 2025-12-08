@@ -1,0 +1,25 @@
+uuid: e0951555-d557-42d9-8b84-42229cedc303
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: bootstrap_barrio_subtheme_branding
+theme: bootstrap_barrio_subtheme
+region: header
+weight: 3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: d763de3f-7e11-4ea9-b951-c2d32327b613
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fechaactualizacion
+    - node.type.tratados
+  module:
+    - datetime
+id: node.tratados.field_fechaactualizacion
+field_name: field_fechaactualizacion
+entity_type: node
+bundle: tratados
+label: 'Fecha actualización'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

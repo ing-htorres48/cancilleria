@@ -1,0 +1,30 @@
+uuid: 45c784da-7477-4d74-a0c2-8481bdca1878
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f838c60a-b6c0-4e0e-8888-8601cd5a2957'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: formats
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 132
+provider: null
+plugin: 'block_content:f838c60a-b6c0-4e0e-8888-8601cd5a2957'
+settings:
+  id: 'block_content:f838c60a-b6c0-4e0e-8888-8601cd5a2957'
+  label: Formats
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /en/procedures_services/visa/formats

@@ -1,0 +1,31 @@
+uuid: 6edcb729-64ec-4298-89c7-93c807f86532
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.el_archipielago_es_colombia.body
+    - node.type.el_archipielago_es_colombia
+  module:
+    - text
+    - user
+id: node.el_archipielago_es_colombia.teaser
+targetEntityType: node
+bundle: el_archipielago_es_colombia
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

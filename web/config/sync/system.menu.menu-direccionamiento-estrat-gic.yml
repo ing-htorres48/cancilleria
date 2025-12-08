@@ -1,0 +1,8 @@
+uuid: 2a5d9014-dcee-4e28-8c66-ad870108c6b7
+langcode: und
+status: true
+dependencies: {  }
+id: menu-direccionamiento-estrat-gic
+label: 'Planeación y Gestión'
+description: ''
+locked: false

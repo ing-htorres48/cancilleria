@@ -1,0 +1,16 @@
+uuid: bee260bd-c4ae-4d44-aefe-a76e40e573a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.faq
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.faq
+target_entity_type_id: node
+target_bundle: faq
+default_langcode: current_interface
+language_alterable: true

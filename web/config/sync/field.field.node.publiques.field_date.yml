@@ -1,0 +1,24 @@
+uuid: d0654340-a4a0-4c8b-adc8-b51fdef8467e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.publiques
+  module:
+    - datetime
+id: node.publiques.field_date
+field_name: field_date
+entity_type: node
+bundle: publiques
+label: Fecha
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

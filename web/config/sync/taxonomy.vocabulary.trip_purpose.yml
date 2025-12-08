@@ -1,0 +1,8 @@
+uuid: d4157f82-53d2-45f7-b466-3c3ff8aabd2c
+langcode: es
+status: true
+dependencies: {  }
+name: 'Trip purpose'
+vid: trip_purpose
+description: ''
+weight: 0

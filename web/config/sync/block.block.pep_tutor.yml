@@ -1,0 +1,30 @@
+uuid: 8b7a7681-f294-43e9-81af-5a8a2fd68b72
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:29782210-e042-4333-91e8-5cfc1f24f03b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: pep_tutor
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:29782210-e042-4333-91e8-5cfc1f24f03b'
+settings:
+  id: 'block_content:29782210-e042-4333-91e8-5cfc1f24f03b'
+  label: PEP-TUTOR
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/pep-tutor

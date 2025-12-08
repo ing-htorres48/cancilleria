@@ -1,0 +1,30 @@
+uuid: 94bd70f1-a59f-4ce8-be03-34878676cfb7
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dfa28021-51cc-4383-b1d3-fe5672044b7f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_124
+theme: bootstrap_barrio
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:dfa28021-51cc-4383-b1d3-fe5672044b7f'
+settings:
+  id: 'block_content:dfa28021-51cc-4383-b1d3-fe5672044b7f'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /footer/academy/institute

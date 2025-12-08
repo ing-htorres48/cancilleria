@@ -1,0 +1,31 @@
+uuid: f6b770af-477c-4c9b-ac23-7ac27028a01e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.node_gallery_gallery.body
+    - node.type.node_gallery_gallery
+  module:
+    - text
+    - user
+id: node.node_gallery_gallery.teaser
+targetEntityType: node
+bundle: node_gallery_gallery
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

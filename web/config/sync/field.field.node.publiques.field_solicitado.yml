@@ -1,0 +1,24 @@
+uuid: 64306aa6-8c61-4841-8438-9a0e50c4b072
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solicitado
+    - node.type.publiques
+  module:
+    - datetime
+id: node.publiques.field_solicitado
+field_name: field_solicitado
+entity_type: node
+bundle: publiques
+label: Solicitado
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

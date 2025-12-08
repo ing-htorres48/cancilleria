@@ -1,0 +1,27 @@
+uuid: 6dc6b3f1-2bca-4683-95fa-0bd947246ab0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.faq.body
+    - field.field.node.faq.field_detailed_question
+    - field.field.node.faq.field_faq
+    - node.type.faq
+  module:
+    - user
+id: node.faq.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: faq
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_detailed_question: true
+  field_faq: true
+  langcode: true

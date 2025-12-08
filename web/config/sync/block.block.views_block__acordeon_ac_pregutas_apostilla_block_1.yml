@@ -1,0 +1,29 @@
+uuid: 390a2116-5d97-4317-b6b0-45e2d8bafb14
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.acordeon_ac_pregutas_apostilla
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_ac_pregutas_apostilla_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 180
+provider: null
+plugin: 'views_block:acordeon_ac_pregutas_apostilla-block_1'
+settings:
+  id: 'views_block:acordeon_ac_pregutas_apostilla-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/faq/apostilla-legalizacion

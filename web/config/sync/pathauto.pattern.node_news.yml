@@ -1,0 +1,24 @@
+uuid: ec01111a-29d8-4268-a8b0-e3d3e4191757
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_news
+label: 'Contenido - Noticias'
+type: 'canonical_entities:node'
+pattern: 'newsroom/news/[node:title]'
+selection_criteria:
+  1512b331-5e5b-44f9-8615-8e3b793b9fa1:
+    id: node_type
+    negate: false
+    uuid: 1512b331-5e5b-44f9-8615-8e3b793b9fa1
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: 0
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,30 @@
+uuid: 496fd738-e4ea-4758-942e-e83cbdb959e4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0fd0f181-3320-4dcc-9a70-f47b0d90b8c9'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: block_vista_visa
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 28
+provider: null
+plugin: 'block_content:0fd0f181-3320-4dcc-9a70-f47b0d90b8c9'
+settings:
+  id: 'block_content:0fd0f181-3320-4dcc-9a70-f47b0d90b8c9'
+  label: block_vista_visa
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/tramites_servicios/visa\r\n/tramites_servicios/visa/abece-visas\r\n/tramites_servicios/visa/requisitos\r\n/tramites_servicios/visa/costos-medios-pago-oficinas-atencion\r\n/tramites_servicios/visa/formatos\r\n/en/procedures_services/visa/quick-visa-guide\r\n/en/procedures_services/visa/requirements\r\n/en/procedures_services/visa/costs-means-payment-service-offices\r\n/en/procedures_services/visa/formats\r\n/tramites_servicios/visa/normativa\r\n/tramites_servicios/visa/abece\r\n/procedures_services/visa/quick-visa-guide\r\n/procedures_services/visa/requirements\r\n/procedures_services/visa/costs-means-payment-service-offices\r\n/procedures_services/visa/formats"

@@ -1,0 +1,32 @@
+uuid: c502b017-21f6-439a-b707-f29b6a10da99
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6def1d47-d5ae-4be1-9839-31122425681c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_111
+theme: bartik
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:6def1d47-d5ae-4be1-9839-31122425681c'
+settings:
+  id: 'block_content:6def1d47-d5ae-4be1-9839-31122425681c'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /tramites_servicios/pasaportes
+      /tramites_servicios/pasaportes/*

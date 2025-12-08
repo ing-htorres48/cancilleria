@@ -1,0 +1,18 @@
+uuid: d236b136-c133-46f3-ac5e-d3a5bb53db7d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_aparece_en_columna
+field_name: field_aparece_en_columna
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

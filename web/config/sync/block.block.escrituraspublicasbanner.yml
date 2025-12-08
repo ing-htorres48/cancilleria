@@ -1,0 +1,30 @@
+uuid: a1d12f6a-2224-4e07-9540-ead79310ec4b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:41055b71-5a31-45ab-ae31-7b1e0f150d49'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: escrituraspublicasbanner
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 101
+provider: null
+plugin: 'block_content:41055b71-5a31-45ab-ae31-7b1e0f150d49'
+settings:
+  id: 'block_content:41055b71-5a31-45ab-ae31-7b1e0f150d49'
+  label: 'Escrituras Publicas Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/tramites_exterior/escrituras_publicas

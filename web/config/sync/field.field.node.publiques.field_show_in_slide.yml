@@ -1,0 +1,23 @@
+uuid: 972b5d76-1f57-4502-af40-46e0903cac55
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_slide
+    - node.type.publiques
+id: node.publiques.field_show_in_slide
+field_name: field_show_in_slide
+entity_type: node
+bundle: publiques
+label: 'Aparece en las diapositivas'
+description: 'Este campo define si esta noticia aparece en las diapositivas de primera página'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

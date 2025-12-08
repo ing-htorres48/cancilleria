@@ -1,0 +1,15 @@
+uuid: d9e3f9d4-e28d-464b-8739-0e0168cb4ce4
+langcode: es
+status: true
+dependencies: {  }
+name: auto_400
+label: auto_400
+effects:
+  e7cefceb-5072-47a0-a7e6-10680e6e2f2a:
+    uuid: e7cefceb-5072-47a0-a7e6-10680e6e2f2a
+    id: image_scale
+    weight: 1
+    data:
+      width: 920
+      height: 400
+      upscale: false

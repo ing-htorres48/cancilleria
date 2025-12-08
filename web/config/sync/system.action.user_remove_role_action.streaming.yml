@@ -1,0 +1,14 @@
+uuid: d839625a-bea7-431a-b740-2663cb61736c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.streaming
+  module:
+    - user
+id: user_remove_role_action.streaming
+label: 'Elimina el rol streaming al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: streaming

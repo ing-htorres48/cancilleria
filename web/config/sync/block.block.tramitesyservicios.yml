@@ -1,0 +1,29 @@
+uuid: baa52895-3cf4-41d6-8df9-4d5894bd21e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.tramites-y-servicios
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: tramitesyservicios
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 27
+provider: null
+plugin: 'system_menu_block:tramites-y-servicios'
+settings:
+  id: 'system_menu_block:tramites-y-servicios'
+  label: 'Trámites y Servicios'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/tramites_servicios/*\r\n/tramites-exterior\r\n/apostilla_legalizacion_en_linea/asi-nos-evaluaron-nuestros-usuarios\r\n"

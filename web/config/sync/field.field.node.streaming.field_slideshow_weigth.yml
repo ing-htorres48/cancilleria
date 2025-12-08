@@ -1,0 +1,21 @@
+uuid: ed3353e4-3f66-4920-ac82-e59f58d05fb2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow_weigth
+    - node.type.streaming
+  module:
+    - options
+id: node.streaming.field_slideshow_weigth
+field_name: field_slideshow_weigth
+entity_type: node
+bundle: streaming
+label: 'Peso en Portada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

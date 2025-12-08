@@ -1,0 +1,22 @@
+uuid: f25a26cd-47d7-47ab-af9f-6d6edd78ff74
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.regiones
+id: node.regiones.promote
+field_name: promote
+entity_type: node
+bundle: regiones
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

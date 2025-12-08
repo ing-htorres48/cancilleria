@@ -1,0 +1,13 @@
+uuid: a8438454-4849-4802-9359-5702ed1bfef5
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: repositorios
+label: repositorios
+weight: 7
+is_admin: null
+permissions:
+  - 'access content'
+  - 'view the administration theme'

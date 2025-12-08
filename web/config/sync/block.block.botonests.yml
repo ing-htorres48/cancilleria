@@ -1,0 +1,30 @@
+uuid: 81d87fe6-6903-474d-96ee-dc995f7d16fe
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:dcfa437c-7675-44b6-933d-4fc23807fb0f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: botonests
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 161
+provider: null
+plugin: 'block_content:dcfa437c-7675-44b6-933d-4fc23807fb0f'
+settings:
+  id: 'block_content:dcfa437c-7675-44b6-933d-4fc23807fb0f'
+  label: 'Botones TS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/tramites_servicios\r\n/tramites_servicios/visas/clases\r\n/tramites_servicios/visas/categorias/residente/re"

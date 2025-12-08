@@ -1,0 +1,21 @@
+uuid: b09e61f9-cb80-4369-9ca3-d95d7e89bd4e
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: FNiNKqwbt0v4IlJTmkVVOklrNR-VUU6rb18sZTobay0
+id: media.field_gtts_text
+field_name: field_gtts_text
+entity_type: media
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

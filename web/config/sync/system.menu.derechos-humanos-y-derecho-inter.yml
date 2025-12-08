@@ -1,0 +1,8 @@
+uuid: 7baaf210-d6fd-4e67-8f5e-d8944dbb0ab8
+langcode: es
+status: true
+dependencies: {  }
+id: derechos-humanos-y-derecho-inter
+label: 'Derechos Humanos y Derecho Internacional Humanitario'
+description: ''
+locked: false

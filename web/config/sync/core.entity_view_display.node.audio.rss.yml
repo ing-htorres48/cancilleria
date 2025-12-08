@@ -1,0 +1,65 @@
+uuid: 3ef7e38d-ce77-4ae1-a88c-d31247d17e28
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.audio.body
+    - field.field.node.audio.field_date
+    - field.field.node.audio.field_image_audio_thumb
+    - field.field.node.audio.field_opciones_de_titulo
+    - field.field.node.audio.field_slideshow_weigth
+    - field.field.node.audio.field_solicitado
+    - field.field.node.audio.field_solicitante
+    - field.field.node.audio.taxonomy_vocabulary_4
+    - node.type.audio
+  module:
+    - datetime
+    - image
+    - user
+id: node.audio.rss
+targetEntityType: node
+bundle: audio
+mode: rss
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_image_audio_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_slideshow_weigth:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_opciones_de_titulo: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true
+  taxonomy_vocabulary_4: true

@@ -1,0 +1,37 @@
+uuid: 96b149ac-fef7-456f-87c9-79f53e6162d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.heart_of_government.body
+    - field.field.node.heart_of_government.field_heart_government_image
+    - field.field.node.heart_of_government.field_heart_government_url
+    - field.field.node.heart_of_government.field_peso
+    - node.type.heart_of_government
+  module:
+    - text
+    - user
+id: node.heart_of_government.teaser
+targetEntityType: node
+bundle: heart_of_government
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_heart_government_image: true
+  field_heart_government_url: true
+  field_peso: true
+  langcode: true

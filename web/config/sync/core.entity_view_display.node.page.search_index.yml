@@ -1,0 +1,41 @@
+uuid: 1b55e6e2-67a5-4111-8d71-d14d759b34de
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.page.body
+    - field.field.node.page.field_attached_page
+    - field.field.node.page.field_clasificacion_de_pagina
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_image_post
+    - field.field.node.page.field_link_panel
+    - node.type.page
+  module:
+    - file
+    - user
+id: node.page.search_index
+targetEntityType: node
+bundle: page
+mode: search_index
+content:
+  field_attached_page:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_clasificacion_de_pagina: true
+  field_gallery: true
+  field_image_post: true
+  field_link_panel: true
+  langcode: true

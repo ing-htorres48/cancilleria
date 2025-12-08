@@ -1,0 +1,15 @@
+uuid: dfe469a2-6386-4d31-8f6d-93e1eb7dcaea
+langcode: es
+status: true
+dependencies: {  }
+name: banner_principal
+label: 'Banner Principal'
+effects:
+  ff9aa5a8-033e-49d0-a0a2-68c952bf9dd5:
+    uuid: ff9aa5a8-033e-49d0-a0a2-68c952bf9dd5
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 850
+      height: 600
+      anchor: center-center

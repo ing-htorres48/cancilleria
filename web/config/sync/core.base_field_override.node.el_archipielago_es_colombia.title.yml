@@ -1,0 +1,18 @@
+uuid: e7fdbd92-8c72-4441-a88e-2228549c591e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.el_archipielago_es_colombia
+id: node.el_archipielago_es_colombia.title
+field_name: title
+entity_type: node
+bundle: el_archipielago_es_colombia
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

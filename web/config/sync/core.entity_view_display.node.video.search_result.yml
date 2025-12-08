@@ -1,0 +1,85 @@
+uuid: 08b956f3-1310-4534-8929-43c541284168
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.video.body
+    - field.field.node.video.field_date
+    - field.field.node.video.field_opciones_de_titulo
+    - field.field.node.video.field_show_in_slide
+    - field.field.node.video.field_slideshow_weigth
+    - field.field.node.video.field_solicitado
+    - field.field.node.video.field_solicitante
+    - field.field.node.video.field_video_descarga
+    - field.field.node.video.field_video_local
+    - field.field.node.video.field_video_local_thumb
+    - field.field.node.video.field_video_youtube
+    - field.field.node.video.field_weight
+    - field.field.node.video.field_youtube_video
+    - field.field.node.video.taxonomy_vocabulary_3
+    - node.type.video
+  module:
+    - datetime
+    - file
+    - image
+    - user
+id: node.video.search_result
+targetEntityType: node
+bundle: video
+mode: search_result
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_slideshow_weigth:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_video_local:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_local_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_solicitado: true
+  field_solicitante: true
+  field_video_descarga: true
+  field_video_youtube: true
+  field_weight: true
+  field_youtube_video: true
+  langcode: true
+  taxonomy_vocabulary_3: true

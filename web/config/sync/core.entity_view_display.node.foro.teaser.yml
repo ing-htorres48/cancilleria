@@ -1,0 +1,35 @@
+uuid: 44a6b206-475e-4748-9a2e-2696f8d4a02a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.foro.body
+    - field.field.node.foro.comment
+    - field.field.node.foro.field_imagen
+    - node.type.foro
+  module:
+    - text
+    - user
+id: node.foro.teaser
+targetEntityType: node
+bundle: foro
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  field_imagen: true
+  langcode: true

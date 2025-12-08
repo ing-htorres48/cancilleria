@@ -1,0 +1,20 @@
+uuid: 2fcfd952-0db8-40eb-8f7c-95e1f3db19f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_tags
+  module:
+    - file
+id: file.image.default
+targetEntityType: file
+bundle: image
+mode: default
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true
+  field_tags: true
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: b4f184c3-86aa-4dae-8763-14861d8c396f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vinculo
+    - node.type.images
+  module:
+    - link
+id: node.images.field_vinculo
+field_name: field_vinculo
+entity_type: node
+bundle: images
+label: Vinculo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

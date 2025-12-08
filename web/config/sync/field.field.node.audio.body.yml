@@ -1,0 +1,23 @@
+uuid: 34146a2c-0e22-40c8-86cd-723933a0ccad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.audio
+  module:
+    - text
+id: node.audio.body
+field_name: body
+entity_type: node
+bundle: audio
+label: Cuerpo
+description: 'Subir un audio para la galería de multimedia.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

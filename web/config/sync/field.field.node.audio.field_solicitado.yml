@@ -1,0 +1,21 @@
+uuid: 2df1fd72-72e8-4a8d-8ed5-0e8cf6daf0a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solicitado
+    - node.type.audio
+  module:
+    - datetime
+id: node.audio.field_solicitado
+field_name: field_solicitado
+entity_type: node
+bundle: audio
+label: Solicitado
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

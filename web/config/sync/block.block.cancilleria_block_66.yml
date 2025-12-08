@@ -1,0 +1,39 @@
+uuid: a26c0a75-94e5-4f43-99aa-74fb8bd8e5c4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:41d4c3f5-6298-48ac-b23a-0b91232c157b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_66
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:41d4c3f5-6298-48ac-b23a-0b91232c157b'
+settings:
+  id: 'block_content:41d4c3f5-6298-48ac-b23a-0b91232c157b'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: |-
+      <front>
+      /ministra
+      /ministerio/viceministra-relaciones-exteriores
+      /ministerio/viceministro-asuntos-multilaterales
+      /ministerio/mision_vision_objetivos_normas_principios_lineamientos
+      /tramites_servicios/visa
+      /tramites_servicios/visa/*
+      /procedures_services/visa
+      /procedures_services/visa/*

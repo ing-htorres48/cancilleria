@@ -1,0 +1,10 @@
+uuid: 8e907924-40b0-4ee9-b471-fc06a13be5d5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.encabezado_en_vistas
+label: encabezado_en_vistas
+targetEntityType: node
+cache: true

@@ -1,0 +1,11 @@
+uuid: 32d99530-f116-4936-949c-df4b3f5ffa6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.regiones
+id: node.regiones
+target_entity_type_id: node
+target_bundle: regiones
+default_langcode: site_default
+language_alterable: false

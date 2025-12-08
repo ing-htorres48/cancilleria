@@ -1,0 +1,29 @@
+uuid: 54f95d1e-a025-4c22-a059-c1ea01b208a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.plan_anticorrupcion
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__plan_anticorrupcion_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 153
+provider: null
+plugin: 'views_block:plan_anticorrupcion-block_1'
+settings:
+  id: 'views_block:plan_anticorrupcion-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /programa-de-transparencia-y-etica-publica

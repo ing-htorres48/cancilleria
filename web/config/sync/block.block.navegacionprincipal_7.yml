@@ -1,0 +1,24 @@
+uuid: 26fbd428-f7c5-4d34-b8fa-e1be790f1059
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_7
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 37
+provider: null
+plugin: 'tb_megamenu_menu_block:main'
+settings:
+  id: 'tb_megamenu_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: tb_megamenu
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /organizacion-las-naciones-unidas-onu

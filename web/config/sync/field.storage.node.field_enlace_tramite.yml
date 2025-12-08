@@ -1,0 +1,19 @@
+uuid: 406a603b-b412-45b9-832b-5e0db29cf0b4
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_enlace_tramite
+field_name: field_enlace_tramite
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

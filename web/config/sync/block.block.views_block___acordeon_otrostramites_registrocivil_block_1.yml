@@ -1,0 +1,29 @@
+uuid: 41f1c0d3-fd19-47f5-8e0a-23d3cecf45bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view._acordeon_otrostramites_registrocivil
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block___acordeon_otrostramites_registrocivil_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 103
+provider: null
+plugin: 'views_block:_acordeon_otrostramites_registrocivil-block_1'
+settings:
+  id: 'views_block:_acordeon_otrostramites_registrocivil-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/tramites_exterior/registro_civil

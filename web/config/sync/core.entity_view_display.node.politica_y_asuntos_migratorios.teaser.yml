@@ -1,0 +1,31 @@
+uuid: c2940cea-c62b-4226-b99c-75fb6038c8b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.politica_y_asuntos_migratorios.body
+    - node.type.politica_y_asuntos_migratorios
+  module:
+    - text
+    - user
+id: node.politica_y_asuntos_migratorios.teaser
+targetEntityType: node
+bundle: politica_y_asuntos_migratorios
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: cb223e0b-0f2b-43c7-b16c-5cc3d38d21c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opciones_de_titulo
+    - node.type.publiques
+  module:
+    - options
+id: node.publiques.field_opciones_de_titulo
+field_name: field_opciones_de_titulo
+entity_type: node
+bundle: publiques
+label: 'Opciones de título'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

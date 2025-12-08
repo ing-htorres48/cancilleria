@@ -1,0 +1,11 @@
+uuid: 04c4fb09-888e-4e97-9382-6abe2748e552
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex__viceministrorelaciones
+id: node.flex__viceministrorelaciones
+target_entity_type_id: node
+target_bundle: flex__viceministrorelaciones
+default_langcode: site_default
+language_alterable: false

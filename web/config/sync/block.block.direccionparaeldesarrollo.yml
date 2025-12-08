@@ -1,0 +1,29 @@
+uuid: c7c4ceca-2b50-4b6f-bf16-365368fbb16c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.direccion-para-el-desarrollo-
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: direccionparaeldesarrollo
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 16
+provider: null
+plugin: 'system_menu_block:direccion-para-el-desarrollo-'
+settings:
+  id: 'system_menu_block:direccion-para-el-desarrollo-'
+  label: 'Dirección para el desarrollo '
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/prosperity/presentation\r\n/prosperity/methodologic\r\n/prosperity/results\r\n/prosperity/news\r\n/prosperity/videos\r\n/noticias-fpf\r\n/tramite-para-la-Determinacion-de-Zona-de-Frontera\r\n/https://www.cancilleria.gov.co/noticias-fpf\r\n\r\n"

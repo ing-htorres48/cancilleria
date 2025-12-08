@@ -1,0 +1,45 @@
+uuid: fdac11ff-fd66-41ef-bb63-ea0dd5a50305
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e86e62dd-e7ec-408e-9c7f-b8b539640ab9'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_99
+theme: bartik
+region: content
+weight: 24
+provider: null
+plugin: 'block_content:e86e62dd-e7ec-408e-9c7f-b8b539640ab9'
+settings:
+  id: 'block_content:e86e62dd-e7ec-408e-9c7f-b8b539640ab9'
+  label: 'Contenido relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /newsroom/news/canciller-holguin-sostuvo-reunion-bilateral-secretario-estado-departamento-federal
+      /newsroom/news/canada-apoyara-colombia-implementacion-posconflicto
+      /newsroom/news/cancilleres-colombia-canada-reunen-cartagena
+      /newsroom/news/canciller-holguin-reunio-su-homologo-noruega-borge-brende-cartagena
+      /newsroom/news/colombia-amplia-vigencia-mandato-mision-apoyo-proceso-paz-organizacion-estados
+      /newsroom/news/canciller-holguin-reunio-su-homologa-argentina-susana-malcorra
+      /newsroom/news/presidente-juan-manuel-santos-hizo-reconocimiento-equipo-negociador-entregar-anos
+      /newsroom/news/canciller-holguin-presencio-firma-acuerdo-paz-miembro-equipo-negociador
+      /newsroom/news/paz-colombia-paz-region-todo-continente-presidente-juan-manuel-santos
+      /newsroom/news/equipo-negociador-proceso-paz-habana-fue-aplaudido-todos-asistentes-ceremonia-firma
+      /newsroom/news/canciller-holguin-acompano-momento-historico-paz-colombia-quedo-plasmada-firma
+      /newsroom/news/cerca-2500-invitados-especiales-mil-periodistas-presenciaron-firma-acuerdo-final-paz
+      /newsroom/news/ceso-horrible-noche-palabras-presidente-santos-sello-52-anos-conflicto-armado-colombia
+      /newsroom/news/ministra-holguin-parte-equipo-negociador-proceso-paz-habana-protagonizo-junto-miembros
+      /newsroom/news/hoy-colombianos-dicen-adios-decadas-llamas-estan-enviando-luz-brillante-esperanza

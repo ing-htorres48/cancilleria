@@ -1,0 +1,25 @@
+uuid: af2c7b5c-b02b-4954-8bfd-8556cacbd660
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f037eec0-096d-4ed8-861c-f39eccf29650'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_109
+theme: bootstrap_barrio
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:f037eec0-096d-4ed8-861c-f39eccf29650'
+settings:
+  id: 'block_content:f037eec0-096d-4ed8-861c-f39eccf29650'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

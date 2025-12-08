@@ -1,0 +1,16 @@
+uuid: ce4d8659-36c5-406f-9684-8e6376232a7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.images
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.images
+target_entity_type_id: node
+target_bundle: images
+default_langcode: current_interface
+language_alterable: true

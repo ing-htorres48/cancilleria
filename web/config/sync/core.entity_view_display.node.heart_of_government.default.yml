@@ -1,0 +1,58 @@
+uuid: 4d203cfc-cf1f-4e8d-b16b-b64c426043a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.heart_of_government.body
+    - field.field.node.heart_of_government.field_heart_government_image
+    - field.field.node.heart_of_government.field_heart_government_url
+    - field.field.node.heart_of_government.field_peso
+    - node.type.heart_of_government
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.heart_of_government.default
+targetEntityType: node
+bundle: heart_of_government
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heart_government_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heart_government_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_peso: true
+  langcode: true

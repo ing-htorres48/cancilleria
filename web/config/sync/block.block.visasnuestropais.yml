@@ -1,0 +1,30 @@
+uuid: 82b81f3c-5a56-4d9c-b8d4-ebf8c69bd3cb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:43e3943f-06e6-4099-bc8d-f7efa33efe06'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: visasnuestropais
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 32
+provider: null
+plugin: 'block_content:43e3943f-06e6-4099-bc8d-f7efa33efe06'
+settings:
+  id: 'block_content:43e3943f-06e6-4099-bc8d-f7efa33efe06'
+  label: 'Visas Nuestro Pais'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /colombia/nuestro-pais/visas-pais

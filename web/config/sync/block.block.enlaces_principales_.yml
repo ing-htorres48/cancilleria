@@ -1,0 +1,30 @@
+uuid: b20d3f77-a733-4dbc-866a-1998f54fe7b0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51bdc21d-85e9-463a-bd42-b8f7cd1cf105'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: enlaces_principales_
+theme: bootstrap_barrio_subtheme
+region: banner_principal
+weight: 3
+provider: null
+plugin: 'block_content:51bdc21d-85e9-463a-bd42-b8f7cd1cf105'
+settings:
+  id: 'block_content:51bdc21d-85e9-463a-bd42-b8f7cd1cf105'
+  label: Enlaces_principales_
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/inicio\r\n/tramites_servicios"

@@ -1,0 +1,49 @@
+uuid: d4dce517-bbfd-4df6-a329-cd9ac86a7690
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_attached_page
+    - field.field.node.page.field_clasificacion_de_pagina
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_image_post
+    - field.field.node.page.field_link_panel
+    - node.type.page
+  module:
+    - file
+    - text
+    - user
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_attached_page:
+    type: file_table
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    weight: 101
+    region: content
+hidden:
+  field_clasificacion_de_pagina: true
+  field_gallery: true
+  field_image_post: true
+  field_link_panel: true
+  langcode: true

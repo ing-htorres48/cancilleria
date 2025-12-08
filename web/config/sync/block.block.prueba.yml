@@ -1,0 +1,29 @@
+uuid: 769d8341-8522-485a-9426-3f4b54018ad3
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.prueba
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: prueba
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 40
+provider: null
+plugin: 'system_menu_block:prueba'
+settings:
+  id: 'system_menu_block:prueba'
+  label: prueba
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /historia-ministerio-0

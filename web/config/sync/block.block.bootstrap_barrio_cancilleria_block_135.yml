@@ -1,0 +1,30 @@
+uuid: 472cb092-502b-4cfd-9034-559a593d63dc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_135
+theme: bootstrap_barrio
+region: content
+weight: -16
+provider: null
+plugin: 'block_content:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+settings:
+  id: 'block_content:c0b3a8ab-0f26-4cfd-bd5e-b8429df35742'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/novedades

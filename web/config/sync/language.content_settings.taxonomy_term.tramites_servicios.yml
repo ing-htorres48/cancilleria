@@ -1,0 +1,16 @@
+uuid: 773baa76-e5a0-4194-a20e-0e4717111c79
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tramites_servicios
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.tramites_servicios
+target_entity_type_id: taxonomy_term
+target_bundle: tramites_servicios
+default_langcode: und
+language_alterable: true

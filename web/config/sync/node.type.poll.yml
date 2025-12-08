@@ -1,0 +1,11 @@
+uuid: 06c5a56c-48d9-4e85-86f7-e25f99d914b9
+langcode: es
+status: true
+dependencies: {  }
+name: Encuesta
+type: poll
+description: 'Una <em>encuesta</em> es una pregunta con un grupo de respuestas posibles. Una <em>encuesta</em>, una vez creada, proporciona automáticamente un sencillo contador del número de votos que ha recibido cada respuesta.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,30 @@
+uuid: 98bfd40c-5969-4753-8861-b9056c45d6ed
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cf612399-289f-4cfc-929e-07448b424f6a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensanoticiasdeembajadasyconsuladosimg
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 42
+provider: null
+plugin: 'block_content:cf612399-289f-4cfc-929e-07448b424f6a'
+settings:
+  id: 'block_content:cf612399-289f-4cfc-929e-07448b424f6a'
+  label: 'Sala de prensa - Noticias de Embajadas y Consulados img'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/embajadas_consulados

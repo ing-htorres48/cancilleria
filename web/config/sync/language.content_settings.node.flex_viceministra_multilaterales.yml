@@ -1,0 +1,11 @@
+uuid: bd82c57a-a035-42ad-88e1-f42d0cad5122
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_viceministra_multilaterales
+id: node.flex_viceministra_multilaterales
+target_entity_type_id: node
+target_bundle: flex_viceministra_multilaterales
+default_langcode: site_default
+language_alterable: false

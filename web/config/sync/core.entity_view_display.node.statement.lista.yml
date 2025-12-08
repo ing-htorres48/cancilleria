@@ -1,0 +1,50 @@
+uuid: f8861dcf-9dda-4fb3-a368-19a7a92492e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.lista
+    - field.field.node.statement.body
+    - field.field.node.statement.field_attached_statment
+    - field.field.node.statement.field_date
+    - field.field.node.statement.field_gallery_page
+    - field.field.node.statement.field_images_statement
+    - field.field.node.statement.field_opciones_de_titulo
+    - node.type.statement
+  module:
+    - datetime
+    - text
+    - user
+id: node.statement.lista
+targetEntityType: node
+bundle: statement
+mode: lista
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_attached_statment: true
+  field_gallery_page: true
+  field_images_statement: true
+  field_opciones_de_titulo: true
+  langcode: true

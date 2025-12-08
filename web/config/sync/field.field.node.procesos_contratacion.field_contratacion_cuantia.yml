@@ -1,0 +1,22 @@
+uuid: f487abc4-7619-440b-97ab-e967b1d2ebbc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contratacion_cuantia
+    - node.type.procesos_contratacion
+id: node.procesos_contratacion.field_contratacion_cuantia
+field_name: field_contratacion_cuantia
+entity_type: node
+bundle: procesos_contratacion
+label: Cuantía
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_contratacion_cuantia][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

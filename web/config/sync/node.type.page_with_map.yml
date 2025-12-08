@@ -1,0 +1,16 @@
+uuid: c5173e05-1756-4d3f-b41e-bb399dfe168f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Page with map'
+type: page_with_map
+description: ''
+help: "<br />\r\n"
+new_revision: false
+preview_mode: 1
+display_submitted: false

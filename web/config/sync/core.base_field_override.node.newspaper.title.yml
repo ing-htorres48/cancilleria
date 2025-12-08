@@ -1,0 +1,18 @@
+uuid: ac4c1f7d-419b-45de-a726-b9e71a5ddb20
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.newspaper
+id: node.newspaper.title
+field_name: title
+entity_type: node
+bundle: newspaper
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

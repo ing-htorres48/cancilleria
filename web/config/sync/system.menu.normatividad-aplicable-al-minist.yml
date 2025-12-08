@@ -1,0 +1,8 @@
+uuid: 701518b1-dab1-4f03-ad11-6276e630cb49
+langcode: es
+status: true
+dependencies: {  }
+id: normatividad-aplicable-al-minist
+label: 'Normatividad aplicable al Ministerio'
+description: ''
+locked: false

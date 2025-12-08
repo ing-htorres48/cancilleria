@@ -1,0 +1,33 @@
+uuid: 2de4421e-52d4-4c75-a8f2-9124ccbdc780
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:81188f83-c4bb-42b3-80a0-7a5dd79dccc5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_113
+theme: bootstrap_barrio
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:81188f83-c4bb-42b3-80a0-7a5dd79dccc5'
+settings:
+  id: 'block_content:81188f83-c4bb-42b3-80a0-7a5dd79dccc5'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /tramites_servicios/apostilla_legalizacion_en_linea
+      /tramites_servicios/apostilla_legalizacion_en_linea/*
+      /tramites_servicios/apostilla_legalizacion_en_linea*

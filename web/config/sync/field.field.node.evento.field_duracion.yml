@@ -1,0 +1,19 @@
+uuid: e57d6bce-5e7a-4217-9f52-187644ae6580
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duracion
+    - node.type.evento
+id: node.evento.field_duracion
+field_name: field_duracion
+entity_type: node
+bundle: evento
+label: Duración
+description: 'The field value should be a string in the format hh:mm:ss.sss, hh:mm:sss or hh:mm. For example, "05:00" signifies 5 hours.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

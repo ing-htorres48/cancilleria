@@ -1,0 +1,38 @@
+uuid: 1df55def-1165-4699-b1b1-16948577fab3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c15aba54-9f79-4744-963b-2786b6a3492c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_cancilleria_block_65
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 60
+provider: null
+plugin: 'block_content:c15aba54-9f79-4744-963b-2786b6a3492c'
+settings:
+  id: 'block_content:c15aba54-9f79-4744-963b-2786b6a3492c'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /footer/academy/about
+      /footer/academy/carrera
+      /footer/academy/contest-entry
+      /footer/academy/courses
+      /footer/academy/curso-ascenso
+      /footer/academy/embassador-updates
+      /footer/academy/cooperation
+      /footer/academy/news

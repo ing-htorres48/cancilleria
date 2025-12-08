@@ -1,0 +1,29 @@
+uuid: efb1b899-f7d7-46c6-b998-17940cb84cf5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.asuntos-bilaterales
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: asuntosbilaterales
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 9
+provider: null
+plugin: 'system_menu_block:asuntos-bilaterales'
+settings:
+  id: 'system_menu_block:asuntos-bilaterales'
+  label: 'Asuntos Bilaterales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/politica/asuntos-bilaterales\r\n/politica\r\n/politica/fronteras-terrestres\r\n/politica/brasil\r\n/politica/ecuador\r\n/politica/panama\r\n/politica/peru\r\n/politica/venezuela\r\n/politica/tratados-acuerdos-convenios\r\n/politica/sobrevuelos\r\n/politica/fronteras-maritimas\r\n/politica/procedimiento-transito-atraque-buques-estado\r\n/politica/asuntos-maritimos\r\n/politica/asuntos-antarticos\r\n/politica/seguridad-defensa-regionales\r\n/politica/integracion-brasil-ecuador-peru\r\n/politica/organismos-regionales-integracion\r\n/politica/otca\r\n/politica/delimitacion-ecuador\r\n/politica/delimitacion-panama\r\n/politica/delimitacion-costa-rica\r\n/politica/delimitacion-haiti\r\n/politica/delimitacion-honduras\r\n/politica/delimitacion-jamaica\r\n/politica/delimitacion-nicaragua\r\n/politica/delimitacion-republica-dominicana\r\n/organizacion-del-tratado-cooperacion-amazonica-otca"

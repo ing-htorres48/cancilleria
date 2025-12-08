@@ -1,0 +1,8 @@
+uuid: 657c64fc-3039-45ed-99c4-e0367e77d3a7
+langcode: es
+status: true
+dependencies: {  }
+id: regiones
+label: Regiones
+description: ''
+locked: false

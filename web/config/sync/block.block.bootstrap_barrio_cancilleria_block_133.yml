@@ -1,0 +1,30 @@
+uuid: 4d34fd3b-e508-413a-888b-dcd035292498
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e52a4dd7-7444-427e-a0fb-84c72dcce584'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_133
+theme: bootstrap_barrio
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:e52a4dd7-7444-427e-a0fb-84c72dcce584'
+settings:
+  id: 'block_content:e52a4dd7-7444-427e-a0fb-84c72dcce584'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/reglamento

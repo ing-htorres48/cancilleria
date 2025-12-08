@@ -1,0 +1,14 @@
+uuid: 50e31362-13ed-40d0-980b-73139133c21c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.contratacion
+  module:
+    - user
+id: user_add_role_action.contratacion
+label: 'Añade el rol contratacion al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: contratacion

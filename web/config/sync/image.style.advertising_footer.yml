@@ -1,0 +1,15 @@
+uuid: 65663e5e-425b-44c6-b195-83d3e1ea3462
+langcode: es
+status: true
+dependencies: {  }
+name: advertising_footer
+label: advertising_footer
+effects:
+  2aab3a47-d33d-457e-bd0a-dd119b258d14:
+    uuid: 2aab3a47-d33d-457e-bd0a-dd119b258d14
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 134
+      anchor: center-center

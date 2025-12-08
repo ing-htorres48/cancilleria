@@ -1,0 +1,25 @@
+uuid: 43191978-408c-4566-b846-3f596a55f5af
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8b1e79eb-37bb-4330-83b6-5d260bf101c1'
+  module:
+    - block_content
+  theme:
+    - marvin
+id: marvin_block_2
+theme: marvin
+region: ''
+weight: -42
+provider: null
+plugin: 'block_content:8b1e79eb-37bb-4330-83b6-5d260bf101c1'
+settings:
+  id: 'block_content:8b1e79eb-37bb-4330-83b6-5d260bf101c1'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

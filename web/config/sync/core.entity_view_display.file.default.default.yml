@@ -1,0 +1,16 @@
+uuid: 2368118a-415d-4893-8098-41b6418d6a03
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.default.field_tags
+  module:
+    - file
+id: file.default.default
+targetEntityType: file
+bundle: default
+mode: default
+content: {  }
+hidden:
+  field_tags: true
+  langcode: true

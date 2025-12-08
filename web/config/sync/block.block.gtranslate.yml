@@ -1,0 +1,20 @@
+uuid: edf646c8-79f9-43eb-97b2-b83e26a752eb
+langcode: es
+status: true
+dependencies:
+  module:
+    - gtranslate
+  theme:
+    - bootstrap_barrio_subtheme
+id: gtranslate
+theme: bootstrap_barrio_subtheme
+region: govco
+weight: 0
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  label_display: '0'
+  provider: gtranslate
+visibility: {  }

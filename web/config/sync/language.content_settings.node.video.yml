@@ -1,0 +1,16 @@
+uuid: cc672ed4-2489-44ae-b4c7-52318a6086f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.video
+target_entity_type_id: node
+target_bundle: video
+default_langcode: current_interface
+language_alterable: true

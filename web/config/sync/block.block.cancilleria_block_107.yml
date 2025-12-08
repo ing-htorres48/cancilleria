@@ -1,0 +1,39 @@
+uuid: a548d998-dc06-4931-9bc0-3b5b03917741
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b3753217-95ff-402f-b432-294e63791677'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_107
+theme: bartik
+region: content
+weight: 17
+provider: null
+plugin: 'block_content:b3753217-95ff-402f-b432-294e63791677'
+settings:
+  id: 'block_content:b3753217-95ff-402f-b432-294e63791677'
+  label: 'Contenido Relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /node/15720
+      /node/15718
+      /node/15717
+      /node/15715
+      /node/15714
+      /node/15713
+      /node/15712
+      /node/15704
+      /node/15705

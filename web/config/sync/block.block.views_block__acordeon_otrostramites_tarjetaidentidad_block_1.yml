@@ -1,0 +1,29 @@
+uuid: d492659c-64bf-4680-8807-2afbe555d18d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_otrostramites_tarjetaidentidad
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_otrostramites_tarjetaidentidad_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 110
+provider: null
+plugin: 'views_block:acordeon_otrostramites_tarjetaidentidad-block_1'
+settings:
+  id: 'views_block:acordeon_otrostramites_tarjetaidentidad-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/tramites_exterior/tarjeta_identidad

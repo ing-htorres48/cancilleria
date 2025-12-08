@@ -1,0 +1,45 @@
+uuid: f459a4db-3c24-406c-90a0-ee28613f873a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.streaming.field_embedded
+    - field.field.node.streaming.field_opciones_de_titulo
+    - field.field.node.streaming.field_show_in_slide
+    - field.field.node.streaming.field_slideshow_weigth
+    - field.field.node.streaming.field_weight
+    - node.type.streaming
+  module:
+    - text
+    - user
+id: node.streaming.default
+targetEntityType: node
+bundle: streaming
+mode: default
+content:
+  field_embedded:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  langcode: true

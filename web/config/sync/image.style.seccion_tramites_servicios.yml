@@ -1,0 +1,23 @@
+uuid: edf7e179-4f3b-48b1-b766-2b4c2128fe51
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_tramites_servicios
+label: seccion_tramites_servicios
+effects:
+  05ec21c9-d116-4224-893e-ce3b0ec6113e:
+    uuid: 05ec21c9-d116-4224-893e-ce3b0ec6113e
+    id: image_scale
+    weight: 2
+    data:
+      width: 708
+      height: null
+      upscale: true
+  7b2b6725-9ebf-4980-bf0c-0875d121a749:
+    uuid: 7b2b6725-9ebf-4980-bf0c-0875d121a749
+    id: image_crop
+    weight: 3
+    data:
+      width: 708
+      height: 308
+      anchor: center-center

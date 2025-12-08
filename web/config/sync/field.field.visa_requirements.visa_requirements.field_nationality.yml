@@ -1,0 +1,30 @@
+uuid: 307fd7ad-617f-4b11-9492-df9a937b7438
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.visa_requirements.field_nationality
+    - taxonomy.vocabulary.nationality
+  module:
+    - cancilleria_form
+id: visa_requirements.visa_requirements.field_nationality
+field_name: field_nationality
+entity_type: visa_requirements
+bundle: visa_requirements
+label: Nationality
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nationality: nationality
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

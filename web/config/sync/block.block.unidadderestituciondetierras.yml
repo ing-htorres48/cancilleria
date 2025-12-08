@@ -1,0 +1,30 @@
+uuid: 2b8c7aaf-7b7f-42e7-968b-a0d8a80a3cf8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d2521dc3-7a9d-4c95-a1a7-788211f8717b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: unidadderestituciondetierras
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 20
+provider: null
+plugin: 'block_content:d2521dc3-7a9d-4c95-a1a7-788211f8717b'
+settings:
+  id: 'block_content:d2521dc3-7a9d-4c95-a1a7-788211f8717b'
+  label: 'Unidad de restitución de tierras'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /victimas/unidad-de-restitucion-de-tierras

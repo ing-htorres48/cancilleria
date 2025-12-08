@@ -1,0 +1,8 @@
+uuid: afb4c61d-ef40-417f-b3d1-9239a4dcc8b5
+langcode: es
+status: true
+dependencies: {  }
+id: sala-de-prensa
+label: 'Sala de prensa'
+description: ''
+locked: false

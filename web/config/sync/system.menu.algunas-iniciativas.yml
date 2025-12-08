@@ -1,0 +1,8 @@
+uuid: fa3d5fe4-6ad1-44eb-bcde-333176b50423
+langcode: es
+status: true
+dependencies: {  }
+id: algunas-iniciativas
+label: ' Iniciativas y Programas de la Cancillería'
+description: ''
+locked: false

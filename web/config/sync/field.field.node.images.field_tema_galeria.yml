@@ -1,0 +1,23 @@
+uuid: 309e34a5-1c66-4722-882a-98d94788361d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tema_galeria
+    - node.type.images
+  module:
+    - options
+id: node.images.field_tema_galeria
+field_name: field_tema_galeria
+entity_type: node
+bundle: images
+label: Tema
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

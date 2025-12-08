@@ -1,0 +1,11 @@
+uuid: 790c62c7-4424-4f95-a155-cfe3f8ae8710
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contratacion
+id: node.contratacion
+target_entity_type_id: node
+target_bundle: contratacion
+default_langcode: site_default
+language_alterable: false

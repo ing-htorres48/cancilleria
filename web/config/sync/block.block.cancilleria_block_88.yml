@@ -1,0 +1,30 @@
+uuid: 8190283c-9c79-4f77-bf44-bb0009cb9910
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dc42258c-4df2-4c3f-a648-3b25cb327c61'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_88
+theme: bartik
+region: content
+weight: 5
+provider: null
+plugin: 'block_content:dc42258c-4df2-4c3f-a648-3b25cb327c61'
+settings:
+  id: 'block_content:dc42258c-4df2-4c3f-a648-3b25cb327c61'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/video

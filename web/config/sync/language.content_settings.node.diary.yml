@@ -1,0 +1,16 @@
+uuid: 7331dd53-5c26-4123-8b43-02df331eb197
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.diary
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.diary
+target_entity_type_id: node
+target_bundle: diary
+default_langcode: current_interface
+language_alterable: true

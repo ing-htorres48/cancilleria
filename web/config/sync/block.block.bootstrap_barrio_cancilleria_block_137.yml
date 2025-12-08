@@ -1,0 +1,30 @@
+uuid: aa758825-93ed-41d4-9802-04f2895e44b0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a62d4d25-91f7-4ad0-a216-6e6f6699bc77'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_137
+theme: bootstrap_barrio
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:a62d4d25-91f7-4ad0-a216-6e6f6699bc77'
+settings:
+  id: 'block_content:a62d4d25-91f7-4ad0-a216-6e6f6699bc77'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/academy/publications/*'

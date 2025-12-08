@@ -1,0 +1,27 @@
+uuid: 3a1a6b0f-a4b7-4780-9e3f-621649f91af5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attached_page
+    - node.type.page
+  module:
+    - file
+id: node.page.field_attached_page
+field_name: field_attached_page
+entity_type: node
+bundle: page
+label: 'Archivos Adjuntos'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf zip tar.gz gz bz2 tar.bz2 ods odt xls xlsx docx doc'
+  max_filesize: '3 MB'
+  description_field: true
+field_type: file

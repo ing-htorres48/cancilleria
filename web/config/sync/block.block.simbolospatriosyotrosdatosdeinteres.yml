@@ -1,0 +1,30 @@
+uuid: 1ca3855f-787d-4634-af81-c62e7de76c30
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9e019a79-ebe7-492b-8846-7fe5c51e6f1f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: simbolospatriosyotrosdatosdeinteres
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 33
+provider: null
+plugin: 'block_content:9e019a79-ebe7-492b-8846-7fe5c51e6f1f'
+settings:
+  id: 'block_content:9e019a79-ebe7-492b-8846-7fe5c51e6f1f'
+  label: 'Símbolos patrios y otros datos de interés'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /colombia/nuestro-pais/simbolos

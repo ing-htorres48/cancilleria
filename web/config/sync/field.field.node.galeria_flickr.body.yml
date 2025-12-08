@@ -1,0 +1,23 @@
+uuid: e5a32248-1fc9-4765-bbe7-a37d6a533c0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.galeria_flickr
+  module:
+    - text
+id: node.galeria_flickr.body
+field_name: body
+entity_type: node
+bundle: galeria_flickr
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

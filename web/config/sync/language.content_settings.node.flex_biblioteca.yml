@@ -1,0 +1,11 @@
+uuid: dcb43b65-d2fb-4762-b370-268dff4c6827
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_biblioteca
+id: node.flex_biblioteca
+target_entity_type_id: node
+target_bundle: flex_biblioteca
+default_langcode: site_default
+language_alterable: false

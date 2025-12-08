@@ -1,0 +1,11 @@
+uuid: 4ce6a1da-10d1-454e-9a36-bfefa8c8a562
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visas_abc
+id: taxonomy_term.visas_abc
+target_entity_type_id: taxonomy_term
+target_bundle: visas_abc
+default_langcode: site_default
+language_alterable: false

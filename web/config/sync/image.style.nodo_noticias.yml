@@ -1,0 +1,22 @@
+uuid: bb3351e4-652a-4f64-bf34-1c996cae6c1c
+langcode: es
+status: true
+dependencies: {  }
+name: nodo_noticias
+label: 'nodo noticias'
+effects:
+  15f0a9af-5a31-415a-a9da-c48cd2948401:
+    uuid: 15f0a9af-5a31-415a-a9da-c48cd2948401
+    id: image_resize
+    weight: -9
+    data:
+      width: 920
+      height: 400
+  027ac9a0-24f6-4af1-a935-53f9531669a6:
+    uuid: 027ac9a0-24f6-4af1-a935-53f9531669a6
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 920
+      height: 400
+      anchor: center-center

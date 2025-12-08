@@ -1,0 +1,29 @@
+uuid: 0d9ef4b2-ef08-4412-9e3d-3a3478f7dc62
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.academia-diplomatica
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: academiadiplomatica
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 5
+provider: null
+plugin: 'system_menu_block:academia-diplomatica'
+settings:
+  id: 'system_menu_block:academia-diplomatica'
+  label: 'Academia Diplomática'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/footer/academy/about\r\n/footer/academy/carrera\r\n/footer/academy/contest-entry\r\n/footer/academy/courses\r\n/footer/academy/curso-ascenso\r\n/footer/academy/cooperation\r\n/footer/academy/institute\r\n/footer/academy/publications\r\n/footer/academy/news\r\n/footer/academy/institute/historia\r\n/footer/academy/institute/acuerdos\r\n/footer/academy/institute/programa\r\n/footer/academy/institute/egresados\r\n/footer/academy/institute/actualidad\r\n/footer/academy/institute/convocatoria\r\n/footer/academy/contest-entry-2026\r\n/footer/academy/contest-entry-2027\r\n/footer/academy/Consejo-Academico"

@@ -1,0 +1,11 @@
+uuid: 05ef5fb0-4fb5-49ee-acad-07795630d0f6
+langcode: es
+status: true
+dependencies: {  }
+name: 'Página de libro'
+type: book
+description: '<em>Los libros</em> tienen una navegación interna jerarquizada. Úselos para cosas como manuales o tutoriales.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

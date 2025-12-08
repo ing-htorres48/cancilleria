@@ -1,0 +1,11 @@
+uuid: 61391c98-f3f8-4a01-bc41-6683773b5c35
+langcode: es
+status: true
+dependencies: {  }
+name: Galería
+type: node_gallery_gallery
+description: 'A gallery of nodes.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

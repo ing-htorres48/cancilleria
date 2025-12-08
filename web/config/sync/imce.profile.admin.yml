@@ -1,0 +1,43 @@
+uuid: 1368de47-f621-483c-ab85-ba76dc17de1d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Yr2l9kFlT4Sa8875bhBZ0jy7QkYNxCKbx60FqGxELAg
+id: admin
+label: 'Admin profile'
+description: 'Configuration for site administrators'
+conf:
+  extensions: '*'
+  maxsize: 0.0
+  quota: 0.0
+  maxwidth: 0
+  maxheight: 0
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  folders:
+    -
+      path: FOTOS2024
+      permissions:
+        all: true
+    -
+      path: FOTOS2023
+      permissions:
+        all: true
+    -
+      path: FOTOS2022
+      permissions:
+        all: true
+    -
+      path: FOTOS2020
+      permissions:
+        all: true
+    -
+      path: FOTOS2025
+      permissions:
+        all: true
+    -
+      path: .
+      permissions: {  }

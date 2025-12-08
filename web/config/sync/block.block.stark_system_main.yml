@@ -1,0 +1,20 @@
+uuid: bfbde5b2-736f-4a21-aa7e-ba0c43ab68b3
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+id: stark_system_main
+theme: stark
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

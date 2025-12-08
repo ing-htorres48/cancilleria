@@ -1,0 +1,8 @@
+uuid: 2a97fe20-3f4e-48d2-9831-3906af69768d
+langcode: es
+status: true
+dependencies: {  }
+id: ministerio-gestion
+label: Gestión
+description: ''
+locked: false

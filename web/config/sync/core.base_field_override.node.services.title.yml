@@ -1,0 +1,18 @@
+uuid: 74561d83-0fe0-43e6-bfc2-a4d641abcb27
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.services
+id: node.services.title
+field_name: title
+entity_type: node
+bundle: services
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

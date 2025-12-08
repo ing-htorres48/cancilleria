@@ -1,0 +1,27 @@
+uuid: dde29c04-3fe7-4442-8231-b530bfdbe766
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_tags
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+id: file.image.field_tags
+field_name: field_tags
+entity_type: file
+bundle: image
+label: Etiquetas
+description: 'Enter a comma-separated list of words to describe your image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 5a37ab4f-b2f6-4dd0-a825-310dbc2fd38a
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.algunas-iniciativas-y-programas-
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: algunasiniciativasyprogramasdelacancilleria_4
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 43
+provider: null
+plugin: 'system_menu_block:algunas-iniciativas-y-programas-'
+settings:
+  id: 'system_menu_block:algunas-iniciativas-y-programas-'
+  label: 'Casos ante la Corte'
+  label_display: visible
+  provider: system
+  level: 2
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/casos-corte\r\n/casos_corte/nicaragua_colombia\r\n/casos_corte/estrategia-post-fallo\r\n/casos_corte/ecuador_colombia\r\n/casos_corte/nueva-demanda\r\n/casos_corte/nueva-demanda-26-Nov-2013"

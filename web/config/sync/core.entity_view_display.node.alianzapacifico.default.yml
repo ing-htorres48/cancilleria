@@ -1,0 +1,42 @@
+uuid: fbce0c3a-6d67-4aa4-93f7-dfa9740739d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.alianzapacifico.body
+    - field.field.node.alianzapacifico.field_imagenes
+    - node.type.alianzapacifico
+  module:
+    - image
+    - text
+    - user
+id: node.alianzapacifico.default
+targetEntityType: node
+bundle: alianzapacifico
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagenes:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

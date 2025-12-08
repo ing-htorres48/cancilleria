@@ -1,0 +1,92 @@
+uuid: 64081435-d0de-4674-91db-4b7a35d9c793
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.images.body
+    - field.field.node.images.field_date
+    - field.field.node.images.field_image_full_description
+    - field.field.node.images.field_images_gallery
+    - field.field.node.images.field_images_thumb
+    - field.field.node.images.field_opciones_de_titulo
+    - field.field.node.images.field_show_in_slide
+    - field.field.node.images.field_show_week
+    - field.field.node.images.field_slideshow_weigth
+    - field.field.node.images.field_solicitado
+    - field.field.node.images.field_solicitante
+    - field.field.node.images.field_target
+    - field.field.node.images.field_tema_galeria
+    - field.field.node.images.field_vinculo
+    - field.field.node.images.taxonomy_vocabulary_6
+    - node.type.images
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.images.teaser
+targetEntityType: node
+bundle: images
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_full_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_images_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  taxonomy_vocabulary_6:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_images_gallery: true
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_show_week: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_target: true
+  field_tema_galeria: true
+  field_vinculo: true
+  langcode: true

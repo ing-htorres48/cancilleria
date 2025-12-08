@@ -1,0 +1,14 @@
+uuid: ea9f3da4-0ee4-41c6-91df-6c05c1d1a6c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.streaming
+  module:
+    - user
+id: user_add_role_action.streaming
+label: 'Añade el rol streaming al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: streaming

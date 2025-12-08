@@ -1,0 +1,11 @@
+uuid: 548a353d-8aa4-4a7c-99b6-7d934db9b57d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visas
+id: taxonomy_term.visas
+target_entity_type_id: taxonomy_term
+target_bundle: visas
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: 9b9b5c17-105e-4cc7-99b0-2757732f5f1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.sala-de-prensa
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensa
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 25
+provider: null
+plugin: 'system_menu_block:sala-de-prensa'
+settings:
+  id: 'system_menu_block:sala-de-prensa'
+  label: 'Sala de prensa'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/contacto-prensa\r\n/newsroom\r\n/especiales-multimedia\r\n"

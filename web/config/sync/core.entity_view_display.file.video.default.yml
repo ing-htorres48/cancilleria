@@ -1,0 +1,16 @@
+uuid: 9f5e67ed-df40-4a4d-b625-cadf9ba682ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.video.field_tags
+  module:
+    - file
+id: file.video.default
+targetEntityType: file
+bundle: video
+mode: default
+content: {  }
+hidden:
+  field_tags: true
+  langcode: true

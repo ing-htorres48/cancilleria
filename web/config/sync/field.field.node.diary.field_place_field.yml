@@ -1,0 +1,22 @@
+uuid: 8c4c846e-cc1a-47e3-943a-6a7b2ba83ddc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place_field
+    - node.type.diary
+id: node.diary.field_place_field
+field_name: field_place_field
+entity_type: node
+bundle: diary
+label: Lugar
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_place_field][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

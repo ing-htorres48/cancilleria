@@ -1,0 +1,38 @@
+uuid: 73110be2-1a7b-434f-a846-7c798135b415
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_miniatura_activa
+    - node.type.secciones
+  module:
+    - image
+id: node.secciones.field_miniatura_activa
+field_name: field_miniatura_activa
+entity_type: node
+bundle: secciones
+label: 'Miniatura Activa'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

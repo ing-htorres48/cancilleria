@@ -1,0 +1,30 @@
+uuid: 7deec92e-f22f-416f-aeaf-d9b8137b13e1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:104778f9-4f3f-4436-bd3c-55946cdc4465'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: medidasenelexterior
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 14
+provider: null
+plugin: 'block_content:104778f9-4f3f-4436-bd3c-55946cdc4465'
+settings:
+  id: 'block_content:104778f9-4f3f-4436-bd3c-55946cdc4465'
+  label: 'Medidas en el exterior'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /victimas/medidas-en-el-exterior

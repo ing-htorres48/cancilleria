@@ -1,0 +1,11 @@
+uuid: 66f86a03-d023-4db4-ba75-aa277dee2666
+langcode: es
+status: true
+dependencies: {  }
+name: 'Gallery Item'
+type: node_gallery_item
+description: 'A gallery node item.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

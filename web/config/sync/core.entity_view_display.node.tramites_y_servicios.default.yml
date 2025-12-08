@@ -1,0 +1,29 @@
+uuid: 4b3af736-f94f-4894-b309-de40bb65ead3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.tramites_y_servicios.body
+    - node.type.tramites_y_servicios
+  module:
+    - text
+    - user
+id: node.tramites_y_servicios.default
+targetEntityType: node
+bundle: tramites_y_servicios
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

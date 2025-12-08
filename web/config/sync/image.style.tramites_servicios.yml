@@ -1,0 +1,23 @@
+uuid: 02e848dd-01a7-47bd-a661-63b1f84fa4d9
+langcode: es
+status: true
+dependencies: {  }
+name: tramites_servicios
+label: tramites_servicios
+effects:
+  0d40f162-70c1-469d-b44a-4e4850e87153:
+    uuid: 0d40f162-70c1-469d-b44a-4e4850e87153
+    id: image_scale
+    weight: 2
+    data:
+      width: 480
+      height: null
+      upscale: true
+  614e4f8e-3ed9-49b6-bfe0-6d1691f787a3:
+    uuid: 614e4f8e-3ed9-49b6-bfe0-6d1691f787a3
+    id: image_crop
+    weight: 3
+    data:
+      width: 480
+      height: 360
+      anchor: center-center

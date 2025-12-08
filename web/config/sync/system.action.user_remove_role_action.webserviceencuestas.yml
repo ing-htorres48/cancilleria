@@ -1,0 +1,14 @@
+uuid: b269790c-20ac-4074-9169-e2c37aeec9f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.webserviceencuestas
+  module:
+    - user
+id: user_remove_role_action.webserviceencuestas
+label: 'Elimina el rol webserviceencuestas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webserviceencuestas

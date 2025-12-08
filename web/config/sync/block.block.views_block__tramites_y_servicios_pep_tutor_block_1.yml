@@ -1,0 +1,29 @@
+uuid: 66909cf5-fdc8-4c97-b756-c64c7eb343e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tramites_y_servicios_pep_tutor
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__tramites_y_servicios_pep_tutor_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:tramites_y_servicios_pep_tutor-block_1'
+settings:
+  id: 'views_block:tramites_y_servicios_pep_tutor-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/pep-tutor

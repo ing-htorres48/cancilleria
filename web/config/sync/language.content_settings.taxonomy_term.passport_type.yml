@@ -1,0 +1,11 @@
+uuid: 19211718-b724-4f47-8224-3da4d67b755e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.passport_type
+id: taxonomy_term.passport_type
+target_entity_type_id: taxonomy_term
+target_bundle: passport_type
+default_langcode: site_default
+language_alterable: false

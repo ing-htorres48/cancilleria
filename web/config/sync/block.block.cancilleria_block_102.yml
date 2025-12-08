@@ -1,0 +1,45 @@
+uuid: 26b77307-22ef-47c6-8b7f-72cdb7510bd6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3866b836-2a2a-45a5-ae87-27f8add56abc'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_102
+theme: bartik
+region: content
+weight: 23
+provider: null
+plugin: 'block_content:3866b836-2a2a-45a5-ae87-27f8add56abc'
+settings:
+  id: 'block_content:3866b836-2a2a-45a5-ae87-27f8add56abc'
+  label: 'Contenido relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /newsroom/news/mujeres-han-estado-presentes-inicio-proceso-paz-colombia-destaco-canciller-holguin
+      /newsroom/news/canciller-holguin-participa-republica-dominicana-reunion-ministros-relaciones
+      /newsroom/news/colombia-union-europea-afianzan-vinculos-marco-reunion-ministerial-celac-ue
+      /newsroom/news/marco-cumbre-celac-ue-canciller-maria-angela-holguin-reunio-su-homologo-polaco-witold
+      /newsroom/news/canciller-holguin-sostuvo-encuentro-bilateral-ministro-asuntos-exteriores-europa
+      /newsroom/news/marco-cumbre-celac-ue-canciller-maria-angela-holguin-reunio-viceministra-asuntos
+      /newsroom/news/canciller-holguin-reunio-directora-america-latina-caribe-ministerio-relaciones
+      /newsroom/news/canciller-holguin-sostuvo-encuentro-bilateral-senor-jean-asselborn-su-homologo
+      /newsroom/news/eslovaquia-ratifica-su-apoyo-colombia-su-esfuerzo-alcanzar-paz
+      /newsroom/news/marco-reunion-ministerial-celac-ue-colombia-luxemburgo-reiteran-disposicion-trabajar
+      /newsroom/news/reino-unido-reafirma-su-compromiso-apoyo-posconflicto-colombia
+      /newsroom/news/cancilleres-colombia-letonia-reunieron-republica-dominicana
+      /newsroom/news/canciller-holguin-participo-firma-acuerdo-constitutivo-fundacion-eu-lac
+      /newsroom/news/canciller-holguin-participa-segundo-dia-reunion-ministros-relaciones-exteriores-celac
+      /newsroom/news/intervencion-canciller-maria-angela-holguin-debate-financiamiento-desarrollo-cumbre

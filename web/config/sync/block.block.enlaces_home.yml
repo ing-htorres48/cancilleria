@@ -1,0 +1,30 @@
+uuid: 6423267f-d952-4173-b397-6dc8d172e46e
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7d3502e9-ec5a-4ab6-802b-cad7217f6d29'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: enlaces_home
+theme: bootstrap_barrio_subtheme
+region: enlaces_principales
+weight: 6
+provider: null
+plugin: 'block_content:7d3502e9-ec5a-4ab6-802b-cad7217f6d29'
+settings:
+  id: 'block_content:7d3502e9-ec5a-4ab6-802b-cad7217f6d29'
+  label: Enlaces
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/inicio"

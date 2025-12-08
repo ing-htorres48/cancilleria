@@ -1,0 +1,29 @@
+uuid: 0fd3d3ef-34b4-4d1d-8516-e8b311ea7121
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.acordeon_visa_turismo
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_visa_turismo_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 168
+provider: null
+plugin: 'views_block:acordeon_visa_turismo-block_1'
+settings:
+  id: 'views_block:acordeon_visa_turismo-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/tramites_servicios/visa/v-turismo\r\n/tramites_servicios/visa/v-intercambio\r\n/tramites_servicios/visa/v-negocios\r\n/tramites_servicios/visa/v-prestador-servicios-temporales"

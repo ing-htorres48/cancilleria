@@ -1,0 +1,11 @@
+uuid: 6a78362c-ad9e-4cbc-9688-0a686bf6a8f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_evento
+id: taxonomy_term.tipo_evento
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_evento
+default_langcode: site_default
+language_alterable: false

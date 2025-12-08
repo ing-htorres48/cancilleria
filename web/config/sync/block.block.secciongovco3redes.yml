@@ -1,0 +1,25 @@
+uuid: 392bd146-728d-4dfa-b715-13639f26d78d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8bf2c12d-c3ea-48ee-80e4-06fb11423e13'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: secciongovco3redes
+theme: bootstrap_barrio_subtheme
+region: pausa_presidencial
+weight: 0
+provider: null
+plugin: 'block_content:8bf2c12d-c3ea-48ee-80e4-06fb11423e13'
+settings:
+  id: 'block_content:8bf2c12d-c3ea-48ee-80e4-06fb11423e13'
+  label: 'seccion govco 3 redes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 92c31b09-a449-4791-bb6d-692b2b327a10
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b9dea5bc-c24b-4e14-91a1-2c37720597fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_92
+theme: bootstrap_barrio
+region: content
+weight: 10
+provider: null
+plugin: 'block_content:b9dea5bc-c24b-4e14-91a1-2c37720597fa'
+settings:
+  id: 'block_content:b9dea5bc-c24b-4e14-91a1-2c37720597fa'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/embajadas_consulados

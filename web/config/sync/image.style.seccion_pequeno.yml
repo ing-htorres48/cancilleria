@@ -1,0 +1,23 @@
+uuid: b697ffe5-360c-48be-abf7-6b3ca636cfa3
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_pequeno
+label: seccion_pequeno
+effects:
+  4fcce24d-24a2-4d81-89c6-0a254d63bc27:
+    uuid: 4fcce24d-24a2-4d81-89c6-0a254d63bc27
+    id: image_scale
+    weight: 2
+    data:
+      width: 650
+      height: null
+      upscale: true
+  77edf6c3-18dc-4ddb-ab04-d6b8dc095239:
+    uuid: 77edf6c3-18dc-4ddb-ab04-d6b8dc095239
+    id: image_crop
+    weight: 3
+    data:
+      width: 650
+      height: 386
+      anchor: center-center

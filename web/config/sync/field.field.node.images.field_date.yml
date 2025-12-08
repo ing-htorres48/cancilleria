@@ -1,0 +1,21 @@
+uuid: 394c7f5f-1ed2-4868-b10b-24ed470104ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.images
+  module:
+    - datetime
+id: node.images.field_date
+field_name: field_date
+entity_type: node
+bundle: images
+label: Fecha
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,25 @@
+uuid: f3500896-b022-4220-a628-7920887158cd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f037eec0-096d-4ed8-861c-f39eccf29650'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: cancilleria_block_109
+theme: bartik
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:f037eec0-096d-4ed8-861c-f39eccf29650'
+settings:
+  id: 'block_content:f037eec0-096d-4ed8-861c-f39eccf29650'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 92fefeb1-96ce-4109-b306-fa4210c3f3b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_generalidades_participa
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_generalidades_participa_generalidades_part
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 65
+provider: null
+plugin: 'views_block:acordeon_generalidades_participa-generalidades_participa'
+settings:
+  id: 'views_block:acordeon_generalidades_participa-generalidades_participa'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/3680\r\n/help/participation\r\n/help/participation/diagnostico-necesidades\r\n/help/participation/planeacion\r\n/help/participation/consulta-ciudadana\r\n/help/participation/colaboracion-innovacion\r\n/ministry/strategy/rendicioncuentas\r\n/help/participation/control-social\r\n"

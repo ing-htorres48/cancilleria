@@ -1,0 +1,31 @@
+uuid: 99b95a54-6b28-4c5e-87ef-7c7b05213d2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_flickr.body
+    - node.type.galeria_flickr
+  module:
+    - text
+    - user
+id: node.galeria_flickr.teaser
+targetEntityType: node
+bundle: galeria_flickr
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

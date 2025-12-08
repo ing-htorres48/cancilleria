@@ -1,0 +1,22 @@
+uuid: d404247b-1e30-4b59-bb5f-6f0a518b2fd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_depositario
+    - node.type.tratados
+id: node.tratados.field_depositario
+field_name: field_depositario
+entity_type: node
+bundle: tratados
+label: Depositario
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Ministerio de Relaciones Exteriores'
+    _error_element: 'default_value_widget][field_depositario][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

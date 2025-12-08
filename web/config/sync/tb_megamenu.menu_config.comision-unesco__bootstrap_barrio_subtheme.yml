@@ -1,0 +1,13 @@
+uuid: 9f4aa0fe-10e9-4cc6-b924-7a0f716552c4
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio_subtheme
+  menu:
+    - comision-unesco
+id: comision-unesco__bootstrap_barrio_subtheme
+menu: comision-unesco
+theme: bootstrap_barrio_subtheme
+block_config: '[]'
+menu_config: '[]'

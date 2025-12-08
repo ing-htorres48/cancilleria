@@ -1,0 +1,38 @@
+uuid: 5471c95d-4ec7-4919-8ac1-010a0d68ce19
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.instrumentos.body
+    - field.field.node.instrumentos.field_instrumentos
+    - node.type.instrumentos
+  module:
+    - text
+    - user
+id: node.instrumentos.default
+targetEntityType: node
+bundle: instrumentos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_instrumentos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

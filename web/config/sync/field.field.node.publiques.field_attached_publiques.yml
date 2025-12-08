@@ -1,0 +1,27 @@
+uuid: e63d3764-d0eb-4e65-a2ab-ed51ae35faf4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attached_publiques
+    - node.type.publiques
+  module:
+    - file
+id: node.publiques.field_attached_publiques
+field_name: field_attached_publiques
+entity_type: node
+bundle: publiques
+label: 'Archivo Adjunto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: ''
+  max_filesize: ''
+  description_field: false
+field_type: file

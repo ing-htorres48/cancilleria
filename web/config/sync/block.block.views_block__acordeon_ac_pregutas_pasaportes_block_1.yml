@@ -1,0 +1,29 @@
+uuid: ff6d9e65-5f42-4e38-8045-a9c6e067a8b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_ac_pregutas_pasaportes
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_ac_pregutas_pasaportes_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 121
+provider: null
+plugin: 'views_block:acordeon_ac_pregutas_pasaportes-block_1'
+settings:
+  id: 'views_block:acordeon_ac_pregutas_pasaportes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/faq/passports

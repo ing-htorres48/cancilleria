@@ -1,0 +1,29 @@
+uuid: 76ac6f91-23a2-41cc-a429-6eb3a419242c
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - options
+_core:
+  default_config_hash: StV9u-rVNtofJzDACM_HA6KTds-kIuh8if87pLxxxkI
+id: media.field_gtts_language
+field_name: field_gtts_language
+entity_type: media
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: en-US
+      label: 'English (US)'
+    -
+      value: en-GB
+      label: 'English (UK)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

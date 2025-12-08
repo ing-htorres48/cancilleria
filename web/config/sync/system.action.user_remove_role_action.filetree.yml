@@ -1,0 +1,14 @@
+uuid: 0d9a3a03-4bbb-4687-9327-5999e6dc039b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.filetree
+  module:
+    - user
+id: user_remove_role_action.filetree
+label: 'Elimina el rol filetree al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: filetree

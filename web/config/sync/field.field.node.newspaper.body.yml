@@ -1,0 +1,23 @@
+uuid: d4c6d0c7-9b46-474e-b876-930f8b040c16
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.newspaper
+  module:
+    - text
+id: node.newspaper.body
+field_name: body
+entity_type: node
+bundle: newspaper
+label: Cuerpo
+description: 'Publica una entrada en el periódico San Carlos.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

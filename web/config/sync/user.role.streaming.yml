@@ -1,0 +1,25 @@
+uuid: 6d0720a3-f2a4-4d29-947b-d56b3065aa91
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.streaming
+  module:
+    - node
+    - system
+id: streaming
+label: streaming
+weight: 10
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'administer nodes'
+  - 'create streaming content'
+  - 'delete any streaming content'
+  - 'delete own streaming content'
+  - 'edit any streaming content'
+  - 'edit own streaming content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

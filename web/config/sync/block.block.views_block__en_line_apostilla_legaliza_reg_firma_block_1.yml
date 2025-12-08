@@ -1,0 +1,29 @@
+uuid: 59c38388-9ced-4909-9527-2003f461d2c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.en_linea_apostilla_y_legalizacion_registre_su_firma
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__en_line_apostilla_legaliza_reg_firma_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 140
+provider: null
+plugin: 'views_block:en_linea_apostilla_y_legalizacion_registre_su_firma-block_1'
+settings:
+  id: 'views_block:en_linea_apostilla_y_legalizacion_registre_su_firma-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/apostilla_legalizacion_en_linea/registre_firma

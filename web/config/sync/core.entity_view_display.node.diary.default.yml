@@ -1,0 +1,64 @@
+uuid: 105b869d-7741-413b-8100-75f7788d54be
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.diary.body
+    - field.field.node.diary.field_country_field
+    - field.field.node.diary.field_diary_date
+    - field.field.node.diary.field_peso
+    - field.field.node.diary.field_place_field
+    - field.field.node.diary.field_solicitado
+    - field.field.node.diary.field_solicitante
+    - node.type.diary
+  module:
+    - datetime
+    - text
+    - user
+id: node.diary.default
+targetEntityType: node
+bundle: diary
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_country_field:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_diary_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_place_field:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_peso: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true

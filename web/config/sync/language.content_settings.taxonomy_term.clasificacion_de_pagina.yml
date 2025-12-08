@@ -1,0 +1,11 @@
+uuid: 352aaf89-b2fa-4fdf-af79-ab9dc0a66814
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.clasificacion_de_pagina
+id: taxonomy_term.clasificacion_de_pagina
+target_entity_type_id: taxonomy_term
+target_bundle: clasificacion_de_pagina
+default_langcode: site_default
+language_alterable: false

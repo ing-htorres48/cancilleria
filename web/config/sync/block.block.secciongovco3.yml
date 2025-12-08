@@ -1,0 +1,25 @@
+uuid: 0dce9d0d-0d22-4a29-9c12-2473b3396908
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:85c8894c-dbec-4bb9-8ed5-5fbd5b6219f9'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: secciongovco3
+theme: bootstrap_barrio_subtheme
+region: govco
+weight: 1
+provider: null
+plugin: 'block_content:85c8894c-dbec-4bb9-8ed5-5fbd5b6219f9'
+settings:
+  id: 'block_content:85c8894c-dbec-4bb9-8ed5-5fbd5b6219f9'
+  label: 'Seccion Govco 3'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

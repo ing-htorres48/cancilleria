@@ -1,0 +1,65 @@
+uuid: ffda2d2f-ed7a-4706-837a-5d33f5f5c9de
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_redes_sociales
+label: 'Tabs - Redes Sociales'
+renderer: quick_tabs
+hide_empty_tabs: true
+default_tab: 0
+options:
+  quick_tabs:
+    ajax: true
+    class: ''
+    style: ''
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+configuration_data:
+  -
+    title: Facebook
+    weight: -10
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'block_content:f4c04587-b80d-4b38-95ae-2e05e0601c5a'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: _acordeon_otrostramites_registrocivil
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Instagram
+    weight: -9
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'block_content:0e16f9a8-8b6c-4b1a-8fff-00f1aea27dd2'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: _acordeon_otrostramites_registrocivil
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''

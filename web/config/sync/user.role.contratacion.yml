@@ -1,0 +1,20 @@
+uuid: e84c9c7f-7e6c-434e-b3c9-a8a517e0fff4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.procesos_contratacion
+  module:
+    - contextual
+    - node
+id: contratacion
+label: contratacion
+weight: 6
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'create procesos_contratacion content'
+  - 'delete any procesos_contratacion content'
+  - 'delete own procesos_contratacion content'
+  - 'edit any procesos_contratacion content'
+  - 'edit own procesos_contratacion content'

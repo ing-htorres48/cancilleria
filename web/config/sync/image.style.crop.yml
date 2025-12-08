@@ -1,0 +1,25 @@
+uuid: a1ac4ca7-a227-4b83-9a52-1d21312d5fac
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.generic
+  module:
+    - crop
+name: crop
+label: Crop
+effects:
+  fa862166-25f4-4c5a-b3ca-c4f34033149e:
+    uuid: fa862166-25f4-4c5a-b3ca-c4f34033149e
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: generic
+      automatic_crop_provider: null
+  29f4f30e-a65e-4f36-9172-75591bc74c40:
+    uuid: 29f4f30e-a65e-4f36-9172-75591bc74c40
+    id: image_resize
+    weight: 2
+    data:
+      width: 920
+      height: 400

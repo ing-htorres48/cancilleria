@@ -1,0 +1,29 @@
+uuid: fcaee1db-3339-4b51-91af-aebc7919c011
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticia_destacada
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__noticia_destacada_block_1
+theme: bootstrap_barrio_subtheme
+region: enlaces_principales
+weight: 0
+provider: null
+plugin: 'views_block:noticia_destacada-block_1'
+settings:
+  id: 'views_block:noticia_destacada-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/inicio"

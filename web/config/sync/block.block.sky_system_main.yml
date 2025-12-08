@@ -1,0 +1,20 @@
+uuid: 092158d5-9ea4-414f-96c1-6599e1143440
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - sky
+id: sky_system_main
+theme: sky
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 7ce65da6-c5a9-4af4-86cb-f9fcd0b8d821
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_contratacion_archivos
+field_name: field_contratacion_archivos
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

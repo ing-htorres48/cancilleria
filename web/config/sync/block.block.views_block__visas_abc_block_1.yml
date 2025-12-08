@@ -1,0 +1,29 @@
+uuid: dba87e95-52a5-4211-936b-4e3a47930902
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.visas_abc
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__visas_abc_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 8
+provider: null
+plugin: 'views_block:visas_abc-block_1'
+settings:
+  id: 'views_block:visas_abc-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/visa/lista-a-b-c

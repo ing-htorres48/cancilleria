@@ -1,0 +1,30 @@
+uuid: c0cc1382-46af-47a4-88be-2a1686908ccd
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:01dea86f-5067-4fba-9d0f-9a29f777a827'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: calendariosdeeventos
+theme: bootstrap_barrio_subtheme
+region: pausa_presidencial
+weight: 5
+provider: null
+plugin: 'block_content:01dea86f-5067-4fba-9d0f-9a29f777a827'
+settings:
+  id: 'block_content:01dea86f-5067-4fba-9d0f-9a29f777a827'
+  label: 'Calendario de Actividades '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front> \r\n/inicio"

@@ -1,0 +1,42 @@
+uuid: be2450c1-2a88-4db2-adac-cc68a2ae1ab0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.flex_apostilla.body
+    - field.field.node.flex_apostilla.field_apost
+    - node.type.flex_apostilla
+  module:
+    - image
+    - text
+    - user
+id: node.flex_apostilla.default
+targetEntityType: node
+bundle: flex_apostilla
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_apost:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

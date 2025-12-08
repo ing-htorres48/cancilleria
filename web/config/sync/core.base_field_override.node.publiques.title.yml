@@ -1,0 +1,18 @@
+uuid: a9c90455-51ac-4fad-a4f5-e5997bf6937f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publiques
+id: node.publiques.title
+field_name: title
+entity_type: node
+bundle: publiques
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

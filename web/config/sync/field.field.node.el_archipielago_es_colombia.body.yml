@@ -1,0 +1,23 @@
+uuid: d639387d-6d74-459b-b246-18d1b2d96b7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.el_archipielago_es_colombia
+  module:
+    - text
+id: node.el_archipielago_es_colombia.body
+field_name: body
+entity_type: node
+bundle: el_archipielago_es_colombia
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

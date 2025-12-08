@@ -1,0 +1,21 @@
+uuid: 0a6492aa-d61a-483f-82af-2dff4f4310f8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_streaming
+label: 'Contenido - Streaming'
+type: 'canonical_entities:node'
+pattern: 'streaming/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      streaming: streaming
+selection_logic: and
+weight: 0
+relationships: {  }

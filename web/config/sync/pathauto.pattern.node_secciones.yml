@@ -1,0 +1,21 @@
+uuid: 96e4b600-b107-4835-aa41-6562a0b37437
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_secciones
+label: 'Contenido - Secciones'
+type: 'canonical_entities:node'
+pattern: 'secciones/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      secciones: secciones
+selection_logic: and
+weight: 0
+relationships: {  }

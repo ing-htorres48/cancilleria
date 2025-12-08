@@ -1,0 +1,20 @@
+uuid: 667590ca-4f9b-4475-8d82-0cad39cedc42
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_nombramiento_numero
+field_name: field_nombramiento_numero
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

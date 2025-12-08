@@ -1,0 +1,21 @@
+uuid: bb26bf6f-f3da-4bfd-80f4-7788064b5e1a
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - clean
+id: clean_search_form
+theme: clean
+region: ''
+weight: -43
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

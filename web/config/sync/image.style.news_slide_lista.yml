@@ -1,0 +1,15 @@
+uuid: b4fb902c-fbc8-4a06-826a-2e3eabcf0a1f
+langcode: es
+status: true
+dependencies: {  }
+name: news_slide_lista
+label: news_slide_lista
+effects:
+  641be810-3322-4ff1-8815-f4435ac52f8f:
+    uuid: 641be810-3322-4ff1-8815-f4435ac52f8f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 290
+      anchor: center-center

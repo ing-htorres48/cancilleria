@@ -1,0 +1,21 @@
+uuid: 5d357d92-6711-47c3-8ae4-31126feca75a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solicitado
+    - node.type.images
+  module:
+    - datetime
+id: node.images.field_solicitado
+field_name: field_solicitado
+entity_type: node
+bundle: images
+label: Solicitado
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,8 @@
+uuid: 82cd4b16-515e-46f8-bd93-1ac3a3ccde2e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Instrumentos Internacionales en Calidad de Depositario'
+vid: instrumentos_internacionales_e
+description: ''
+weight: 0

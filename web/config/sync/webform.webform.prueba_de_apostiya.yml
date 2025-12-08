@@ -1,0 +1,388 @@
+uuid: 91c1430a-fe0e-4ae8-809c-839baa9c4abc
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1928
+template: false
+archive: false
+id: prueba_de_apostiya
+title: 'Prueba de Apostilla'
+description: 'Formualrio para reducir el manejo de informaci&oacute;n concerniente a apostiya'
+category: ''
+elements: |-
+  categoria:
+    '#type': select
+    '#title': CATEGORIA
+    '#prepopulate': true
+    '#options':
+      ANTECEDENTES: ANTECEDENTES
+      'PARTICULARES DOCUMENTOS PRIVADOS': 'PARTICULARES DOCUMENTOS PRIVADOS'
+      TRADUCCIONES: TRADUCCIONES
+      'DOCUMENTOS FIRMADOS POR UNA PARTE PRIVADA Y UNA PÚBLICA': 'DOCUMENTOS FIRMADOS POR UNA PARTE PRIVADA Y UNA PÚBLICA'
+    '#empty_option': 'Seleccione la Categoría'
+    '#empty_value': 'Seleccione la Categoría'
+    '#select2': true
+    '#required': true
+  subcategoria:
+    '#type': select
+    '#title': SUBCATEGORIA_0
+    '#title_display': none
+    '#description_display': invisible
+    '#options':
+      'EXPEDIDO POR ENTIDADES OFICIALES': 'EXPEDIDO POR ENTIDADES OFICIALES'
+      'ANTECEDENTES DISCIPLINARIOS EMITIDOS POR TRIBUNALES, COMISIÓN NACIONAL DE DISCIPLINA JUDICIAL Y CONSEJOS PROFESIONALES': 'ANTECEDENTES DISCIPLINARIOS EMITIDOS POR TRIBUNALES, COMISIÓN NACIONAL DE DISCIPLINA JUDICIAL Y CONSEJOS PROFESIONALES'
+    '#empty_option': 'Seleccione la Subcategoría'
+    '#select2': true
+    '#states':
+      visible-slide:
+        ':input[name="categoria"]':
+          value: ANTECEDENTES
+  subcategoria_1:
+    '#type': select
+    '#title': SUBCATEGORIA_1
+    '#title_display': none
+    '#options':
+      'FIEL COPIA DE ORIGINALES QUE REPOSAN EN LA NOTARÍA ': 'FIEL COPIA DE ORIGINALES QUE REPOSAN EN LA NOTARÍA '
+      'DOCUMENTOS PRIVADOS A TRAVÉS DEL ACTO NOTARIAL DE RECONOCIMIENTO DE FIRMA': 'DOCUMENTOS PRIVADOS A TRAVÉS DEL ACTO NOTARIAL DE RECONOCIMIENTO DE FIRMA'
+      'DOCUMENTOS APROBADOS A TRAVÉS DEL ACTO NOTARIAL DE AUTENTICACIÓN DE COPIA O A LA VISTA': 'DOCUMENTOS APROBADOS A TRAVÉS DEL ACTO NOTARIAL DE AUTENTICACIÓN DE COPIA O A LA VISTA'
+    '#empty_option': 'Seleccione la Subcategoría'
+    '#empty_value': 'Seleccione la Subcategoría'
+    '#select2': true
+    '#states':
+      visible-slide:
+        ':input[name="categoria"]':
+          value: 'PARTICULARES DOCUMENTOS PRIVADOS'
+      invisible-slide:
+        ':input[name="categoria"]':
+          '!value': 'PARTICULARES DOCUMENTOS PRIVADOS'
+  documentos_0:
+    '#type': fieldset
+    '#title': DOCUMENTOS_0
+    '#description': |-
+      <ul>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes Judiciales</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Antecedentes Judiciales para extranjeros</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Antecedentes de menores de edad</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Ampliaci&oacute;n de Antecedentes Judiciales</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes Disciplinarios expedido por la Procuradur&iacute;a General de la Naci&oacute;n</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes de Responsabilidad Fiscal expedido por la Contralor&iacute;a General de la Rep&uacute;blica</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Consulta en l&iacute;nea&nbsp;del r&eacute;gimen de&nbsp;inhabilidades&nbsp;por&nbsp;delitos sexuales&nbsp;cometidos contra menores de (18) a&ntilde;os</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado REDAM - Registro Deudores Alimentarios</span></span></span></li>
+      	<li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes Disciplinarios expedido por las Personer&iacute;as</span></span></span></li>
+      </ul>
+    '#title_display': invisible
+    '#states':
+      visible-slide:
+        ':input[name="subcategoria"]':
+          value: 'EXPEDIDO POR ENTIDADES OFICIALES'
+  documentos_1:
+    '#type': fieldset
+    '#title': DOCUMENTOS_1
+    '#description': |-
+      <ul>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes &Eacute;ticos Disciplinarios expedidos por Tribunales M&eacute;dicos, de Enfermer&iacute;a y Odontolog&iacute;a. </span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes Disciplinarios de Abogados expedido por la Comisi&oacute;n Nacional de Disciplina Judicial</span></span></span></li>
+      	<li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Antecedentes Disciplinarios expedidos por Consejos profesionales</span></span></span></li>
+      </ul>
+    '#title_display': invisible
+    '#states':
+      visible-slide:
+        ':input[name="subcategoria"]':
+          value: 'ANTECEDENTES DISCIPLINARIOS EMITIDOS POR TRIBUNALES, COMISIÓN NACIONAL DE DISCIPLINA JUDICIAL Y CONSEJOS PROFESIONALES'
+  documentos_2:
+    '#type': fieldset
+    '#title': DOCUMENTOS_2
+    '#description': |-
+      <ul>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Registro Civil Nacimiento </span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Registro Civil Matrimonio </span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Registro Civil Defunci&oacute;n </span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Escritura P&uacute;blica</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Libro de Registro de varios</span></span></span></li>
+      	<li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Edicto</span></span></span></li>
+      </ul>
+    '#title_display': invisible
+    '#states':
+      visible-slide:
+        ':input[name="subcategoria_1"]':
+          value: 'FIEL COPIA DE ORIGINALES QUE REPOSAN EN LA NOTARÍA '
+  documentos_3:
+    '#type': fieldset
+    '#title': DOCUMENTOS_3
+    '#description': |-
+      <ul>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Declaraci&oacute;n Extraproceso</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaci&oacute;n Notarial</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado de Supervivencia</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificado Fe de Vida</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Acta</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Acuerdo</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Anexo</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Autorizaci&oacute;n</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Carta</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaci&oacute;n</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaciones bancarias **</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaciones emitidas por fondos privados de pension</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaciones emitidas por juntas de acci&oacute;n comunal </span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaciones firmadas por veterinario</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Certificaci&oacute;n Documento de estudio **</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Cesi&oacute;n</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Constancia</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Constancias / Certificaciones laborales emitidas por entidades privadas</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Contrato</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Convenio</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Declaraci&oacute;n</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Declaraciones de renta, RUT, Certificados de ingresos y retenciones expedidos por la DIAN</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Estatutos</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Extracto **</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Factura de venta</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Formato</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">F&oacute;rmula</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Garant&iacute;a</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Informe</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Pagar&eacute;</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Permiso salida menor</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Poder</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Recibos de pago (Desprendibles o comprobantes de pago de n&oacute;mina, impuestos, transferencias)</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Resoluciones expedidas por privados</span></span></span></li>
+      	<li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Traducci&oacute;n oficial</span></span></span></li>
+      </ul>
+    '#title_display': invisible
+    '#states':
+      visible-slide:
+        ':input[name="subcategoria_1"]':
+          value: 'DOCUMENTOS PRIVADOS A TRAVÉS DEL ACTO NOTARIAL DE RECONOCIMIENTO DE FIRMA'
+  documentos_4:
+    '#type': fieldset
+    '#title': DOCUMENTOS_4
+    '#description': |-
+      <ul>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Art&iacute;culo</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Carnet</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Excepto el de vacunaci&oacute;n.</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Extracto **</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">C&eacute;dula de Ciudadan&iacute;a</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">C&eacute;dula de Extranjer&iacute;a</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Consultas web (Incluye bases de datos p&uacute;blicas como RUAF, RETHUS, SISBEN, ADRES)</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Contrase&ntilde;a documento de identidad</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Comprobante de documento en tr&aacute;mite</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Correo o mensaje electr&oacute;nico</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Fotograf&iacute;a</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Libro</span></span></span></li>
+      	<li style="margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Publicidad</span></span></span></li>
+      	<li style="margin-bottom:11px; margin-left:8px"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif">Tarjeta de identidad</span></span></span></li>
+      </ul>
+    '#title_display': invisible
+    '#states':
+      visible-slide:
+        ':input[name="subcategoria_1"]':
+          value: 'DOCUMENTOS APROBADOS A TRAVÉS DEL ACTO NOTARIAL DE AUTENTICACIÓN DE COPIA O A LA VISTA'
+  documentos_5:
+    '#type': fieldset
+    '#title': DOCUMENTOS_5
+    '#description': N/A
+    '#title_display': invisible
+    '#states':
+      visible:
+        ':input[name="categoria"]':
+          value: TRADUCCIONES
+  documentos_6:
+    '#type': fieldset
+    '#title': DOCUMENTOS_6
+    '#description': N/A
+    '#title_display': invisible
+    '#states':
+      visible:
+        ':input[name="categoria"]':
+          value: 'DOCUMENTOS FIRMADOS POR UNA PARTE PRIVADA Y UNA PÚBLICA'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit_hide': true
+    '#update_hide': true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

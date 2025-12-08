@@ -1,0 +1,25 @@
+uuid: 26d44d4b-8f3c-4ce3-8630-df3e05e7bfdf
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:2b182f89-7093-4543-9b6c-becc49afff4b'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: bannerprincipaldos
+theme: bootstrap_barrio_subtheme
+region: banner_principal
+weight: 5
+provider: null
+plugin: 'block_content:2b182f89-7093-4543-9b6c-becc49afff4b'
+settings:
+  id: 'block_content:2b182f89-7093-4543-9b6c-becc49afff4b'
+  label: bannerprincipaldos
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

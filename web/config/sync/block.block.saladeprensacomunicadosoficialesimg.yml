@@ -1,0 +1,30 @@
+uuid: 8b8295f5-47a6-4c0a-b7b8-8c5a8d35d314
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c2687aa4-ca8e-4e15-bf9a-df1db3920b7f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensacomunicadosoficialesimg
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 45
+provider: null
+plugin: 'block_content:c2687aa4-ca8e-4e15-bf9a-df1db3920b7f'
+settings:
+  id: 'block_content:c2687aa4-ca8e-4e15-bf9a-df1db3920b7f'
+  label: 'Sala de prensa - comunicados oficiales img'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/publiques

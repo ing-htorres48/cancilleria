@@ -1,0 +1,30 @@
+uuid: db31ac0b-b66c-4127-bfcf-5687ff2297eb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a3d04211-0e30-4d64-adf6-902bec43ba5a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bannerturismo
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:a3d04211-0e30-4d64-adf6-902bec43ba5a'
+settings:
+  id: 'block_content:a3d04211-0e30-4d64-adf6-902bec43ba5a'
+  label: 'Banner Turismo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /colombia/nuestro-pais/turismo

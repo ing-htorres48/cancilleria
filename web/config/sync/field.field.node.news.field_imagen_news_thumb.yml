@@ -1,0 +1,38 @@
+uuid: 05ad1f79-3a24-40f8-8f6a-306af1b40373
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_news_thumb
+    - node.type.news
+  module:
+    - image
+id: node.news.field_imagen_news_thumb
+field_name: field_imagen_news_thumb
+entity_type: node
+bundle: news
+label: Foto
+description: 'Fotografía que encabeza la publicación.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 920x400
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

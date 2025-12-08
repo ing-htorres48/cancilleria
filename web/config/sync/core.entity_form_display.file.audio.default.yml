@@ -1,0 +1,31 @@
+uuid: 4dd34251-1c08-46fa-b8cf-1a4246932122
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.audio.field_tags
+  module:
+    - file
+id: file.audio.default
+targetEntityType: file
+bundle: audio
+mode: default
+content:
+  field_tags:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

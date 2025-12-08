@@ -1,0 +1,16 @@
+uuid: d37a6248-a1c5-46cb-aee5-9b83993a8906
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.audio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.audio
+target_entity_type_id: node
+target_bundle: audio
+default_langcode: current_interface
+language_alterable: true

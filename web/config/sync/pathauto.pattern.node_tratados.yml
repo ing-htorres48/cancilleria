@@ -1,0 +1,21 @@
+uuid: b82ef31a-2c6b-4f7d-8ba8-2bae0ae20acc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_tratados
+label: 'Contenido - Tratados'
+type: 'canonical_entities:node'
+pattern: 'tratados/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      tratados: tratados
+selection_logic: and
+weight: 0
+relationships: {  }

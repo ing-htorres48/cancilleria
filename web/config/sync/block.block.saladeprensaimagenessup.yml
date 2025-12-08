@@ -1,0 +1,30 @@
+uuid: 902c20fd-b94a-4baf-be8d-0b70fa31178b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:db424fcb-79cf-42a9-acfe-f0e83b45f45e'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensaimagenessup
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 41
+provider: null
+plugin: 'block_content:db424fcb-79cf-42a9-acfe-f0e83b45f45e'
+settings:
+  id: 'block_content:db424fcb-79cf-42a9-acfe-f0e83b45f45e'
+  label: 'sala de prensa imagenes sup'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/images

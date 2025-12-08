@@ -1,0 +1,23 @@
+uuid: 06918c3a-e174-4ce7-b2b0-2ceaa248281e
+langcode: es
+status: true
+dependencies:
+  module:
+    - cancilleria_form
+_core:
+  default_config_hash: pUwhpGOVXffArkWnI3TqX2u0WEoikOKGfTZusMd99fo
+id: costs_means.field_visa_type
+field_name: field_visa_type
+entity_type: costs_means
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

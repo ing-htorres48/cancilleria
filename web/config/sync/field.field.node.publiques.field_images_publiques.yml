@@ -1,0 +1,33 @@
+uuid: f4187584-e60b-4d49-b490-7b9a9ce9ac9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images_publiques
+    - node.type.publiques
+  module:
+    - image
+id: node.publiques.field_images_publiques
+field_name: field_images_publiques
+entity_type: node
+bundle: publiques
+label: Imágenes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image: 0
+field_type: image

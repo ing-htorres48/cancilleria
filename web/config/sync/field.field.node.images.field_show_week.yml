@@ -1,0 +1,23 @@
+uuid: 9d5d55df-5418-45a7-8913-54f3e8af6227
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_week
+    - node.type.images
+id: node.images.field_show_week
+field_name: field_show_week
+entity_type: node
+bundle: images
+label: 'Galeria Semanal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

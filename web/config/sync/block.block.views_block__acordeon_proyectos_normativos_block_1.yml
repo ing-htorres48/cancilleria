@@ -1,0 +1,29 @@
+uuid: fcb0f0b7-be10-4cf4-8943-51e4c0a6fa2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_proyectos_normativos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_proyectos_normativos_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 151
+provider: null
+plugin: 'views_block:acordeon_proyectos_normativos-block_1'
+settings:
+  id: 'views_block:acordeon_proyectos_normativos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /proyectos-normativos

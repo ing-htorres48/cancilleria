@@ -1,0 +1,30 @@
+uuid: 3e10be38-5ea3-4b7e-989d-ed2c4e3d2013
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.visa_requirements.field_trip_purpose
+    - taxonomy.vocabulary.trip_purpose
+  module:
+    - cancilleria_form
+id: visa_requirements.visa_requirements.field_trip_purpose
+field_name: field_trip_purpose
+entity_type: visa_requirements
+bundle: visa_requirements
+label: 'Trip purpose'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trip_purpose: trip_purpose
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

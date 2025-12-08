@@ -1,0 +1,29 @@
+uuid: 8aa05641-ddc8-49ed-abfc-f3d054bced01
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.page_with_map.body
+    - node.type.page_with_map
+  module:
+    - text
+    - user
+id: node.page_with_map.default
+targetEntityType: node
+bundle: page_with_map
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 3cc35a69-3ebe-4bf0-a59b-253cda1c6b4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tramites_y_servicios
+  module:
+    - text
+id: node.tramites_y_servicios.body
+field_name: body
+entity_type: node
+bundle: tramites_y_servicios
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

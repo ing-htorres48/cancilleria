@@ -1,0 +1,46 @@
+uuid: 18533b48-0e69-4343-a7e9-ebf3266e7eff
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e8330969-04fe-41df-bbb1-7f8064376a81'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_104
+theme: bootstrap_barrio
+region: content
+weight: 25
+provider: null
+plugin: 'block_content:e8330969-04fe-41df-bbb1-7f8064376a81'
+settings:
+  id: 'block_content:e8330969-04fe-41df-bbb1-7f8064376a81'
+  label: 'Contenido relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /node/15197
+      /node/15199
+      /newsroom/news/ministra-holguin-parte-delegacion-acompana-presidente-santos-su-visita-estado-reino
+      /newsroom/news/canciller-estuvo-presente-honores-ceremoniales-horse-guards-parade-guardia-honor-hizo
+      /newsroom/news/canciller-holguin-llego-ceremonia-honor-presidente-santos-horse-guards-parade-inicio
+      /newsroom/news/canciller-holguin-aseguro-londres-visita-estado-reino-unido-refleja-excelente-relacion
+      /newsroom/news/asi-sera-agenda-visita-estado-presidente-juan-manuel-santos-reino-unido
+      /newsroom/video/su-llegada-londres-canciller-holguin-explica-medios-comunicacion-detalles-visita
+      /newsroom/news/ministra-relaciones-exteriores-presencio-coleccion-real-objetos-relacionados-colombia
+      /newsroom/news/canciller-maria-angela-holguin-acompano-presidente-santos-su-intervencion-palacio
+      /newsroom/news/canciller-holguin-acompano-presidente-santos-conferencia-ofrecio-foro-negocios
+      /newsroom/news/cancilleres-colombia-reino-unido-reunieron-londres
+      /newsroom/news/canciller-holguin-visito-museo-historia-natural-londres
+      /newsroom/news/canciller-holguin-asistio-mesa-redonda-alto-nivel-bosques-biodiversidad-clima-nueva
+      /newsroom/news/canciller-holguin-participo-reunion-presidente-santos-secretario-estado-irlanda-norte
+      /newsroom/news/presidente-santos-canciller-holguin-adelantaron-jornada-trabajo-embajadores-colombia

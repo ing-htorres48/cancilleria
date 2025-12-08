@@ -1,0 +1,32 @@
+uuid: 0dc17e77-01e0-4272-87fe-63637df6c6e5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7e912700-9c35-4d58-bef1-0ca3ab957f8d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_86
+theme: bootstrap_barrio
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:7e912700-9c35-4d58-bef1-0ca3ab957f8d'
+settings:
+  id: 'block_content:7e912700-9c35-4d58-bef1-0ca3ab957f8d'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /newsroom/news
+      /newsroom

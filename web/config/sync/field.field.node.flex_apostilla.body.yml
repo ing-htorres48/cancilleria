@@ -1,0 +1,23 @@
+uuid: 0743fbdc-ce8b-4f8a-b627-2054dd5cb733
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_apostilla
+  module:
+    - text
+id: node.flex_apostilla.body
+field_name: body
+entity_type: node
+bundle: flex_apostilla
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

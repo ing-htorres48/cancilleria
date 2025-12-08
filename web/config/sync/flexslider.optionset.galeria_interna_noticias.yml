@@ -1,0 +1,47 @@
+uuid: 3a4669b3-1003-4722-8c0d-971438e760ba
+langcode: es
+status: true
+dependencies: {  }
+id: galeria_interna_noticias
+label: 'Galeria Interna Noticias'
+options:
+  animation: fade
+  animationSpeed: 600
+  direction: horizontal
+  slideshow: true
+  easing: swing
+  smoothHeight: true
+  reverse: false
+  slideshowSpeed: 7000
+  animationLoop: true
+  randomize: false
+  startAt: 0
+  itemWidth: 500
+  itemMargin: 0
+  minItems: 1
+  maxItems: 1
+  move: 0
+  directionNav: true
+  controlNav: '1'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: false
+  multipleKeyboard: false
+  mousewheel: false
+  touch: true
+  prevText: Previous
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: true
+  pauseOnHover: true
+  controlsContainer: ''
+  manualControls: ''

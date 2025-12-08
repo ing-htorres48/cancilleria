@@ -1,0 +1,21 @@
+uuid: 95cb184b-e614-458b-b692-0b58c00fb81a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.media_original
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_tags
+  module:
+    - file
+id: file.image.media_original
+targetEntityType: file
+bundle: image
+mode: media_original
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true
+  field_tags: true
+  langcode: true

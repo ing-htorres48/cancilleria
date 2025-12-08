@@ -1,0 +1,38 @@
+uuid: 260964a6-bbbc-4332-ae7a-deff708ac891
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:2eca66a3-517b-47d8-8061-cbe2c1947933'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: instrucciones
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 162
+provider: null
+plugin: 'block_content:2eca66a3-517b-47d8-8061-cbe2c1947933'
+settings:
+  id: 'block_content:2eca66a3-517b-47d8-8061-cbe2c1947933'
+  label: Instrucciones
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/en/procedures_services/visa/requirements\r\n/procedures_services/visa/requirements\r\n/node/28231"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

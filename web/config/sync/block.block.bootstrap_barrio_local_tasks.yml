@@ -1,0 +1,22 @@
+uuid: 3b11ce28-31b1-4647-aadd-c43b16224650
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: bootstrap_barrio_local_tasks
+theme: bootstrap_barrio
+region: content
+weight: -28
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

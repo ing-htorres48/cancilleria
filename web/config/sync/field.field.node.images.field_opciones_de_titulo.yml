@@ -1,0 +1,21 @@
+uuid: ae197412-af35-4137-be72-4abf3cd52f52
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opciones_de_titulo
+    - node.type.images
+  module:
+    - options
+id: node.images.field_opciones_de_titulo
+field_name: field_opciones_de_titulo
+entity_type: node
+bundle: images
+label: 'Opciones de título'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

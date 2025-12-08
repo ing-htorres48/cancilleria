@@ -1,0 +1,21 @@
+uuid: dc518205-0de9-40e6-805d-3a6dcb5232ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.evento
+  module:
+    - datetime
+id: node.evento.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: evento
+label: 'Fecha de inicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

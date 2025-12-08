@@ -1,0 +1,31 @@
+uuid: 27088d57-9596-4ce1-b744-6873649b5ab6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.file.default.field_tags
+  module:
+    - file
+id: file.default.default
+targetEntityType: file
+bundle: default
+mode: default
+content:
+  field_tags:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

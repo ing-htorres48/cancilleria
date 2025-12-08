@@ -1,0 +1,23 @@
+uuid: 741c4b70-25fd-42ac-a785-3283aeaa6722
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.feed_item.field_feed_item_description
+    - node.type.feed_item
+  module:
+    - user
+id: node.feed_item.rss
+targetEntityType: node
+bundle: feed_item
+mode: rss
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_feed_item_description: true
+  langcode: true

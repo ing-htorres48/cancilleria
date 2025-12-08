@@ -1,0 +1,30 @@
+uuid: 42e4b264-fc2d-4755-b0fe-c7971865f409
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:562149af-314d-41ea-9730-e800b3fb70d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: unidadparalasvictimas
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 21
+provider: null
+plugin: 'block_content:562149af-314d-41ea-9730-e800b3fb70d6'
+settings:
+  id: 'block_content:562149af-314d-41ea-9730-e800b3fb70d6'
+  label: 'Unidad para las víctimas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /victimas/unidad-para-las-victimas

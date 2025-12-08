@@ -1,0 +1,11 @@
+uuid: 7347dee7-59b7-4c10-b771-619e29609e1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_diplomatica
+id: node.flex_diplomatica
+target_entity_type_id: node
+target_bundle: flex_diplomatica
+default_langcode: site_default
+language_alterable: false

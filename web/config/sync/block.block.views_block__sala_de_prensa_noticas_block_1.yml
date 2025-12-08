@@ -1,0 +1,30 @@
+uuid: 37adbe3b-b6ca-4974-a71c-fcb48c586237
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.sala_de_prensa_noticas
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__sala_de_prensa_noticas_block_1
+theme: bootstrap_barrio_subtheme
+region: multimedia
+weight: 6
+provider: null
+plugin: 'views_block:sala_de_prensa_noticas-block_1'
+settings:
+  id: 'views_block:sala_de_prensa_noticas-block_1'
+  label: Multimedia
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: Multimedia
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/inicio"

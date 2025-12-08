@@ -1,0 +1,23 @@
+uuid: fb0bb687-df8d-4bd3-9540-d74ac23a3458
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.node_gallery_item
+  module:
+    - text
+id: node.node_gallery_item.body
+field_name: body
+entity_type: node
+bundle: node_gallery_item
+label: Etiqueta
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

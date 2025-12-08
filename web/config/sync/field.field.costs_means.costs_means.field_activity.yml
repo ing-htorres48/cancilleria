@@ -1,0 +1,22 @@
+uuid: 538a1f9d-55b4-4dc7-9f93-064cf1a171bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.costs_means.field_activity
+  module:
+    - cancilleria_form
+_core:
+  default_config_hash: Sqc7YlXcOMCAoAI1tw-GyHzGG3pfrEr6x8vs3AG_IpQ
+id: costs_means.costs_means.field_activity
+field_name: field_activity
+entity_type: costs_means
+bundle: costs_means
+label: Activity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

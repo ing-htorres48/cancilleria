@@ -1,0 +1,23 @@
+uuid: 15d46a24-2260-4f85-8c09-954218b0e703
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_cultura
+  module:
+    - text
+id: node.flex_cultura.body
+field_name: body
+entity_type: node
+bundle: flex_cultura
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

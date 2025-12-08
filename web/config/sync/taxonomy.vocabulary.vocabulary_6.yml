@@ -1,0 +1,8 @@
+uuid: 02515be3-7534-42d3-b2ba-aead2abe6a62
+langcode: es
+status: true
+dependencies: {  }
+name: 'Galería de Imágenes'
+vid: vocabulary_6
+description: 'Términos de la galería de imágenes.'
+weight: 0

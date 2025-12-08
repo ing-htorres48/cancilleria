@@ -1,0 +1,252 @@
+uuid: e7dda677-5542-4614-8e9a-e584bd875550
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_aparece_en_columna
+    - field.field.node.news.field_attached_news
+    - field.field.node.news.field_carga_de_archivos_masivos
+    - field.field.node.news.field_contenido_relacionado
+    - field.field.node.news.field_date
+    - field.field.node.news.field_destacado_en_columna
+    - field.field.node.news.field_gallery_page
+    - field.field.node.news.field_image_full_description
+    - field.field.node.news.field_image_post
+    - field.field.node.news.field_imagen_news_thumb
+    - field.field.node.news.field_opciones_de_titulo
+    - field.field.node.news.field_presentar_en_carrusel
+    - field.field.node.news.field_show_in_slide
+    - field.field.node.news.field_slideshow_weigth
+    - field.field.node.news.field_solicitado
+    - field.field.node.news.field_solicitante
+    - field.field.node.news.field_target
+    - field.field.node.news.field_weight
+    - field.field.node.news.taxonomy_vocabulary_5
+    - image.style.thumbnail
+    - node.type.news
+  module:
+    - datetime
+    - file
+    - image
+    - image_widget_crop
+    - imce
+    - path
+    - scheduler
+    - text
+    - weight
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attached_news:
+    type: file_generic
+    weight: 8
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_carga_de_archivos_masivos:
+    type: file_generic
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_contenido_relacionado:
+    type: entity_reference_autocomplete_tags
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_date:
+    type: datetime_datelist
+    weight: 2
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  field_gallery_page:
+    type: image_image
+    weight: 20
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: medium
+    third_party_settings:
+      imce:
+        enabled: false
+  field_image_full_description:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 4
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_post:
+    type: image_image
+    weight: 21
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_imagen_news_thumb:
+    type: image_widget_crop
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - generic
+      crop_types_required: {  }
+      warn_multiple_usages: true
+      show_crop_area: false
+      show_default_crop: false
+    third_party_settings:
+      imce:
+        enabled: true
+  field_opciones_de_titulo:
+    type: options_buttons
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_show_in_slide:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_solicitado:
+    type: datetime_default
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_solicitante:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_weight:
+    type: weight_selector
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 52
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 19
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  taxonomy_vocabulary_5:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 23
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_aparece_en_columna: true
+  field_destacado_en_columna: true
+  field_presentar_en_carrusel: true
+  field_slideshow_weigth: true
+  field_target: true
+  unpublish_on: true

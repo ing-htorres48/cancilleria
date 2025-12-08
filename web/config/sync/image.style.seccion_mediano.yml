@@ -1,0 +1,23 @@
+uuid: 3fd0d6e5-de0c-4503-b234-6646253621f8
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_mediano
+label: seccion_mediano
+effects:
+  9e9a5f0a-c282-4aa7-9ea3-96f163b16785:
+    uuid: 9e9a5f0a-c282-4aa7-9ea3-96f163b16785
+    id: image_scale
+    weight: 2
+    data:
+      width: 720
+      height: null
+      upscale: true
+  98026a47-b0d4-409c-b0c8-5bae730aabc6:
+    uuid: 98026a47-b0d4-409c-b0c8-5bae730aabc6
+    id: image_crop
+    weight: 3
+    data:
+      width: 720
+      height: 428
+      anchor: center-center

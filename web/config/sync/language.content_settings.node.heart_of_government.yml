@@ -1,0 +1,16 @@
+uuid: 0d47916b-b6f0-4309-aa8f-ea4671b4ed7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.heart_of_government
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.heart_of_government
+target_entity_type_id: node
+target_bundle: heart_of_government
+default_langcode: current_interface
+language_alterable: true

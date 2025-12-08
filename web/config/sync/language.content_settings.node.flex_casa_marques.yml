@@ -1,0 +1,11 @@
+uuid: 10aad100-fef6-4a3f-bb9c-8998b3263bf1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_casa_marques
+id: node.flex_casa_marques
+target_entity_type_id: node
+target_bundle: flex_casa_marques
+default_langcode: site_default
+language_alterable: false

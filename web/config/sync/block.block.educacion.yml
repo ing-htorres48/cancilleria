@@ -1,0 +1,30 @@
+uuid: eb303cad-3b00-40b7-9167-f59188e3bc81
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cbc3c85f-cb36-4cee-b635-cc6c1bb4ab5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: educacion
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 30
+provider: null
+plugin: 'block_content:cbc3c85f-cb36-4cee-b635-cc6c1bb4ab5f'
+settings:
+  id: 'block_content:cbc3c85f-cb36-4cee-b635-cc6c1bb4ab5f'
+  label: Educación
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /colombia/nuestro-pais/educacion

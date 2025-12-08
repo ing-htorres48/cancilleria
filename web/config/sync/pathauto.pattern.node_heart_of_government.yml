@@ -1,0 +1,21 @@
+uuid: e6e601f2-54d5-4119-9810-37617940862c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_heart_of_government
+label: 'Contenido - Corazón de Gobierno'
+type: 'canonical_entities:node'
+pattern: 'corazon-de-gobierno/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      heart_of_government: heart_of_government
+selection_logic: and
+weight: 0
+relationships: {  }

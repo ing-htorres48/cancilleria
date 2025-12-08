@@ -1,0 +1,3 @@
+lite_speed_cache:
+  max_age: '64800'
+  cache_status: '1'

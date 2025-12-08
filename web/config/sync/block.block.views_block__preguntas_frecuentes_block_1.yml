@@ -1,0 +1,29 @@
+uuid: 08498d33-ab34-43db-b241-79ba319fe88b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.preguntas_frecuentes
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__preguntas_frecuentes_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 93
+provider: null
+plugin: 'views_block:preguntas_frecuentes-block_1'
+settings:
+  id: 'views_block:preguntas_frecuentes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/faq/apostilla-legalizacion

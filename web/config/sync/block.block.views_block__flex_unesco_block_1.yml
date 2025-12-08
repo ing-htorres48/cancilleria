@@ -1,0 +1,29 @@
+uuid: 1ae34952-0601-472e-9276-5545eb15cf92
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.flex_unesco
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__flex_unesco_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 40
+provider: null
+plugin: 'views_block:flex_unesco-block_1'
+settings:
+  id: 'views_block:flex_unesco-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /unesco/presentation

@@ -1,0 +1,29 @@
+uuid: 9d1ecf56-0ebd-47c4-8529-3b32f1beb89d
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.ts_otrostramties_reconocimiento_privado
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__ts_otrostramties_reconocimiento_privado_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 179
+provider: null
+plugin: 'views_block:ts_otrostramties_reconocimiento_privado-block_1'
+settings:
+  id: 'views_block:ts_otrostramties_reconocimiento_privado-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/tramites_exterior/reconocimiento

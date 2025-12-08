@@ -1,0 +1,27 @@
+uuid: 03d0762b-a86e-489d-8f84-f408b0151640
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contratacion_archivos
+    - node.type.procesos_contratacion
+  module:
+    - file
+id: node.procesos_contratacion.field_contratacion_archivos
+field_name: field_contratacion_archivos
+entity_type: node
+bundle: procesos_contratacion
+label: Archivos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'pdf doc docx'
+  max_filesize: ''
+  description_field: true
+field_type: file

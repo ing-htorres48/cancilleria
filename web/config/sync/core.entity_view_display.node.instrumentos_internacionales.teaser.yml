@@ -1,0 +1,33 @@
+uuid: c5622e37-b02f-4973-98d3-e99ad4a3f6d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instrumentos_internacionales.body
+    - field.field.node.instrumentos_internacionales.field_instrumentos_internacional
+    - node.type.instrumentos_internacionales
+  module:
+    - text
+    - user
+id: node.instrumentos_internacionales.teaser
+targetEntityType: node
+bundle: instrumentos_internacionales
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_instrumentos_internacional: true
+  langcode: true

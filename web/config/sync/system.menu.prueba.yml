@@ -1,0 +1,8 @@
+uuid: 8d01ffb3-e3e8-4ab2-921e-00cd420d5c05
+langcode: es
+status: true
+dependencies: {  }
+id: prueba
+label: prueba
+description: ''
+locked: false

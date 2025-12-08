@@ -1,0 +1,29 @@
+uuid: 7db25d68-8727-48ca-9da2-18a519a16491
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.flex_participacion_ciudadana_jovenes
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__flex_participacion_ciudadana_jovenes_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 117
+provider: null
+plugin: 'views_block:flex_participacion_ciudadana_jovenes-block_1'
+settings:
+  id: 'views_block:flex_participacion_ciudadana_jovenes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /programas-participacion-ciudadana-jovenes-cancilleria-canciller-academia

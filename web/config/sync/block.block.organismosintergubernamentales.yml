@@ -1,0 +1,29 @@
+uuid: 7020f67c-1236-447e-9639-ab2332c2e635
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.organismos-intergubernamentales
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: organismosintergubernamentales
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 21
+provider: null
+plugin: 'system_menu_block:organismos-intergubernamentales'
+settings:
+  id: 'system_menu_block:organismos-intergubernamentales'
+  label: 'Organismos Intergubernamentales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/multilateral/inter-governmental\r\n/international/multilateral/inter-governmental/ihc\r\n/international/multilateral/inter-governmental/cpps\r\n/international/multilateral/inter-governmental/icrc\r\n/international/multilateral/inter-governmental/unidroit\r\n/international/multilateral/inter-governmental/bureau\r\n/international/multilateral/inter-governmental/puasp\r\n/international/multilateral/inter-governmental/iila\r\n/international/multilateral/inter-governmental/sugar\r\n/international/multilateral/inter-governmental/ico\r\n/international/multilateral/inter-governmental/iho\r\n/international/multilateral/inter-governmental/iom\r\n/international/multilateral/inter-governmental/pecc"

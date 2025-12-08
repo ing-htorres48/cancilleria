@@ -1,0 +1,22 @@
+uuid: 27270c4a-1e35-4c48-bdcd-0c6aab030437
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.costs_means.field_usd_study
+  module:
+    - cancilleria_form
+_core:
+  default_config_hash: cPDJFflbdDpImXzVdFjWz8RT-oOk3zk92-agFCgqmp8
+id: costs_means.costs_means.field_usd_study
+field_name: field_usd_study
+entity_type: costs_means
+bundle: costs_means
+label: 'USD study'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,26 @@
+uuid: 46e8e895-c43b-4933-9aea-277797535a24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secci_n
+    - node.type.secciones
+    - taxonomy.vocabulary.secciones
+id: node.secciones.field_secci_n
+field_name: field_secci_n
+entity_type: node
+bundle: secciones
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      secciones: secciones
+    sort:
+      field: _none
+field_type: entity_reference

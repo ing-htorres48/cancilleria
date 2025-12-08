@@ -1,0 +1,9 @@
+uuid: 24e8ef41-b9cb-4c9c-9a54-1c9fd356a3b3
+langcode: es
+status: true
+dependencies: {  }
+id: filetree
+label: filetree
+weight: 9
+is_admin: null
+permissions: {  }

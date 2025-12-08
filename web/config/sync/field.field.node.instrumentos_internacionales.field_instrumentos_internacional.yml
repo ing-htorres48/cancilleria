@@ -1,0 +1,29 @@
+uuid: 58dc48de-5f69-4d38-9b33-afcd3c38ccff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrumentos_internacional
+    - node.type.instrumentos_internacionales
+    - taxonomy.vocabulary.instrumentos_internacionales_e
+id: node.instrumentos_internacionales.field_instrumentos_internacional
+field_name: field_instrumentos_internacional
+entity_type: node
+bundle: instrumentos_internacionales
+label: instrumentos_internacionales
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      instrumentos_internacionales_e: instrumentos_internacionales_e
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

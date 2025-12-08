@@ -1,0 +1,30 @@
+uuid: 5e5fd95b-08b4-4670-a7c9-ff5bbf231097
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e6aa7a5e-3266-4689-a8a5-6e39fa396a16'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bannervisa
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 182
+provider: null
+plugin: 'block_content:e6aa7a5e-3266-4689-a8a5-6e39fa396a16'
+settings:
+  id: 'block_content:e6aa7a5e-3266-4689-a8a5-6e39fa396a16'
+  label: 'Banner visa'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/visa

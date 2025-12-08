@@ -1,0 +1,30 @@
+uuid: 5bb162ce-1a0c-4c73-9b8b-08f76a1e569b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fc4d4249-bc3f-4da1-afb0-0a17c75b54a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: ts_otrostramites_tarjeta_banner
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 100
+provider: null
+plugin: 'block_content:fc4d4249-bc3f-4da1-afb0-0a17c75b54a8'
+settings:
+  id: 'block_content:fc4d4249-bc3f-4da1-afb0-0a17c75b54a8'
+  label: TS_OtrosTramites_Tarjeta_Banner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/tramites_exterior/tarjeta_identidad

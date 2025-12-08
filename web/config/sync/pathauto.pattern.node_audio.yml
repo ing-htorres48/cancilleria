@@ -1,0 +1,21 @@
+uuid: 393e817a-f62c-4001-b679-543640694952
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_audio
+label: 'Contenido - Audio'
+type: 'canonical_entities:node'
+pattern: 'newsroom/audio/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      audio: audio
+selection_logic: and
+weight: 0
+relationships: {  }

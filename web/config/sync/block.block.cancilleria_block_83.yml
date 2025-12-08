@@ -1,0 +1,34 @@
+uuid: c309c60d-4d5f-4720-8c37-d8c2602841f5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:99d7ab41-f71f-4fa2-a41b-33a71e9c46f6'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_83
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:99d7ab41-f71f-4fa2-a41b-33a71e9c46f6'
+settings:
+  id: 'block_content:99d7ab41-f71f-4fa2-a41b-33a71e9c46f6'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /tramites_servicios/visas
+      /tramites_servicios/visas/*
+      /procedures_services/visas
+      /procedures_services/visas/*

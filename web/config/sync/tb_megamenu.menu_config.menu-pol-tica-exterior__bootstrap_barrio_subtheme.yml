@@ -1,0 +1,13 @@
+uuid: 492f484d-b6be-4431-8bba-08e8c4a6a8fd
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio_subtheme
+  menu:
+    - menu-pol-tica-exterior
+id: menu-pol-tica-exterior__bootstrap_barrio_subtheme
+menu: menu-pol-tica-exterior
+theme: bootstrap_barrio_subtheme
+block_config: '{"animation":"none","duration":400,"delay":200,"style":"","auto-arrow":"0","always-show-submenu":"1","number-columns":1}'
+menu_config: '{"menu_link_content:5bdf3aa4-d1f8-46a6-aebe-38ca1472d076":{"rows_content":[[{"col_content":[{"plugin_id":"menu_link_content:faee33cd-8be1-42e4-82f8-742ba855a2fb","type":"menu_item","tb_item_config":[],"weight":"0"}],"col_config":{"width":"12","class":"","hidewcol":"0","showblocktitle":"1"}}]],"submenu_config":{"width":"","class":"","group":"0"},"item_config":{"class":"","xicon":"","caption":"","alignsub":"","group":"0","hidewcol":"0","hidesub":"0","label":""}},"menu_link_content:faee33cd-8be1-42e4-82f8-742ba855a2fb":{"rows_content":[[{"col_content":[{"plugin_id":"menu_link_content:660ae290-1319-4843-9a57-18409c8a3e54","type":"menu_item","tb_item_config":[],"weight":"0"}],"col_config":{"width":"12","class":"","hidewcol":"0","showblocktitle":"1"}}]],"submenu_config":{"width":"","class":"","group":"1"},"item_config":{"class":"","xicon":"","caption":"","alignsub":"","group":"1","hidewcol":"0","hidesub":"0","label":""}},"menu_link_content:660ae290-1319-4843-9a57-18409c8a3e54":{"rows_content":[],"submenu_config":{"width":"","class":"","group":"0"},"item_config":{"class":"","xicon":"","caption":"","alignsub":"","group":"0","hidewcol":"0","hidesub":"0","label":""}},"menu_link_content:d461b5e7-c1f4-4607-bc74-99366dd5aab5":{"rows_content":[],"submenu_config":{"width":"","class":"","group":"0"},"item_config":{"class":"","xicon":"","caption":"","alignsub":"","group":"0","hidewcol":"0","hidesub":"0","label":""}},"menu_link_content:2ac0ce42-802d-4b90-8648-031a8240c456":{"rows_content":[],"submenu_config":{"width":"","class":"","group":"0"},"item_config":{"class":"","xicon":"","caption":"","alignsub":"","group":"0","hidewcol":"0","hidesub":"0","label":""}}}'

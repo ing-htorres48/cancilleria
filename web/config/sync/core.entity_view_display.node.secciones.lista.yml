@@ -1,0 +1,65 @@
+uuid: 25375cb0-bcc9-4eb9-b977-4af0036e8e0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.lista
+    - field.field.node.secciones.field_image_full_description
+    - field.field.node.secciones.field_miniatura_activa
+    - field.field.node.secciones.field_miniatura_inactiva
+    - field.field.node.secciones.field_peso
+    - field.field.node.secciones.field_secci_n
+    - field.field.node.secciones.field_secciones_imagen
+    - field.field.node.secciones.field_vinculo
+    - node.type.secciones
+  module:
+    - image
+    - link
+    - user
+id: node.secciones.lista
+targetEntityType: node
+bundle: secciones
+mode: lista
+content:
+  field_secci_n:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_secciones_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_vinculo:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_full_description: true
+  field_miniatura_activa: true
+  field_miniatura_inactiva: true
+  field_peso: true
+  langcode: true

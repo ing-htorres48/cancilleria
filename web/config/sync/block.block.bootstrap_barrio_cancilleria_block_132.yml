@@ -1,0 +1,30 @@
+uuid: 981b61bc-5fd5-4b20-a561-0918db853a43
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed17c197-4413-4c1a-ab73-f823965dc231'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_132
+theme: bootstrap_barrio
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:ed17c197-4413-4c1a-ab73-f823965dc231'
+settings:
+  id: 'block_content:ed17c197-4413-4c1a-ab73-f823965dc231'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/catalogo

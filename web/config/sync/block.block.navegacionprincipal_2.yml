@@ -1,0 +1,20 @@
+uuid: 2b4fc96e-95f0-4204-8b16-d685b07aab67
+langcode: es
+status: true
+dependencies:
+  module:
+    - we_megamenu
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_2
+theme: bootstrap_barrio_subtheme
+region: nav_main
+weight: -48
+provider: null
+plugin: 'we_megamenu_block:main'
+settings:
+  id: 'we_megamenu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: we_megamenu
+visibility: {  }

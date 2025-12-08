@@ -1,0 +1,30 @@
+uuid: 5d3f7906-c48d-496b-96c4-96fefea075d0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f833e52-fb74-4568-a0a3-ab9799bb96dd'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: botacademiadiplomatica
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 134
+provider: null
+plugin: 'block_content:2f833e52-fb74-4568-a0a3-ab9799bb96dd'
+settings:
+  id: 'block_content:2f833e52-fb74-4568-a0a3-ab9799bb96dd'
+  label: bot-academia-diplomatica
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /academia-diplomatica

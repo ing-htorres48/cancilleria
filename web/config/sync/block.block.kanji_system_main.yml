@@ -1,0 +1,20 @@
+uuid: 9e225e58-147b-45f6-9508-687270c6b55e
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - kanji
+id: kanji_system_main
+theme: kanji
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

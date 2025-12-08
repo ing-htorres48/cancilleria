@@ -1,0 +1,69 @@
+uuid: bca21f12-bd83-4433-84b7-0f4c37e900b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.encabezado_en_vistas
+    - field.field.node.news.body
+    - field.field.node.news.field_aparece_en_columna
+    - field.field.node.news.field_attached_news
+    - field.field.node.news.field_carga_de_archivos_masivos
+    - field.field.node.news.field_contenido_relacionado
+    - field.field.node.news.field_date
+    - field.field.node.news.field_destacado_en_columna
+    - field.field.node.news.field_gallery_page
+    - field.field.node.news.field_image_full_description
+    - field.field.node.news.field_image_post
+    - field.field.node.news.field_imagen_news_thumb
+    - field.field.node.news.field_opciones_de_titulo
+    - field.field.node.news.field_presentar_en_carrusel
+    - field.field.node.news.field_show_in_slide
+    - field.field.node.news.field_slideshow_weigth
+    - field.field.node.news.field_solicitado
+    - field.field.node.news.field_solicitante
+    - field.field.node.news.field_target
+    - field.field.node.news.field_weight
+    - field.field.node.news.taxonomy_vocabulary_5
+    - node.type.news
+  module:
+    - text
+    - user
+id: node.news.encabezado_en_vistas
+targetEntityType: node
+bundle: news
+mode: encabezado_en_vistas
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_aparece_en_columna: true
+  field_attached_news: true
+  field_carga_de_archivos_masivos: true
+  field_contenido_relacionado: true
+  field_date: true
+  field_destacado_en_columna: true
+  field_gallery_page: true
+  field_image_full_description: true
+  field_image_post: true
+  field_imagen_news_thumb: true
+  field_opciones_de_titulo: true
+  field_presentar_en_carrusel: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_target: true
+  field_weight: true
+  langcode: true
+  taxonomy_vocabulary_5: true

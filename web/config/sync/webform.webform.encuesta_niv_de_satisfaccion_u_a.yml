@@ -1,0 +1,1504 @@
+uuid: d3ec6cd6-f188-42f8-8ab9-703a6bee9726
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: encuesta_niv_de_satisfaccion_u_a
+title: 'Encuesta Nivel de Satisfacción del Usuario - Apostilla y Legalización'
+description: ''
+category: ''
+elements: |-
+  pais:
+    '#type': select
+    '#title': País
+    '#options': country_names
+  departamento:
+    '#type': select
+    '#title': Departamento
+    '#options':
+      1: AMAZONAS
+      2: ANTIOQUIA
+      3: ARAUCA
+      4: ATLANTICO
+      5: BOLIVAR
+      6: BOYACA
+      7: CALDAS
+      8: CAQUETA
+      13: CORDOBA
+      15: GUAINIA
+      14: CUNDINAMARCA
+      0: CAUCA
+      12: CHOCO
+      11: CESAR
+      9: CASANARE
+      21: 'N. DE SANTANDER'
+      23: PUTUMAYO
+      22: NARIÑO
+      17: HUILA
+      20: META
+      19: MAGDALENA
+      18: 'LA GUAJIRA'
+      16: GUAVIARE
+      24: QUINDIO
+      25: RISARALDA
+      26: 'SAN ANDRES'
+      27: SANTANDER
+      28: SUCRE
+      29: TOLIMA
+      30: 'VALLE DEL CAUCA'
+      31: VAUPES
+      32: VICHADA
+  municipio:
+    '#type': select
+    '#title': Municipio
+    '#options':
+      1: ABEJORRAL
+      2: ABREGO
+      3: ABRIAQUI
+      4: ACACIAS
+      5: ACANDI
+      6: ACEVEDO
+      7: ACHI
+      8: AGRADO
+      9: 'AGUA DE DIOS'
+      10: AGUACHICA
+      11: AGUADA
+      12: AGUADAS
+      13: AGUAZUL
+      14: 'AGUSTIN CODAZZI'
+      15: AIPE
+      16: ALBAN
+      17: ALBAN
+      18: ALBANIA
+      19: ALBANIA
+      20: ALBANIA
+      21: ALCALA
+      22: ALDANA
+      23: ALEJANDRIA
+      24: ALGARROBO
+      25: ALGECIRAS
+      26: ALMAGUER
+      27: ALMEIDA
+      28: ALPUJARRA
+      29: ALTAMIRA
+      30: 'ALTO BAUDO'
+      31: 'ALTOS DEL ROSARI'
+      32: ALVARADO
+      33: AMAGA
+      34: AMALFI
+      35: AMBALEMA
+      36: ANAPOIMA
+      37: ANCUYA
+      38: ANDALUCIA
+      39: ANDES
+      40: ANGELOPOLIS
+      41: ANGOSTURA
+      42: ANOLAIMA
+      43: ANORI
+      44: ANSERMA
+      45: ANSERMANUEVO
+      46: ANZA
+      47: ANZOATEGUI
+      48: APARTADO
+      49: APIA
+      50: APULO
+      51: AQUITANIA
+      52: ARACATACA
+      53: ARANZAZU
+      54: ARATOCA
+      55: ARAUCA
+      56: ARAUQUITA
+      57: ARBELAEZ
+      58: ARBOLEDA
+      59: ARBOLEDAS
+      60: ARBOLETES
+      61: ARCABUCO
+      62: ARENAL
+      63: ARGELIA
+      64: ARGELIA
+      65: ARGELIA
+      66: ARIGUANI
+      67: ARJONA
+      68: ARMENIA
+      69: ARMENIA
+      70: ARMERO
+      71: ARROYOHONDO
+      72: ASTREA
+      73: ATACO
+      74: ATRATO
+      75: AYAPEL
+      76: BAGADO
+      77: 'BAHIA SOLANO'
+      78: 'BAJO BAUDO'
+      79: BALBOA
+      80: BALBOA
+      81: BARANOA
+      82: BARAYA
+      83: BARBACOAS
+      84: BARBOSA
+      85: BARBOSA
+      86: BARICHARA
+      87: 'BARRANCA DE UPIA'
+      88: BARRANCABERMEJA
+      89: BARRANCAS
+      90: 'BARRANCO DE LOBA'
+      91: 'BARRANCO MINAS'
+      92: BARRANQUILLA
+      93: BECERRIL
+      94: BELALCAZAR
+      95: BELEN
+      96: BELEN
+      97: 'BELEN DE LOS ANDAQUIES'
+      98: 'BELEN DE UMBRIA'
+      99: BELLO
+      100: BELMIRA
+      101: BELTRAN
+      102: BERBEO
+      103: BETANIA
+      104: BETEITIVA
+      105: BETULIA
+      106: BETULIA
+      107: BITUIMA
+      108: BOAVITA
+      109: BOCHALEMA
+      110: 'BOGOTA, D.C.'
+      111: BOJACA
+      112: BOJAYA
+      113: BOLIVAR
+      114: BOLIVAR
+      115: BOLIVAR
+      116: BOSCONIA
+      117: BOYACA
+      118: BRICEÑO
+      119: BRICEÑO
+      120: BUCARAMANGA
+      121: BUCARASICA
+      122: BUENAVENTURA
+      123: BUENAVISTA
+      124: BUENAVISTA
+      125: BUENAVISTA
+      126: BUENAVISTA
+      127: 'BUENOS AIRES'
+      128: BUESACO
+      129: BUGALAGRANDE
+      130: BURITICA
+      131: BUSBANZA
+      132: CABRERA
+      133: CABRERA
+      134: CABUYARO
+      135: CACAHUAL
+      136: CACERES
+      137: CACHIPAY
+      138: CACHIRA
+      139: CACOTA
+      140: CAICEDO
+      141: CAICEDONIA
+      142: CAIMITO
+      143: CAJAMARCA
+      144: CAJIBIO
+      145: CAJICA
+      146: CALAMAR
+      147: CALAMAR
+      148: CALARCA
+      149: CALDAS
+      150: CALDAS
+      151: CALDONO
+      152: CALI
+      153: CALIFORNIA
+      154: CALIMA
+      155: CALOTO
+      156: CAMPAMENTO
+      157: 'CAMPO DE LA CRUZ'
+      158: CAMPOALEGRE
+      159: CAMPOHERMOSO
+      160: CANALETE
+      161: CANDELARIA
+      162: CANDELARIA
+      163: CANTAGALLO
+      164: CAÑASGORDAS
+      165: CAPARRAPI
+      166: CAPITANEJO
+      167: CAQUEZA
+      168: CARACOLI
+      169: CARAMANTA
+      170: CARCASI
+      171: CAREPA
+      172: 'CARMEN DE APICALA'
+      173: 'CARMEN DE CARUPA'
+      174: 'CARMEN DEL DARIEN'
+      175: CAROLINA
+      176: CARTAGENA
+      177: 'CARTAGENA DEL CHAIRA'
+      178: CARTAGO
+      179: CARURU
+      180: CASABIANCA
+      181: 'CASTILLA LA NUEVA'
+      182: CAUCASIA
+      183: CEPITA
+      184: CERETE
+      185: CERINZA
+      186: CERRITO
+      187: 'CERRO SAN ANTONIO'
+      188: CERTEGUI
+      189: CHACHAGsI
+      190: CHAGUANI
+      191: CHALAN
+      192: CHAMEZA
+      193: CHAPARRAL
+      194: CHARALA
+      195: CHARTA
+      196: CHIA
+      197: CHIBOLO
+      198: CHIGORODO
+      199: CHIMA
+      200: CHIMA
+      201: CHIMICHAGUA
+      202: CHINACOTA
+      203: CHINAVITA
+      204: CHINCHINA
+      205: CHINU
+      206: CHIPAQUE
+      207: CHIPATA
+      208: CHIQUINQUIRA
+      209: CHIQUIZA
+      210: CHIRIGUANA
+      211: CHISCAS
+      212: CHITA
+      213: CHITAGA
+      214: CHITARAQUE
+      215: CHIVATA
+      216: CHIVOR
+      217: CHOACHI
+      218: CHOCONTA
+      219: CICUCO
+      220: CIENAGA
+      221: 'CIENAGA DE ORO'
+      222: CIENEGA
+      223: CIMITARRA
+      224: CIRCASIA
+      225: CISNEROS
+      226: 'CIUDAD BOLIVAR'
+      227: CLEMENCIA
+      228: COCORNA
+      229: COELLO
+      230: COGUA
+      231: COLOMBIA
+      232: COLON
+      233: COLON
+      234: COLOSO
+      235: COMBITA
+      236: CONCEPCION
+      237: CONCEPCION
+      238: CONCORDIA
+      239: CONCORDIA
+      240: CONDOTO
+      241: CONFINES
+      242: CONSACA
+      243: CONTADERO
+      244: CONTRATACION
+      245: CONVENCION
+      246: COPACABANA
+      247: COPER
+      248: CORDOBA
+      249: CORDOBA
+      250: CORDOBA
+      251: CORINTO
+      252: COROMORO
+      253: COROZAL
+      254: CORRALES
+      255: COTA
+      256: COTORRA
+      257: COVARACHIA
+      258: COVEÑAS
+      259: COYAIMA
+      260: 'CRAVO NORTE'
+      261: CUASPUD
+      262: CUBARA
+      263: CUBARRAL
+      264: CUCAITA
+      265: CUCUNUBA
+      266: CUCUTA
+      267: CUCUTILLA
+      268: CUITIVA
+      269: CUMARAL
+      270: CUMARIBO
+      271: CUMBAL
+      272: CUMBITARA
+      273: CUNDAY
+      274: CURILLO
+      275: CURITI
+      276: CURUMANI
+      277: DABEIBA
+      278: DAGUA
+      279: DIBULLA
+      280: DISTRACCION
+      281: DOLORES
+      282: 'DON MATIAS'
+      283: DOSQUEBRADAS
+      284: DUITAMA
+      285: DURANIA
+      286: EBEJICO
+      287: 'EL AGUILA'
+      288: 'EL BAGRE'
+      289: 'EL BANCO'
+      290: 'EL CAIRO'
+      291: 'EL CALVARIO'
+      292: 'EL CANTON DEL SAN PABLO'
+      293: 'EL CARMEN'
+      294: 'EL CARMEN DE ATRATO'
+      295: 'EL CARMEN DE BOLIVAR'
+      296: 'EL CARMEN DE CHUCURI'
+      297: 'EL CARMEN DE VIBORAL'
+      298: 'EL CASTILLO'
+      299: 'EL CERRITO'
+      300: 'EL CHARCO'
+      301: 'EL COCUY'
+      302: 'EL COLEGIO'
+      303: 'EL COPEY'
+      304: 'EL DONCELLO'
+      305: 'EL DORADO'
+      306: 'EL DOVIO'
+      307: 'EL ENCANTO'
+      308: 'EL ESPINO'
+      309: 'EL GUACAMAYO'
+      310: 'EL GUAMO'
+      311: 'EL LITORAL DEL SAN JUAN'
+      312: 'EL MOLINO'
+      313: 'EL PASO'
+      314: 'EL PAUJIL'
+      315: 'EL PEÑOL'
+      316: 'EL PEÑON'
+      317: 'EL PEÑON'
+      318: 'EL PEÑON'
+      319: 'EL PIÑON'
+      320: 'EL PLAYON'
+      321: 'EL RETEN'
+      322: 'EL RETORNO'
+      323: 'EL ROBLE'
+      324: 'EL ROSAL'
+      325: 'EL ROSARIO'
+      326: 'EL SANTUARIO'
+      327: 'EL TABLON DE GOMEZ'
+      328: 'EL TAMBO'
+      329: 'EL TAMBO'
+      330: 'EL TARRA'
+      331: 'EL ZULIA'
+      332: ELIAS
+      333: ENCINO
+      334: ENCISO
+      335: ENTRERRIOS
+      336: ENVIGADO
+      337: ESPINAL
+      338: FACATATIVA
+      339: FALAN
+      340: FILADELFIA
+      341: FILANDIA
+      342: FIRAVITOBA
+      343: FLANDES
+      344: FLORENCIA
+      345: FLORENCIA
+      346: FLORESTA
+      347: FLORIAN
+      348: FLORIDA
+      349: FLORIDABLANCA
+      350: FOMEQUE
+      351: FONSECA
+      352: FORTUL
+      353: FOSCA
+      354: 'FRANCISCO PIZARRO'
+      355: FREDONIA
+      356: FRESNO
+      357: FRONTINO
+      358: 'FUENTE DE ORO'
+      359: FUNDACION
+      360: FUNES
+      361: FUNZA
+      362: FUQUENE
+      363: FUSAGASUGA
+      364: GACHALA
+      365: GACHANCIPA
+      366: GACHANTIVA
+      367: GACHETA
+      368: GALAN
+      369: GALAPA
+      370: GALERAS
+      371: GAMA
+      372: GAMARRA
+      373: GAMBITA
+      374: GAMEZA
+      375: GARAGOA
+      376: GARZON
+      377: GENOVA
+      378: GIGANTE
+      379: GINEBRA
+      380: GIRALDO
+      381: GIRARDOT
+      382: GIRARDOTA
+      383: GIRON
+      384: 'GOMEZ PLATA'
+      385: GONZALEZ
+      386: GRAMALOTE
+      387: GRANADA
+      388: GRANADA
+      389: GRANADA
+      390: GsEPSA
+      391: GsICAN
+      392: GUACA
+      393: GUACAMAYAS
+      394: GUACARI
+      395: GUACHENE
+      396: GUACHETA
+      397: GUACHUCAL
+      398: 'GUADALAJARA DE BUGA'
+      399: GUADALUPE
+      400: GUADALUPE
+      401: GUADALUPE
+      402: GUADUAS
+      403: GUAITARILLA
+      404: GUALMATAN
+      405: GUAMAL
+      406: GUAMAL
+      407: GUAMO
+      408: GUAPI
+      409: GUAPOTA
+      410: GUARANDA
+      411: GUARNE
+      412: GUASCA
+      413: GUATAPE
+      414: GUATAQUI
+      415: GUATAVITA
+      416: GUATEQUE
+      417: GUATICA
+      418: GUAVATA
+      419: 'GUAYABAL DE SIQUIMA'
+      420: GUAYABETAL
+      421: GUAYATA
+      422: GUTIERREZ
+      423: HACARI
+      424: 'HATILLO DE LOBA'
+      425: HATO
+      426: 'HATO COROZAL'
+      427: HATONUEVO
+      428: HELICONIA
+      429: HERRAN
+      430: HERVEO
+      431: HISPANIA
+      432: HOBO
+      433: HONDA
+      434: IBAGUE
+      435: ICONONZO
+      436: ILES
+      437: IMUES
+      438: INIRIDA
+      439: INZA
+      440: IPIALES
+      441: IQUIRA
+      442: ISNOS
+      443: ISTMINA
+      444: ITAGUI
+      445: ITUANGO
+      446: IZA
+      447: JAMBALO
+      448: JAMUNDI
+      449: JARDIN
+      450: JENESANO
+      451: JERICO
+      452: JERICO
+      453: JERUSALEN
+      454: 'JESUS MARIA'
+      455: JORDAN
+      456: 'JUAN DE ACOSTA'
+      457: JUNIN
+      458: JURADO
+      459: 'LA APARTADA'
+      460: 'LA ARGENTINA'
+      461: 'LA BELLEZA'
+      462: 'LA CALERA'
+      463: 'LA CAPILLA'
+      464: 'LA CEJA'
+      465: 'LA CELIA'
+      466: 'LA CHORRERA'
+      467: 'LA CRUZ'
+      468: 'LA CUMBRE'
+      469: 'LA DORADA'
+      470: 'LA ESPERANZA'
+      471: 'LA ESTRELLA'
+      472: 'LA FLORIDA'
+      473: 'LA GLORIA'
+      474: 'LA GUADALUPE'
+      475: 'LA JAGUA DE IBIRICO'
+      476: 'LA JAGUA DEL PILAR'
+      477: 'LA LLANADA'
+      478: 'LA MACARENA'
+      479: 'LA MERCED'
+      480: 'LA MESA'
+      481: 'LA MONTAÑITA'
+      482: 'LA PALMA'
+      483: 'LA PAZ'
+      484: 'LA PAZ'
+      485: 'LA PEDRERA'
+      486: 'LA PEÑA'
+      487: 'LA PINTADA'
+      488: 'LA PLATA'
+      489: 'LA PLAYA'
+      490: 'LA PRIMAVERA'
+      491: 'LA SALINA'
+      492: 'LA SIERRA'
+      493: 'LA TEBAIDA'
+      494: 'LA TOLA'
+      495: 'LA UNION'
+      496: 'LA UNION'
+      497: 'LA UNION'
+      498: 'LA UNION'
+      499: 'LA UVITA'
+      500: 'LA VEGA'
+      501: 'LA VEGA'
+      502: 'LA VICTORIA'
+      503: 'LA VICTORIA'
+      504: 'LA VICTORIA'
+      505: 'LA VIRGINIA'
+      506: LABATECA
+      507: LABRANZAGRANDE
+      508: LANDAZURI
+      509: LEBRIJA
+      510: LEGUIZAMO
+      511: LEIVA
+      512: LEJANIAS
+      513: LENGUAZAQUE
+      514: LERIDA
+      515: LETICIA
+      516: LIBANO
+      517: LIBORINA
+      518: LINARES
+      519: LLORO
+      520: LOPEZ
+      521: LORICA
+      522: 'LOS ANDES'
+      523: 'LOS CORDOBAS'
+      524: 'LOS PALMITOS'
+      525: 'LOS PATIOS'
+      526: 'LOS SANTOS'
+      527: LOURDES
+      528: LURUACO
+      529: MACANAL
+      530: MACARAVITA
+      531: MACEO
+      532: MACHETA
+      533: MADRID
+      534: MAGANGUE
+      535: MAGsI
+      536: MAHATES
+      537: MAICAO
+      538: MAJAGUAL
+      539: MALAGA
+      540: MALAMBO
+      541: MALLAMA
+      542: MANATI
+      543: MANAURE
+      544: MANAURE
+      545: MANI
+      546: MANIZALES
+      547: MANTA
+      548: MANZANARES
+      549: MAPIRIPAN
+      550: MAPIRIPANA
+      551: MARGARITA
+      552: 'MARIA LA BAJA'
+      553: MARINILLA
+      554: MARIPI
+      555: MARIQUITA
+      556: MARMATO
+      557: MARQUETALIA
+      558: MARSELLA
+      559: MARULANDA
+      560: MATANZA
+      561: MEDELLIN
+      562: MEDINA
+      563: 'MEDIO ATRATO'
+      564: 'MEDIO BAUDO'
+      565: 'MEDIO SAN JUAN'
+      566: MELGAR
+      567: MERCADERES
+      568: MESETAS
+      569: MILAN
+      570: MIRAFLORES
+      571: MIRAFLORES
+      572: MIRANDA
+      573: 'MIRITI - PARANA'
+      574: MISTRATO
+      575: MITU
+      576: MOCOA
+      577: MOGOTES
+      578: MOLAGAVITA
+      579: MOMIL
+      580: MOMPOS
+      581: MONGUA
+      582: MONGUI
+      583: MONIQUIRA
+      584: MONTEBELLO
+      585: MONTECRISTO
+      586: MONTELIBANO
+      587: MONTENEGRO
+      588: MONTERIA
+      589: MONTERREY
+      590: MOÑITOS
+      591: MORALES
+      592: MORALES
+      593: MORELIA
+      594: MORICHAL
+      595: MORROA
+      596: MOSQUERA
+      597: MOSQUERA
+      598: MOTAVITA
+      599: MURILLO
+      600: MURINDO
+      601: MUTATA
+      602: MUTISCUA
+      603: MUZO
+      604: NARIÑO
+      605: NARIÑO
+      606: NARIÑO
+      607: NATAGA
+      608: NATAGAIMA
+      609: NECHI
+      610: NECOCLI
+      611: NEIRA
+      612: NEIVA
+      613: NEMOCON
+      614: NILO
+      615: NIMAIMA
+      616: NOBSA
+      617: NOCAIMA
+      618: NORCASIA
+      619: NOROSI
+      620: NOVITA
+      621: 'NUEVA GRANADA'
+      622: 'NUEVO COLON'
+      623: NUNCHIA
+      624: NUQUI
+      625: OBANDO
+      626: OCAMONTE
+      627: OCAÑA
+      628: OIBA
+      629: OICATA
+      630: OLAYA
+      631: 'OLAYA HERRERA'
+      632: ONZAGA
+      633: OPORAPA
+      634: ORITO
+      635: OROCUE
+      636: ORTEGA
+      637: OSPINA
+      638: OTANCHE
+      639: OVEJAS
+      640: PACHAVITA
+      641: PACHO
+      642: PACOA
+      643: PACORA
+      644: PADILLA
+      645: PAEZ
+      646: PAEZ
+      647: PAICOL
+      648: PAILITAS
+      649: PAIME
+      650: PAIPA
+      651: PAJARITO
+      652: PALERMO
+      653: PALESTINA
+      654: PALESTINA
+      655: PALMAR
+      656: 'PALMAR DE VARELA'
+      657: 'PALMAS DEL SOCORRO'
+      658: PALMIRA
+      659: PALMITO
+      660: PALOCABILDO
+      661: PAMPLONA
+      662: PAMPLONITA
+      663: 'PANA PANA'
+      664: PANDI
+      665: PANQUEBA
+      666: PAPUNAUA
+      667: PARAMO
+      668: PARATEBUENO
+      669: PASCA
+      670: PASTO
+      671: PATIA
+      672: PAUNA
+      673: PAYA
+      674: 'PAZ DE ARIPORO'
+      675: 'PAZ DE RIO'
+      676: PEÐOL
+      677: PEDRAZA
+      678: PELAYA
+      679: PENSILVANIA
+      680: PEQUE
+      681: PEREIRA
+      682: PESCA
+      683: PIAMONTE
+      684: PIEDECUESTA
+      685: PIEDRAS
+      686: PIENDAMO
+      687: PIJAO
+      688: 'PIJIÑO DEL CARMEN'
+      689: PINCHOTE
+      690: PINILLOS
+      691: PIOJO
+      692: PISBA
+      693: PITAL
+      694: PITALITO
+      695: PIVIJAY
+      696: PLANADAS
+      697: 'PLANETA RICA'
+      698: PLATO
+      699: POLICARPA
+      700: POLONUEVO
+      701: PONEDERA
+      702: POPAYAN
+      703: PORE
+      704: POTOSI
+      705: PRADERA
+      706: PRADO
+      707: PROVIDENCIA
+      708: PROVIDENCIA
+      709: 'PUEBLO BELLO'
+      710: 'PUEBLO NUEVO'
+      711: 'PUEBLO RICO'
+      712: PUEBLORRICO
+      713: PUEBLOVIEJO
+      714: 'PUENTE NACIONAL'
+      715: PUERRES
+      716: 'PUERTO ALEGRIA'
+      717: 'PUERTO ARICA'
+      718: 'PUERTO ASIS'
+      719: 'PUERTO BERRIO'
+      720: 'PUERTO BOYACA'
+      721: 'PUERTO CAICEDO'
+      722: 'PUERTO CARREÑO'
+      723: 'PUERTO COLOMBIA'
+      724: 'PUERTO COLOMBIA'
+      725: 'PUERTO CONCORDIA'
+      726: 'PUERTO ESCONDIDO'
+      727: 'PUERTO GAITAN'
+      728: 'PUERTO GUZMAN'
+      729: 'PUERTO LIBERTADOR'
+      730: 'PUERTO LLERAS'
+      731: 'PUERTO LOPEZ'
+      732: 'PUERTO NARE'
+      733: 'PUERTO NARIÑO'
+      734: 'PUERTO PARRA'
+      735: 'PUERTO RICO'
+      736: 'PUERTO RICO'
+      737: 'PUERTO RONDON'
+      738: 'PUERTO SALGAR'
+      739: 'PUERTO SANTANDER'
+      740: 'PUERTO SANTANDER'
+      741: 'PUERTO TEJADA'
+      742: 'PUERTO TRIUNFO'
+      743: 'PUERTO WILCHES'
+      744: PULI
+      745: PUPIALES
+      746: PURACE
+      747: PURIFICACION
+      748: PURISIMA
+      749: QUEBRADANEGRA
+      750: QUETAME
+      751: QUIBDO
+      752: QUIMBAYA
+      753: QUINCHIA
+      754: QUIPAMA
+      755: QUIPILE
+      756: RAGONVALIA
+      757: RAMIRIQUI
+      758: RAQUIRA
+      759: RECETOR
+      760: REGIDOR
+      761: REMEDIOS
+      762: REMOLINO
+      763: REPELON
+      764: RESTREPO
+      765: RESTREPO
+      766: RETIRO
+      767: RICAURTE
+      768: RICAURTE
+      769: 'RIO DE ORO'
+      770: 'RIO IRO'
+      771: 'RIO QUITO'
+      772: 'RIO VIEJO'
+      773: RIOBLANCO
+      774: RIOFRIO
+      775: RIOHACHA
+      776: RIONEGRO
+      777: RIONEGRO
+      778: RIOSUCIO
+      779: RIOSUCIO
+      780: RISARALDA
+      781: RIVERA
+      782: 'ROBERTO PAYAN'
+      783: ROLDANILLO
+      784: RONCESVALLES
+      785: RONDON
+      786: ROSAS
+      787: ROVIRA
+      788: 'SABANA DE TORRES'
+      789: SABANAGRANDE
+      790: SABANALARGA
+      791: SABANALARGA
+      792: SABANALARGA
+      793: 'SABANAS DE SAN ANGEL'
+      794: SABANETA
+      795: SABOYA
+      796: SACAMA
+      797: SACHICA
+      798: SAHAGUN
+      799: SALADOBLANCO
+      800: SALAMINA
+      801: SALAMINA
+      802: SALAZAR
+      803: SALDAÑA
+      804: SALENTO
+      805: SALGAR
+      806: SAMACA
+      807: SAMANA
+      808: SAMANIEGO
+      809: SAMPUES
+      810: 'SAN AGUSTIN'
+      811: 'SAN ALBERTO'
+      812: 'SAN ANDRES'
+      813: 'SAN ANDRES'
+      814: 'SAN ANDRES DE CUERQUIA'
+      815: 'SAN ANDRES DE TUMACO'
+      816: 'SAN ANDRES SOTAVENTO'
+      817: 'SAN ANTERO'
+      818: 'SAN ANTONIO'
+      819: 'SAN ANTONIO DEL TEQUENDAMA'
+      820: 'SAN BENITO'
+      821: 'SAN BENITO ABAD'
+      822: 'SAN BERNARDO'
+      823: 'SAN BERNARDO'
+      824: 'SAN BERNARDO DEL VIENTO'
+      825: 'SAN CALIXTO'
+      826: 'SAN CARLOS'
+      827: 'SAN CARLOS'
+      828: 'SAN CARLOS DE GUAROA'
+      829: 'SAN CAYETANO'
+      830: 'SAN CAYETANO'
+      831: 'SAN CRISTOBAL'
+      832: 'SAN DIEGO'
+      833: 'SAN EDUARDO'
+      834: 'SAN ESTANISLAO'
+      835: 'SAN FELIPE'
+      836: 'SAN FERNANDO'
+      837: 'SAN FRANCISCO'
+      838: 'SAN FRANCISCO'
+      839: 'SAN FRANCISCO'
+      840: 'SAN GIL'
+      841: 'SAN JACINTO'
+      842: 'SAN JACINTO DEL CAUCA'
+      843: 'SAN JERONIMO'
+      844: 'SAN JOAQUIN'
+      845: 'SAN JOSE'
+      846: 'SAN JOSE DE LA MONTAÑA'
+      847: 'SAN JOSE DE MIRANDA'
+      848: 'SAN JOSE DE PARE'
+      849: 'SAN JOSE DEL FRAGUA'
+      850: 'SAN JOSE DEL GUAVIARE'
+      851: 'SAN JOSE DEL PALMAR'
+      852: 'SAN JUAN DE ARAMA'
+      853: 'SAN JUAN DE BETULIA'
+      854: 'SAN JUAN DE RIO SECO'
+      855: 'SAN JUAN DE URABA'
+      856: 'SAN JUAN DEL CESAR'
+      857: 'SAN JUAN NEPOMUCENO'
+      858: 'SAN JUANITO'
+      859: 'SAN LORENZO'
+      860: 'SAN LUIS'
+      861: 'SAN LUIS'
+      862: 'SAN LUIS DE GACENO'
+      863: 'SAN LUIS DE PALENQUE'
+      864: 'SAN LUIS DE SINCE'
+      865: 'SAN MARCOS'
+      866: 'SAN MARTIN'
+      867: 'SAN MARTIN'
+      868: 'SAN MARTIN DE LOBA'
+      869: 'SAN MATEO'
+      870: 'SAN MIGUEL'
+      871: 'SAN MIGUEL'
+      872: 'SAN MIGUEL DE SEMA'
+      873: 'SAN ONOFRE'
+      874: 'SAN PABLO'
+      875: 'SAN PABLO'
+      876: 'SAN PABLO DE BORBUR'
+      877: 'SAN PEDRO'
+      878: 'SAN PEDRO'
+      879: 'SAN PEDRO'
+      880: 'SAN PEDRO DE CARTAGO'
+      881: 'SAN PEDRO DE URABA'
+      882: 'SAN PELAYO'
+      883: 'SAN RAFAEL'
+      884: 'SAN ROQUE'
+      885: 'SAN SEBASTIAN'
+      886: 'SAN SEBASTIAN DE BUENAVISTA'
+      887: 'SAN VICENTE'
+      888: 'SAN VICENTE DE CHUCURI'
+      889: 'SAN VICENTE DEL CAGUAN'
+      890: 'SAN ZENON'
+      891: SANDONA
+      892: 'SANTA ANA'
+      893: 'SANTA BARBARA'
+      894: 'SANTA BARBARA'
+      895: 'SANTA BARBARA'
+      896: 'SANTA BARBARA DE PINTO'
+      897: 'SANTA CATALINA'
+      898: 'SANTA HELENA DEL OPON'
+      899: 'SANTA ISABEL'
+      900: 'SANTA LUCIA'
+      901: 'SANTA MARIA'
+      902: 'SANTA MARIA'
+      903: 'SANTA MARTA'
+      904: 'SANTA ROSA'
+      905: 'SANTA ROSA'
+      906: 'SANTA ROSA DE CABAL'
+      907: 'SANTA ROSA DE OSOS'
+      908: 'SANTA ROSA DE VITERBO'
+      909: 'SANTA ROSA DEL SUR'
+      910: 'SANTA ROSALIA'
+      911: 'SANTA SOFIA'
+      912: SANTACRUZ
+      913: 'SANTAFE DE ANTIOQUIA'
+      914: SANTANA
+      915: 'SANTANDER DE QUILICHAO'
+      916: SANTIAGO
+      917: SANTIAGO
+      918: 'SANTIAGO DE TOLU'
+      919: 'SANTO DOMINGO'
+      920: 'SANTO TOMAS'
+      921: SANTUARIO
+      922: SAPUYES
+      923: SARAVENA
+      924: SARDINATA
+      925: SASAIMA
+      926: SATIVANORTE
+      927: SATIVASUR
+      928: SEGOVIA
+      929: SESQUILE
+      930: SEVILLA
+      931: SIACHOQUE
+      932: SIBATE
+      933: SIBUNDOY
+      934: SILOS
+      935: SILVANIA
+      936: SILVIA
+      937: SIMACOTA
+      938: SIMIJACA
+      939: SIMITI
+      940: SINCELEJO
+      941: SIPI
+      942: SITIONUEVO
+      943: SOACHA
+      944: SOATA
+      945: SOCHA
+      946: SOCORRO
+      947: SOCOTA
+      948: SOGAMOSO
+      949: SOLANO
+      950: SOLEDAD
+      951: SOLITA
+      952: SOMONDOCO
+      953: SONSON
+      954: SOPETRAN
+      955: SOPLAVIENTO
+      956: SOPO
+      957: SORA
+      958: SORACA
+      959: SOTAQUIRA
+      960: SOTARA
+      961: SUAITA
+      962: SUAN
+      963: SUAREZ
+      964: SUAREZ
+      965: SUAZA
+      966: SUBACHOQUE
+      967: SUCRE
+      968: SUCRE
+      969: SUCRE
+      970: SUESCA
+      971: SUPATA
+      972: SUPIA
+      973: SURATA
+      974: SUSA
+      975: SUSACON
+      976: SUTAMARCHAN
+      977: SUTATAUSA
+      978: SUTATENZA
+      979: TABIO
+      980: TADO
+      981: 'TALAIGUA NUEVO'
+      982: TAMALAMEQUE
+      983: TAMARA
+      984: TAME
+      985: TAMESIS
+      986: TAMINANGO
+      987: TANGUA
+      988: TARAIRA
+      989: TARAPACA
+      990: TARAZA
+      991: TARQUI
+      992: TARSO
+      993: TASCO
+      994: TAURAMENA
+      995: TAUSA
+      996: TELLO
+      997: TENA
+      998: TENERIFE
+      999: TENJO
+      1000: TENZA
+      1001: TEORAMA
+      1002: TERUEL
+      1003: TESALIA
+      1004: TIBACUY
+      1005: TIBANA
+      1006: TIBASOSA
+      1007: TIBIRITA
+      1008: TIBU
+      1009: TIERRALTA
+      1010: TIMANA
+      1011: TIMBIO
+      1012: TIMBIQUI
+      1013: TINJACA
+      1014: TIPACOQUE
+      1015: TIQUISIO
+      1016: TITIRIBI
+      1017: TOCA
+      1018: TOCAIMA
+      1019: TOCANCIPA
+      1020: TOGsI
+      1021: TOLEDO
+      1022: TOLEDO
+      1023: 'TOLU VIEJO'
+      1024: TONA
+      1025: TOPAGA
+      1026: TOPAIPI
+      1027: TORIBIO
+      1028: TORO
+      1029: TOTA
+      1030: TOTORO
+      1031: TRINIDAD
+      1032: TRUJILLO
+      1033: TUBARA
+      1034: TULUA
+      1035: TUNJA
+      1036: TUNUNGUA
+      1037: TUQUERRES
+      1038: TURBACO
+      1039: TURBANA
+      1040: TURBO
+      1041: TURMEQUE
+      1042: TUTA
+      1043: TUTAZA
+      1044: UBALA
+      1045: UBAQUE
+      1046: ULLOA
+      1047: UMBITA
+      1048: UNE
+      1049: UNGUIA
+      1050: 'UNION PANAMERICANA'
+      1051: URAMITA
+      1052: URIBE
+      1053: URIBIA
+      1054: URRAO
+      1055: URUMITA
+      1056: USIACURI
+      1057: UTICA
+      1058: VALDIVIA
+      1059: VALENCIA
+      1060: 'VALLE DE SAN JOSE'
+      1061: 'VALLE DE SAN JUAN'
+      1062: 'VALLE DEL GUAMUEZ'
+      1063: VALLEDUPAR
+      1064: VALPARAISO
+      1065: VALPARAISO
+      1066: VEGACHI
+      1067: VELEZ
+      1068: VENADILLO
+      1069: VENECIA
+      1070: VENECIA
+      1071: VENTAQUEMADA
+      1072: VERGARA
+      1073: VERSALLES
+      1074: VETAS
+      1075: VIANI
+      1076: VICTORIA
+      1077: 'VIGIA DEL FUERTE'
+      1078: VIJES
+      1079: 'VILLA CARO'
+      1080: 'VILLA DE LEYVA'
+      1081: 'VILLA DE SAN DIEGO DE UBATE'
+      1082: 'VILLA DEL ROSARIO'
+      1083: 'VILLA RICA'
+      1084: VILLAGARZON
+      1085: VILLAGOMEZ
+      1086: VILLAHERMOSA
+      1087: VILLAMARIA
+      1088: VILLANUEVA
+      1089: VILLANUEVA
+      1090: VILLANUEVA
+      1091: VILLANUEVA
+      1092: VILLAPINZON
+      1093: VILLARRICA
+      1094: VILLAVICENCIO
+      1095: VILLAVIEJA
+      1096: VILLETA
+      1097: VIOTA
+      1098: VIRACACHA
+      1099: VISTAHERMOSA
+      1100: VITERBO
+      1101: YACOPI
+      1102: YACUANQUER
+      1103: YAGUARA
+      1104: YALI
+      1105: YARUMAL
+      1106: YAVARATE
+      1107: YOLOMBO
+      1108: YONDO
+      1109: YOPAL
+      1110: YOTOCO
+      1111: YUMBO
+      1112: ZAMBRANO
+      1113: ZAPATOCA
+      1114: ZAPAYAN
+      1115: ZARAGOZA
+      1116: ZARZAL
+      1117: ZETAQUIRA
+      1118: ZIPACON
+      1119: ZIPAQUIRA
+      1120: 'ZONA BANANERA'
+  oficina:
+    '#type': radios
+    '#title': Oficina
+    '#options':
+      1: 'Calle 53'
+      2: 'Calle 98'
+      3: Gobernación
+    '#required': true
+  _cual_:
+    '#type': textfield
+    '#title': '¿Cuál?'
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+  direccion:
+    '#type': textfield
+    '#title': Dirección
+  correo:
+    '#type': email
+    '#title': Correo
+  telefono:
+    '#type': tel
+    '#title': Teléfono
+    '#international': true
+    '#international_initial_country': CO
+  servicio_o_tramite_a_evaluar:
+    '#type': select
+    '#title': 'Servicio o Trámite a Evaluar'
+    '#options':
+      1: Apostilla
+      2: Legalizaciones
+      3: 'Apostilla y Legalización'
+    '#required': true
+  genero:
+    '#type': select
+    '#title': '1. Género'
+    '#options':
+      1: Femenino
+      2: Masculino
+    '#required': true
+  edad:
+    '#type': select
+    '#title': '2. Edad'
+    '#options':
+      1: 'Menor de 18 años (Aplica solo a visas y pasaportes)'
+      2: 'De 18 a 35 años'
+      3: 'De 36 a 55'
+      4: 'Mayor de 56 años'
+      5: 'No responde'
+    '#required': true
+  el_tramite_lo_va_a_realizar:
+    '#type': select
+    '#title': "3. El trámite lo va a realizar\t"
+    '#options':
+      1: 'A titulo personal'
+      2: 'Como representante de empresa'
+      3: 'Como intermediario'
+      4: 'No responde'
+    '#required': true
+  cual_es_la_finalidad_de_su_tramite:
+    '#type': select
+    '#title': '4. Cuál es la finalidad de su trámite'
+    '#options':
+      1: Trabajo
+      2: Estudio
+      3: Turismo
+      4: Negocios
+      5: Remesas
+    '#required': true
+  canales_de_atencion_y_difusion_de_la_informacion:
+    '#type': webform_likert
+    '#title': '5. Canales de atención y difusión de la información'
+    '#description': 'Califique de 1 a 5 donde: 1 (Deficiente), 2 (Inadecuado), 3(Regular), 4(Sobresaliente), 5 (Excelente), los siguientes aspectos relacionados con la atenci&oacute;n recibida por parte de los funcionarios de esta oficina:'
+    '#questions':
+      1: 'Funcionario Oficina'
+      2: "Página Web\t"
+      3: "Atención Telefónica\t"
+      4: "Atención Chat\t"
+      5: "Atención Correo Electrónico\t"
+      6: "Voz a Voz Otras personas\t"
+      7: "Skype\t"
+      8: Otro
+    '#answers':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+  5_canales_de_atencion_y_difusion_de_la_informacion:
+    '#type': webform_likert
+    '#title': '6. Calidad en cuanto al servicio que se presta al usuario'
+    '#description': 'Califique de 1 a 5 donde: 1 (Deficiente), 2 (Inadecuado), 3(Regular), 4(Sobresaliente), 5 (Excelente), los siguientes aspectos relacionados con la atenci&oacute;n recibida por parte de los funcionarios de esta oficina:'
+    '#required': true
+    '#questions':
+      1: 'Calidad del servicio'
+      2: 'Trato recibido por los funcionarios que lo atendieron'
+      3: 'Claridad de la información brindada'
+      4: 'Comodidad en la Espera'
+      5: 'Tiempo de atención '
+      6: 'Comunicación con la Entidad'
+      7: 'Aseo de las Instalaciones'
+      8: 'Acceso al punto de atención'
+      9: Organización
+      10: Ventilación
+    '#answers':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+  calidad_en_cuanto_al_servicio_que_se_presa:
+    '#type': webform_likert
+    '#title': '7. Calidad en cuanto al servicio que se presta al usuario'
+    '#description': 'Califique de 1 a 5 donde: 1 (Deficiente), 2 (Inadecuado), 3(Regular), 4(Sobresaliente), 5 (Excelente), los siguientes aspectos relacionados con la atenci&oacute;n recibida por parte de los funcionarios de esta oficina:'
+    '#required': true
+    '#questions':
+      A: Amabilidad
+      B: 'Conocimiento del tema'
+      C: 'Disposición para atenderlo'
+      D: 'Solución de inquietudes'
+      E: 'Información oportuna'
+    '#answers':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+  atributos_de_imagen_institucional:
+    '#type': webform_likert
+    '#title': "8. Atributos de imagen Institucional\t"
+    '#description': 'Califique de 1 a 5 donde: 1 (Deficiente), 2 (Inadecuado), 3(Regular), 4(Sobresaliente), 5 (Excelente), los siguientes aspectos relacionados con la atenci&oacute;n recibida por parte de los funcionarios de esta oficina:'
+    '#required': true
+    '#questions':
+      1: 'La Entidad atiende rápido'
+      2: 'Las instalaciones son modernas'
+      3: 'La Entidad se preocupa por la satisfacción de sus usuarios'
+    '#answers':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

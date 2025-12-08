@@ -1,0 +1,38 @@
+uuid: fe5700b3-12ef-49cb-8e18-a0cda76411a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.visas.body
+    - field.field.node.visas.field_taxonomi_visas
+    - node.type.visas
+  module:
+    - text
+    - user
+id: node.visas.default
+targetEntityType: node
+bundle: visas
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_taxonomi_visas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,15 @@
+uuid: 1075e171-76f4-42f7-a0bd-fb87d3abed05
+langcode: es
+status: true
+dependencies: {  }
+name: 920x690
+label: 920x690
+effects:
+  d4b41c4e-76bd-404e-a465-cf654bcb169d:
+    uuid: d4b41c4e-76bd-404e-a465-cf654bcb169d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 920
+      height: 690
+      anchor: center-center

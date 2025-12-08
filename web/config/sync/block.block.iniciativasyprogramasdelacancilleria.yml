@@ -1,0 +1,29 @@
+uuid: 69bb73d8-75bf-41f5-8f8f-b75b2c27be09
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.algunas-iniciativas
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: iniciativasyprogramasdelacancilleria
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:algunas-iniciativas'
+settings:
+  id: 'system_menu_block:algunas-iniciativas'
+  label: ' Iniciativas y Programas de la Cancillería'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /casos-corte

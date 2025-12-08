@@ -1,0 +1,23 @@
+uuid: 622e6fd4-53ad-45dd-af0e-b8ebfa653616
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presentar_en_carrusel
+    - node.type.news
+id: node.news.field_presentar_en_carrusel
+field_name: field_presentar_en_carrusel
+entity_type: node
+bundle: news
+label: 'Aparece en carrusel'
+description: 'Si es marcado este campo se mostrara esta publicacion en el carrusel de noticias'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

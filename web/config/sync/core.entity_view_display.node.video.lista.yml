@@ -1,0 +1,66 @@
+uuid: 7c2e1b0f-0767-4b3c-93d7-5d5092af86e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.lista
+    - field.field.node.video.body
+    - field.field.node.video.field_date
+    - field.field.node.video.field_opciones_de_titulo
+    - field.field.node.video.field_show_in_slide
+    - field.field.node.video.field_slideshow_weigth
+    - field.field.node.video.field_solicitado
+    - field.field.node.video.field_solicitante
+    - field.field.node.video.field_video_descarga
+    - field.field.node.video.field_video_local
+    - field.field.node.video.field_video_local_thumb
+    - field.field.node.video.field_video_youtube
+    - field.field.node.video.field_weight
+    - field.field.node.video.field_youtube_video
+    - field.field.node.video.taxonomy_vocabulary_3
+    - node.type.video
+  module:
+    - datetime
+    - text
+    - user
+id: node.video.lista
+targetEntityType: node
+bundle: video
+mode: lista
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_video_descarga: true
+  field_video_local: true
+  field_video_local_thumb: true
+  field_video_youtube: true
+  field_weight: true
+  field_youtube_video: true
+  langcode: true
+  taxonomy_vocabulary_3: true

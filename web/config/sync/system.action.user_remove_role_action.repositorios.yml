@@ -1,0 +1,14 @@
+uuid: 161f5c64-7ed3-42a8-8b89-dabf30354cde
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.repositorios
+  module:
+    - user
+id: user_remove_role_action.repositorios
+label: 'Elimina el rol repositorios al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: repositorios

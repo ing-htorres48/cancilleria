@@ -1,0 +1,33 @@
+uuid: c1687af9-eaa0-4971-9bfa-051fa568873d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instrumentos.body
+    - field.field.node.instrumentos.field_instrumentos
+    - node.type.instrumentos
+  module:
+    - text
+    - user
+id: node.instrumentos.teaser
+targetEntityType: node
+bundle: instrumentos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_instrumentos: true
+  langcode: true

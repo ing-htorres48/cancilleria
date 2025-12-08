@@ -1,0 +1,29 @@
+uuid: d9167b7f-d6e8-489a-b06d-a0e1c2de20e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_enlaces_carrousel
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__bloque_enlaces_carrousel_block_1_2
+theme: bootstrap_barrio_subtheme
+region: enlaces_principales
+weight: 2
+provider: null
+plugin: 'views_block:bloque_enlaces_carrousel-block_1'
+settings:
+  id: 'views_block:bloque_enlaces_carrousel-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/inicio"

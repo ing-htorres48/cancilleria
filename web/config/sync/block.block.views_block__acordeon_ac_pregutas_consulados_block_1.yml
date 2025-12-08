@@ -1,0 +1,29 @@
+uuid: 360c69fc-d162-4db6-bfb7-38eb48d5ef88
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_ac_pregutas_consulados
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_ac_pregutas_consulados_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 119
+provider: null
+plugin: 'views_block:acordeon_ac_pregutas_consulados-block_1'
+settings:
+  id: 'views_block:acordeon_ac_pregutas_consulados-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/faq/consulates

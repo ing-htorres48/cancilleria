@@ -1,0 +1,21 @@
+uuid: bb0d5874-8d98-468f-836f-c58f76f43200
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomi_visas
+    - node.type.visas
+id: node.visas.field_taxonomi_visas
+field_name: field_taxonomi_visas
+entity_type: node
+bundle: visas
+label: taxonomi_visas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

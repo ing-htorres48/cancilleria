@@ -1,0 +1,29 @@
+uuid: daa83d30-d413-4816-95b1-dd88e2014808
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.atencion-al-ciudadano
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: atencionalciudadano
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 7
+provider: null
+plugin: 'system_menu_block:atencion-al-ciudadano'
+settings:
+  id: 'system_menu_block:atencion-al-ciudadano'
+  label: 'Accesos Rápidos '
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/help\r\n/help/contactus\r\n/help/report\r\n/help/report/complaints\r\n/help/contactus/*"

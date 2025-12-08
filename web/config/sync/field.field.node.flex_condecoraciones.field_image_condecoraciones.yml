@@ -1,0 +1,38 @@
+uuid: 4d0e42c4-a12b-4138-b1aa-6d384b75fdf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_condecoraciones
+    - node.type.flex_condecoraciones
+  module:
+    - image
+id: node.flex_condecoraciones.field_image_condecoraciones
+field_name: field_image_condecoraciones
+entity_type: node
+bundle: flex_condecoraciones
+label: image_condecoraciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ceremonia_condecoration
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

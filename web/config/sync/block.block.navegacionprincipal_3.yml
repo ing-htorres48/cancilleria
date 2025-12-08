@@ -1,0 +1,29 @@
+uuid: 41c17af1-46e8-404e-9eb2-ad4320f0f085
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_3
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 36
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/*\r\n/international/politics/right/universal\r\n/international/politics/right/interamerican\r\ntramites_servicios/*\r\nprocedures_services/*\r\n/sedes\r\nhelp/faq/*\r\ninternacional/politica/*\r\nministry/planeacion/*\r\nbiblioteca/*\r\nbiblioteca\r\nministry/vice-minister-of-foreign-affairs\r\nministry/vice-minister-for-multilateral-affairs\r\nministerio/viceministra-asuntos-multilaterales\r\nministerio/viceministro-relaciones-exteriores\r\nministerio/secretario-general\r\ncolombia/nuestro-pais\r\ncolombia/nuestro-pais/*\r\nministry/strategy/rendicioncuentas\r\nespeciales-multimedia\r\ncasos-colombia-cij\r\ncasos-colombia-cij/*\r\n/tramites_servicios/\r\n/juridicainternacional/informativo/\r\n/ministry/planeacion/normograma\r\n/ministerio/mision_vision_objetivos_normas_principios_lineamientos\r\n/help/faq/apostilla-legalizacion\r\nhelp/faq/*\r\n/help/faq/asistencia-connacionales\r\n/internacional/economicos-sociales-ambientales\r\n/internacional/politica/*\r\n/tramites_servicios/*\r\n/tramites_exterior/*\r\n/help/*"

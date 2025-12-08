@@ -1,0 +1,8 @@
+uuid: 8db532eb-41e8-4eb1-ad21-b71bcbd2b8d7
+langcode: es
+status: true
+dependencies: {  }
+name: Lexicon
+vid: vocabulary_2
+description: autorización
+weight: 0

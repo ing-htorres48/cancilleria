@@ -1,0 +1,23 @@
+uuid: a0c153b6-e6b3-4b89-8425-0a03fa1347bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.procesos_contratacion
+  module:
+    - text
+id: node.procesos_contratacion.body
+field_name: body
+entity_type: node
+bundle: procesos_contratacion
+label: Objeto
+description: 'Licitaciones, Subastas ingresados por el usuarios asignado a Contratos.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

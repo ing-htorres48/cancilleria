@@ -1,0 +1,33 @@
+uuid: e8f24466-eab8-4cd5-97f7-b126d2df90c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flex_viceministra_multilaterales.body
+    - field.field.node.flex_viceministra_multilaterales.field_image_viceministramultilat
+    - node.type.flex_viceministra_multilaterales
+  module:
+    - text
+    - user
+id: node.flex_viceministra_multilaterales.teaser
+targetEntityType: node
+bundle: flex_viceministra_multilaterales
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_viceministramultilat: true
+  langcode: true

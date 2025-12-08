@@ -1,0 +1,11 @@
+uuid: c4a4bd16-6dba-460c-8414-efd58e29a5c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_apostilla
+id: node.flex_apostilla
+target_entity_type_id: node
+target_bundle: flex_apostilla
+default_langcode: site_default
+language_alterable: false

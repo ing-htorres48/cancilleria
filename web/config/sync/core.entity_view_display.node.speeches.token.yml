@@ -1,0 +1,40 @@
+uuid: 66aca5bf-9ccc-4c0d-b332-1235bce94729
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.speeches.body
+    - field.field.node.speeches.field_date
+    - field.field.node.speeches.field_opciones_de_titulo
+    - field.field.node.speeches.field_solicitado
+    - field.field.node.speeches.field_solicitante
+    - node.type.speeches
+  module:
+    - datetime
+    - user
+id: node.speeches.token
+targetEntityType: node
+bundle: speeches
+mode: token
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_opciones_de_titulo: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 1ddcdf21-592b-403d-a137-e9241511d8df
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.blog.body
+    - field.field.node.blog.field_blog_imagen_post
+    - node.type.blog
+  module:
+    - user
+id: node.blog.rss
+targetEntityType: node
+bundle: blog
+mode: rss
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_blog_imagen_post: true
+  langcode: true

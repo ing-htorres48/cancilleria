@@ -1,0 +1,25 @@
+uuid: 1acc6836-41f4-4122-acf3-ba805882e102
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - we_megamenu
+  theme:
+    - bootstrap_barrio_subtheme
+id: cooperacioninternacional
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 4
+provider: null
+plugin: 'we_megamenu_block:cooperacion-internacional'
+settings:
+  id: 'we_megamenu_block:cooperacion-internacional'
+  label: 'Cooperación internacional'
+  label_display: visible
+  provider: we_megamenu
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/cooperacion-internacional\r\n/cooperacion-internacional/asistencia-oficial-desarrollo\r\n/cooperacion-internacional/cooperacion-multilateral\r\n/cooperacion-internacional/cooperacion-sur-sur"

@@ -1,0 +1,30 @@
+uuid: 8053aa6d-6eb3-4123-99f7-f5899dc21cef
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dc42258c-4df2-4c3f-a648-3b25cb327c61'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_88
+theme: bootstrap_barrio
+region: content
+weight: 5
+provider: null
+plugin: 'block_content:dc42258c-4df2-4c3f-a648-3b25cb327c61'
+settings:
+  id: 'block_content:dc42258c-4df2-4c3f-a648-3b25cb327c61'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/video

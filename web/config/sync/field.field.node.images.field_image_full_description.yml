@@ -1,0 +1,22 @@
+uuid: eba7f2f0-d5e1-4670-9d63-715d0ed32d75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_full_description
+    - node.type.images
+id: node.images.field_image_full_description
+field_name: field_image_full_description
+entity_type: node
+bundle: images
+label: 'Pie de foto'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_image_full_description][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

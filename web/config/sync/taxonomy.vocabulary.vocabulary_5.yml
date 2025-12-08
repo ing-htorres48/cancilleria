@@ -1,0 +1,8 @@
+uuid: 11ed0c2a-2bbd-4a24-a402-db93df17e721
+langcode: es
+status: true
+dependencies: {  }
+name: 'Clasificación de noticias'
+vid: vocabulary_5
+description: 'Etiquetas utilizadas en la clasificación de las noticias.'
+weight: 0

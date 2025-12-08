@@ -1,0 +1,29 @@
+uuid: 6c221af0-959f-4c1d-a5e6-c30724bcef35
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: navegacionprincipal_5
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 39
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 4
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ministerio/mision_vision_objetivos_normas_principios_lineamientos

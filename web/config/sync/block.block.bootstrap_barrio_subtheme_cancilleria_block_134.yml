@@ -1,0 +1,30 @@
+uuid: c8775156-9099-4de5-8e6b-4bdd10fa470a
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e1e44580-1352-4734-a933-cbf26fb05e7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_cancilleria_block_134
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 187
+provider: null
+plugin: 'block_content:e1e44580-1352-4734-a933-cbf26fb05e7d'
+settings:
+  id: 'block_content:e1e44580-1352-4734-a933-cbf26fb05e7d'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/museo

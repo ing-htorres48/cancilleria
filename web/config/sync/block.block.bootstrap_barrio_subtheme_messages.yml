@@ -1,0 +1,22 @@
+uuid: 0b135633-7252-44fd-8b02-39580b009997
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: bootstrap_barrio_subtheme_messages
+theme: bootstrap_barrio_subtheme
+region: govco
+weight: 6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

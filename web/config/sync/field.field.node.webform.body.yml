@@ -1,0 +1,23 @@
+uuid: e7f8e56d-c7ea-4315-9b87-c784b3533f6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webform
+  module:
+    - text
+id: node.webform.body
+field_name: body
+entity_type: node
+bundle: webform
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

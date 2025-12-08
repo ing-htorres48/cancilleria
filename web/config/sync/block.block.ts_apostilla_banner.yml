@@ -1,0 +1,30 @@
+uuid: 085a1be9-a255-4435-ae4d-3693ceaa26a0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6edc4ac4-c72e-4b71-bc2a-1e625a98abaa'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: ts_apostilla_banner
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 53
+provider: null
+plugin: 'block_content:6edc4ac4-c72e-4b71-bc2a-1e625a98abaa'
+settings:
+  id: 'block_content:6edc4ac4-c72e-4b71-bc2a-1e625a98abaa'
+  label: TS_Apostilla_Banner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/tramites_servicios/apostilla_legalizacion_en_linea\r\n/tramites_servicios/apostilla_legalizacion_en_linea/que_es_apostilla\r\n/tramites_servicios/apostilla_legalizacion_en_linea/que_es_legalizacion\r\n/tramites_servicios/apostilla_legalizacion_en_linea/tramite\r\n/tramites_servicios/apostilla_legalizacion_en_linea/consulta\r\n/tramites_servicios/apostilla_legalizacion_en_linea/guias\r\n/tramites_servicios/apostilla_legalizacion_en_linea/requisitos\r\n/tramites_servicios/apostilla_legalizacion_en_linea/costos_y_medios_de_pago\r\n/tramites_servicios/apostilla_legalizacion_en_linea/registre_firma\r\n"

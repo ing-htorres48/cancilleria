@@ -1,0 +1,30 @@
+uuid: 3187be05-fe04-40f9-8d9c-b6d5099c0e66
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cdb80864-c317-4b21-a19d-24e65dca8bd9'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: tramitesyserviciosvisa
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 25
+provider: null
+plugin: 'block_content:cdb80864-c317-4b21-a19d-24e65dca8bd9'
+settings:
+  id: 'block_content:cdb80864-c317-4b21-a19d-24e65dca8bd9'
+  label: 'Tramites y Servicios Visa'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/visa

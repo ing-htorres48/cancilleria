@@ -1,0 +1,57 @@
+uuid: b9408337-2cca-4362-8eb5-ef39f4b245a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_html
+    - field.field.node.audio.body
+    - field.field.node.audio.field_date
+    - field.field.node.audio.field_image_audio_thumb
+    - field.field.node.audio.field_opciones_de_titulo
+    - field.field.node.audio.field_slideshow_weigth
+    - field.field.node.audio.field_solicitado
+    - field.field.node.audio.field_solicitante
+    - field.field.node.audio.taxonomy_vocabulary_4
+    - node.type.audio
+  module:
+    - datetime
+    - image
+    - user
+id: node.audio.email_html
+targetEntityType: node
+bundle: audio
+mode: email_html
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_image_audio_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_opciones_de_titulo: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true
+  taxonomy_vocabulary_4: true

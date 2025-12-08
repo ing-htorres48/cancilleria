@@ -1,0 +1,29 @@
+uuid: 1274f185-bc87-494b-bef6-e96bf188bf2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.colombia-nos-une
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: colombianosune
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 1
+provider: null
+plugin: 'system_menu_block:colombia-nos-une'
+settings:
+  id: 'system_menu_block:colombia-nos-une'
+  label: 'Accesos Rápidos '
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/footer/join-us/introduction\r\n/footer/join-us/objectives\r\n/footer/join-us/work\r\n/footer/join-us/work/community\r\n/footer/join-us/work/services\r\n/footer/join-us/work/plan\r\n/portal-colombia-nos-une"

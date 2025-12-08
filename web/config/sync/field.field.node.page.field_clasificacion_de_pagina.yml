@@ -1,0 +1,29 @@
+uuid: ecb0334a-0718-4898-be8d-f38463847619
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clasificacion_de_pagina
+    - node.type.page
+    - taxonomy.vocabulary.clasificacion_de_pagina
+id: node.page.field_clasificacion_de_pagina
+field_name: field_clasificacion_de_pagina
+entity_type: node
+bundle: page
+label: 'Clasificación de Página'
+description: 'Referencia para clasificación de páginas'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      clasificacion_de_pagina: clasificacion_de_pagina
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

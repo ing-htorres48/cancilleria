@@ -1,0 +1,52 @@
+uuid: af6f16ec-ec12-4149-97ca-1707d00aacb3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.page.body
+    - field.field.node.page.field_attached_page
+    - field.field.node.page.field_clasificacion_de_pagina
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_image_post
+    - field.field.node.page.field_link_panel
+    - node.type.page
+  module:
+    - file
+    - image
+    - user
+id: node.page.email_plain
+targetEntityType: node
+bundle: page
+mode: email_plain
+content:
+  field_attached_page:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_post:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_clasificacion_de_pagina: true
+  field_gallery: true
+  field_link_panel: true
+  langcode: true

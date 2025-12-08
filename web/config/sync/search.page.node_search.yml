@@ -1,0 +1,20 @@
+uuid: f8c61c53-156e-4db8-bfa7-5eb3e99318a7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: Content
+path: node
+weight: -10
+plugin: node_search
+configuration:
+  rankings:
+    comments: 3
+    promote: 2
+    recent: 5
+    relevance: 4
+    sticky: 1

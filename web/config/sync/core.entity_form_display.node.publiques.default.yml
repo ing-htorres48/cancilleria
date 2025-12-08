@@ -1,0 +1,177 @@
+uuid: 22b8f72f-59f2-4717-8312-bf578d4bcd68
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.publiques.body
+    - field.field.node.publiques.field_attached_publiques
+    - field.field.node.publiques.field_contenido_relacionado
+    - field.field.node.publiques.field_date
+    - field.field.node.publiques.field_image_full_description
+    - field.field.node.publiques.field_imagen_publiques_thumb
+    - field.field.node.publiques.field_images_gallery
+    - field.field.node.publiques.field_images_publiques
+    - field.field.node.publiques.field_opciones_de_titulo
+    - field.field.node.publiques.field_show_in_slide
+    - field.field.node.publiques.field_slideshow_weigth
+    - field.field.node.publiques.field_solicitado
+    - field.field.node.publiques.field_solicitante
+    - field.field.node.publiques.field_weight
+    - image.style.thumbnail
+    - node.type.publiques
+  module:
+    - datetime
+    - file
+    - image
+    - path
+    - text
+    - weight
+id: node.publiques.default
+targetEntityType: node
+bundle: publiques
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attached_publiques:
+    type: file_generic
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_contenido_relacionado:
+    type: entity_reference_autocomplete_tags
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_date:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_full_description:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 4
+      placeholder: ''
+    third_party_settings: {  }
+  field_imagen_publiques_thumb:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_opciones_de_titulo:
+    type: options_buttons
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_show_in_slide:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_solicitado:
+    type: datetime_default
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_solicitante:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_weight:
+    type: weight_selector
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 17
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_images_gallery: true
+  field_images_publiques: true
+  field_slideshow_weigth: true

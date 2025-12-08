@@ -1,0 +1,15 @@
+uuid: 2eb4e2ca-2032-4087-b018-d322ea90dc18
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_miniatura
+label: seccion_miniatura
+effects:
+  ff566990-2753-4dcf-849c-42669561a7a8:
+    uuid: ff566990-2753-4dcf-849c-42669561a7a8
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 120
+      height: 90
+      anchor: center-center

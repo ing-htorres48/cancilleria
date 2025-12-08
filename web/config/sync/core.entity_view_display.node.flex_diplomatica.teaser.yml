@@ -1,0 +1,33 @@
+uuid: 75b020ba-62f2-491e-87a7-6453288245b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flex_diplomatica.body
+    - field.field.node.flex_diplomatica.field_flex_diplomatica
+    - node.type.flex_diplomatica
+  module:
+    - text
+    - user
+id: node.flex_diplomatica.teaser
+targetEntityType: node
+bundle: flex_diplomatica
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_flex_diplomatica: true
+  langcode: true

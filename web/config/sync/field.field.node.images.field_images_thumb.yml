@@ -1,0 +1,38 @@
+uuid: d9afc1a7-db10-43d0-8ac4-0d63d5774aee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images_thumb
+    - node.type.images
+  module:
+    - image
+id: node.images.field_images_thumb
+field_name: field_images_thumb
+entity_type: node
+bundle: images
+label: 'Imágen Album'
+description: 'Imágen principal o del álbum.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 920x400
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

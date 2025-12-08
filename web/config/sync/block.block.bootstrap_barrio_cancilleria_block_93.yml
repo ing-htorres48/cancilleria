@@ -1,0 +1,30 @@
+uuid: 89a07b2e-af07-4929-8d85-861835415961
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6732ee02-4a14-49f3-b5e9-7c1e9110a0ab'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_93
+theme: bootstrap_barrio
+region: content
+weight: 11
+provider: null
+plugin: 'block_content:6732ee02-4a14-49f3-b5e9-7c1e9110a0ab'
+settings:
+  id: 'block_content:6732ee02-4a14-49f3-b5e9-7c1e9110a0ab'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/speeches

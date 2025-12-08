@@ -1,0 +1,23 @@
+uuid: dda633fe-f16a-4250-8c8b-452abd90c01f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.advertising_footer
+  module:
+    - text
+id: node.advertising_footer.body
+field_name: body
+entity_type: node
+bundle: advertising_footer
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

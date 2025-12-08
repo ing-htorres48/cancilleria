@@ -1,0 +1,29 @@
+uuid: f4752047-258e-4931-ae6a-f4a6b1a6682e
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.tabla_procesos_de_contratacion_menor_cuantia_
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__tabla_procesos_de_contratacion_m_cuantia__block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 165
+provider: null
+plugin: 'views_block:tabla_procesos_de_contratacion_menor_cuantia_-block_1'
+settings:
+  id: 'views_block:tabla_procesos_de_contratacion_menor_cuantia_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ministry/contracting/menorcuantia

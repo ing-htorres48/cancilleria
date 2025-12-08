@@ -1,0 +1,29 @@
+uuid: 33da2cb0-396f-4751-9d05-d019b309b889
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.asuntos-esa
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: asuntosesa
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 11
+provider: null
+plugin: 'system_menu_block:asuntos-esa'
+settings:
+  id: 'system_menu_block:asuntos-esa'
+  label: 'Asuntos ESA'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/internacional/economicos-sociales-ambientales\r\n/internacional/politica/sociales\r\n/internacional/politica/ambiental\r\n/internacional/politica/economico\r\n/internacional/politica/sociales/salud\r\n/internacional/politica/sociales/tabaco\r\n/internacional/politica/sociales/juventud\r\n/internacional/politica/sociales/genero\r\n/internacional/politica/sociales/ninez\r\n/internacional/politica/sociales/familias\r\n/internacional/politica/sociales/discapacidad\r\n/internacional/politica/sociales/personas-mayores\r\n/internacional/politica/sociales/principio-10\r\n/internacional/politica/sociales/poblacion-desarrollo\r\n/internacional/politica/sociales/asentamientos-humanos\r\n/internacional/politica/sociales/desarrollo-social\r\n/internacional/politica/sociales/ECOSOC\r\n/internacional/politica/sociales/trabajo-decente\r\n/internacional/politica/economico/agricultura\r\n/organizacion-cooperacion-desarrollo-economicos-ocde\r\n/internacional/politica/economico/pesca\r\n/internacional/politica/economico/propiedad-intelectual\r\n/internacional/politica/economico/onudi\r\n/internacional/politica/economico/telecomunicaciones\r\n/internacional/politica/economico/turismo\r\n/internacional/politica/economico/unidroit\r\n/internacional/politica/economico/cnudmi\r\n/internacional/politica/economico/onudi\r\n/internacional/politica/economico/oaci\r\n/internacional/politica/economico/ocde\r\n/internacional/politica/economico/copous\r\n/internacional/politica/ambiental/biodiversidad\r\n/internacional/politica/ambiental/cambio-climatico\r\n/internacional/politica/ambiental/sustancias-quimicas\r\n/internacional/politica/ambiental/aguas-dulces-oceanos\r\n/internacional/politica/ambiental/desertificacion\r\n/internacional/politica/ambiental/economia-circular\r\n/internacional/politica/ambiental/energia\r\n/internacional/politica/ambiental/fondo\r\n/internacional/politica/ambiental/PNUMA\r\n/internacional/politica/ambiental/capitulos\r\n/internacional/politica/economico/Agenda-2030-Desarrollo-Sostenible\r\n\r\n"

@@ -1,0 +1,526 @@
+uuid: a1fde732-dbe5-426c-9e19-0b2cf97fba7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html_2
+    - media.type.audio
+    - media.type.document
+    - media.type.google_text_to_speech
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.acordeon
+    - node.type.advertising_footer
+    - node.type.alianzapacifico
+    - node.type.article
+    - node.type.audio
+    - node.type.blog
+    - node.type.book
+    - node.type.contratacion
+    - node.type.diary
+    - node.type.el_archipielago_es_colombia
+    - node.type.enlaces
+    - node.type.f_participacion_ciudadana_j
+    - node.type.faq
+    - node.type.feed
+    - node.type.feed_item
+    - node.type.flex__viceministrorelaciones
+    - node.type.flex_apostilla
+    - node.type.flex_biblioteca
+    - node.type.flex_caribe_galeria
+    - node.type.flex_casa_marques
+    - node.type.flex_condecoraciones
+    - node.type.flex_cultura
+    - node.type.flex_diplomatica
+    - node.type.flex_politica_asuntos_migratorio
+    - node.type.flex_tramites_visa
+    - node.type.flex_unesco
+    - node.type.flex_viceministra
+    - node.type.flex_viceministra_multilaterales
+    - node.type.flexslider_example
+    - node.type.foro
+    - node.type.forum
+    - node.type.galeria_flickr
+    - node.type.galeria_individual
+    - node.type.heart_of_government
+    - node.type.imagen_tramites_y_servicios
+    - node.type.images
+    - node.type.instrumentos
+    - node.type.instrumentos_internacionales
+    - node.type.media_gallery
+    - node.type.news
+    - node.type.newspaper
+    - node.type.node_gallery_gallery
+    - node.type.node_gallery_item
+    - node.type.page
+    - node.type.page_with_map
+    - node.type.panel
+    - node.type.politica_y_asuntos_migratorios
+    - node.type.poll
+    - node.type.procesos_contratacion
+    - node.type.publiques
+    - node.type.regiones
+    - node.type.secciones
+    - node.type.services
+    - node.type.speeches
+    - node.type.statement
+    - node.type.streaming
+    - node.type.tramites_y_servicios
+    - node.type.tratados
+    - node.type.video
+    - node.type.visas
+    - node.type.webform
+    - taxonomy.vocabulary.acordeones
+    - taxonomy.vocabulary.instrumentos_internacionales_e
+    - taxonomy.vocabulary.nationality
+    - taxonomy.vocabulary.palabras_de_la_vicepresidente_y_
+    - taxonomy.vocabulary.passport_type
+    - taxonomy.vocabulary.secciones
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.tramites_servicios
+    - taxonomy.vocabulary.trip_purpose
+    - taxonomy.vocabulary.visas
+    - taxonomy.vocabulary.visas_abc
+    - taxonomy.vocabulary.vocabulary_2
+    - taxonomy.vocabulary.vocabulary_3
+    - taxonomy.vocabulary.vocabulary_4
+    - taxonomy.vocabulary.vocabulary_5
+    - taxonomy.vocabulary.vocabulary_6
+    - taxonomy.vocabulary.vocabulary_9
+  module:
+    - block
+    - comment
+    - contextual
+    - field_ui
+    - filter
+    - imce
+    - media
+    - node
+    - path
+    - redirect
+    - scheduler
+    - search
+    - sitemap
+    - system
+    - taxonomy
+    - toolbar
+    - we_megamenu
+    - youtube
+id: editor
+label: editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access sitemap'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer display modes'
+  - 'administer imce'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer scheduler'
+  - 'administer url aliases'
+  - 'administer we_megamenu'
+  - 'administer youtube'
+  - 'bypass node access'
+  - 'create acordeon content'
+  - 'create advertising_footer content'
+  - 'create alianzapacifico content'
+  - 'create article content'
+  - 'create audio content'
+  - 'create blog content'
+  - 'create book content'
+  - 'create contratacion content'
+  - 'create diary content'
+  - 'create el_archipielago_es_colombia content'
+  - 'create enlaces content'
+  - 'create f_participacion_ciudadana_j content'
+  - 'create faq content'
+  - 'create feed content'
+  - 'create feed_item content'
+  - 'create flex__viceministrorelaciones content'
+  - 'create flex_apostilla content'
+  - 'create flex_biblioteca content'
+  - 'create flex_caribe_galeria content'
+  - 'create flex_casa_marques content'
+  - 'create flex_condecoraciones content'
+  - 'create flex_cultura content'
+  - 'create flex_diplomatica content'
+  - 'create flex_politica_asuntos_migratorio content'
+  - 'create flex_tramites_visa content'
+  - 'create flex_unesco content'
+  - 'create flex_viceministra content'
+  - 'create flex_viceministra_multilaterales content'
+  - 'create flexslider_example content'
+  - 'create foro content'
+  - 'create forum content'
+  - 'create galeria_flickr content'
+  - 'create galeria_individual content'
+  - 'create heart_of_government content'
+  - 'create imagen_tramites_y_servicios content'
+  - 'create images content'
+  - 'create instrumentos content'
+  - 'create instrumentos_internacionales content'
+  - 'create media_gallery content'
+  - 'create news content'
+  - 'create newspaper content'
+  - 'create node_gallery_gallery content'
+  - 'create node_gallery_item content'
+  - 'create page content'
+  - 'create page_with_map content'
+  - 'create panel content'
+  - 'create politica_y_asuntos_migratorios content'
+  - 'create poll content'
+  - 'create procesos_contratacion content'
+  - 'create publiques content'
+  - 'create regiones content'
+  - 'create secciones content'
+  - 'create services content'
+  - 'create speeches content'
+  - 'create statement content'
+  - 'create streaming content'
+  - 'create tramites_y_servicios content'
+  - 'create tratados content'
+  - 'create url aliases'
+  - 'create video content'
+  - 'create visas content'
+  - 'create webform content'
+  - 'delete acordeon revisions'
+  - 'delete advertising_footer revisions'
+  - 'delete alianzapacifico revisions'
+  - 'delete all revisions'
+  - 'delete any advertising_footer content'
+  - 'delete any audio content'
+  - 'delete any blog content'
+  - 'delete any diary content'
+  - 'delete any el_archipielago_es_colombia content'
+  - 'delete any faq content'
+  - 'delete any galeria_flickr content'
+  - 'delete any heart_of_government content'
+  - 'delete any images content'
+  - 'delete any media_gallery content'
+  - 'delete any news content'
+  - 'delete any newspaper content'
+  - 'delete any node_gallery_gallery content'
+  - 'delete any node_gallery_item content'
+  - 'delete any page content'
+  - 'delete any page_with_map content'
+  - 'delete any poll content'
+  - 'delete any publiques content'
+  - 'delete any secciones content'
+  - 'delete any services content'
+  - 'delete any speeches content'
+  - 'delete any statement content'
+  - 'delete any streaming content'
+  - 'delete any tratados content'
+  - 'delete any video content'
+  - 'delete article revisions'
+  - 'delete audio revisions'
+  - 'delete blog revisions'
+  - 'delete book revisions'
+  - 'delete contratacion revisions'
+  - 'delete diary revisions'
+  - 'delete el_archipielago_es_colombia revisions'
+  - 'delete enlaces revisions'
+  - 'delete f_participacion_ciudadana_j revisions'
+  - 'delete faq revisions'
+  - 'delete feed revisions'
+  - 'delete feed_item revisions'
+  - 'delete flex__viceministrorelaciones revisions'
+  - 'delete flex_apostilla revisions'
+  - 'delete flex_biblioteca revisions'
+  - 'delete flex_caribe_galeria revisions'
+  - 'delete flex_casa_marques revisions'
+  - 'delete flex_condecoraciones revisions'
+  - 'delete flex_cultura revisions'
+  - 'delete flex_diplomatica revisions'
+  - 'delete flex_politica_asuntos_migratorio revisions'
+  - 'delete flex_tramites_visa revisions'
+  - 'delete flex_unesco revisions'
+  - 'delete flex_viceministra revisions'
+  - 'delete flex_viceministra_multilaterales revisions'
+  - 'delete flexslider_example revisions'
+  - 'delete foro revisions'
+  - 'delete forum revisions'
+  - 'delete galeria_flickr revisions'
+  - 'delete galeria_individual revisions'
+  - 'delete heart_of_government revisions'
+  - 'delete imagen_tramites_y_servicios revisions'
+  - 'delete images revisions'
+  - 'delete instrumentos revisions'
+  - 'delete instrumentos_internacionales revisions'
+  - 'delete media_gallery revisions'
+  - 'delete news revisions'
+  - 'delete newspaper revisions'
+  - 'delete node_gallery_gallery revisions'
+  - 'delete node_gallery_item revisions'
+  - 'delete own advertising_footer content'
+  - 'delete own audio content'
+  - 'delete own blog content'
+  - 'delete own diary content'
+  - 'delete own el_archipielago_es_colombia content'
+  - 'delete own faq content'
+  - 'delete own galeria_flickr content'
+  - 'delete own heart_of_government content'
+  - 'delete own images content'
+  - 'delete own media_gallery content'
+  - 'delete own news content'
+  - 'delete own newspaper content'
+  - 'delete own node_gallery_gallery content'
+  - 'delete own node_gallery_item content'
+  - 'delete own page content'
+  - 'delete own page_with_map content'
+  - 'delete own poll content'
+  - 'delete own publiques content'
+  - 'delete own secciones content'
+  - 'delete own services content'
+  - 'delete own speeches content'
+  - 'delete own statement content'
+  - 'delete own streaming content'
+  - 'delete own tratados content'
+  - 'delete own video content'
+  - 'delete page revisions'
+  - 'delete page_with_map revisions'
+  - 'delete panel revisions'
+  - 'delete politica_y_asuntos_migratorios revisions'
+  - 'delete poll revisions'
+  - 'delete procesos_contratacion revisions'
+  - 'delete publiques revisions'
+  - 'delete regiones revisions'
+  - 'delete secciones revisions'
+  - 'delete services revisions'
+  - 'delete speeches revisions'
+  - 'delete statement revisions'
+  - 'delete streaming revisions'
+  - 'delete tratados revisions'
+  - 'delete video revisions'
+  - 'delete visas revisions'
+  - 'delete webform revisions'
+  - 'edit any acordeon content'
+  - 'edit any advertising_footer content'
+  - 'edit any alianzapacifico content'
+  - 'edit any article content'
+  - 'edit any audio content'
+  - 'edit any audio media'
+  - 'edit any blog content'
+  - 'edit any book content'
+  - 'edit any contratacion content'
+  - 'edit any diary content'
+  - 'edit any document media'
+  - 'edit any el_archipielago_es_colombia content'
+  - 'edit any enlaces content'
+  - 'edit any f_participacion_ciudadana_j content'
+  - 'edit any faq content'
+  - 'edit any feed content'
+  - 'edit any feed_item content'
+  - 'edit any flex__viceministrorelaciones content'
+  - 'edit any flex_apostilla content'
+  - 'edit any flex_biblioteca content'
+  - 'edit any flex_caribe_galeria content'
+  - 'edit any flex_casa_marques content'
+  - 'edit any flex_condecoraciones content'
+  - 'edit any flex_cultura content'
+  - 'edit any flex_diplomatica content'
+  - 'edit any flex_politica_asuntos_migratorio content'
+  - 'edit any flex_tramites_visa content'
+  - 'edit any flex_unesco content'
+  - 'edit any flex_viceministra content'
+  - 'edit any flex_viceministra_multilaterales content'
+  - 'edit any flexslider_example content'
+  - 'edit any foro content'
+  - 'edit any forum content'
+  - 'edit any galeria_flickr content'
+  - 'edit any galeria_individual content'
+  - 'edit any google_text_to_speech media'
+  - 'edit any heart_of_government content'
+  - 'edit any image media'
+  - 'edit any imagen_tramites_y_servicios content'
+  - 'edit any images content'
+  - 'edit any instrumentos content'
+  - 'edit any instrumentos_internacionales content'
+  - 'edit any media_gallery content'
+  - 'edit any news content'
+  - 'edit any newspaper content'
+  - 'edit any node_gallery_gallery content'
+  - 'edit any node_gallery_item content'
+  - 'edit any page content'
+  - 'edit any page_with_map content'
+  - 'edit any panel content'
+  - 'edit any politica_y_asuntos_migratorios content'
+  - 'edit any poll content'
+  - 'edit any procesos_contratacion content'
+  - 'edit any publiques content'
+  - 'edit any regiones content'
+  - 'edit any remote_video media'
+  - 'edit any secciones content'
+  - 'edit any services content'
+  - 'edit any speeches content'
+  - 'edit any statement content'
+  - 'edit any streaming content'
+  - 'edit any tramites_y_servicios content'
+  - 'edit any tratados content'
+  - 'edit any video content'
+  - 'edit any video media'
+  - 'edit any visas content'
+  - 'edit any webform content'
+  - 'edit own acordeon content'
+  - 'edit own advertising_footer content'
+  - 'edit own alianzapacifico content'
+  - 'edit own article content'
+  - 'edit own audio content'
+  - 'edit own audio media'
+  - 'edit own blog content'
+  - 'edit own book content'
+  - 'edit own comments'
+  - 'edit own contratacion content'
+  - 'edit own diary content'
+  - 'edit own document media'
+  - 'edit own el_archipielago_es_colombia content'
+  - 'edit own enlaces content'
+  - 'edit own f_participacion_ciudadana_j content'
+  - 'edit own faq content'
+  - 'edit own feed content'
+  - 'edit own feed_item content'
+  - 'edit own flex__viceministrorelaciones content'
+  - 'edit own flex_apostilla content'
+  - 'edit own flex_biblioteca content'
+  - 'edit own flex_caribe_galeria content'
+  - 'edit own flex_casa_marques content'
+  - 'edit own flex_condecoraciones content'
+  - 'edit own flex_cultura content'
+  - 'edit own flex_diplomatica content'
+  - 'edit own flex_tramites_visa content'
+  - 'edit own flex_unesco content'
+  - 'edit own flex_viceministra content'
+  - 'edit own flex_viceministra_multilaterales content'
+  - 'edit own flexslider_example content'
+  - 'edit own foro content'
+  - 'edit own forum content'
+  - 'edit own galeria_flickr content'
+  - 'edit own galeria_individual content'
+  - 'edit own google_text_to_speech media'
+  - 'edit own heart_of_government content'
+  - 'edit own image media'
+  - 'edit own imagen_tramites_y_servicios content'
+  - 'edit own images content'
+  - 'edit own instrumentos content'
+  - 'edit own instrumentos_internacionales content'
+  - 'edit own media_gallery content'
+  - 'edit own news content'
+  - 'edit own newspaper content'
+  - 'edit own node_gallery_gallery content'
+  - 'edit own node_gallery_item content'
+  - 'edit own page content'
+  - 'edit own page_with_map content'
+  - 'edit own panel content'
+  - 'edit own politica_y_asuntos_migratorios content'
+  - 'edit own poll content'
+  - 'edit own procesos_contratacion content'
+  - 'edit own publiques content'
+  - 'edit own regiones content'
+  - 'edit own remote_video media'
+  - 'edit own secciones content'
+  - 'edit own services content'
+  - 'edit own speeches content'
+  - 'edit own statement content'
+  - 'edit own streaming content'
+  - 'edit own tratados content'
+  - 'edit own video content'
+  - 'edit own video media'
+  - 'edit own visas content'
+  - 'edit own webform content'
+  - 'edit terms in acordeones'
+  - 'edit terms in instrumentos_internacionales_e'
+  - 'edit terms in nationality'
+  - 'edit terms in palabras_de_la_vicepresidente_y_'
+  - 'edit terms in passport_type'
+  - 'edit terms in secciones'
+  - 'edit terms in tags'
+  - 'edit terms in tramites_servicios'
+  - 'edit terms in trip_purpose'
+  - 'edit terms in visas'
+  - 'edit terms in visas_abc'
+  - 'edit terms in vocabulary_2'
+  - 'edit terms in vocabulary_3'
+  - 'edit terms in vocabulary_4'
+  - 'edit terms in vocabulary_5'
+  - 'edit terms in vocabulary_6'
+  - 'edit terms in vocabulary_9'
+  - 'revert acordeon revisions'
+  - 'revert advertising_footer revisions'
+  - 'revert alianzapacifico revisions'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert audio revisions'
+  - 'revert blog revisions'
+  - 'revert book revisions'
+  - 'revert contratacion revisions'
+  - 'revert diary revisions'
+  - 'revert el_archipielago_es_colombia revisions'
+  - 'revert enlaces revisions'
+  - 'revert f_participacion_ciudadana_j revisions'
+  - 'revert faq revisions'
+  - 'revert feed revisions'
+  - 'revert feed_item revisions'
+  - 'revert flex__viceministrorelaciones revisions'
+  - 'revert flex_apostilla revisions'
+  - 'revert flex_biblioteca revisions'
+  - 'revert flex_caribe_galeria revisions'
+  - 'revert flex_casa_marques revisions'
+  - 'revert flex_condecoraciones revisions'
+  - 'revert flex_cultura revisions'
+  - 'revert flex_diplomatica revisions'
+  - 'revert flex_politica_asuntos_migratorio revisions'
+  - 'revert flex_tramites_visa revisions'
+  - 'revert flex_unesco revisions'
+  - 'revert flex_viceministra revisions'
+  - 'revert flex_viceministra_multilaterales revisions'
+  - 'revert flexslider_example revisions'
+  - 'revert foro revisions'
+  - 'revert forum revisions'
+  - 'revert galeria_flickr revisions'
+  - 'revert galeria_individual revisions'
+  - 'revert heart_of_government revisions'
+  - 'revert imagen_tramites_y_servicios revisions'
+  - 'revert images revisions'
+  - 'revert instrumentos revisions'
+  - 'revert instrumentos_internacionales revisions'
+  - 'revert media_gallery revisions'
+  - 'revert news revisions'
+  - 'revert newspaper revisions'
+  - 'revert node_gallery_gallery revisions'
+  - 'revert node_gallery_item revisions'
+  - 'revert page revisions'
+  - 'revert page_with_map revisions'
+  - 'revert panel revisions'
+  - 'revert poll revisions'
+  - 'revert procesos_contratacion revisions'
+  - 'revert publiques revisions'
+  - 'revert regiones revisions'
+  - 'revert secciones revisions'
+  - 'revert services revisions'
+  - 'revert speeches revisions'
+  - 'revert statement revisions'
+  - 'revert streaming revisions'
+  - 'revert tratados revisions'
+  - 'revert video revisions'
+  - 'revert visas revisions'
+  - 'revert webform revisions'
+  - 'schedule publishing of media'
+  - 'schedule publishing of nodes'
+  - 'schedule publishing of taxonomy_term'
+  - 'search content'
+  - 'use advanced search'
+  - 'use text format full_html_2'
+  - 'view own unpublished content'
+  - 'view scheduled content'
+  - 'view scheduled media'
+  - 'view scheduled taxonomy_term'
+  - 'view the administration theme'

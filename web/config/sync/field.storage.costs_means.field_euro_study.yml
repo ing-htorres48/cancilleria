@@ -1,0 +1,23 @@
+uuid: 69f73d64-2949-4d82-8aed-b6c7066e5519
+langcode: es
+status: true
+dependencies:
+  module:
+    - cancilleria_form
+_core:
+  default_config_hash: N2C6NYvM2aFPymKBP3m05TyOdlG7TXgOFpY0tZVAx1U
+id: costs_means.field_euro_study
+field_name: field_euro_study
+entity_type: costs_means
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

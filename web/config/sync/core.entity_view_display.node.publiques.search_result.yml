@@ -1,0 +1,111 @@
+uuid: 65c8a999-8d6a-43a6-89ae-19c0b305f13a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.publiques.body
+    - field.field.node.publiques.field_attached_publiques
+    - field.field.node.publiques.field_contenido_relacionado
+    - field.field.node.publiques.field_date
+    - field.field.node.publiques.field_image_full_description
+    - field.field.node.publiques.field_imagen_publiques_thumb
+    - field.field.node.publiques.field_images_gallery
+    - field.field.node.publiques.field_images_publiques
+    - field.field.node.publiques.field_opciones_de_titulo
+    - field.field.node.publiques.field_show_in_slide
+    - field.field.node.publiques.field_slideshow_weigth
+    - field.field.node.publiques.field_solicitado
+    - field.field.node.publiques.field_solicitante
+    - field.field.node.publiques.field_weight
+    - node.type.publiques
+  module:
+    - datetime
+    - file
+    - image
+    - user
+id: node.publiques.search_result
+targetEntityType: node
+bundle: publiques
+mode: search_result
+content:
+  field_attached_publiques:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image_full_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imagen_publiques_thumb:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_images_gallery:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_images_publiques:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_slideshow_weigth:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_contenido_relacionado: true
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_solicitado: true
+  field_solicitante: true
+  field_weight: true
+  langcode: true

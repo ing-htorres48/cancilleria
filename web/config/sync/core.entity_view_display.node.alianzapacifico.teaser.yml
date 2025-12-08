@@ -1,0 +1,33 @@
+uuid: 8fef24fd-324f-4c1d-9945-d0ad24865c97
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.alianzapacifico.body
+    - field.field.node.alianzapacifico.field_imagenes
+    - node.type.alianzapacifico
+  module:
+    - text
+    - user
+id: node.alianzapacifico.teaser
+targetEntityType: node
+bundle: alianzapacifico
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagenes: true
+  langcode: true

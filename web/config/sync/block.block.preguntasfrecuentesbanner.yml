@@ -1,0 +1,30 @@
+uuid: b2ad54ec-9f5b-43c1-b3fe-de721f801466
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dd0430cf-fa3b-479f-889b-829b13d9f201'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: preguntasfrecuentesbanner
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 114
+provider: null
+plugin: 'block_content:dd0430cf-fa3b-479f-889b-829b13d9f201'
+settings:
+  id: 'block_content:dd0430cf-fa3b-479f-889b-829b13d9f201'
+  label: 'Preguntas Frecuentes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/help/faq/cnu\r\n/help/faq/asistencia-connacionales\r\n/help/faq/passports\r\n/help/faq/visas\r\n/help/faq/Nationality\r\n/help/faq/cooperation\r\n/help/faq/consulates\r\n"

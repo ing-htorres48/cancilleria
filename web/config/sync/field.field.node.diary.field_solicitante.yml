@@ -1,0 +1,19 @@
+uuid: 16b76194-7000-4151-837e-292caea5ddd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solicitante
+    - node.type.diary
+id: node.diary.field_solicitante
+field_name: field_solicitante
+entity_type: node
+bundle: diary
+label: Solicitante
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

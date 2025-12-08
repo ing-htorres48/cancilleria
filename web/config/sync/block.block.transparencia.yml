@@ -1,0 +1,30 @@
+uuid: e00e3622-d529-462b-826b-1ee537a94ac9
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ce6e5688-44ef-4aeb-afdd-96a161374e6f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: transparencia
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 174
+provider: null
+plugin: 'block_content:ce6e5688-44ef-4aeb-afdd-96a161374e6f'
+settings:
+  id: 'block_content:ce6e5688-44ef-4aeb-afdd-96a161374e6f'
+  label: Transparencia
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /transparencia-acceso-informacion-publica-0

@@ -1,0 +1,28 @@
+uuid: 8984b0c3-74ad-4805-9ea6-09b13c7837bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_viceministra
+    - node.type.flex_viceministra
+id: node.flex_viceministra.field_image_viceministra
+field_name: field_image_viceministra
+entity_type: node
+bundle: flex_viceministra
+label: image_viceministra
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      flex_viceministra: flex_viceministra
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

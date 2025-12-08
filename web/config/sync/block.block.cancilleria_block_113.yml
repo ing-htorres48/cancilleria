@@ -1,0 +1,33 @@
+uuid: 581042fd-cce1-4f31-937f-8f4752168d36
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:81188f83-c4bb-42b3-80a0-7a5dd79dccc5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_113
+theme: bartik
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:81188f83-c4bb-42b3-80a0-7a5dd79dccc5'
+settings:
+  id: 'block_content:81188f83-c4bb-42b3-80a0-7a5dd79dccc5'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /tramites_servicios/apostilla_legalizacion_en_linea
+      /tramites_servicios/apostilla_legalizacion_en_linea/*
+      /tramites_servicios/apostilla_legalizacion_en_linea*

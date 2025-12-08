@@ -1,0 +1,8 @@
+uuid: 019d5805-42da-4225-9ad9-5fe9a8ee18c5
+langcode: es
+status: true
+dependencies: {  }
+id: tratados
+label: Tratados
+description: ''
+locked: false

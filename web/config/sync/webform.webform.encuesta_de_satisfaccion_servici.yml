@@ -1,0 +1,394 @@
+uuid: c61ad2d6-003a-4fbd-95d2-93ef281349aa
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1925
+template: false
+archive: false
+id: encuesta_de_satisfaccion_servici
+title: 'ENCUESTA UNIVERSAL DE ATENCIÓN AL CIUDADANO MRE'
+description: ''
+category: ''
+elements: |-
+  processed_text:
+    '#type': processed_text
+    '#text': |
+      <h3>Su opinión es importante para la Cancillería. ¡Ayúdenos a mejorar completando esta encuesta!&nbsp;<br />
+      &nbsp;</h3>
+    '#format': full_html_2
+  1_cual_oficina_o_mision_de_colombia_lo_atendio_:
+    '#type': select
+    '#title': '1. ¿Cuál oficina o misión de Colombia lo atendió?'
+    '#options':
+      colombiaciac: 'CIAC (Voz, Redes sociales, Video llamada y correo electrónico)'
+      colombiabogotacalle12c: 'Colombia Bogotá Centro Calle 12C'
+      colombiabogotacalle98: 'Colombia Bogotá Calle 98'
+      colombiabogotapalaciosancarlos: 'Colombia Bogotá Palacio San Carlos'
+      emiratosarabesabudhabi: 'Consulado de Colombia en Abu Dhabi'
+      ghanaacra: 'Consulado de Colombia en Acra'
+      paisesbajosamsterdam: 'Consulado de Colombia en Amsterdam'
+      turquiaankara: 'Consulado de Colombia en Ankara'
+      chileantofagasta: 'Consulado de Colombia en Antofagasta'
+      argeliaargel: 'Consulado de Colombia en Argel'
+      paraguayasuncion: 'Consulado de Colombia en Asunción'
+      estadosunidosatlanta: 'Consulado de Colombia en Atlanta'
+      nuevazelandaauckland: 'Consulado de Colombia en Auckland'
+      azerbaiyanbaku: 'Consulado de Colombia en Bakú'
+      tailandiabangkok: 'Consulado de Colombia en Bangkok'
+      espanabarcelona: 'Consulado de Colombia en Barcelona'
+      venezuelabarinas: 'Consulado de Colombia en Barinas'
+      venezuelabarquisimeto: 'Consulado de Colombia en Barquisimeto'
+      chinabeijing: 'Consulado de Colombia en Beijing'
+      libanobeirut: 'Consulado de Colombia en Beirut'
+      alemaniaberlin: 'Consulado de Colombia en Berlín'
+      suizaberna: 'Consulado de Colombia en Berna'
+      espanabilbao: 'Consulado de Colombia en Bilbao'
+      estadosunidosboston: 'Consulado de Colombia en Boston'
+      brasilbrasilia: 'Consulado de Colombia en Brasilia'
+      belgicabruselas: 'Consulado de Colombia en Bruselas'
+      hungriabudapest: 'Consulado de Colombia en Budapest'
+      argentinabuenosaires: 'Consulado de Colombia en Buenos Aires'
+      canadacalgary: 'Consulado de Colombia en Calgary'
+      australiacanberra: 'Consulado de Colombia en Canberra'
+      mexicocancun: 'Consulado de Colombia en Cancún'
+      venezuelacaracas: 'Consulado de Colombia en Caracas'
+      estadosunidoschicago: 'Consulado de Colombia en Chicago'
+      panamapanama: 'Consulado de Colombia en Ciudad de Panamá'
+      panamacolon: 'Consulado de Colombia en Colón'
+      dinamarcacopenhague: 'Consulado de Colombia en Copenhague'
+      irlandadublin: 'Consulado de Colombia en Dublin'
+      venezuelaenelamparo: 'Consulado de Colombia en El Amparo'
+      egiptoelcairo: 'Consulado de Colombia en el Cairo'
+      ecuadoresmeraldas: 'Consulado de Colombia en Esmeraldas'
+      sueciaestocolmo: 'Consulado de Colombia en Estocolmo'
+      filipinasmanila: 'Consulado de Colombia en Filipinas - Manila'
+      alemaniafrankfurt: 'Consulado de Colombia en Frankfurt'
+      mexicoguadalajara: 'Consulado de Colombia en Guadalajara'
+      chinaguangzhou: 'Consulado de Colombia en Guangzhou'
+      guatemalaguatemala: 'Consulado de Colombia en Guatemala'
+      ecuadorguayaquil: 'Consulado de Colombia en Guayaquil'
+      vietnamhanoi: 'Consulado de Colombia en Hanoi'
+      finlandiahelsinky: 'Consulado de Colombia en Helsinki'
+      hongkonghongkong: 'Consulado de Colombia en Hong Kong'
+      estadosunidoshouston: 'Consulado de Colombia en Houston'
+      peruiquitos: 'Consulado de Colombia en Iquitos'
+      indonesiajakarta: 'Consulado de Colombia en Jakarta'
+      panamajaque: 'Consulado de Colombia en Jaque'
+      jamaicakingston: 'Consulado de Colombia en Kingston'
+      malasiakualalampur: 'Consulado de Colombia en Kuala Lumpur'
+      cubalahabana: 'Consulado de Colombia en La Habana'
+      bolivialapaz: 'Consulado de Colombia en La Paz'
+      perulima: 'Consulado de Colombia en Lima'
+      portugallisboa: 'Consulado de Colombia en Lisboa'
+      reinounidolondres: 'Consulado de Colombia en Londres'
+      estadosunidoslosangeles: 'Consulado de Colombia en Los Ángeles'
+      venezuelamachiques: 'Consulado de Colombia en Machiques'
+      espanamadrid: 'Consulado de Colombia en Madrid'
+      nicaraguamanagua: 'Consulado de Colombia en Managua'
+      brasilmanaos: 'Consulado de Colombia en Manaos'
+      venezuelamaracaibo: 'Consulado de Colombia en Maracaibo'
+      venezuelamerida: 'Consulado de Colombia en Mérida'
+      mexicomexico: 'Consulado de Colombia en México'
+      estadosunidosmiami: 'Consulado de Colombia en Miami'
+      italiamilan: 'Consulado de Colombia en Milán'
+      uruguaymontevideo: 'Consulado de Colombia en Montevideo'
+      canadamontreal: 'Consulado de Colombia en Montreal'
+      federacionderusiamoscu: 'Consulado de Colombia en Moscu'
+      kenianairobi: 'Consulado de Colombia en Nairobi'
+      estadosunidosnewark: 'Consulado de Colombia en Newark'
+      indianuevadelhi: 'Consulado de Colombia en Nueva Delhi'
+      ecuadornuevaloja: 'Consulado de Colombia en Nueva Loja'
+      estadosunidosnuevayork: 'Consulado de Colombia en Nueva York'
+      estadosunidosorlando: 'Consulado de Colombia en Orlando'
+      noruegaoslo: 'Consulado de Colombia en Oslo'
+      canadaottawa: 'Consulado de Colombia en Ottawa'
+      espanapalmademallorca: 'Consulado de Colombia en Palma De Mallorca'
+      espanapalmasgrancanaria: 'Consulado de Colombia en Palmas de Gran Canaria'
+      franciaparis: 'Consulado de Colombia en Paris'
+      sudafricapretoria: 'Consulado de Colombia en Pretoria'
+      venezuelapuertoayacucho: 'Consulado de Colombia en Puerto Ayacucho'
+      venezuelapuertodelacruz: 'Consulado de Colombia en Puerto de la Cruz'
+      trinidadytobagopuertoespana: 'Consulado de Colombia en Puerto España'
+      panamapuertoobaldia: 'Consulado de Colombia en Puerto Obaldia'
+      venezuelapuertoordaz: 'Consulado de Colombia en Puerto Ordaz'
+      ecuadorquito: 'Consulado de Colombia en Quito'
+      marruecosrabat: 'Consulado de Colombia en Rabat'
+      italiaroma: 'Consulado de Colombia en Roma'
+      venezuelasanantoniodeltachira: 'Consulado de Colombia en San Antonio del Táchira'
+      venezuelasancarlosdezulia: 'Consulado de Colombia en San Carlos de Zulia'
+      venezuelasancristobal: 'Consulado de Colombia en San Cristóbal'
+      venezuelasanfernandodeatabapo: 'Consulado de Colombia en San Fernando de Atabapo'
+      estadosunidossanfrancisco: 'Consulado de Colombia en San Francisco'
+      costaricasanjose: 'Consulado de Colombia en San José'
+      estadosunidossanjuandepuertorico: 'Consulado de Colombia en San Juan de Puerto Rico'
+      elsalvadorelsalvador: 'Consulado de Colombia en San Salvador'
+      chilesantiagodechile: 'Consulado de Colombia en Santiago'
+      republicadominicanasantodomingo: 'Consulado de Colombia en Santo Domingo'
+      brasilsaopaulo: 'Consulado de Colombia en Sao Paulo'
+      coreadelsurseul: 'Consulado de Colombia en Seul'
+      espanasevilla: 'Consulado de Colombia en Sevilla'
+      chinashanghai: 'Consulado de Colombia en Shanghai'
+      singapursingapur: 'Consulado de Colombia en Singapur'
+      brasiltabatinga: 'Consulado de Colombia en Tabatinga'
+      hondurastegucigalpa: 'Consulado de Colombia en Tegucigalpa'
+      israeltelaviv: 'Consulado de Colombia en Tel Aviv'
+      japontokio: 'Consulado de Colombia en Tokio'
+      canadatoronto: 'Consulado de Colombia en Toronto'
+      ecuadortulcan: 'Consulado de Colombia en Tulcán'
+      espanavalencia: 'Consulado de Colombia en Valencia'
+      curacaowillemstad: 'Consulado de Colombia en Willemstad - Curazao'
+      venezuelavalencia: 'Consulado de Colombia en Valencia Venezuela'
+      canadavancouver: 'Consulado de Colombia en Vancouver'
+      poloniavarsovia: 'Consulado de Colombia en Varsovia'
+      austriaviena: 'Consulado de Colombia en Viena'
+      estadosunidoswashington: 'Consulado de Colombia en Washington'
+      arubaaruba: 'Aruba Aruba'
+      australiasidney: 'Australia Sidney'
+      ecuadorsantodomingoloscolorados: 'Ecuador Santo Domingo los Colorados'
+    '#select2': true
+    '#required': true
+  2_solicitud_tramite_o_servicio:
+    '#type': radios
+    '#title': "2.\tSolicitud, trámite o servicio"
+    '#options':
+      Visas: Visas
+      Pasaporte: Pasaporte
+      'Apostilla y Legalización': 'Apostilla y Legalización'
+      Refugio: Refugio
+      Nacionalidad: Nacionalidad
+      'Ley Retorno': 'Ley Retorno'
+      'Actos Notariales': 'Actos Notariales'
+      Registraduría: Registraduría
+      'Cooperación Judicial': 'Cooperación Judicial'
+      Otro: Otro
+    '#required': true
+  2_por_cual_canal_se_comunico_con_el_ministerio_de_relaciones_ext:
+    '#type': radios
+    '#title': "3.\t¿Por cuál canal se comunicó con el Ministerio de Relaciones Exteriores? "
+    '#options':
+      1: 'Canal de voz.'
+      2: 'Correo Electrónico / Buzón Virtual.'
+      3: 'Chat Asistencias.'
+      4: ChatBot.
+      5: 'Videollamada. '
+      6: 'Redes Sociales.'
+      7: ' Whatsapp / Telegram / Instagram.'
+      8: 'Correspondencia Física.'
+      9: 'Atención Presencial.'
+    '#required': true
+  3_fue_atendida_su_solicitud_tramite_o_servicio_por_parte_de_la_e:
+    '#type': radios
+    '#title': "4.\t¿Fue atendida su solicitud, trámite o servicio por parte de la Entidad?"
+    '#options':
+      1: Si
+      0: 'No'
+    '#required': true
+  4_el_tiempo_de_respuesta_a_su_solicitud_tramite_o_servicio_fue_r:
+    '#type': radios
+    '#title': '5. ¿El tiempo de respuesta a su solicitud, trámite o servicio fue razonable?'
+    '#options':
+      1: Si
+      0: 'No'
+    '#required': true
+  5_se_siente_satisfecho_por_la_atencion_recibida_por_parte_del_fu:
+    '#type': radios
+    '#title': "6.\t¿Se siente satisfecho por la atención recibida por parte del funcionario del Ministerio (Embajada, Consulado, Misión ante Organizaciones, Cancillería Colombia y/o CIAC?"
+    '#options':
+      3: Satisfecho
+      2: 'Medianamente satisfecho '
+      1: 'No satisfecho '
+    '#required': true
+  6_tiene_alguna_sugerencia_para_mejorar_nuestro_servicio_:
+    '#type': textarea
+    '#title': "7.\t¿Tiene alguna sugerencia para mejorar nuestro servicio? "
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Enviar
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: form
+  ajax_progress_type: throbber
+  ajax_effect: fade
+  ajax_speed: 1500
+  page: true
+  page_submit_path: /encuesta-satisfaccion-servicio-ciudadano
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: true
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: true
+  form_disable_back: true
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - repositorios
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

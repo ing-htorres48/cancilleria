@@ -1,0 +1,23 @@
+uuid: e5c0625a-7855-4153-9398-45c17721edec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.foro
+  module:
+    - text
+id: node.foro.body
+field_name: body
+entity_type: node
+bundle: foro
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

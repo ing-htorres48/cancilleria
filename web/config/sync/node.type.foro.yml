@@ -1,0 +1,18 @@
+uuid: fffab9b6-eff9-4d96-bb37-2ac96ffd3153
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Foro
+type: foro
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

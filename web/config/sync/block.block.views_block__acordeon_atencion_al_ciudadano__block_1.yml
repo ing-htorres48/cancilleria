@@ -1,0 +1,26 @@
+uuid: d6c85a0e-640c-406e-b697-7021c5f385dd
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_atencion_al_ciudadano__block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 15
+provider: null
+plugin: 'views_block:acordeon_atencion_al_ciudadano_-block_1'
+settings:
+  id: 'views_block:acordeon_atencion_al_ciudadano_-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /plan-anticorrupcion-y-atencion-al-ciudadano

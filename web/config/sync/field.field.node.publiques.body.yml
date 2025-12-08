@@ -1,0 +1,23 @@
+uuid: 899bc074-5976-45dc-a210-1430f78c25e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publiques
+  module:
+    - text
+id: node.publiques.body
+field_name: body
+entity_type: node
+bundle: publiques
+label: Cuerpo
+description: 'Publica un Comunicado Official.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

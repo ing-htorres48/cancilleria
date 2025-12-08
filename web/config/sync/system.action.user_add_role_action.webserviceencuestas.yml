@@ -1,0 +1,14 @@
+uuid: 40456351-b1d9-4e3e-ab8e-823868c11973
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.webserviceencuestas
+  module:
+    - user
+id: user_add_role_action.webserviceencuestas
+label: 'Añade el rol webserviceencuestas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: webserviceencuestas

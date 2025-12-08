@@ -1,0 +1,26 @@
+uuid: eac34565-f1f7-4148-b8d5-4dd2e23c6607
+langcode: es
+status: true
+dependencies:
+  config:
+    - crop.type.generic
+  module:
+    - crop
+name: 920x400
+label: 920x400
+effects:
+  ccfadede-8faf-4b29-b14c-04f87e175f85:
+    uuid: ccfadede-8faf-4b29-b14c-04f87e175f85
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 920
+      height: 420
+      anchor: left-top
+  25cba235-45f6-4559-9062-201c69fbcf7c:
+    uuid: 25cba235-45f6-4559-9062-201c69fbcf7c
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: generic
+      automatic_crop_provider: null

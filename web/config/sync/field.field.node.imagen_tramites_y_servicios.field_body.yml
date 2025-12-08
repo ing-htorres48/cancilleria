@@ -1,0 +1,21 @@
+uuid: 8dc2e99b-c239-4002-b098-841c78fd727d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.imagen_tramites_y_servicios
+  module:
+    - text
+id: node.imagen_tramites_y_servicios.field_body
+field_name: field_body
+entity_type: node
+bundle: imagen_tramites_y_servicios
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

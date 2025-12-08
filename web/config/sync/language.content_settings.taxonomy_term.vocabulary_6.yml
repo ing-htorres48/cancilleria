@@ -1,0 +1,16 @@
+uuid: 367cde73-b8ea-46f7-b0ec-516782ae51bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vocabulary_6
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.vocabulary_6
+target_entity_type_id: taxonomy_term
+target_bundle: vocabulary_6
+default_langcode: und
+language_alterable: false

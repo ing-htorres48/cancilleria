@@ -1,0 +1,18 @@
+uuid: 39717544-e512-4ada-90be-e2985ea39e94
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.diary
+id: node.diary.title
+field_name: title
+entity_type: node
+bundle: diary
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

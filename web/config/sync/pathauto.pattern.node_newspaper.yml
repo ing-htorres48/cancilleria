@@ -1,0 +1,21 @@
+uuid: 3fa85684-a0c0-4c76-9020-114228ffda8a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_newspaper
+label: 'Contenido - Periódico San Carlos'
+type: 'canonical_entities:node'
+pattern: 'newsroom/sancarlos/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      newspaper: newspaper
+selection_logic: and
+weight: 0
+relationships: {  }

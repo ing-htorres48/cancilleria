@@ -1,0 +1,20 @@
+uuid: ee220fa9-4600-4825-ade4-488db5254d4e
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mitema
+id: mitema_system_main
+theme: mitema
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

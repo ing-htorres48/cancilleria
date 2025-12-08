@@ -1,0 +1,30 @@
+uuid: ea82986d-c4b0-43ad-bdd7-fc4f6cd510cd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0d7fa277-af70-4e9a-ba8b-6605be55de07'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: costosmediosdepagoyoficinasdeatencion
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 129
+provider: null
+plugin: 'block_content:0d7fa277-af70-4e9a-ba8b-6605be55de07'
+settings:
+  id: 'block_content:0d7fa277-af70-4e9a-ba8b-6605be55de07'
+  label: 'Costos, medios de pago y oficinas de atención'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/visa/costos-medios-pago-oficinas-atencion

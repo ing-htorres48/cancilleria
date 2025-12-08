@@ -1,0 +1,10 @@
+uuid: 3e47b1fc-aec4-4dec-b703-26b491e4a2f1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.email_html
+label: email_html
+targetEntityType: node
+cache: true

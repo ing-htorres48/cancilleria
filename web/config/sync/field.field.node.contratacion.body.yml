@@ -1,0 +1,23 @@
+uuid: 4da0dab5-f8ca-43f4-9a86-0c148db41ab3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contratacion
+  module:
+    - text
+id: node.contratacion.body
+field_name: body
+entity_type: node
+bundle: contratacion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

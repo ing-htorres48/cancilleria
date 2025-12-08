@@ -1,0 +1,33 @@
+uuid: 23965ab8-84da-430c-925e-63b3c31ebdc5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flex_unesco.body
+    - field.field.node.flex_unesco.field_img_unesco
+    - node.type.flex_unesco
+  module:
+    - text
+    - user
+id: node.flex_unesco.teaser
+targetEntityType: node
+bundle: flex_unesco
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_img_unesco: true
+  langcode: true

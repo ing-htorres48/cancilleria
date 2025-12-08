@@ -1,0 +1,30 @@
+uuid: 7b5f4d69-1b89-4370-9151-3e48c2ec87e0
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ef851215-1cd4-4c9b-b826-a11b36ce3c99'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: noticiasrelacionadas
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 30
+provider: null
+plugin: 'block_content:ef851215-1cd4-4c9b-b826-a11b36ce3c99'
+settings:
+  id: 'block_content:ef851215-1cd4-4c9b-b826-a11b36ce3c99'
+  label: 'Noticias Relacionadas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom

@@ -1,0 +1,18 @@
+uuid: 250cca25-bda0-45c0-b311-0e95d9b4791c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.images
+id: node.images.title
+field_name: title
+entity_type: node
+bundle: images
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

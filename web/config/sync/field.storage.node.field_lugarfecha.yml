@@ -1,0 +1,21 @@
+uuid: 0c87af0e-f4e7-4531-a70b-7459f8632029
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_lugarfecha
+field_name: field_lugarfecha
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

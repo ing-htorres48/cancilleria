@@ -1,0 +1,30 @@
+uuid: 5167dfce-6678-4906-a35a-d432509a3b34
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b9dea5bc-c24b-4e14-91a1-2c37720597fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_92
+theme: bartik
+region: content
+weight: 10
+provider: null
+plugin: 'block_content:b9dea5bc-c24b-4e14-91a1-2c37720597fa'
+settings:
+  id: 'block_content:b9dea5bc-c24b-4e14-91a1-2c37720597fa'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/embajadas_consulados

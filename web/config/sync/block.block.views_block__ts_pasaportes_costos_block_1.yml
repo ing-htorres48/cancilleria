@@ -1,0 +1,29 @@
+uuid: ff4ccbf7-8668-4414-bbd6-d095af3ba53b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.ts_pasaportes_costos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__ts_pasaportes_costos_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 152
+provider: null
+plugin: 'views_block:ts_pasaportes_costos-block_1'
+settings:
+  id: 'views_block:ts_pasaportes_costos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/pasaportes/costos

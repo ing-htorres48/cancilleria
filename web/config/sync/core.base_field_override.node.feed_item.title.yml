@@ -1,0 +1,18 @@
+uuid: 55d24e59-3566-4f84-93df-4862793d6079
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.feed_item
+id: node.feed_item.title
+field_name: title
+entity_type: node
+bundle: feed_item
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,247 @@
+_core:
+  default_config_hash: B_6w2RYqF6vEA_QZ8-0LRUI0AqnS4NZuQqlO9rXwfJs
+langcode: es
+determine_menu: true
+disable_admin_page: true
+append_current_page: true
+current_page_as_link: false
+stop_on_first_match: false
+append_member_page: false
+member_page_as_link: false
+remove_home: false
+add_home: true
+front_title: 1
+exclude_empty_url: false
+exclude_disabled_menu_items: false
+derived_active_trail: false
+menu_breadcrumb_menus:
+  main:
+    enabled: 1
+    weight: -10
+    taxattach: 0
+    langhandle: 0
+  algunas-iniciativas:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  organismos-regionales:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  account:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  normatividad-aplicable-al-minist:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  noticias-unesco:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  nuestro-pais:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  onu:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  organismos-intergubernamentales:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  organismos-multilaterales:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  footer:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  menu-direccionamiento-estrat-gic:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  preguntas-frecuentes:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  regiones:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  sala-de-prensa:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  sala-de-prensa---fechas:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  sedes:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  tratados:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  tratados-2:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  tramites-y-servicios:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  mecanismos-de-concertacion-e-int:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  ministerio-gestion:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  academia-diplomatica:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  atencion-al-ciudadano:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  admin:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  revisiones-abierta-opciones-:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  algunas-iniciativas-y-programas-:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  asuntos-ambientales:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  asuntos-bilaterales:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  asuntos-culturales-educativos-y-:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  asuntos-esa:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  asuntos-juridicos-internacionale:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  asuntos-politicos:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  features:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  flexslider-example:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  colombia-nos-une:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  comision-unesco:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  consejo-de-seguridad:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  convocatorias:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  cooperacion-internacional-:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  cooperacion-internacional:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  derechos-humanos-y-derecho-inter:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  devel:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  direccion-para-el-desarrollo-:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0
+  prueba:
+    enabled: 0
+    weight: 0
+    taxattach: 0
+    langhandle: 0

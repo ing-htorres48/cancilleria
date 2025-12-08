@@ -1,0 +1,29 @@
+uuid: 6ba93bea-fa81-40ee-b90d-db9ea3cf4eb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.glosario_terminos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__glosario_terminos_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 125
+provider: null
+plugin: 'views_block:glosario_terminos-block_1'
+settings:
+  id: 'views_block:glosario_terminos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/glossary333

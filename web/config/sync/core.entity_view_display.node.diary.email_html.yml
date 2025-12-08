@@ -1,0 +1,49 @@
+uuid: 7a11dfcc-6d83-47d7-bc09-4585a46b7d62
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_html
+    - field.field.node.diary.body
+    - field.field.node.diary.field_country_field
+    - field.field.node.diary.field_diary_date
+    - field.field.node.diary.field_peso
+    - field.field.node.diary.field_place_field
+    - field.field.node.diary.field_solicitado
+    - field.field.node.diary.field_solicitante
+    - node.type.diary
+  module:
+    - user
+id: node.diary.email_html
+targetEntityType: node
+bundle: diary
+mode: email_html
+content:
+  field_country_field:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_place_field:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_diary_date: true
+  field_peso: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true

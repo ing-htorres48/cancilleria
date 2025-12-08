@@ -1,0 +1,48 @@
+uuid: 5ec179ae-15ff-43da-b3e8-1e4cfca152c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.acordeon.body
+    - field.field.node.acordeon.field_categoria
+    - field.field.node.acordeon.field_peso
+    - node.type.acordeon
+  module:
+    - text
+    - user
+id: node.acordeon.default
+targetEntityType: node
+bundle: acordeon
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_peso:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

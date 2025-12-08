@@ -1,0 +1,31 @@
+uuid: 6d272f8a-c726-40bb-8948-b7a5a6f98676
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.blog.body
+    - field.field.node.blog.field_blog_imagen_post
+    - node.type.blog
+  module:
+    - text
+    - user
+id: node.blog.default
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_blog_imagen_post: true
+  langcode: true

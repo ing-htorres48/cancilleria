@@ -1,0 +1,23 @@
+uuid: dbeb69d4-b02e-4682-a938-2cbf9ccaf158
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex__viceministrorelaciones
+  module:
+    - text
+id: node.flex__viceministrorelaciones.body
+field_name: body
+entity_type: node
+bundle: flex__viceministrorelaciones
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

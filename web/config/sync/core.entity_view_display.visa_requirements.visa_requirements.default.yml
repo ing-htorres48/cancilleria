@@ -1,0 +1,66 @@
+uuid: 4941b792-f9f2-43fc-b25e-0c4f1cabac81
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.visa_requirements.visa_requirements.field_answer
+    - field.field.visa_requirements.visa_requirements.field_nationality
+    - field.field.visa_requirements.visa_requirements.field_passport_type
+    - field.field.visa_requirements.visa_requirements.field_trip_purpose
+  module:
+    - cancilleria_form
+    - text
+    - user
+id: visa_requirements.visa_requirements.default
+targetEntityType: visa_requirements
+bundle: visa_requirements
+mode: default
+content:
+  field_answer:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_nationality:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_passport_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_trip_purpose:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

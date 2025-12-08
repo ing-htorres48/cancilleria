@@ -1,0 +1,42 @@
+uuid: 6ac724e1-327c-4cb3-9ee0-1e39c6593f22
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.flex_cultura.body
+    - field.field.node.flex_cultura.field_img_cult
+    - node.type.flex_cultura
+  module:
+    - image
+    - text
+    - user
+id: node.flex_cultura.default
+targetEntityType: node
+bundle: flex_cultura
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_img_cult:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

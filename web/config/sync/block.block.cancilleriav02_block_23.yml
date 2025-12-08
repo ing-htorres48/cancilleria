@@ -1,0 +1,25 @@
+uuid: d1df8f19-e2a5-4731-8672-87dfd4b021ee
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:fc39b58a-005f-4e99-a90c-bdb28c4b9bcf'
+  module:
+    - block_content
+  theme:
+    - CancilleriaV02
+id: cancilleriav02_block_23
+theme: CancilleriaV02
+region: ''
+weight: -46
+provider: null
+plugin: 'block_content:fc39b58a-005f-4e99-a90c-bdb28c4b9bcf'
+settings:
+  id: 'block_content:fc39b58a-005f-4e99-a90c-bdb28c4b9bcf'
+  label: '<none>'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: bd0d68c4-8643-4d91-b56f-bed15a85baea
+langcode: es
+status: true
+dependencies: {  }
+name: 'Galería de Video'
+vid: vocabulary_3
+description: 'Términos relacionados de la galería de Videos.'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: f57d3ea2-5d27-408c-bcf4-dcacf2e13d4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.organismos-regionales
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: organismosregionales
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 23
+provider: null
+plugin: 'system_menu_block:organismos-regionales'
+settings:
+  id: 'system_menu_block:organismos-regionales'
+  label: 'Organismos Regionales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/regional\r\n/international/regional/economic\r\n/international/regional/amazon\r\n/international/regional/idb\r\n/international/regional/aladi\r\n/seminario-nacional-otca"

@@ -1,0 +1,24 @@
+uuid: 202f538a-fbce-4f9f-b898-fb8c00ae5078
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: politicaexterior
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 33
+provider: null
+plugin: 'tb_megamenu_menu_block:menu-pol-tica-exterior'
+settings:
+  id: 'tb_megamenu_menu_block:menu-pol-tica-exterior'
+  label: 'Menu Política Exterior'
+  label_display: '0'
+  provider: tb_megamenu
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "international/*\r\ntramites_servicios/*\r\nprocedures_services/*\r\nhelp/faq/*\r\ninternacional/politica/*\r\nministry/planeacion/*\r\nbiblioteca/*\r\nbiblioteca\r\nministry/vice-minister-of-foreign-affairs\r\nministry/vice-minister-for-multilateral-affairs\r\nministerio/viceministra-asuntos-multilaterales\r\nministerio/viceministro-relaciones-exteriores\r\nministerio/secretario-general\r\ncolombia/nuestro-pais\r\ncolombia/nuestro-pais/*\r\nministry/strategy/rendicioncuentas\r\nespeciales-multimedia\r\ncasos-colombia-cij\r\ncasos-colombia-cij/*"

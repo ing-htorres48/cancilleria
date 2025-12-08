@@ -1,0 +1,21 @@
+uuid: e4ad561e-ea7f-4984-9c45-ff3df30fed2e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_services
+label: 'Contenido - Trámites y Servicios'
+type: 'canonical_entities:node'
+pattern: 'tt_ss/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      services: services
+selection_logic: and
+weight: 0
+relationships: {  }

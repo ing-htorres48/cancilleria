@@ -1,0 +1,18 @@
+uuid: 9b7c84ff-4c78-4197-8c79-0cd69e961c51
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_show_week
+field_name: field_show_week
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

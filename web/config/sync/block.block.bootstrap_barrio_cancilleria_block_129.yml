@@ -1,0 +1,30 @@
+uuid: f254b95f-7c18-405b-b49f-8dc56412a0a1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2a404c36-4fd1-4aa7-923c-f409022dd10a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_129
+theme: bootstrap_barrio
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:2a404c36-4fd1-4aa7-923c-f409022dd10a'
+settings:
+  id: 'block_content:2a404c36-4fd1-4aa7-923c-f409022dd10a'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /footer/academy/embassador-updates

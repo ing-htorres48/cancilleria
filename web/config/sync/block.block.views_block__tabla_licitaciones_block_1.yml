@@ -1,0 +1,29 @@
+uuid: 8a57e037-4d03-4317-bafb-2159031ce8fa
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.tabla_licitaciones
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__tabla_licitaciones_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 167
+provider: null
+plugin: 'views_block:tabla_licitaciones-block_1'
+settings:
+  id: 'views_block:tabla_licitaciones-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ministry/contracting/procesos

@@ -1,0 +1,23 @@
+uuid: 960de6f2-678b-49d8-b83c-229676b47d7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_slide
+    - node.type.streaming
+id: node.streaming.field_show_in_slide
+field_name: field_show_in_slide
+entity_type: node
+bundle: streaming
+label: 'Aparece en las diapositivas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

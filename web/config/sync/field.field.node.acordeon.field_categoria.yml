@@ -1,0 +1,26 @@
+uuid: cf03ba36-c840-4a65-bdcd-f2a62ed44233
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.acordeon
+    - taxonomy.vocabulary.acordeones
+id: node.acordeon.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: acordeon
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      acordeones: acordeones
+    sort:
+      field: _none
+field_type: entity_reference

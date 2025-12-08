@@ -1,0 +1,16 @@
+uuid: e665b1cb-a09b-44af-b481-dffb948eab28
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.speeches
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.speeches
+target_entity_type_id: node
+target_bundle: speeches
+default_langcode: current_interface
+language_alterable: true

@@ -1,0 +1,27 @@
+uuid: e2567f8c-94d7-4897-b607-75bb0133ebb2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.webform
+  module:
+    - file
+id: node.webform.field_file
+field_name: field_file
+entity_type: node
+bundle: webform
+label: File
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: png
+  max_filesize: ''
+  description_field: false
+field_type: file

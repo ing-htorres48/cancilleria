@@ -1,0 +1,25 @@
+uuid: 54fd092c-c499-458d-8d07-da748c98e740
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f003ef79-02da-44c8-9be5-ff8abc061130'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_31
+theme: bootstrap_barrio
+region: content
+weight: -25
+provider: null
+plugin: 'block_content:f003ef79-02da-44c8-9be5-ff8abc061130'
+settings:
+  id: 'block_content:f003ef79-02da-44c8-9be5-ff8abc061130'
+  label: 'Atención Teléfonica 24 Horas'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

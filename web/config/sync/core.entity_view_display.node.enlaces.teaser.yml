@@ -1,0 +1,25 @@
+uuid: ea666fd5-366d-46b7-9b94-bcb7505a6d62
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.enlaces.field_imagen_enlaces
+    - field.field.node.enlaces.field_url
+    - node.type.enlaces
+  module:
+    - user
+id: node.enlaces.teaser
+targetEntityType: node
+bundle: enlaces
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_enlaces: true
+  field_url: true
+  langcode: true

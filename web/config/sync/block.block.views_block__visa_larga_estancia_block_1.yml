@@ -1,0 +1,29 @@
+uuid: 0de8cf2b-e44d-4656-af6d-b3dde6a16fa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.visa_larga_estancia
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__visa_larga_estancia_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 7
+provider: null
+plugin: 'views_block:visa_larga_estancia-block_1'
+settings:
+  id: 'views_block:visa_larga_estancia-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /visas/larga-estancia

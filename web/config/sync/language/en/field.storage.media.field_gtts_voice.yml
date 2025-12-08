@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: Male
+    -
+      label: Female
+    -
+      label: Neutral

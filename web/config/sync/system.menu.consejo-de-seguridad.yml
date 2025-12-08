@@ -1,0 +1,8 @@
+uuid: fbdc1a24-7068-40ff-bf35-9ae8c90f2fbe
+langcode: es
+status: true
+dependencies: {  }
+id: consejo-de-seguridad
+label: 'Consejo de Seguridad'
+description: ''
+locked: false

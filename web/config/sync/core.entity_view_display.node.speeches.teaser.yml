@@ -1,0 +1,48 @@
+uuid: 9ead68ef-cddd-43bb-8f36-b846e145013b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.speeches.body
+    - field.field.node.speeches.field_date
+    - field.field.node.speeches.field_opciones_de_titulo
+    - field.field.node.speeches.field_solicitado
+    - field.field.node.speeches.field_solicitante
+    - node.type.speeches
+  module:
+    - datetime
+    - text
+    - user
+id: node.speeches.teaser
+targetEntityType: node
+bundle: speeches
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_opciones_de_titulo: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true

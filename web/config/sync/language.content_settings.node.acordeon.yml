@@ -1,0 +1,16 @@
+uuid: 0a972409-a625-4197-8443-2ac4111f6738
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.acordeon
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.acordeon
+target_entity_type_id: node
+target_bundle: acordeon
+default_langcode: current_interface
+language_alterable: true

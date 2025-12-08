@@ -1,0 +1,32 @@
+uuid: a199d81b-4deb-44bf-9d19-d7783adfa15d
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - options
+_core:
+  default_config_hash: 0Xib5NsZvvc5XmyicpJ4JkBSzvptBpXBWM2OWeQxS88
+id: media.field_gtts_voice
+field_name: field_gtts_voice
+entity_type: media
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Male
+    -
+      value: 2
+      label: Female
+    -
+      value: 3
+      label: Neutral
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

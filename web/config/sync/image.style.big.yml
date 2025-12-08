@@ -1,0 +1,15 @@
+uuid: 8570de0b-55c0-4420-b33f-974d52e4860c
+langcode: es
+status: true
+dependencies: {  }
+name: big
+label: big
+effects:
+  fc128647-9b13-4f9a-8768-76ed27fd9e2c:
+    uuid: fc128647-9b13-4f9a-8768-76ed27fd9e2c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: 768
+      upscale: false

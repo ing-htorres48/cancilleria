@@ -1,0 +1,18 @@
+uuid: 86aa3f05-34f3-4332-a24a-c6a92951a3ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.page_with_map
+id: node.page_with_map.title
+field_name: title
+entity_type: node
+bundle: page_with_map
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,42 @@
+uuid: 11a52458-7108-473f-a1e0-1d2ef7bd186a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.flex_casa_marques.body
+    - field.field.node.flex_casa_marques.field_img_marques
+    - node.type.flex_casa_marques
+  module:
+    - image
+    - text
+    - user
+id: node.flex_casa_marques.default
+targetEntityType: node
+bundle: flex_casa_marques
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_img_marques:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

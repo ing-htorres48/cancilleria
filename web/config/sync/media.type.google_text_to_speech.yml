@@ -1,0 +1,15 @@
+uuid: 702cd01c-bae7-4cf0-a017-072a7d3e2fa2
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Uo3coIoB8jYvMIeYMKLwcH7XSRhAuWU4zJaAoDdMisQ
+id: google_text_to_speech
+label: 'Google Text To Speech'
+description: ''
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_audio_file
+field_map: {  }

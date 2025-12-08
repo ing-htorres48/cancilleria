@@ -1,0 +1,16 @@
+uuid: 1fbe58ee-6025-4558-9eed-b18fee3fa3b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.newspaper
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.newspaper
+target_entity_type_id: node
+target_bundle: newspaper
+default_langcode: current_interface
+language_alterable: true

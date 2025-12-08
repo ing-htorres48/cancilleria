@@ -1,0 +1,16 @@
+uuid: 20fc2350-6670-40b1-adc1-2f6ae96e59be
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acordeones
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.acordeones
+target_entity_type_id: taxonomy_term
+target_bundle: acordeones
+default_langcode: es
+language_alterable: true

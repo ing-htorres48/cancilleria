@@ -1,0 +1,11 @@
+uuid: 27ee575a-4181-4438-a867-4ba90f1f9895
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_cultura
+id: node.flex_cultura
+target_entity_type_id: node
+target_bundle: flex_cultura
+default_langcode: site_default
+language_alterable: false

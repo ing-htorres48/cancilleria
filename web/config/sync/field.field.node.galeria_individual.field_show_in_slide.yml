@@ -1,0 +1,23 @@
+uuid: 2b34e043-daf4-41a0-bf69-eac757282f7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_slide
+    - node.type.galeria_individual
+id: node.galeria_individual.field_show_in_slide
+field_name: field_show_in_slide
+entity_type: node
+bundle: galeria_individual
+label: 'Aparece en las diapositivas'
+description: 'Publicar en carrusel principal '
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

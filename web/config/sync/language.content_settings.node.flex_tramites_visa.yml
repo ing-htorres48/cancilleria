@@ -1,0 +1,11 @@
+uuid: 8b2e63ce-2d9b-476f-aace-f1ec71a7f8f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flex_tramites_visa
+id: node.flex_tramites_visa
+target_entity_type_id: node
+target_bundle: flex_tramites_visa
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,38 @@
+uuid: 8a763b1d-7d9d-4925-a46b-f8dcd06143d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_audio_thumb
+    - node.type.audio
+  module:
+    - image
+id: node.audio.field_image_audio_thumb
+field_name: field_image_audio_thumb
+entity_type: node
+bundle: audio
+label: Imagen
+description: 'Imagen que acompaña al archivo de audio.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 1024x768
+  min_resolution: 470x322
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

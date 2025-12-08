@@ -1,0 +1,29 @@
+uuid: 93adbf5d-551c-46f0-ac2c-6d80685446f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.consejo-de-seguridad
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: consejodeseguridad
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 3
+provider: null
+plugin: 'system_menu_block:consejo-de-seguridad'
+settings:
+  id: 'system_menu_block:consejo-de-seguridad'
+  label: 'Consejo de Seguridad'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/principios\r\n/intervenciones\r\n/2011-0\r\n/2012-0\r\n/declaraciones-presidente-consejo-seguridad\r\n/memorias\r\n/resoluciones\r\n/consejo-seguridad-onu"

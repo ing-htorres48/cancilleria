@@ -1,0 +1,30 @@
+uuid: 3a1e3d2b-a666-4663-8296-69d28723d932
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b8347653-03c3-4da8-bc51-0890bd2f07dc'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_130
+theme: bartik
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:b8347653-03c3-4da8-bc51-0890bd2f07dc'
+settings:
+  id: 'block_content:b8347653-03c3-4da8-bc51-0890bd2f07dc'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/biblioteca/*'

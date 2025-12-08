@@ -1,0 +1,19 @@
+uuid: 634c9479-3ef8-40d5-93cf-e77407c1b823
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rrule
+    - node.type.evento
+id: node.evento.field_rrule
+field_name: field_rrule
+entity_type: node
+bundle: evento
+label: RRule
+description: "More information about the RRULE, please see https://github.com/jakubroztocil/rrule\r\n\r\nThere is an online tool to generate an valid RRULE string https://jkbrzt.github.io/rrule/."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

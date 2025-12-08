@@ -1,0 +1,29 @@
+uuid: f5651376-866b-4d24-9851-5350d0c3497e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.asuntos-politicos
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: asuntospoliticos
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 13
+provider: null
+plugin: 'system_menu_block:asuntos-politicos'
+settings:
+  id: 'system_menu_block:asuntos-politicos'
+  label: 'Asuntos Políticos'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/politics\r\n/international/politics/crime\r\n/international/politics/cooperation\r\n/international/politics/cooperation/development\r\n/international/politics/cooperation/multilateral\r\n/international/politics/cooperation/south\r\n/international/politics/security\r\n/international/politics/drugs"

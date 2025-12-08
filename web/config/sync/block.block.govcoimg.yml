@@ -1,0 +1,25 @@
+uuid: 5ea0ce7b-6c15-447c-af27-53c452ec3b9e
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c51ca1ad-3a3c-42c8-b0fa-97feb5ca6d39'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: govcoimg
+theme: bootstrap_barrio_subtheme
+region: govco
+weight: 3
+provider: null
+plugin: 'block_content:c51ca1ad-3a3c-42c8-b0fa-97feb5ca6d39'
+settings:
+  id: 'block_content:c51ca1ad-3a3c-42c8-b0fa-97feb5ca6d39'
+  label: GOVCOIMG
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: ddea752f-cd70-4907-b851-a2c3abab056e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vocabulary_2
+  module:
+    - text
+id: taxonomy_term.vocabulary_2.default
+targetEntityType: taxonomy_term
+bundle: vocabulary_2
+mode: default
+content:
+  description:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

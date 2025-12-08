@@ -1,0 +1,30 @@
+uuid: 8aa033e6-e19a-4b16-af1c-2892ad5924a6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f48fb298-1182-41f8-979c-703af5b2cfb8'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: ts_otrostramites_registrocivil_banner
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 102
+provider: null
+plugin: 'block_content:f48fb298-1182-41f8-979c-703af5b2cfb8'
+settings:
+  id: 'block_content:f48fb298-1182-41f8-979c-703af5b2cfb8'
+  label: TS_OtrosTramites_RegistroCivil_Banner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/tramites_exterior/registro_civil

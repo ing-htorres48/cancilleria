@@ -1,0 +1,27 @@
+uuid: e08420ac-c629-4b1e-bab6-b40a4b1542a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attached_statment
+    - node.type.statement
+  module:
+    - file
+id: node.statement.field_attached_statment
+field_name: field_attached_statment
+entity_type: node
+bundle: statement
+label: 'Archivo Adjunto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: ''
+  max_filesize: ''
+  description_field: false
+field_type: file

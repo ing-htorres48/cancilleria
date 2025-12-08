@@ -1,0 +1,30 @@
+uuid: 7ec94a6b-d02e-4d80-8d5b-0c60fabdb22c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a62d4d25-91f7-4ad0-a216-6e6f6699bc77'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_137
+theme: bartik
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:a62d4d25-91f7-4ad0-a216-6e6f6699bc77'
+settings:
+  id: 'block_content:a62d4d25-91f7-4ad0-a216-6e6f6699bc77'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/academy/publications/*'

@@ -1,0 +1,25 @@
+uuid: 403ad87e-0df4-4d42-a04e-0c54b616f174
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b30cd980-f388-4662-90e0-387cfc025bed'
+  module:
+    - block_content
+  theme:
+    - minnelli
+id: minnelli_block_19
+theme: minnelli
+region: ''
+weight: -34
+provider: null
+plugin: 'block_content:b30cd980-f388-4662-90e0-387cfc025bed'
+settings:
+  id: 'block_content:b30cd980-f388-4662-90e0-387cfc025bed'
+  label: '<none>'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

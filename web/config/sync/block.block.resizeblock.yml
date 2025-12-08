@@ -1,0 +1,20 @@
+uuid: cbce8314-8a07-4358-bb31-026d93b6a983
+langcode: es
+status: true
+dependencies:
+  module:
+    - text_resize
+  theme:
+    - bootstrap_barrio_subtheme
+id: resizeblock
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 150
+provider: null
+plugin: resize_block
+settings:
+  id: resize_block
+  label: 'Resize block'
+  label_display: '0'
+  provider: text_resize
+visibility: {  }

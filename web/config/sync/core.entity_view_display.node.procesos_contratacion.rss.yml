@@ -1,0 +1,51 @@
+uuid: 62747d48-36c5-4674-9d63-79ae4e7e6634
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.procesos_contratacion.body
+    - field.field.node.procesos_contratacion.field_contratacion_archivos
+    - field.field.node.procesos_contratacion.field_contratacion_cuantia
+    - field.field.node.procesos_contratacion.field_contratacion_tipo
+    - node.type.procesos_contratacion
+  module:
+    - file
+    - text
+    - user
+id: node.procesos_contratacion.rss
+targetEntityType: node
+bundle: procesos_contratacion
+mode: rss
+content:
+  field_contratacion_archivos:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_contratacion_cuantia:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_contratacion_tipo:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true

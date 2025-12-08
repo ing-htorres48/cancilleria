@@ -1,0 +1,11 @@
+uuid: 9a2f41ce-838b-488a-90b0-ca1cd955a2eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.visas
+id: node.visas
+target_entity_type_id: node
+target_bundle: visas
+default_langcode: site_default
+language_alterable: false

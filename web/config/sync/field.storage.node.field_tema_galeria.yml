@@ -1,0 +1,60 @@
+uuid: 93c3e138-6536-47fd-92b4-9f160eb62430
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tema_galeria
+field_name: field_tema_galeria
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: América
+    -
+      value: '1'
+      label: Asia
+    -
+      value: '2'
+      label: Europa
+    -
+      value: '3'
+      label: Asia
+    -
+      value: '4'
+      label: África
+    -
+      value: '5'
+      label: 'Organismos Multilaterales'
+    -
+      value: '6'
+      label: 'Plan Fronteras para la Prosperidad'
+    -
+      value: '7'
+      label: 'Diplomacia Cultural'
+    -
+      value: '8'
+      label: 'Cartas Credenciales'
+    -
+      value: '9'
+      label: Eventos
+    -
+      value: '10'
+      label: 'Condecoraciones y Premios'
+    -
+      value: '11'
+      label: Nacionalizaciones
+    -
+      value: '12'
+      label: 'VI Cumbre de las Américas'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

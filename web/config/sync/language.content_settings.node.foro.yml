@@ -1,0 +1,11 @@
+uuid: 227f1b36-88e3-49e2-91a3-d4af4ba1530f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.foro
+id: node.foro
+target_entity_type_id: node
+target_bundle: foro
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: 9ecf5baa-3f01-4204-8f8f-6c7d5a4bc832
+langcode: es
+status: true
+dependencies:
+  module:
+    - cancilleria_form
+    - taxonomy
+id: visa_requirements.field_nationality
+field_name: field_nationality
+entity_type: visa_requirements
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

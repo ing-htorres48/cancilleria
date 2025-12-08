@@ -1,0 +1,20 @@
+label: 'Sitemap tour'
+tips:
+  page-title:
+    label: 'Page Title'
+    body: '<p>Define the page title that will be used on the Sitemap page. If you do not wish to display a title, leave this field blank.</p>'
+  message:
+    label: 'Sitemap message'
+    body: '<p>Define a message to be displayed above the sitemap. If you do not wish to display a message, leave this field blank.</p>'
+  plugins:
+    label: Plugins
+    body: '<p>Select which plugins to use to generate entries into the sitemap.  You will be able to configure below.</p>'
+  plugin-display-order:
+    label: 'Plugin display order'
+    body: '<p>Use this section to reorder the items as they appear in the Sitemap.  Click and drag the arrow icon to reorder, or select Show row heights and you can set the weight of the items manually.  The lower the number the higher in the list it will appear.</p>'
+  css:
+    label: 'CSS Settings'
+    body: '<p>Select this box if you wish to load the CSS file included with the module. To learn how to override or specify the CSS at the theme level, visit the <a href="https://www.drupal.org/node/2615568">documentation page</a>.</p>'
+  save-configuration:
+    label: 'Save configuration'
+    body: '<p>Once you are finished configuring the sitemap settings, select Save configuration to save them.</p>'

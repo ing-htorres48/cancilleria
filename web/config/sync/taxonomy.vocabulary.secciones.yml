@@ -1,0 +1,8 @@
+uuid: 2ce8d938-bf3d-40f8-a7d7-36b9f60cf7b0
+langcode: es
+status: true
+dependencies: {  }
+name: Secciones
+vid: secciones
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 390d75ba-8ec0-4c9e-9764-0f0c1aa0f244
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - google_analytics
+    - media
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'usuario registrado'
+weight: 1
+is_admin: false
+permissions:
+  - 'opt-in or out of google analytics tracking'
+  - 'use text format basic_html'
+  - 'view media'

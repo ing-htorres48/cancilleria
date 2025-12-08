@@ -1,0 +1,38 @@
+uuid: 9f745cb9-cbea-454e-b2ef-9534480df77c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heart_government_image
+    - node.type.heart_of_government
+  module:
+    - image
+id: node.heart_of_government.field_heart_government_image
+field_name: field_heart_government_image
+entity_type: node
+bundle: heart_of_government
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: 1280x960
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

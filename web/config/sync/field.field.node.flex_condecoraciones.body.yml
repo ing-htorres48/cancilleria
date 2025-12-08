@@ -1,0 +1,23 @@
+uuid: a99ddeb0-adcd-4b91-9518-32c537e7579a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flex_condecoraciones
+  module:
+    - text
+id: node.flex_condecoraciones.body
+field_name: body
+entity_type: node
+bundle: flex_condecoraciones
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

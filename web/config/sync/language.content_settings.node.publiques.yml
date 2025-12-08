@@ -1,0 +1,16 @@
+uuid: 4873ddac-6211-4936-91f3-99360599b05f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publiques
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.publiques
+target_entity_type_id: node
+target_bundle: publiques
+default_langcode: current_interface
+language_alterable: true

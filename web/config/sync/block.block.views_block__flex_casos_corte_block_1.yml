@@ -1,0 +1,29 @@
+uuid: 71a370a9-9bf1-4021-8ae5-5f4adeb634a7
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.flex_casos_corte
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__flex_casos_corte_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 159
+provider: null
+plugin: 'views_block:flex_casos_corte-block_1'
+settings:
+  id: 'views_block:flex_casos_corte-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /casos-corte

@@ -1,0 +1,11 @@
+uuid: ded09d13-6f71-4e21-bebc-2104c4175ccb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_tramites_y_servicios
+id: node.imagen_tramites_y_servicios
+target_entity_type_id: node
+target_bundle: imagen_tramites_y_servicios
+default_langcode: site_default
+language_alterable: false

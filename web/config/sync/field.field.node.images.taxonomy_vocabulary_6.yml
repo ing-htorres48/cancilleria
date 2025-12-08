@@ -1,0 +1,26 @@
+uuid: 20bbf59e-654b-4fdd-8aac-bf8a4ed2fa96
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_6
+    - node.type.images
+    - taxonomy.vocabulary.vocabulary_6
+id: node.images.taxonomy_vocabulary_6
+field_name: taxonomy_vocabulary_6
+entity_type: node
+bundle: images
+label: 'Galería de Imágenes'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_6: vocabulary_6
+    sort:
+      field: _none
+field_type: entity_reference

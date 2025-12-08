@@ -1,0 +1,29 @@
+uuid: 5dba10ba-5270-486a-955e-b50a827d71d0
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.algunas-iniciativas-y-programas-
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: algunasiniciativasyprogramasdelacancilleria_3
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 42
+provider: null
+plugin: 'system_menu_block:algunas-iniciativas-y-programas-'
+settings:
+  id: 'system_menu_block:algunas-iniciativas-y-programas-'
+  label: 'Agenda 2030 para el Desarrollo Sostenible'
+  label_display: visible
+  provider: system
+  level: 2
+  depth: 1
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/rio\r\n/rio/acerca\r\n/rio/abc\r\n/rio/propuesta\r\n/rio/linea"

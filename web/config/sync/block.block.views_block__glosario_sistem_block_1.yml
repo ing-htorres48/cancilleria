@@ -1,0 +1,30 @@
+uuid: 64a2efe5-ea18-465e-b52b-fa8ab87113f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.glosario_sistem
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__glosario_sistem_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 124
+provider: null
+plugin: 'views_block:glosario_sistem-block_1'
+settings:
+  id: 'views_block:glosario_sistem-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/glossary222

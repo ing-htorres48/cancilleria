@@ -1,0 +1,29 @@
+uuid: 5863f068-6ca7-4ce9-bac3-825a6b48f0b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.organismos-multilaterales
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: organismosmultilaterales
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 22
+provider: null
+plugin: 'system_menu_block:organismos-multilaterales'
+settings:
+  id: 'system_menu_block:organismos-multilaterales'
+  label: 'Organismos Multilaterales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/multilateral/como-aplicar-a-postulaciones-para-naciones-unidas\r\n/international/multilateral\r\n/international/consensus/cumbre-americas\r\n/organizacion-las-naciones-unidas-onu\r\n/international/multilateral/consensus\r\n/international/multilateral/consensus/g77-china\r\n/international/multilateral/consensus/non-aligned\r\n/international/multilateral/consensus/latin-america\r\n/international/multilateral/united-nations\r\n/international/multilateral/united-nations/world-trade\r\n/international/multilateral/united-nations/world-bank\r\n/international/multilateral/united-nations/icc\r\n/international/multilateral/united-nations/iadf\r\n/international/multilateral/united-nations/imf\r\n/international/multilateral/united-nations/icao\r\n/international/multilateral/united-nations/unido\r\n/international/multilateral/united-nations/fao\r\n/international/multilateral/united-nations/unesco\r\n/international/multilateral/united-nations/ilo\r\n/international/multilateral/united-nations/imo\r\n/international/multilateral/united-nations/wmo\r\n/international/multilateral/united-nations/wipo\r\n/international/multilateral/united-nations/who\r\n/international/multilateral/united-nations/wto\r\n/international/multilateral/united-nations/paho\r\n/international/multilateral/united-nations/itu\r\n/international/multilateral/united-nations/upu\r\n/international/regional/oas\r\n"

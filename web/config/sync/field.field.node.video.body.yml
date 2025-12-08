@@ -1,0 +1,23 @@
+uuid: 47257559-8b33-42be-af61-0b754c0a29c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.video
+  module:
+    - text
+id: node.video.body
+field_name: body
+entity_type: node
+bundle: video
+label: Sinopsis
+description: 'Subir un video para la galería de videos.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

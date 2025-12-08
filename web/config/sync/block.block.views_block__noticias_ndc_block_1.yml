@@ -1,0 +1,29 @@
+uuid: 887e08c4-46d5-4ddb-97a0-79b0457c3b52
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias_ndc
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__noticias_ndc_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 113
+provider: null
+plugin: 'views_block:noticias_ndc-block_1'
+settings:
+  id: 'views_block:noticias_ndc-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /diplomacy/news

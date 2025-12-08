@@ -1,0 +1,25 @@
+uuid: 1f52ff6b-8ebe-411d-9d2a-ae213dd5667c
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b30cd980-f388-4662-90e0-387cfc025bed'
+  module:
+    - block_content
+  theme:
+    - clean_960gs
+id: clean_960gs_block_19
+theme: clean_960gs
+region: ''
+weight: -34
+provider: null
+plugin: 'block_content:b30cd980-f388-4662-90e0-387cfc025bed'
+settings:
+  id: 'block_content:b30cd980-f388-4662-90e0-387cfc025bed'
+  label: '<none>'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

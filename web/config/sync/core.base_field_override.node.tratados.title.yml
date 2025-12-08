@@ -1,0 +1,18 @@
+uuid: a8e57b70-c782-4490-90ab-ea970a934480
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tratados
+id: node.tratados.title
+field_name: title
+entity_type: node
+bundle: tratados
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 7b372639-e5b8-46bd-8373-ea3bfe39bc19
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.tabla_minima_cuantia_10
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__tabla_minima_cuantia_10_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 164
+provider: null
+plugin: 'views_block:tabla_minima_cuantia_10-block_1'
+settings:
+  id: 'views_block:tabla_minima_cuantia_10-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ministry/contracting/minima

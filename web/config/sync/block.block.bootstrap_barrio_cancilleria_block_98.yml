@@ -1,0 +1,109 @@
+uuid: 67240a06-0136-43d4-865d-05228fa73103
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f0302e4b-11d3-4e70-8a14-2d253536f0ee'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_98
+theme: bootstrap_barrio
+region: content
+weight: 19
+provider: null
+plugin: 'block_content:f0302e4b-11d3-4e70-8a14-2d253536f0ee'
+settings:
+  id: 'block_content:f0302e4b-11d3-4e70-8a14-2d253536f0ee'
+  label: 'Contenido relacionado:'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /*/14838
+      /*/14837
+      /*/14835
+      /*/14836
+      /*/14833
+      /*/14832
+      /*/14827
+      /*/14829
+      /*/14825
+      /*/14818
+      /*/14813
+      /*/14810
+      /*/14826
+      /*/14808
+      /*/14824
+      /*/14823
+      /*/14822
+      /*/14821
+      /*/14820
+      /*/14819
+      /*/14811
+      /*/14799
+      /*/14789
+      /*/14794
+      /*/14792
+      /*/14791
+      /*/14796
+      /*/14803
+      /*/14830
+      /*/14783
+      /*/14775
+      /*/14778
+      /*/14780
+      /*/14777
+      /*/14834
+      /*/14769
+      /*/14774
+      /*/14797
+      /*/14752
+      /newsroom/news/canciller-holguin-participa-xi-reunion-ministros-relaciones-exteriores-celac-nueva
+      /newsroom/news/canciller-maria-angela-holguin-reunio-ministro-relaciones-exteriores-reino-butan
+      /newsroom/news/canciller-holguin-sostuvo-reunion-bilateral-presidente-asamblea-general-naciones
+      /newsroom/news/canciller-colombiana-agradecio-primera-ministra-noruega-su-intervencion-asamblea
+      /newsroom/news/acuerdo-final-paz-tema-central-reunion-canciller-maria-angela-holguin-alto-comisionado
+      /newsroom/news/reunion-bilateral-canciller-maria-angela-holguin-representante-especial-sg-naciones
+      /newsroom/news/ministra-holguin-reunio-directora-ejecutiva-programa-mundial-alimentos-naciones-unidas
+      /newsroom/news/canciller-maria-angela-holguin-reunio-ministro-relaciones-exteriores-libano-gebran
+      /newsroom/news/canciller-holguin-reunio-presidente-comite-internacional-cruz-roja
+      /newsroom/news/canciller-holguin-acompano-presidente-santos-panel-paises-alianza-pacifico-comercio-e
+      /newsroom/news/presidente-juan-manuel-santos-entrego-su-homologo-estados-unidos-barack-obama-acuerdo
+      /newsroom/news/dia-internacional-paz-presidente-santos-anuncio-naciones-unidas-guerra-colombia-ha
+      /newsroom/news/aqui-resultado-trabajo-ustedes-todos-ustedes-han-apoyado-contribucion-paz-mundo
+      /newsroom/news/cancilleres-iberoamerica-felicitaron-colombia-dar-importante-paso-paz
+      /newsroom/news/canciller-holguin-presidio-reunion-ministros-relaciones-exteriores-conferencia
+      /newsroom/news/ministros-relaciones-exteriores-colombia-rusia-sostuvieron-encuentro-bilateral-nueva
+      /newsroom/news/vicepresidenta-comision-europea-comisaria-europea-programacion-financiera-presupuestos
+      /newsroom/news/cancilleres-colombia-senegal-hicieron-revision-agenda-bilateral-nueva-york
+      /newsroom/news/canciller-holguin-reunio-su-homologo-georgia-mikheil-janelidze
+      /newsroom/news/ministra-maria-angela-holguin-reunio-jefe-diplomacia-argelina
+      /newsroom/news/colombia-qatar-revisaron-estado-relaciones-bilaterales
+      /newsroom/news/canciller-holguin-acompano-presidente-santos-reunion-bilateral-mandatario-guatemala
+      /newsroom/news/proceso-paz-colombia-fue-destacado-debate-71deg-periodo-sesiones-asamblea-general
+      /newsroom/news/hemos-ayudado-colombia-poner-fin-guerra-larga-latinoamerica-presidente-estados-unidos
+      /newsroom/news/presidente-santos-canciller-holguin-agradecieron-primera-ministra-noruega-erna-solberg
+      /newsroom/news/ministra-holguin-acompano-presidente-santos-encuentro-primer-ministro-nueva-zelandia
+      /newsroom/news/canciller-holguin-acompano-presidente-santos-encuentro-presidente-panama-juan-carlos
+      /newsroom/news/colombia-agradece-francia-respaldo-politico-ha-brindado-proceso-paz
+      /newsroom/news/presidente-juan-manuel-santos-reunio-alta-representante-union-europea-asuntos
+      /newsroom/news/encuentros-bilaterales-ministra-relaciones-exteriores-maria-angela-holguin-marco
+      /newsroom/news/presidente-santos-canciller-holguin-reunieron-su-majestad-rey-don-felipe-vi
+      /newsroom/news/presidente-santos-canciller-holguin-reunieron-primer-ministro-japon-shinzo-abe
+      /newsroom/news/presidente-santos-compania-canciller-holguin-entrego-secretario-general-onu-copia
+      /newsroom/news/colombia-agradece-naciones-unidas-buenos-oficios-organismo-su-disposicion-conseguir
+      /newsroom/news/presidente-santos-canciller-holguin-reunieron-secretario-general-naciones-unidas-ban-0
+      /newsroom/news/resumen-encuentros-bilaterales-canciller-maria-angela-holguin-marco-asamblea-general
+      /newsroom/news/canciller-holguin-participo-apertura-reunion-alto-nivel-analizar-desplazamientos
+      /newsroom/news/hora-avanzar-sistema-movilidad-internacional-proteja-derechos-migrantes-canciller
+      /newsroom/news/resumen-agenda-presidente-juan-manuel-santos-canciller-maria-angela-holguin-previa
+      /newsroom/news/naciones-unidas-jugada-paz-colombia-canciller-maria-angela-holguin

@@ -1,0 +1,71 @@
+uuid: e9f657c0-31a6-484e-a081-408ffbbacf91
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.statement.body
+    - field.field.node.statement.field_attached_statment
+    - field.field.node.statement.field_date
+    - field.field.node.statement.field_gallery_page
+    - field.field.node.statement.field_images_statement
+    - field.field.node.statement.field_opciones_de_titulo
+    - node.type.statement
+  module:
+    - datetime
+    - file
+    - image
+    - user
+id: node.statement.token
+targetEntityType: node
+bundle: statement
+mode: token
+content:
+  field_attached_statment:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_gallery_page:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_images_statement:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_opciones_de_titulo: true
+  langcode: true

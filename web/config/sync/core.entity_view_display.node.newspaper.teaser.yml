@@ -1,0 +1,55 @@
+uuid: 83a1f00c-8c9d-4595-930e-1281f5f6f7c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.newspaper.body
+    - field.field.node.newspaper.field_date
+    - field.field.node.newspaper.field_images_newspaper
+    - node.type.newspaper
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.newspaper.teaser
+targetEntityType: node
+bundle: newspaper
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_images_newspaper:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

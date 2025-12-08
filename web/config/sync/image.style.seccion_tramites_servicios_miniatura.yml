@@ -1,0 +1,15 @@
+uuid: b0bed0e1-4a13-4d9c-aa78-4e0f397a4e6b
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_tramites_servicios_miniatura
+label: seccion_tramites_servicios_miniatura
+effects:
+  1919953e-7d74-4d40-abb4-9618756362ce:
+    uuid: 1919953e-7d74-4d40-abb4-9618756362ce
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 115
+      height: 28
+      anchor: center-center

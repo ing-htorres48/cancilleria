@@ -1,0 +1,26 @@
+uuid: 11f1e780-77ae-4f26-95a8-f80c9aa5452b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secciones
+    - node.type.services
+    - taxonomy.vocabulary.secciones
+id: node.services.field_secciones
+field_name: field_secciones
+entity_type: node
+bundle: services
+label: Secciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      secciones: secciones
+    sort:
+      field: _none
+field_type: entity_reference

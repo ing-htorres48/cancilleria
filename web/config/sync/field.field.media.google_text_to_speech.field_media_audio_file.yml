@@ -1,0 +1,29 @@
+uuid: 0d03a48a-3cd9-45d7-bef1-a47fc0ede72b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_audio_file
+    - media.type.google_text_to_speech
+  module:
+    - file
+_core:
+  default_config_hash: ZQmdBGwo6HTICG4eZCk2vAHQ4kHRc8a51I3YVpUhXp8
+id: media.google_text_to_speech.field_media_audio_file
+field_name: field_media_audio_file
+entity_type: media
+bundle: google_text_to_speech
+label: 'Audio file'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 wav'
+  max_filesize: ''
+  description_field: false
+field_type: file

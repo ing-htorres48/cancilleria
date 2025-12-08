@@ -1,0 +1,29 @@
+uuid: 4926fb66-a17e-476c-9a77-15679561e0cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tramites_y_servicios_pasaportes_requisitos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__tramites_y_servicios_pasaportes_requisitos_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 143
+provider: null
+plugin: 'views_block:tramites_y_servicios_pasaportes_requisitos-block_1'
+settings:
+  id: 'views_block:tramites_y_servicios_pasaportes_requisitos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/pasaportes/requisitos

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: es
+uuid: 5cb4e458-2c74-4be5-b60d-f05e2e8ca56e
+name: Cancillería
+mail: noreply@cancilleria.gov.co
+slogan: 'Ministerio de Relaciones Exteriores'
+page:
+  403: ''
+  404: ''
+  front: /node/24824
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es

@@ -1,0 +1,29 @@
+uuid: 48f1a41f-1993-4e3c-af65-bb1da3589bed
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias_consulares
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__noticias_consulares_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 126
+provider: null
+plugin: 'views_block:noticias_consulares-block_1'
+settings:
+  id: 'views_block:noticias_consulares-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/noticias

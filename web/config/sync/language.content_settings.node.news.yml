@@ -1,0 +1,16 @@
+uuid: fef2c062-a8f5-4b8b-b0bf-1a1b4490883c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.news
+target_entity_type_id: node
+target_bundle: news
+default_langcode: current_interface
+language_alterable: true

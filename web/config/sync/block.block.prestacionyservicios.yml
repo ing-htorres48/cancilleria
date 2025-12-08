@@ -1,0 +1,29 @@
+uuid: cb2fd35f-0949-46e9-90ce-5fbae9618833
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.prestacion-y-servicios
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: prestacionyservicios
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 44
+provider: null
+plugin: 'system_menu_block:prestacion-y-servicios'
+settings:
+  id: 'system_menu_block:prestacion-y-servicios'
+  label: Biblioteca
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bibliotecas\r\n/biblioteca"

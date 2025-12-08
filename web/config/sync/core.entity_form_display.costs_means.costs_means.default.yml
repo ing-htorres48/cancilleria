@@ -1,0 +1,94 @@
+uuid: a6851ea0-4be3-48e3-8c40-bc07ef6de554
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.costs_means.costs_means.field_activity
+    - field.field.costs_means.costs_means.field_euro_study
+    - field.field.costs_means.costs_means.field_euro_visa
+    - field.field.costs_means.costs_means.field_usd_study
+    - field.field.costs_means.costs_means.field_usd_visa
+    - field.field.costs_means.costs_means.field_visa_type
+  module:
+    - cancilleria_form
+_core:
+  default_config_hash: bTzqb8aSB36ORR6arrmZOvHAYXyLgF6-tg8FXzJkzgo
+id: costs_means.costs_means.default
+targetEntityType: costs_means
+bundle: costs_means
+mode: default
+content:
+  field_activity:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_euro_study:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_euro_visa:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_usd_study:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_usd_visa:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_visa_type:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 64cac611-c320-413a-b2a3-0a2df3ecec75
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_instrumentos_internacional
+field_name: field_instrumentos_internacional
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

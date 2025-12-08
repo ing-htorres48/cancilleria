@@ -1,0 +1,30 @@
+uuid: d7c44995-176d-4edd-87a7-5103253844ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.visa_requirements.field_passport_type
+    - taxonomy.vocabulary.passport_type
+  module:
+    - cancilleria_form
+id: visa_requirements.visa_requirements.field_passport_type
+field_name: field_passport_type
+entity_type: visa_requirements
+bundle: visa_requirements
+label: 'Passport type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      passport_type: passport_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

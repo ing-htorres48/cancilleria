@@ -1,0 +1,21 @@
+uuid: 2cf7fa21-b4dd-45a7-9a1d-262975bb5a69
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_advertising_footer
+label: 'Contenido - Publicidad pie de página'
+type: 'canonical_entities:node'
+pattern: 'publicidad-pie-de-pagina/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      advertising_footer: advertising_footer
+selection_logic: and
+weight: 0
+relationships: {  }

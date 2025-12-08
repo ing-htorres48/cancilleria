@@ -1,0 +1,11 @@
+uuid: ca04e05a-816f-4118-89ae-09d2bfb7d320
+langcode: es
+status: true
+dependencies: {  }
+name: Feed
+type: feed
+description: 'Subscribirse a las fuentes RSS o Atom. Crea nodos del tipo de contenido «Elemento de fuente web» a partir del contenido de la fuente.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

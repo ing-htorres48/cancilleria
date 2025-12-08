@@ -1,0 +1,25 @@
+uuid: 2ef627fb-da6b-45d4-b513-0dfa90e2decc
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e44de956-1172-43f1-9d81-0e40af47ba54'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: enlacesdos
+theme: bootstrap_barrio_subtheme
+region: pausa_presidencial
+weight: 4
+provider: null
+plugin: 'block_content:e44de956-1172-43f1-9d81-0e40af47ba54'
+settings:
+  id: 'block_content:e44de956-1172-43f1-9d81-0e40af47ba54'
+  label: Enlaces-dos
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

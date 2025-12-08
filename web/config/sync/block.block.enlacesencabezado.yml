@@ -1,0 +1,25 @@
+uuid: 1c14cef0-ff8f-4ab1-ac3d-82c633db71b3
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d373a3cf-65ca-47af-af27-f9801f61c4a2'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: enlacesencabezado
+theme: bootstrap_barrio_subtheme
+region: govco
+weight: 4
+provider: null
+plugin: 'block_content:d373a3cf-65ca-47af-af27-f9801f61c4a2'
+settings:
+  id: 'block_content:d373a3cf-65ca-47af-af27-f9801f61c4a2'
+  label: 'Enlaces Encabezado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

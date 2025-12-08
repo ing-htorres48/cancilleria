@@ -1,0 +1,29 @@
+uuid: ab6b7e8f-0616-4037-9b6f-c71f84e11ab1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_encargos
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_encargos_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 4
+provider: null
+plugin: 'views_block:acordeon_encargos-block_1'
+settings:
+  id: 'views_block:acordeon_encargos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /encargos

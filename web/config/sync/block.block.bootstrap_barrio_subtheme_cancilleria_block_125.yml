@@ -1,0 +1,34 @@
+uuid: 53685958-5f10-43ae-98df-f6de91cefffb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7f251284-5b73-4c39-ab37-bb8bb5652498'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_cancilleria_block_125
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 78
+provider: null
+plugin: 'block_content:7f251284-5b73-4c39-ab37-bb8bb5652498'
+settings:
+  id: 'block_content:7f251284-5b73-4c39-ab37-bb8bb5652498'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /tramites_servicios/visa
+      /tramites_servicios/visa/*
+      /procedures_services/visa
+      /procedures_services/visa/*

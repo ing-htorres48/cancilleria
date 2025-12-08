@@ -1,0 +1,23 @@
+uuid: 58a41c17-dcfa-4020-af20-75190486703c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_gtts_language
+    - media.type.google_text_to_speech
+  module:
+    - options
+_core:
+  default_config_hash: W_wwKiblH2kXhx2Vuc3X1r6Ed88l4yUqZLKD-lfGzx8
+id: media.google_text_to_speech.field_gtts_language
+field_name: field_gtts_language
+entity_type: media
+bundle: google_text_to_speech
+label: Language
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

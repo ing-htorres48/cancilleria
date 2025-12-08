@@ -1,0 +1,57 @@
+uuid: 67785945-cbd9-4c8f-9d5f-cc5cc376bc32
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publiques.body
+    - field.field.node.publiques.field_attached_publiques
+    - field.field.node.publiques.field_contenido_relacionado
+    - field.field.node.publiques.field_date
+    - field.field.node.publiques.field_image_full_description
+    - field.field.node.publiques.field_imagen_publiques_thumb
+    - field.field.node.publiques.field_images_gallery
+    - field.field.node.publiques.field_images_publiques
+    - field.field.node.publiques.field_opciones_de_titulo
+    - field.field.node.publiques.field_show_in_slide
+    - field.field.node.publiques.field_slideshow_weigth
+    - field.field.node.publiques.field_solicitado
+    - field.field.node.publiques.field_solicitante
+    - field.field.node.publiques.field_weight
+    - node.type.publiques
+  module:
+    - text
+    - user
+id: node.publiques.teaser
+targetEntityType: node
+bundle: publiques
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_attached_publiques: true
+  field_contenido_relacionado: true
+  field_date: true
+  field_image_full_description: true
+  field_imagen_publiques_thumb: true
+  field_images_gallery: true
+  field_images_publiques: true
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_weight: true
+  langcode: true

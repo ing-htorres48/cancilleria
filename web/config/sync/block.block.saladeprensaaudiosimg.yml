@@ -1,0 +1,30 @@
+uuid: 8f425fa1-3ec8-4c19-b742-382f91c98137
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f30d37f6-adba-4e60-b1bd-bd1f0fc0070b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensaaudiosimg
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 44
+provider: null
+plugin: 'block_content:f30d37f6-adba-4e60-b1bd-bd1f0fc0070b'
+settings:
+  id: 'block_content:f30d37f6-adba-4e60-b1bd-bd1f0fc0070b'
+  label: 'Sala de prensa - audios img'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/audio

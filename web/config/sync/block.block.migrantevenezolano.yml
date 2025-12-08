@@ -1,0 +1,30 @@
+uuid: ad7fd8d3-d286-4e36-84d4-857ca1c3f1eb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:21edd8ea-2ca4-423d-baec-c4476d176016'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: migrantevenezolano
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 12
+provider: null
+plugin: 'block_content:21edd8ea-2ca4-423d-baec-c4476d176016'
+settings:
+  id: 'block_content:21edd8ea-2ca4-423d-baec-c4476d176016'
+  label: 'migrante venezolano'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /estatuto-temporal-proteccion-migrantes-venezolanos

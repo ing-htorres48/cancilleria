@@ -1,0 +1,19 @@
+uuid: 2c22a552-b802-4267-b1a1-00f0675878e1
+langcode: es
+status: false
+dependencies:
+  theme:
+    - seven
+id: seven_book_navigation
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: broken
+  label: ''
+  label_display: '0'
+  provider: core
+  block_mode: 'all pages'
+visibility: {  }

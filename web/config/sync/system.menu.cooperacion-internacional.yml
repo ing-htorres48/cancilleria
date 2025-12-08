@@ -1,0 +1,8 @@
+uuid: 1bf8ed19-3c68-4bff-804e-b7dbdecb5ce9
+langcode: es
+status: true
+dependencies: {  }
+id: cooperacion-internacional
+label: 'Cooperación internacional'
+description: ''
+locked: false

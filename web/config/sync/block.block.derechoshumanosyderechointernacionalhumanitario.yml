@@ -1,0 +1,29 @@
+uuid: 6742f906-bdaf-4bbc-81f7-b74bab61f7fb
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.derechos-humanos-y-derecho-inter
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: derechoshumanosyderechointernacionalhumanitario
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 32
+provider: null
+plugin: 'system_menu_block:derechos-humanos-y-derecho-inter'
+settings:
+  id: 'system_menu_block:derechos-humanos-y-derecho-inter'
+  label: 'Derechos Humanos y Derecho Internacional Humanitario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/international/politics/right/universal\r\n/international/politics/right/interamerican\r\n/international/politics/right"

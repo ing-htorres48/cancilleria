@@ -1,0 +1,101 @@
+uuid: c93bfab9-d48e-4949-9822-2f2054572a64
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.news.body
+    - field.field.node.news.field_aparece_en_columna
+    - field.field.node.news.field_attached_news
+    - field.field.node.news.field_carga_de_archivos_masivos
+    - field.field.node.news.field_contenido_relacionado
+    - field.field.node.news.field_date
+    - field.field.node.news.field_destacado_en_columna
+    - field.field.node.news.field_gallery_page
+    - field.field.node.news.field_image_full_description
+    - field.field.node.news.field_image_post
+    - field.field.node.news.field_imagen_news_thumb
+    - field.field.node.news.field_opciones_de_titulo
+    - field.field.node.news.field_presentar_en_carrusel
+    - field.field.node.news.field_show_in_slide
+    - field.field.node.news.field_slideshow_weigth
+    - field.field.node.news.field_solicitado
+    - field.field.node.news.field_solicitante
+    - field.field.node.news.field_target
+    - field.field.node.news.field_weight
+    - field.field.node.news.taxonomy_vocabulary_5
+    - node.type.news
+  module:
+    - datetime
+    - image
+    - user
+id: node.news.email_plain
+targetEntityType: node
+bundle: news
+mode: email_plain
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_gallery_page:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image_post:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_news_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_aparece_en_columna: true
+  field_attached_news: true
+  field_carga_de_archivos_masivos: true
+  field_contenido_relacionado: true
+  field_destacado_en_columna: true
+  field_image_full_description: true
+  field_opciones_de_titulo: true
+  field_presentar_en_carrusel: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_target: true
+  field_weight: true
+  langcode: true
+  taxonomy_vocabulary_5: true

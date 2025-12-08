@@ -1,0 +1,29 @@
+uuid: 88826fd8-2f2f-4c99-8028-69920094fc00
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.normatividad-aplicable-al-minist
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: normatividadaplicablealministerio_2
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 6
+provider: null
+plugin: 'system_menu_block:normatividad-aplicable-al-minist'
+settings:
+  id: 'system_menu_block:normatividad-aplicable-al-minist'
+  label: 'Accesos Rápidos'
+  label_display: visible
+  provider: system
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ministry/planeacion/direccionamiento-estrategico\r\n/ministry/planeacion/proyectos-inversion\r\n/ministry/planeacion/plan-accion\r\n/ministry/planeacion/informe-gestion\r\n/ministry/planeacion/indicadores-gestion\r\n/ministry/planeacion/informes-congreso\r\n/ministry/planeacion/informe-empalme\r\n/ministry/planeacion/sistema-maestro\r\n/ministry/planeacion/normograma\r\n/ministry/planeacion/otros-informes"

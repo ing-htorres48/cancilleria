@@ -1,0 +1,23 @@
+uuid: f869c8a6-cf20-412f-887c-74748dfd4617
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.images
+  module:
+    - text
+id: node.images.body
+field_name: body
+entity_type: node
+bundle: images
+label: Cuerpo
+description: 'Crea un nuevo álbum de imágenes.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

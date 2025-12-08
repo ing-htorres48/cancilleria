@@ -1,0 +1,16 @@
+uuid: 0ff477da-c21f-4cde-a5f1-252563747d79
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  news_keywords: 'Ministerio de Relaciones Exteriores,Cancillería,Cancillería Colombia,Relaciones Exteriores,Ministerio de relaciones exteriores de Colombia,Colombiano en el exterior,Pasaporte,Oficina de pasaportes,Diplomático,Diplomacia'
+  title: '[node:title] | [site:name]'
+  mask_icon:
+    href: ''
+    color: ''

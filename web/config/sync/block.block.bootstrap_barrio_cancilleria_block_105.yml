@@ -1,0 +1,45 @@
+uuid: bbd5f50d-54c4-4cee-948f-2a76ae3cd858
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8f372e0c-475a-457f-87f7-65611b42293a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_cancilleria_block_105
+theme: bootstrap_barrio
+region: content
+weight: 21
+provider: null
+plugin: 'block_content:8f372e0c-475a-457f-87f7-65611b42293a'
+settings:
+  id: 'block_content:8f372e0c-475a-457f-87f7-65611b42293a'
+  label: 'Contenido relacionado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /node/15476
+      /node/15479
+      /node/15480
+      /node/15481
+      /node/15484
+      /node/15477
+      /node/15486
+      /node/15483
+      /node/15478
+      /node/15489
+      /node/15485
+      /node/15487
+      /node/15490
+      /node/15482
+      /node/15457

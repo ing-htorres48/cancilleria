@@ -1,0 +1,30 @@
+uuid: fa62c32a-8d35-4f2d-bed0-77a3a1307b31
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8d8d320a-a405-4854-a16e-d59fdd894d30'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_94
+theme: bartik
+region: content
+weight: 12
+provider: null
+plugin: 'block_content:8d8d320a-a405-4854-a16e-d59fdd894d30'
+settings:
+  id: 'block_content:8d8d320a-a405-4854-a16e-d59fdd894d30'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/medios

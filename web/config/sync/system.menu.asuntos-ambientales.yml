@@ -1,0 +1,8 @@
+uuid: 34a2a4ff-58bc-46ac-9a17-de70a0997077
+langcode: es
+status: true
+dependencies: {  }
+id: asuntos-ambientales
+label: 'Asuntos Ambientales'
+description: ''
+locked: false

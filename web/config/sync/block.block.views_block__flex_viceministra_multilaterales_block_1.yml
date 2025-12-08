@@ -1,0 +1,29 @@
+uuid: 0632120d-3b2e-4c0b-a82f-a0d42b5abe07
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.flex_viceministra_multilaterales
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__flex_viceministra_multilaterales_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 56
+provider: null
+plugin: 'views_block:flex_viceministra_multilaterales-block_1'
+settings:
+  id: 'views_block:flex_viceministra_multilaterales-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ministerio/viceministra-asuntos-multilaterales\r\n/ministerio/viceministro-asuntos-multilaterales"

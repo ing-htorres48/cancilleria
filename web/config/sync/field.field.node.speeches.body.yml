@@ -1,0 +1,23 @@
+uuid: e3e85408-689f-498c-a0da-2ad3c79d575c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.speeches
+  module:
+    - text
+id: node.speeches.body
+field_name: body
+entity_type: node
+bundle: speeches
+label: Cuerpo
+description: 'Publica una entrada en discursos.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

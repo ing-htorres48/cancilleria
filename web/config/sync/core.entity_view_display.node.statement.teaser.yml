@@ -1,0 +1,69 @@
+uuid: 71fc615a-9606-4ae8-a9f5-ff92a024e24b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.statement.body
+    - field.field.node.statement.field_attached_statment
+    - field.field.node.statement.field_date
+    - field.field.node.statement.field_gallery_page
+    - field.field.node.statement.field_images_statement
+    - field.field.node.statement.field_opciones_de_titulo
+    - node.type.statement
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+id: node.statement.teaser
+targetEntityType: node
+bundle: statement
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_attached_statment:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_images_statement:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_gallery_page: true
+  field_opciones_de_titulo: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 0c5c879e-eb11-4895-ac14-dd8a6e7ba464
+langcode: es
+status: true
+dependencies: {  }
+name: Tratados
+type: tratados
+description: 'Tratados internacionales, depositarios'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

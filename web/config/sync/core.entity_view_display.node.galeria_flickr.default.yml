@@ -1,0 +1,29 @@
+uuid: a163747e-e9e7-4321-9e46-0acc5c461ad5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria_flickr.body
+    - node.type.galeria_flickr
+  module:
+    - text
+    - user
+id: node.galeria_flickr.default
+targetEntityType: node
+bundle: galeria_flickr
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

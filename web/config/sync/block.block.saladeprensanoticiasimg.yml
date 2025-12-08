@@ -1,0 +1,30 @@
+uuid: a70025cb-4b82-41fc-ad47-6e3c3228aca8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bc70f97d-8b97-4b2f-887c-5547615066df'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensanoticiasimg
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 43
+provider: null
+plugin: 'block_content:bc70f97d-8b97-4b2f-887c-5547615066df'
+settings:
+  id: 'block_content:bc70f97d-8b97-4b2f-887c-5547615066df'
+  label: 'Sala de prensa - noticias img'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/newsroom\r\n/newsroom/news"

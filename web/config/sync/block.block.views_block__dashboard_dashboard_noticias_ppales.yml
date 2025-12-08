@@ -1,0 +1,46 @@
+uuid: 86297ca0-48a0-424a-86f6-99fc34abf90f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.dashboard
+  module:
+    - node
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__dashboard_dashboard_noticias_ppales
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 18
+provider: null
+plugin: 'views_block:dashboard-dashboard_noticias_ppales'
+settings:
+  id: 'views_block:dashboard-dashboard_noticias_ppales'
+  label: 'Noticias Principales'
+  label_display: visible
+  provider: views
+  views_label: 'Noticias Principales'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin/dashboard
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor

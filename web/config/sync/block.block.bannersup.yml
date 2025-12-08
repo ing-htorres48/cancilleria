@@ -1,0 +1,25 @@
+uuid: ff3c61b0-a08d-421c-99e1-463ddceb986b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7fa686af-5b08-4f89-946a-669ca222dade'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: bannersup
+theme: bootstrap_barrio_subtheme
+region: banner_principal
+weight: 1
+provider: null
+plugin: 'block_content:7fa686af-5b08-4f89-946a-669ca222dade'
+settings:
+  id: 'block_content:7fa686af-5b08-4f89-946a-669ca222dade'
+  label: bannersup
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

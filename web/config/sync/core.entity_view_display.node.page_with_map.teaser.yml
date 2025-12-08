@@ -1,0 +1,31 @@
+uuid: 1a6ef736-b9e9-4f7e-abc1-85699d5147c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_with_map.body
+    - node.type.page_with_map
+  module:
+    - text
+    - user
+id: node.page_with_map.teaser
+targetEntityType: node
+bundle: page_with_map
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

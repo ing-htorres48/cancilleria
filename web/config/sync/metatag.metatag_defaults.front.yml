@@ -1,0 +1,15 @@
+uuid: c5db7df4-305f-4174-ad04-e00d4a14aa30
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  title: 'Cancillería | Ministerio de Relaciones Exteriores de Colombia'
+  shortlink: '[site:url]'
+  mask_icon:
+    href: ''
+    color: ''

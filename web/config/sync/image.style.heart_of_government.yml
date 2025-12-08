@@ -1,0 +1,15 @@
+uuid: d395b1be-5d55-45d8-ad5e-424660cda86c
+langcode: es
+status: true
+dependencies: {  }
+name: heart_of_government
+label: heart_of_government
+effects:
+  bf32a60a-2df1-4469-9ffa-25052b5b2601:
+    uuid: bf32a60a-2df1-4469-9ffa-25052b5b2601
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 77
+      anchor: center-center

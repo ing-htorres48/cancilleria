@@ -1,0 +1,25 @@
+uuid: 997c6cca-e25a-41ce-a9ad-0e54d9ca9ef9
+langcode: es
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: quicktabstabsredessociales
+theme: bootstrap_barrio_subtheme
+region: multimedia
+weight: 0
+provider: null
+plugin: 'quicktabs_block:tabs_redes_sociales'
+settings:
+  id: 'quicktabs_block:tabs_redes_sociales'
+  label: Redes
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/inicio"

@@ -1,0 +1,30 @@
+uuid: 4f1bf2b3-2c0c-486f-941a-ff52c431c52c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:539f974c-e358-4573-972c-b0d0f4bb45fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: saladeprensavideosimg
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 47
+provider: null
+plugin: 'block_content:539f974c-e358-4573-972c-b0d0f4bb45fa'
+settings:
+  id: 'block_content:539f974c-e358-4573-972c-b0d0f4bb45fa'
+  label: 'Sala de prensa - videos img'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/video

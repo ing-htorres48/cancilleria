@@ -1,0 +1,21 @@
+uuid: d369a2f1-8eed-421e-a367-77064e19b615
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aparece_en_columna
+    - node.type.news
+id: node.news.field_aparece_en_columna
+field_name: field_aparece_en_columna
+entity_type: node
+bundle: news
+label: 'Aparece en columna'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

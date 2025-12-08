@@ -1,0 +1,42 @@
+uuid: 23ca5a6f-b475-4305-8576-f567069ce97c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.flex_caribe_galeria.body
+    - field.field.node.flex_caribe_galeria.field_img_caribe
+    - node.type.flex_caribe_galeria
+  module:
+    - image
+    - text
+    - user
+id: node.flex_caribe_galeria.default
+targetEntityType: node
+bundle: flex_caribe_galeria
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_img_caribe:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

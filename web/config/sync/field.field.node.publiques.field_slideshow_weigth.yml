@@ -1,0 +1,23 @@
+uuid: cc1580af-cc7a-4386-9e9e-d835f7445d0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow_weigth
+    - node.type.publiques
+  module:
+    - options
+id: node.publiques.field_slideshow_weigth
+field_name: field_slideshow_weigth
+entity_type: node
+bundle: publiques
+label: 'Peso en Portada'
+description: "Peso de la publicación en el slideshow de la página principal. Si el valor es pequeño tenderá a ubicarse en la primera ubicación. Este valor solo es útil si el nodo está marcado como 'Colocado en página principal', dentro de las opciones de publicación.\r\n"
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,25 @@
+uuid: ec96c393-59fb-4f1b-8d48-6b0199a54876
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_peso
+    - node.type.heart_of_government
+id: node.heart_of_government.field_peso
+field_name: field_peso
+entity_type: node
+bundle: heart_of_government
+label: Peso
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: 20
+  prefix: ''
+  suffix: ''
+field_type: integer

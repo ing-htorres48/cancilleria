@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: GUKBlXIBQ2d0H8Q7M_Rqn1Q93tRxLPfs9cG-VeQC9NI
+langcode: es
+page_title: Sitemap
+path: /sitemap
+message:
+  value: ''
+  format: full_html_2
+plugins:
+  frontpage:
+    enabled: false
+  'menu:main':
+    base_plugin: menu
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Mapa de Sitio Cancillería de Colombia'
+      show_disabled: false
+    id: 'menu:main'
+    provider: sitemap
+include_css: true

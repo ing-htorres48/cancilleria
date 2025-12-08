@@ -1,0 +1,30 @@
+uuid: 243fe4c4-a4aa-4d9d-b319-78e3f52ee857
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50042d3e-f48a-4ff4-a124-2c05ecccc99d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: filtrossaladeprensa
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 28
+provider: null
+plugin: 'block_content:50042d3e-f48a-4ff4-a124-2c05ecccc99d'
+settings:
+  id: 'block_content:50042d3e-f48a-4ff4-a124-2c05ecccc99d'
+  label: Filtros
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/newsroom/*\r\n/programas-participacion-ciudadana-jovenes-cancilleria-canciller-academia\r\n"

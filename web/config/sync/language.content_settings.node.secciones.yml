@@ -1,0 +1,16 @@
+uuid: 17000d5c-1774-47f7-adbf-a5f2965a5241
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.secciones
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.secciones
+target_entity_type_id: node
+target_bundle: secciones
+default_langcode: current_interface
+language_alterable: true

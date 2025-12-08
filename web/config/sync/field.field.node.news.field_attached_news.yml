@@ -1,0 +1,27 @@
+uuid: 21c9bcf4-8a56-4453-b20e-47657082b99a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attached_news
+    - node.type.news
+  module:
+    - file
+id: node.news.field_attached_news
+field_name: field_attached_news
+entity_type: node
+bundle: news
+label: 'Documentos relacionados'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

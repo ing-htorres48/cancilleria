@@ -1,0 +1,29 @@
+uuid: 6891880b-75da-4a3d-9485-bd294661fa1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_nacionalidad_renuncia
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_nacionalidad_renuncia_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 107
+provider: null
+plugin: 'views_block:acordeon_nacionalidad_renuncia-block_1'
+settings:
+  id: 'views_block:acordeon_nacionalidad_renuncia-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/nacionalidad/renuncia

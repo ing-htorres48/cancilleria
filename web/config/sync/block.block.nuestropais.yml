@@ -1,0 +1,29 @@
+uuid: f38f6c17-b060-4753-892a-bd24e93b6c65
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.nuestro-pais
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: nuestropais
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 20
+provider: null
+plugin: 'system_menu_block:nuestro-pais'
+settings:
+  id: 'system_menu_block:nuestro-pais'
+  label: 'Nuestro Pais'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/colombia/nuestro-pais/informacion-inversion\r\n/colombia/nuestro-pais/simbolos\r\n/colombia/nuestro-pais/turismo\r\n/colombia/nuestro-pais/visas-pais\r\n/colombia/nuestro-pais/diarios-pais\r\n/embajadas-consulados-colombia-exterior\r\n/colombia/nuestro-pais/educacion\r\n/colombia/migracion\r\n/colombia/migracion\r\n/colombia/migracion/historia\r\n/colombia/migracion/conpes\r\n/el-archipielago-es-colombia/video1\r\n/el-archipielago-es-colombia/video1\r\n/el-archipielago-es-colombia/video2\r\n/el-archipielago-es-colombia/revista\r\n/el-archipielago-es-colombia/imagen\r\n/el-archipielago-es-colombia/glosario\r\n/el-archipielago-es-colombia/historico\r\n/colombia/migracion/politica\r\n/politica_asuntos_migratorios\r\n\r\n"

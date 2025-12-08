@@ -1,0 +1,134 @@
+uuid: 56a06145-1937-49bc-8d0f-86a986d1e6e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_aparece_en_columna
+    - field.field.node.news.field_attached_news
+    - field.field.node.news.field_carga_de_archivos_masivos
+    - field.field.node.news.field_contenido_relacionado
+    - field.field.node.news.field_date
+    - field.field.node.news.field_destacado_en_columna
+    - field.field.node.news.field_gallery_page
+    - field.field.node.news.field_image_full_description
+    - field.field.node.news.field_image_post
+    - field.field.node.news.field_imagen_news_thumb
+    - field.field.node.news.field_opciones_de_titulo
+    - field.field.node.news.field_presentar_en_carrusel
+    - field.field.node.news.field_show_in_slide
+    - field.field.node.news.field_slideshow_weigth
+    - field.field.node.news.field_solicitado
+    - field.field.node.news.field_solicitante
+    - field.field.node.news.field_target
+    - field.field.node.news.field_weight
+    - field.field.node.news.taxonomy_vocabulary_5
+    - image.style.920x400
+    - node.type.news
+  module:
+    - datetime
+    - file
+    - flexslider_fields
+    - image
+    - text
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_attached_news:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_contenido_relacionado:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_gallery_page:
+    type: flexslider
+    label: hidden
+    settings:
+      optionset: galeria_interna_noticias
+      image_style: ''
+      caption: alt
+      image_loading:
+        attribute: lazy
+      image_link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_image_full_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_post:
+    type: flexslider
+    label: hidden
+    settings:
+      optionset: flexslider_carousel_with_min_and_max_ranges
+      image_style: 920x400
+      caption: '0'
+      image_loading:
+        attribute: lazy
+      image_link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_imagen_news_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  field_aparece_en_columna: true
+  field_carga_de_archivos_masivos: true
+  field_destacado_en_columna: true
+  field_opciones_de_titulo: true
+  field_presentar_en_carrusel: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_target: true
+  field_weight: true
+  langcode: true
+  taxonomy_vocabulary_5: true

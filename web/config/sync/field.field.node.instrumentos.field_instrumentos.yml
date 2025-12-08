@@ -1,0 +1,26 @@
+uuid: e6b68450-a706-4603-a37f-bd9ab58f6ed1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrumentos
+    - node.type.instrumentos
+    - taxonomy.vocabulary.instrumentos_internacionales_e
+id: node.instrumentos.field_instrumentos
+field_name: field_instrumentos
+entity_type: node
+bundle: instrumentos
+label: Instrumentos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      instrumentos_internacionales_e: instrumentos_internacionales_e
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: c4a6b5fb-03de-445c-816d-2339d85f33e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.visas
+  module:
+    - text
+id: node.visas.body
+field_name: body
+entity_type: node
+bundle: visas
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

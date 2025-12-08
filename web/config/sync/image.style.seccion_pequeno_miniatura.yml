@@ -1,0 +1,15 @@
+uuid: 13cb728a-3b90-4393-8185-ea98d2b70383
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_pequeno_miniatura
+label: seccion_pequeno_miniatura
+effects:
+  23d24c76-552e-4f47-a677-715fb9f1583e:
+    uuid: 23d24c76-552e-4f47-a677-715fb9f1583e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 80
+      height: 60
+      anchor: center-center

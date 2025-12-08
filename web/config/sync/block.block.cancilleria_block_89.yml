@@ -1,0 +1,30 @@
+uuid: e6499f06-c594-480c-ad5a-3875c01eed7f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08ba4049-03eb-42d6-aba9-8953ce013705'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_89
+theme: bartik
+region: content
+weight: 7
+provider: null
+plugin: 'block_content:08ba4049-03eb-42d6-aba9-8953ce013705'
+settings:
+  id: 'block_content:08ba4049-03eb-42d6-aba9-8953ce013705'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /newsroom/audio

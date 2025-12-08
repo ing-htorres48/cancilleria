@@ -1,0 +1,38 @@
+uuid: b490cb84-e338-4ba0-812b-3d1bb868aa37
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_viceministramultilat
+    - node.type.flex_viceministra_multilaterales
+  module:
+    - image
+id: node.flex_viceministra_multilaterales.field_image_viceministramultilat
+field_name: field_image_viceministramultilat
+entity_type: node
+bundle: flex_viceministra_multilaterales
+label: image_viceministramultilaterales
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: viceministra-asuntos-multilaterales
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

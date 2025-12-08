@@ -1,0 +1,109 @@
+uuid: 4d0bef44-cfe8-49ab-bcc1-e081a88294c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html_2
+  module:
+    - ckeditor
+format: full_html_2
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formato
+          items:
+            - Styles
+            - '-'
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - '-'
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - '-'
+            - Outdent
+            - Indent
+            - '-'
+            - HorizontalRule
+            - RemoveFormat
+            - '-'
+            - Format
+            - tokenbrowser
+        -
+          name: Enlaces
+          items:
+            - DrupalLink
+            - DrupalUnlink
+            - '-'
+            - ImceLink
+        -
+          name: Listas
+          items:
+            - BulletedList
+            - NumberedList
+            - ShowBlocks
+            - Language
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Subscript
+            - Superscript
+            - DrupalImage
+            - '-'
+            - ImceImage
+            - DrupalMediaLibrary
+        -
+          name: Herramientas
+          items:
+            - Source
+            - SpecialChar
+        -
+          name: Tablas
+          items:
+            - Table
+        -
+          name: 'Copy &amp; Paste'
+          items:
+            - Cut
+            - Copy
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: Custom
+          items:
+            - Maximize
+            - Undo
+            - Redo
+            - Iframe
+            - internalLinkButton
+        -
+          name: grilla
+          items:
+            - WidgetTemplateMenu
+            - widgetbootstrapLeftCol
+            - widgetbootstrapRightCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    tokenbrowser:
+      token_types: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

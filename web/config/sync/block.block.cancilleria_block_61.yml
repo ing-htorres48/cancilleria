@@ -1,0 +1,30 @@
+uuid: 89b92381-9744-4abc-acc2-8b57bc38581d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3423ce72-28b7-4464-96cf-f8af203c5e31'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_61
+theme: bartik
+region: content
+weight: 13
+provider: null
+plugin: 'block_content:3423ce72-28b7-4464-96cf-f8af203c5e31'
+settings:
+  id: 'block_content:3423ce72-28b7-4464-96cf-f8af203c5e31'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/nacionalidad/adquisicion

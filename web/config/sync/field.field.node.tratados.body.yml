@@ -1,0 +1,23 @@
+uuid: ad1e7291-8a1f-4495-8edd-cab262e61d26
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tratados
+  module:
+    - text
+id: node.tratados.body
+field_name: body
+entity_type: node
+bundle: tratados
+label: Cuerpo
+description: 'Tratados internacionales, depositarios'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

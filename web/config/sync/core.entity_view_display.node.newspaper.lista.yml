@@ -1,0 +1,44 @@
+uuid: 04471b09-e0ad-456c-b655-7296a4784e3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.lista
+    - field.field.node.newspaper.body
+    - field.field.node.newspaper.field_date
+    - field.field.node.newspaper.field_images_newspaper
+    - node.type.newspaper
+  module:
+    - datetime
+    - text
+    - user
+id: node.newspaper.lista
+targetEntityType: node
+bundle: newspaper
+mode: lista
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_images_newspaper: true
+  langcode: true

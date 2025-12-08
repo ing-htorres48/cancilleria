@@ -1,0 +1,30 @@
+uuid: b2d923db-1678-45b3-a9ba-14594050fdee
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f195e3b3-787a-4a78-8ac9-9329b75fc02a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: encabezadoacademiadiplomatica
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 37
+provider: null
+plugin: 'block_content:f195e3b3-787a-4a78-8ac9-9329b75fc02a'
+settings:
+  id: 'block_content:f195e3b3-787a-4a78-8ac9-9329b75fc02a'
+  label: 'Encabezado Academia Diplomática'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/footer/academy/about\r\n/footer/academy/carrera\r\n/footer/academy/contest-entry\r\n/footer/academy/courses\r\n/footer/academy/curso-ascenso\r\n/footer/academy/cooperation\r\n/footer/academy/news"

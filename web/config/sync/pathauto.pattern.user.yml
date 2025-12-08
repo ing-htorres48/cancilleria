@@ -1,0 +1,14 @@
+uuid: 84fdb481-b13a-46ee-95c4-4aa63ea05e90
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user
+label: 'Usuario - default'
+type: 'canonical_entities:user'
+pattern: 'users/[user:uid]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

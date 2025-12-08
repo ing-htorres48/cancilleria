@@ -1,0 +1,18 @@
+uuid: 1fd9069c-403a-435d-8d0b-7ccbed26e2de
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Comunicado Oficial'
+type: publiques
+description: 'Publica un Comunicado Oficial.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

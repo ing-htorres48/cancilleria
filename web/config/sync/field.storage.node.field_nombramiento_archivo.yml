@@ -1,0 +1,23 @@
+uuid: 2dd5a5c4-404e-41eb-b00b-65ff41730376
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_nombramiento_archivo
+field_name: field_nombramiento_archivo
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

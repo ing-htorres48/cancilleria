@@ -1,0 +1,30 @@
+uuid: fd5a076a-90a1-4951-94bf-84e35a46e348
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ca5b0353-1a40-49d8-bcf4-0fc8af4520ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: canalesdeatencion
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 172
+provider: null
+plugin: 'block_content:ca5b0353-1a40-49d8-bcf4-0fc8af4520ff'
+settings:
+  id: 'block_content:ca5b0353-1a40-49d8-bcf4-0fc8af4520ff'
+  label: 'Canales de atención'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help/contactus

@@ -1,0 +1,15 @@
+uuid: 09728a4a-955d-4b88-a4d4-91d6ccd654fe
+langcode: es
+status: true
+dependencies: {  }
+name: lista-galeria-imagenes
+label: lista-galeria-imagenes
+effects:
+  8bdb9478-4f81-41ea-9751-9988531e2468:
+    uuid: 8bdb9478-4f81-41ea-9751-9988531e2468
+    id: image_scale
+    weight: 1
+    data:
+      width: 330
+      height: null
+      upscale: true

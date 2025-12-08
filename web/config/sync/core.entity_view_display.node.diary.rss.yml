@@ -1,0 +1,49 @@
+uuid: cd4be915-e9ec-4384-9adc-55eb8448e026
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.diary.body
+    - field.field.node.diary.field_country_field
+    - field.field.node.diary.field_diary_date
+    - field.field.node.diary.field_peso
+    - field.field.node.diary.field_place_field
+    - field.field.node.diary.field_solicitado
+    - field.field.node.diary.field_solicitante
+    - node.type.diary
+  module:
+    - user
+id: node.diary.rss
+targetEntityType: node
+bundle: diary
+mode: rss
+content:
+  field_country_field:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_place_field:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_diary_date: true
+  field_peso: true
+  field_solicitado: true
+  field_solicitante: true
+  langcode: true

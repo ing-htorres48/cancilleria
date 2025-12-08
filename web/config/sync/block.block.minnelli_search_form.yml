@@ -1,0 +1,21 @@
+uuid: 102c623c-2ec5-41e8-8235-445a20c3d3aa
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - minnelli
+id: minnelli_search_form
+theme: minnelli
+region: ''
+weight: -43
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

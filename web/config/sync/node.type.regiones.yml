@@ -1,0 +1,17 @@
+uuid: f8b60763-c0ee-4e7b-b1d7-93a087165212
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Regiones
+type: regiones
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

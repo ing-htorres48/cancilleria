@@ -1,0 +1,87 @@
+uuid: de9f586d-939f-4266-860d-1bfa9b93c95b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.publiques.body
+    - field.field.node.publiques.field_attached_publiques
+    - field.field.node.publiques.field_contenido_relacionado
+    - field.field.node.publiques.field_date
+    - field.field.node.publiques.field_image_full_description
+    - field.field.node.publiques.field_imagen_publiques_thumb
+    - field.field.node.publiques.field_images_gallery
+    - field.field.node.publiques.field_images_publiques
+    - field.field.node.publiques.field_opciones_de_titulo
+    - field.field.node.publiques.field_show_in_slide
+    - field.field.node.publiques.field_slideshow_weigth
+    - field.field.node.publiques.field_solicitado
+    - field.field.node.publiques.field_solicitante
+    - field.field.node.publiques.field_weight
+    - node.type.publiques
+  module:
+    - datetime
+    - file
+    - image
+    - user
+id: node.publiques.email_plain
+targetEntityType: node
+bundle: publiques
+mode: email_plain
+content:
+  field_attached_publiques:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_images_gallery:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_images_publiques:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_contenido_relacionado: true
+  field_image_full_description: true
+  field_imagen_publiques_thumb: true
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_slideshow_weigth: true
+  field_solicitado: true
+  field_solicitante: true
+  field_weight: true
+  langcode: true

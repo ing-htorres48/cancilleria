@@ -1,0 +1,16 @@
+uuid: cfa05526-3ceb-4d72-8b94-93e3f902a90a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vocabulary_5
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.vocabulary_5
+target_entity_type_id: taxonomy_term
+target_bundle: vocabulary_5
+default_langcode: und
+language_alterable: false

@@ -1,0 +1,16 @@
+uuid: e97673d8-da28-4426-801f-561e26919f69
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.instrumentos_internacionales_e
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.instrumentos_internacionales_e
+target_entity_type_id: taxonomy_term
+target_bundle: instrumentos_internacionales_e
+default_langcode: und
+language_alterable: false

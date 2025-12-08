@@ -1,0 +1,21 @@
+uuid: 7ac6bd6d-0174-4310-aa12-af6f3764f213
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opciones_de_titulo
+    - node.type.speeches
+  module:
+    - options
+id: node.speeches.field_opciones_de_titulo
+field_name: field_opciones_de_titulo
+entity_type: node
+bundle: speeches
+label: 'Opciones de título'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 400c3470-3051-4599-884d-aac172822aea
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_grande
+label: seccion_grande
+effects:
+  02965e39-ecb7-462b-be39-c2a43675ffee:
+    uuid: 02965e39-ecb7-462b-be39-c2a43675ffee
+    id: image_crop
+    weight: -9
+    data:
+      width: 920
+      height: 440
+      anchor: center-center
+  55eb767f-584d-4d34-a06d-afd5ea3bb638:
+    uuid: 55eb767f-584d-4d34-a06d-afd5ea3bb638
+    id: image_scale
+    weight: -10
+    data:
+      width: 920
+      height: null
+      upscale: true

@@ -1,0 +1,21 @@
+uuid: f42b0de8-461b-420a-9cf8-9917b7984a41
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_publiques
+label: 'Contenido - Comunicado Official'
+type: 'canonical_entities:node'
+pattern: 'newsroom/publiques/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      publiques: publiques
+selection_logic: and
+weight: 0
+relationships: {  }

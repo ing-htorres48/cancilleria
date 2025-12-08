@@ -1,0 +1,102 @@
+uuid: d271708e-16d2-421a-a2cd-15593bd1336a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.images.body
+    - field.field.node.images.field_date
+    - field.field.node.images.field_image_full_description
+    - field.field.node.images.field_images_gallery
+    - field.field.node.images.field_images_thumb
+    - field.field.node.images.field_opciones_de_titulo
+    - field.field.node.images.field_show_in_slide
+    - field.field.node.images.field_show_week
+    - field.field.node.images.field_slideshow_weigth
+    - field.field.node.images.field_solicitado
+    - field.field.node.images.field_solicitante
+    - field.field.node.images.field_target
+    - field.field.node.images.field_tema_galeria
+    - field.field.node.images.field_vinculo
+    - field.field.node.images.taxonomy_vocabulary_6
+    - node.type.images
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.images.rss
+targetEntityType: node
+bundle: images
+mode: rss
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_image_full_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_images_gallery:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_images_thumb:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_slideshow_weigth:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tema_galeria:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_opciones_de_titulo: true
+  field_show_in_slide: true
+  field_show_week: true
+  field_solicitado: true
+  field_solicitante: true
+  field_target: true
+  field_vinculo: true
+  langcode: true
+  taxonomy_vocabulary_6: true

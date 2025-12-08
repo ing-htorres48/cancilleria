@@ -1,0 +1,23 @@
+uuid: 25ae8613-6e18-476f-b94c-5d825544e269
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.f_participacion_ciudadana_j.field_imagen_j
+    - node.type.f_participacion_ciudadana_j
+  module:
+    - user
+id: node.f_participacion_ciudadana_j.teaser
+targetEntityType: node
+bundle: f_participacion_ciudadana_j
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_j: true
+  langcode: true

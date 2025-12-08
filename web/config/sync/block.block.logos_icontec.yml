@@ -1,0 +1,30 @@
+uuid: 16236078-ef4e-4093-8b53-66d46795b64d
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e0fb77b7-8034-4b3f-84a3-6fc59ed46690'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: logos_icontec
+theme: bootstrap_barrio_subtheme
+region: enlaces_principales
+weight: 7
+provider: null
+plugin: 'block_content:e0fb77b7-8034-4b3f-84a3-6fc59ed46690'
+settings:
+  id: 'block_content:e0fb77b7-8034-4b3f-84a3-6fc59ed46690'
+  label: logos_icontec
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

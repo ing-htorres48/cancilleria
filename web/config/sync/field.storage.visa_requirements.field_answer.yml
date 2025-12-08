@@ -1,0 +1,19 @@
+uuid: f0d2db05-76dd-4984-a693-56f9db794127
+langcode: es
+status: true
+dependencies:
+  module:
+    - cancilleria_form
+    - text
+id: visa_requirements.field_answer
+field_name: field_answer
+entity_type: visa_requirements
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

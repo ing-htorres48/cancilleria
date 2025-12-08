@@ -1,0 +1,23 @@
+uuid: 5837b3ed-2e46-482c-b774-6cd1824b049b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_slide
+    - node.type.video
+id: node.video.field_show_in_slide
+field_name: field_show_in_slide
+entity_type: node
+bundle: video
+label: 'Aparece en las diapositivas'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

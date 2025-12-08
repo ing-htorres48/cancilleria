@@ -1,0 +1,18 @@
+uuid: 198e0593-8fb9-453b-b0f6-60ecbf7d3ee6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.secciones
+id: node.secciones.title
+field_name: title
+entity_type: node
+bundle: secciones
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+uuid: 9f2f2e5a-c4fa-407d-9a45-8ebb46dc10a2
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio_subtheme
+  menu:
+    - menu-regiones
+id: menu-regiones__bootstrap_barrio_subtheme
+menu: menu-regiones
+theme: bootstrap_barrio_subtheme
+block_config: '[]'
+menu_config: '[]'

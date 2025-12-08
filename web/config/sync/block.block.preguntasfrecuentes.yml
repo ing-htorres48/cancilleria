@@ -1,0 +1,29 @@
+uuid: b7118ca6-8070-407b-9c94-3ffeb5bddd40
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.preguntas-frecuentes
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: preguntasfrecuentes
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 8
+provider: null
+plugin: 'system_menu_block:preguntas-frecuentes'
+settings:
+  id: 'system_menu_block:preguntas-frecuentes'
+  label: 'Accesos Rápidos '
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/help/faq/apostilla-legalizacion\r\n/help/faq/passports\r\n/help/faq/visas\r\n/help/faq/Nationality\r\n/help/faq/cooperation\r\n/help/faq/consulates\r\n/help/faq/cnu\r\n/help/faq/asistencia-connacionales"

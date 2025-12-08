@@ -1,0 +1,29 @@
+uuid: 576ddabc-dc35-4003-b77f-88690523acf3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.convocatorias
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: convocatorias
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 14
+provider: null
+plugin: 'system_menu_block:convocatorias'
+settings:
+  id: 'system_menu_block:convocatorias'
+  label: Convocatorias
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/diplomacy/convocatory/colombianos\r\n/diplomacy/convocatory/extranjeros"

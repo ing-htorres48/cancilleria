@@ -1,0 +1,47 @@
+uuid: 4629cf3a-4092-4a16-87f9-fe33ba1b4734
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.newspaper.body
+    - field.field.node.newspaper.field_date
+    - field.field.node.newspaper.field_images_newspaper
+    - node.type.newspaper
+  module:
+    - datetime
+    - image
+    - user
+id: node.newspaper.email_plain
+targetEntityType: node
+bundle: newspaper
+mode: email_plain
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_images_newspaper:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true

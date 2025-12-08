@@ -1,0 +1,23 @@
+uuid: ab92ca62-7d39-4575-bd2e-fc101adba887
+langcode: es
+status: true
+dependencies: {  }
+name: seccion_miniatura2
+label: seccion_miniatura2
+effects:
+  1ba26929-bd69-45ee-98fe-fbf7f2f588bc:
+    uuid: 1ba26929-bd69-45ee-98fe-fbf7f2f588bc
+    id: image_scale
+    weight: 2
+    data:
+      width: 120
+      height: null
+      upscale: true
+  89507eaf-a82d-46fe-936c-8bdf123ef95e:
+    uuid: 89507eaf-a82d-46fe-936c-8bdf123ef95e
+    id: image_crop
+    weight: 3
+    data:
+      width: 120
+      height: 90
+      anchor: center-center

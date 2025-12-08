@@ -1,0 +1,29 @@
+uuid: cdc7ad4e-16ff-420c-b657-3849b28ad0ed
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.algunas-iniciativas-y-programas-
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: algunasiniciativasyprogramasdelacancilleria
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 29
+provider: null
+plugin: 'system_menu_block:algunas-iniciativas-y-programas-'
+settings:
+  id: 'system_menu_block:algunas-iniciativas-y-programas-'
+  label: 'Algunas Iniciativas y Programas de la Cancillería'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/juridicainternacional/informativo\r\n/caribe\r\n/rio\r\n/casos-corte\r\n/unesco/news\r\n/biblioteca/Presentacion\r\n\r\n/caribe/camino_recorrido\r\n/caribe/resultados\r\n/caribe/areas-y-modalidades-cooperacion\r\n/caribe/galeria\r\n/caribe/publicaciones\r\n\r\n/rio/acerca\r\n/rio/abc\r\n/rio/propuesta\r\n/rio/linea\r\n\r\n/casos_corte/nicaragua_colombia\r\n/casos_corte/estrategia-post-fallo\r\n/casos_corte/ecuador_colombia\r\n/casos_corte/nueva-demanda\r\n\r\n/unesco/about\r\n/normatividad\r\n/relacion-unesco\r\n/delegacion-colombia-unesco\r\n/proyectos\r\n/areas-tematicas\r\n/educacion\r\n/unesco/area/education/instruments\r\n/premios\r\n/redes\r\n/ciencias-naturales-exactas\r\n/instrumentos-normativos\r\n/reservas-biosfera\r\n/ciencias-sociales-humanas\r\n/instrumentos-normativos-0\r\n/unesco/area/culture\r\n/instrumentos-normativos-1\r\n/unesco/area/culture/world\r\n/unesco/area/culture/inmaterial\r\n/comunicacion-e-informacion\r\n/instrumentos-normativos-2\r\n/unesco/news\r\n/unesco/call\r\n/fondos\r\n/unesco/call/prize\r\n/unesco/call/premios\r\n/unesco/call/scholarship\r\n/unesco/call/other\r\n/convocatorias-cerradas\r\n/unesco/empleo\r\n/unesco/presentation\r\n/instrumentos-normativos-p\r\n/instrumentos-normativos-4\r\n/instrumentos-normativos-5\r\n/instrumentos-normativos-6\r\n"

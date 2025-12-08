@@ -1,0 +1,27 @@
+uuid: fb5b7e73-1b17-4ccd-b037-886b1424895f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_descarga
+    - node.type.video
+  module:
+    - file
+id: node.video.field_video_descarga
+field_name: field_video_descarga
+entity_type: node
+bundle: video
+label: 'Video Descarga'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

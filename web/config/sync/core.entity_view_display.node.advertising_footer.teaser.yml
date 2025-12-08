@@ -1,0 +1,39 @@
+uuid: e0f59fc0-f4e0-47ce-b569-dfe496f32e30
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.advertising_footer.body
+    - field.field.node.advertising_footer.field_advertising_image
+    - field.field.node.advertising_footer.field_advertising_url
+    - field.field.node.advertising_footer.field_peso
+    - field.field.node.advertising_footer.field_target
+    - node.type.advertising_footer
+  module:
+    - text
+    - user
+id: node.advertising_footer.teaser
+targetEntityType: node
+bundle: advertising_footer
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_advertising_image: true
+  field_advertising_url: true
+  field_peso: true
+  field_target: true
+  langcode: true

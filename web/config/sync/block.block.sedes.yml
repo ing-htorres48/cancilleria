@@ -1,0 +1,29 @@
+uuid: 35088042-0b54-4ac9-bdd6-e8ea1fe918b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.sedes
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: sedes
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 26
+provider: null
+plugin: 'system_menu_block:sedes'
+settings:
+  id: 'system_menu_block:sedes'
+  label: Sedes
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/sedes\r\n/sedes#1\r\n/sedes#2\r\n/sedes#3\r\n/sedes#4"

@@ -1,0 +1,16 @@
+uuid: 9ac2625a-f597-4f18-99a4-8f62a354f063
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.advertising_footer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.advertising_footer
+target_entity_type_id: node
+target_bundle: advertising_footer
+default_langcode: current_interface
+language_alterable: true

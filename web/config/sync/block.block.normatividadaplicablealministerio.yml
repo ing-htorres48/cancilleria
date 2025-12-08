@@ -1,0 +1,29 @@
+uuid: d3a1e5ce-509e-4f47-9fdb-57b89272f9b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.normatividad-aplicable-al-minist
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: normatividadaplicablealministerio
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 19
+provider: null
+plugin: 'system_menu_block:normatividad-aplicable-al-minist'
+settings:
+  id: 'system_menu_block:normatividad-aplicable-al-minist'
+  label: 'Normatividad aplicable al Ministerio'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/decreto-unico-reglamentario-sector-administrativo-relaciones-exteriores\r\n/resoluciones-generales-expedidas"

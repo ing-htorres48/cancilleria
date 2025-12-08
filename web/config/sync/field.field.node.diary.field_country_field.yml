@@ -1,0 +1,19 @@
+uuid: c24985df-048b-4a2b-a64d-04a6b0df1cf1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country_field
+    - node.type.diary
+id: node.diary.field_country_field
+field_name: field_country_field
+entity_type: node
+bundle: diary
+label: País
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

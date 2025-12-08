@@ -1,0 +1,25 @@
+uuid: 57f25378-6425-43cd-b47c-5a10bd80c68b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_peso
+    - node.type.diary
+id: node.diary.field_peso
+field_name: field_peso
+entity_type: node
+bundle: diary
+label: Peso
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

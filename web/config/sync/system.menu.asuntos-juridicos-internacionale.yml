@@ -1,0 +1,8 @@
+uuid: deeb408a-cbeb-4acd-8b76-3c576470ac20
+langcode: es
+status: true
+dependencies: {  }
+id: asuntos-juridicos-internacionale
+label: 'Asuntos Jurídicos Internacionales'
+description: ''
+locked: false

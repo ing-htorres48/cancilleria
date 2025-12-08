@@ -1,0 +1,33 @@
+uuid: fa096dce-e39c-4ba7-8e4f-c198b862b309
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flex__viceministrorelaciones.body
+    - field.field.node.flex__viceministrorelaciones.field_image_viceexterior
+    - node.type.flex__viceministrorelaciones
+  module:
+    - text
+    - user
+id: node.flex__viceministrorelaciones.teaser
+targetEntityType: node
+bundle: flex__viceministrorelaciones
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_viceexterior: true
+  langcode: true

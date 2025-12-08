@@ -1,0 +1,16 @@
+uuid: 35e59fb9-5217-46b0-8c68-3c570f4527f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.blog
+target_entity_type_id: node
+target_bundle: blog
+default_langcode: current_interface
+language_alterable: true

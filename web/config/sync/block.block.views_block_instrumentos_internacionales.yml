@@ -1,0 +1,29 @@
+uuid: 461633ca-6fdd-4142-a567-7637e56c41cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.instrumentos_internacionales_en_calidad_de_depositario
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block_instrumentos_internacionales
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 6
+provider: null
+plugin: 'views_block:instrumentos_internacionales_en_calidad_de_depositario-block_1'
+settings:
+  id: 'views_block:instrumentos_internacionales_en_calidad_de_depositario-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /instrumentos-internacionales-en-deposito-en-Colombia

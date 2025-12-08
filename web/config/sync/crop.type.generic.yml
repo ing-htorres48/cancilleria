@@ -1,0 +1,12 @@
+uuid: 43203935-0f6d-4d5e-abb8-913f0aa0608b
+langcode: es
+status: true
+dependencies: {  }
+label: Generico
+id: generic
+description: ''
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,23 @@
+uuid: 198a2214-a973-4e00-b5ac-f1be900bde12
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_attached_publiques
+field_name: field_attached_publiques
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: true
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

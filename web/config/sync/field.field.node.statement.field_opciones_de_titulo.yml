@@ -1,0 +1,21 @@
+uuid: a4622c1d-420d-4eb6-9804-7a5d866a7812
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opciones_de_titulo
+    - node.type.statement
+  module:
+    - options
+id: node.statement.field_opciones_de_titulo
+field_name: field_opciones_de_titulo
+entity_type: node
+bundle: statement
+label: 'Opciones de título'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+uuid: 302a1db8-0323-4cf7-b553-b6bb8b1747f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clausula
+    - node.type.tratados
+id: node.tratados.field_clausula
+field_name: field_clausula
+entity_type: node
+bundle: tratados
+label: 'Cláusula de entrada en vigor'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_clausula][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: string

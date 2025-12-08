@@ -1,0 +1,30 @@
+uuid: ff1ff7a0-7960-42be-ad77-8c499f8849b8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e1e44580-1352-4734-a933-cbf26fb05e7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cancilleria_block_134
+theme: bartik
+region: content
+weight: -17
+provider: null
+plugin: 'block_content:e1e44580-1352-4734-a933-cbf26fb05e7d'
+settings:
+  id: 'block_content:e1e44580-1352-4734-a933-cbf26fb05e7d'
+  label: ''
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /biblioteca/museo

@@ -1,0 +1,27 @@
+uuid: f5d91954-d0e2-46ce-9f39-906f042cd277
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_tags
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+id: file.default.field_tags
+field_name: field_tags
+entity_type: file
+bundle: default
+label: Etiquetas
+description: 'Enter a comma-separated list of words to describe your file.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+field_type: entity_reference

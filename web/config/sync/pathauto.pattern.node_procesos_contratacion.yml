@@ -1,0 +1,21 @@
+uuid: c817984a-7058-4212-83d2-c420a714a1ee
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_procesos_contratacion
+label: 'Contenido - Procesos de contratación'
+type: 'canonical_entities:node'
+pattern: 'procesos-de-contratacion/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      procesos_contratacion: procesos_contratacion
+selection_logic: and
+weight: 0
+relationships: {  }

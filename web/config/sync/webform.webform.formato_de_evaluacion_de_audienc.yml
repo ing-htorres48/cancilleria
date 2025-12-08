@@ -1,0 +1,298 @@
+uuid: a3ef2954-2fa6-4d7b-bbff-6fc3e3d65518
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: formato_de_evaluacion_de_audienc
+title: 'FORMATO DE EVALUACIÓN DE AUDIENCIA'
+description: ''
+category: ''
+elements: |-
+  intro:
+    '#type': webform_markup
+    '#markup': |-
+      <p style="text-align: center;">SECTOR DE RELACIONES EXTERIORES<br />
+      MINISTERIO DE RELACIONES EXTERIORES Y SU FONDO ROTATORIO, Y LA<br />
+      UNIDAD ADMINISTRATIVA ESPECIAL MIGRACI&Oacute;N COLOMBIA</p>
+
+      <p style="text-align: center;">AUDIENCIA P&Uacute;BLICA DE RENDICI&Oacute;N DE CUENTAS<br />
+      A LA CIUDADAN&Iacute;A 2010-2018<br />
+      &nbsp;&nbsp;&nbsp;<br />
+      Anexo No. 2</p>
+
+      <p style="text-align: center;">FORMATO DE EVALUACI&Oacute;N</p>
+  fecha:
+    '#type': date
+    '#title': Fecha
+  nombre_opcional_:
+    '#type': textfield
+    '#title': 'Nombre (opcional)'
+  entidad_u_organizacion_que_representa_:
+    '#type': textfield
+    '#title': "Entidad u organización que representa\t"
+  1paragraph:
+    '#type': webform_markup
+    '#markup': |-
+      <p><em>Agradecemos su presencia en esta Audiencia P&uacute;blica de Rendici&oacute;n de Cuentas o su seguimiento a trav&eacute;s de los diversos medios dispuestos para tal fin. Sus respuestas a la presente encuesta, que eval&uacute;a aspectos de la audiencia y el proceso de rendici&oacute;n de cuentas, son valiosas para el Sector de Relaciones Exteriores.</em></p>
+
+      <p><em>Marque seg&uacute;n el caso:</em></p>
+  1_como_se_entero_de_la_realizacion_de_la_audiencia_publica_:
+    '#type': webform_radios_other
+    '#title': "1-\t¿Cómo se enteró de la realización de la Audiencia Pública?"
+    '#options':
+      1: 'Página web de las entidades del Sector'
+      2: 'Redes sociales'
+      3: 'Periódico  '
+      4: 'Invitación directa'
+    '#other__option_label': 'Otro medio ¿Cuál?'
+    '#other__placeholder': 'Medio por el cual se enteró de la realización de la Audiencia Pública'
+  2_la_explicacion_sobre_el_procedimiento_de_las_intervenciones_en:
+    '#type': webform_radios_other
+    '#title': "2-\tLa explicación sobre el procedimiento de las intervenciones en la Audiencia Pública fue"
+    '#options':
+      1: Clara
+    '#other__option_label': 'Otros...Confusa ¿Por qué?'
+    '#other__placeholder': 'El procedimiento de las intervenciones en la Audiencia Pública fue confusa porque...'
+  3_la_explicacion_del_objetivo_y_resultados_esperados_de_la_audie:
+    '#type': webform_radios_other
+    '#title': "3-\tLa explicación del objetivo y resultados esperados de la Audiencia Pública fue"
+    '#options':
+      1: Clara
+    '#other__option_label': 'Confusa ¿Por qué?'
+    '#other__placeholder': 'La explicación del objetivo y resultados esperados de la Audiencia Pública fue porque...'
+  4_la_oportunidad_para_que_los_asistentes_inscritos_opinen_durant:
+    '#type': radios
+    '#title': '4- La oportunidad para que los asistentes inscritos opinen durante la Audiencia Pública fue'
+    '#options':
+      1: 'Adecuada '
+      2: Insuficiente
+  5_el_tiempo_de_exposicion_para_la_presentacion_del_informe_de_la:
+    '#type': radios
+    '#title': "5-\tEl tiempo de exposición para la presentación del informe de la gestión institucional fue"
+    '#options':
+      1: 'Muy largo'
+      2: Adecuado
+      3: Corto
+  6_la_informacion_presentada_en_la_audiencia_publica_responde_a_s:
+    '#type': webform_radios_other
+    '#title': '6- ¿La información presentada en la Audiencia Pública responde a sus intereses?'
+    '#options':
+      1: SI
+    '#other__option_label': 'No ¿Por qué?'
+    '#other__title': 'No, porque ...'
+  _consulto_informacion_sobre_la_gestion_de_la_entidad_antes_de_la:
+    '#type': webform_radios_other
+    '#title': '7-  ¿Consultó información sobre la gestión de la entidad antes de la Audiencia Pública?'
+    '#options':
+      1: Si
+    '#other__option_label': 'No.  A través de qué medio'
+    '#other__placeholder': 'A través de qué medio'
+  8_la_forma_como_estan_elaborados_los_informes_de_gestion_permite:
+    '#type': webform_radios_other
+    '#title': '8- ¿La forma como están elaborados los informes de gestión permiten la comprensión de los resultados?'
+    '#options':
+      1: Si
+    '#other__option_label': 'No ¿Por qué?'
+    '#other__placeholder': 'No, porque...'
+  9_segun_su_experiencia_primordialmente_la_audiencia_publica_perm:
+    '#type': radios
+    '#title': '9- Según su experiencia, primordialmente, la Audiencia Pública permite a ciudadanos o usuarios de los servicios de las entidades del sector'
+    '#options':
+      1: 'Evaluar la gestión'
+      2: 'Informarse de la gestión anual '
+      3: 'Proponer mejoras a los servicios'
+      4: 'Presentar quejas'
+  10_por_favor_proponga_un_tema_de_su_interes_sobre_la_gestion_del:
+    '#type': textarea
+    '#title': '10- Por favor proponga un tema de su interés sobre la gestión del Sector de Relaciones Exteriores para próximas Audiencias Públicas'
+  markup:
+    '#type': webform_markup
+    '#markup': '<strong>MUCHAS GRACIAS POR SU PARTICIPACI&Oacute;N</strong>'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

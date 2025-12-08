@@ -1,0 +1,19 @@
+uuid: f62758f2-eb5f-4253-adc3-604100f4021e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solicitante
+    - node.type.news
+id: node.news.field_solicitante
+field_name: field_solicitante
+entity_type: node
+bundle: news
+label: Solicitante
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

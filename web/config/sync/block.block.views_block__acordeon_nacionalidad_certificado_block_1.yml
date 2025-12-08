@@ -1,0 +1,29 @@
+uuid: 8d89489b-2d09-45ff-9834-99f9dc44017f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.acordeon_nacionalidad_certificado
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__acordeon_nacionalidad_certificado_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 104
+provider: null
+plugin: 'views_block:acordeon_nacionalidad_certificado-block_1'
+settings:
+  id: 'views_block:acordeon_nacionalidad_certificado-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tramites_servicios/nacionalidad/certificado

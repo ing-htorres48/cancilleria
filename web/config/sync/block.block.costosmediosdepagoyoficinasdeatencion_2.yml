@@ -1,0 +1,30 @@
+uuid: c8c31450-eeea-4af8-972f-0972248f0852
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0d7fa277-af70-4e9a-ba8b-6605be55de07'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: costosmediosdepagoyoficinasdeatencion_2
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 130
+provider: null
+plugin: 'block_content:0d7fa277-af70-4e9a-ba8b-6605be55de07'
+settings:
+  id: 'block_content:0d7fa277-af70-4e9a-ba8b-6605be55de07'
+  label: 'Costos, medios de pago y oficinas de atención'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<nolink>'
