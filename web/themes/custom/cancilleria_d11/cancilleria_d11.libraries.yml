@@ -1,0 +1,36 @@
+global-styling:
+  css:
+    theme:
+      css/colors.css: {}
+      css/style.css: {}
+      css/components/header.css: {}
+      css/components/footer.css: {}
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+bootstrap-icons:
+  css:
+    theme:
+      'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css': { type: external, minified: true }
+
+custom-fonts:
+  css:
+    theme:
+      'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap': { type: external, minified: true }
+
+# Biblioteca para componentes personalizados
+components:
+  css:
+    theme:
+      css/components/header.css: {}
+      css/components/navigation.css: {}
+      css/components/footer.css: {}
+      css/components/cards.css: {}
+  js:
+    js/components/navigation.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

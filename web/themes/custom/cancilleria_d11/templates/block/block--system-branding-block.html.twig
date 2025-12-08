@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Template para el navbar/navegación principal
+ */
+#}
+
+<div class="navbar-brand">
+  {% if site_logo %}
+    <img src="{{ site_logo }}" alt="{{ site_name }}" class="navbar-logo">
+  {% endif %}
+  {% if site_name %}
+    <span class="brand-text">{{ site_name }}</span>
+  {% endif %}
+</div>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+  {% if primary_nav %}
+    {{ primary_nav }}
+  {% endif %}
+
+  {% if secondary_nav %}
+    <div class="navbar-nav ms-auto">
+      {{ secondary_nav }}
+    </div>
+  {% endif %}
+
+  {# Search form #}
+  <div class="navbar-search ms-auto">
+    <form class="d-flex" role="search" action="/search" method="GET">
+      <div class="position-relative">
+        <input class="form-control" type="search" name="keys" placeholder="Buscar..." aria-label="Buscar">
+        <button class="search-btn" type="submit" aria-label="Buscar">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

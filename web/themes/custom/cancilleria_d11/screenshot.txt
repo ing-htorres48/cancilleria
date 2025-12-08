@@ -1,0 +1,11 @@
+# Archivo para screenshot del tema
+# Este archivo se puede reemplazar con una imagen real PNG del tema
+# Dimensiones recomendadas: 588x438 pixels
+
+Colombianos UNE D11 Theme Screenshot
+===================================
+
+[Aquí iría una imagen screenshot del tema]
+
+Bootstrap 5 Subtheme para Drupal 11
+Colombianos UNE - Edición 2025

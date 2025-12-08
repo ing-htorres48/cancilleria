@@ -1,0 +1,17 @@
+{#
+  Template: paragraph--slider--slider-full.html.twig
+  Layout 50/50: imagen (izquierda) + panel azul (derecha)
+#}
+
+<div{{ attributes.addClass('slider-item-wrapper') }}>
+  <div class="slider-item-inner">
+    <div class="slider-left">
+      {{ content.field_img_slider }}
+    </div>
+    <div class="slider-right">
+      <div class="slider-right-content">
+        {{ content.field_desc_slider }}
+      </div>
+    </div>
+  </div>
+</div>

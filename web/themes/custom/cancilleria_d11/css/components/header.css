@@ -1,0 +1,220 @@
+/* CONTENEDOR GENERAL */
+.govco-header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* 1) FRANJA AZUL */
+.govco-header__top {
+  background-color: #3367CC;
+  /* Azul GOV.CO */
+  color: #ffffff;
+}
+
+.govco-header__top-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.govco-header__govco-logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+a.glink {
+  display: inline-block;
+  background: #ffffff;
+  color: #2F6BD8;
+  /* Ajusta según tu paleta */
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+a.glink:hover {
+  background: #f2f2f2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+a.glink:active {
+  transform: scale(0.97);
+}
+
+/* 2) FRANJA BLANCA */
+.govco-header__middle {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.govco-header__middle-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.govco-header__logo img {
+  max-height: 56px;
+  height: auto;
+  display: block;
+}
+
+.govco-header__search-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.govco-header__search {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  border-radius: 999px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+
+.govco-header__search input {
+  flex: 1;
+  border: none;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.govco-header__search input:focus {
+  outline: none;
+}
+
+.govco-header__search button {
+  border: none;
+  padding: 0 1.1rem;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+/* 3) FRANJA GRIS MENÚ */
+.govco-header__nav {
+  background-color: #F8F8F8;
+  border-top: 1px solid #e5e5e5;
+}
+
+.govco-header__nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 1rem 0.6rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.govco-header__nav-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.78rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+.govco-header__nav-list li span:first-child {
+  font-size: 1.4rem;
+  /* ícono */
+  line-height: 1.2;
+}
+
+.govco-header__nav-list li span:last-child {
+  margin-top: 0.15rem;
+}
+
+/* Responsive básico */
+@media (max-width: 768px) {
+  .govco-header__middle-inner {
+    flex-direction: column;
+  }
+
+  .govco-header__nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+/* SOLO el primer nivel del menú horizontal */
+.govco-header__nav>ul.govco-header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+/* Quita el flex de los ul hijos (dropdown) */
+.govco-header__nav ul.dropdown-menu {
+  display: none;
+  /* oculto por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Los li que tienen submenú deben ser posicionados */
+.govco-header__nav li.dropdown {
+  position: relative;
+}
+
+/* Mostrar submenú al pasar el mouse (si no usas JS de Bootstrap) */
+.govco-header__nav li.dropdown:hover>ul.dropdown-menu {
+  display: block;
+}
+
+/* Estilos básicos de los enlaces del submenú */
+.govco-header__nav ul.dropdown-menu>li>a {
+  display: block;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  color: #333;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.govco-header__nav ul.dropdown-menu>li>a:hover {
+  background: #F5F5F5;
+}
+
+/* Contenedor del menú */
+.govco-header__nav {
+  position: relative;
+  z-index: 1000;
+  /* asegura que quede encima del body */
+}
+
+/* El dropdown debe tener z-index también */
+.govco-header__nav ul.dropdown-menu {
+  position: absolute;
+  z-index: 2000;
+  /* más arriba que el nav */
+}
