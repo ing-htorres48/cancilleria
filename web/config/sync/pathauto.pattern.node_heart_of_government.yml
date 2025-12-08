@@ -10,10 +10,10 @@ type: 'canonical_entities:node'
 pattern: 'corazon-de-gobierno/[node:title]'
 selection_criteria:
   -
-    id: node_type
+    id: entity_bundle:node
     negate: false
     context_mapping:
-      node: node
+      entity: node
     bundles:
       heart_of_government: heart_of_government
 selection_logic: and
