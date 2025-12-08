@@ -5,7 +5,6 @@ dependencies:
   config:
     - taxonomy.vocabulary.vocabulary_9
   module:
-    - content_translation
 third_party_settings:
   content_translation:
     enabled: false

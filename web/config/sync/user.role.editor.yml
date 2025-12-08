@@ -105,7 +105,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - we_megamenu
     - youtube
 id: editor
 label: editor
@@ -127,7 +126,6 @@ permissions:
   - 'administer redirects'
   - 'administer scheduler'
   - 'administer url aliases'
-  - 'administer we_megamenu'
   - 'administer youtube'
   - 'bypass node access'
   - 'create acordeon content'

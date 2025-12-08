@@ -1,0 +1,5 @@
+name: 'cancilleria_form'
+type: module
+description: 'Create to form custom'
+core_version_requirement: ^9 || ^10 || ^11
+package: 'Custom'

@@ -1,0 +1,20 @@
+uuid: 76e4f8b4-725a-40b0-be7a-c2a86ec89fd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.costs_means.field_usd_visa
+  module:
+    - cancilleria_form
+id: costs_means.costs_means.field_usd_visa
+field_name: field_usd_visa
+entity_type: costs_means
+bundle: costs_means
+label: 'USD Visa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

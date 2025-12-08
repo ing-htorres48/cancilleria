@@ -1,0 +1,92 @@
+uuid: a6851ea0-4be3-48e3-8c40-bc07ef6de554
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.costs_means.costs_means.field_activity
+    - field.field.costs_means.costs_means.field_euro_study
+    - field.field.costs_means.costs_means.field_euro_visa
+    - field.field.costs_means.costs_means.field_usd_study
+    - field.field.costs_means.costs_means.field_usd_visa
+    - field.field.costs_means.costs_means.field_visa_type
+  module:
+    - cancilleria_form
+id: costs_means.costs_means.default
+targetEntityType: costs_means
+bundle: costs_means
+mode: default
+content:
+  field_activity:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_euro_study:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_euro_visa:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_usd_study:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_usd_visa:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_visa_type:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

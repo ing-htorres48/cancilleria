@@ -1,0 +1,84 @@
+uuid: b1b8eda8-df4a-48ec-b64f-edf81262ed75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.costs_means.costs_means.field_activity
+    - field.field.costs_means.costs_means.field_euro_study
+    - field.field.costs_means.costs_means.field_euro_visa
+    - field.field.costs_means.costs_means.field_usd_study
+    - field.field.costs_means.costs_means.field_usd_visa
+    - field.field.costs_means.costs_means.field_visa_type
+  module:
+    - cancilleria_form
+    - user
+id: costs_means.costs_means.default
+targetEntityType: costs_means
+bundle: costs_means
+mode: default
+content:
+  field_activity:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_euro_study:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_euro_visa:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_usd_study:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_usd_visa:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_visa_type:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

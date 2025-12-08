@@ -1,0 +1,10 @@
+entity.costs_means.add_form:
+  route_name: entity.costs_means.add_form
+  title: 'Add Costs means'
+  appears_on:
+    - entity.costs_means.collection
+entity.visa_requirements.add_form:
+  route_name: entity.visa_requirements.add_form
+  title: 'Add Visa requirements'
+  appears_on:
+    - entity.visa_requirements.collection

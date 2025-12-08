@@ -4,7 +4,7 @@ status: true
 dependencies:
   module:
     - system
-    - we_megamenu
+    - tb_megamenu
   theme:
     - bootstrap_barrio_subtheme
 id: cooperacioninternacional
@@ -12,12 +12,12 @@ theme: bootstrap_barrio_subtheme
 region: sidebar_second
 weight: 4
 provider: null
-plugin: 'we_megamenu_block:cooperacion-internacional'
+plugin: 'tb_megamenu_menu_block:cooperacion-internacional'
 settings:
-  id: 'we_megamenu_block:cooperacion-internacional'
+  id: 'tb_megamenu_menu_block:cooperacion-internacional'
   label: 'Cooperación internacional'
   label_display: visible
-  provider: we_megamenu
+  provider: tb_megamenu
 visibility:
   request_path:
     id: request_path

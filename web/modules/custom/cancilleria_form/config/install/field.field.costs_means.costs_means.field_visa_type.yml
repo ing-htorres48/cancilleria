@@ -1,0 +1,20 @@
+uuid: 809e27d9-1bad-4ad0-850e-a5a452c5cd3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.costs_means.field_visa_type
+  module:
+    - cancilleria_form
+id: costs_means.costs_means.field_visa_type
+field_name: field_visa_type
+entity_type: costs_means
+bundle: costs_means
+label: 'Visa type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

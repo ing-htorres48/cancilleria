@@ -5,7 +5,6 @@ dependencies:
   config:
     - node.type.advertising_footer
   module:
-    - content_translation
 third_party_settings:
   content_translation:
     enabled: false

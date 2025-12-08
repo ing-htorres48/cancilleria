@@ -4,7 +4,7 @@ status: false
 dependencies:
   module:
     - system
-    - we_megamenu
+    - tb_megamenu
   theme:
     - bootstrap_barrio_subtheme
 id: derechoshumanosyderechointernacionalhumanitario_2
@@ -12,12 +12,12 @@ theme: bootstrap_barrio_subtheme
 region: sidebar_second
 weight: 31
 provider: null
-plugin: 'we_megamenu_block:derechos-humanos-y-derecho-inter'
+plugin: 'tb_megamenu_menu_block:derechos-humanos-y-derecho-inter'
 settings:
-  id: 'we_megamenu_block:derechos-humanos-y-derecho-inter'
+  id: 'tb_megamenu_menu_block:derechos-humanos-y-derecho-inter'
   label: 'Derechos Humanos y Derecho Internacional Humanitario'
   label_display: '0'
-  provider: we_megamenu
+  provider: tb_megamenu
 visibility:
   request_path:
     id: request_path

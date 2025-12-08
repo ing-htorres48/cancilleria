@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains cancilleria_form.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cancilleria_form_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cancilleria_form module.
+    case 'help.page.cancilleria_form':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Create to form custom') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cancilleria_form_theme() {
+  return [
+    'cancilleria_form' => [
+      'variables' => [
+        'euro_visa' => NULL,
+        'euro_study' => NULL,
+        'usd_study' => NULL,
+        'usd_visa' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

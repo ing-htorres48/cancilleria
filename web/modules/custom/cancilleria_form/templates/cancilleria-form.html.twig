@@ -1,0 +1,29 @@
+<!--{{ usd_visa }}
+{{ usd_study }}
+{{ euro_visa }}
+{{ euro_study }}-->
+<!-- Add you custom twig html here -->
+<table class="tabla_visas table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">TIPO</th>
+        <th scope="col">COLOMBIA Y RESTO DEL MUNDO (USD)</th>
+        <th scope="col">EUROPA Y CUBA (EUR)</th>
+    
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Estudio</td>
+          <td>{{ usd_study }}</td>
+          <td>{{ euro_study }}
+        </td>
+      </tr>
+      <tr>
+          <td>Visa</td>
+          <td>{{ usd_visa }}</td>
+          <td>{{ euro_visa }}
+        </td>
+      </tr>
+    </tbody>
+  </table>

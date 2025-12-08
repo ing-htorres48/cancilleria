@@ -1,0 +1,28 @@
+
+# Costs means menu items definition
+entity.costs_means.collection:
+  title: 'Costs means list'
+  route_name: entity.costs_means.collection
+  description: 'List Costs means entities'
+  parent: system.admin_structure
+  weight: 100
+
+costs_means.admin.structure.settings:
+  title: 'Costs means settings'
+  description: 'Configure Costs means entities'
+  route_name: costs_means.settings
+  parent: system.admin_structure
+
+# Visa requirements menu items definition
+entity.visa_requirements.collection:
+  title: 'Visa requirements list'
+  route_name: entity.visa_requirements.collection
+  description: 'List Visa requirements entities'
+  parent: system.admin_structure
+  weight: 100
+
+visa_requirements.admin.structure.settings:
+  title: 'Visa requirements settings'
+  description: 'Configure Visa requirements entities'
+  route_name: visa_requirements.settings
+  parent: system.admin_structure

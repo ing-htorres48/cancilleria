@@ -1,0 +1,42 @@
+# Costs means routing definition
+costs_means.settings_tab:
+  route_name: costs_means.settings
+  title: 'Settings'
+  base_route: costs_means.settings
+
+entity.costs_means.canonical:
+  route_name: entity.costs_means.canonical
+  base_route: entity.costs_means.canonical
+  title: 'View'
+
+entity.costs_means.edit_form:
+  route_name: entity.costs_means.edit_form
+  base_route: entity.costs_means.canonical
+  title: 'Edit'
+
+entity.costs_means.delete_form:
+  route_name:  entity.costs_means.delete_form
+  base_route:  entity.costs_means.canonical
+  title: Delete
+  weight: 10
+# Visa requirements routing definition
+visa_requirements.settings_tab:
+  route_name: visa_requirements.settings
+  title: 'Settings'
+  base_route: visa_requirements.settings
+
+entity.visa_requirements.canonical:
+  route_name: entity.visa_requirements.canonical
+  base_route: entity.visa_requirements.canonical
+  title: 'View'
+
+entity.visa_requirements.edit_form:
+  route_name: entity.visa_requirements.edit_form
+  base_route: entity.visa_requirements.canonical
+  title: 'Edit'
+
+entity.visa_requirements.delete_form:
+  route_name:  entity.visa_requirements.delete_form
+  base_route:  entity.visa_requirements.canonical
+  title: Delete
+  weight: 10

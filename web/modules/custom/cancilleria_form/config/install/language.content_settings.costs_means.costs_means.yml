@@ -1,0 +1,11 @@
+uuid: 7817d21b-b6c5-414e-a08a-fffd04086e4e
+langcode: es
+status: true
+dependencies:
+  module:
+    - cancilleria_form
+id: costs_means.costs_means
+target_entity_type_id: costs_means
+target_bundle: costs_means
+default_langcode: site_default
+language_alterable: true

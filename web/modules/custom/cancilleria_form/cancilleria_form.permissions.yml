@@ -1,0 +1,40 @@
+add costs means entities:
+  title: 'Create new Costs means entities'
+
+administer costs means entities:
+  title: 'Administer Costs means entities'
+  description: 'Allow to access the administration form to configure Costs means entities.'
+  restrict access: true
+
+delete costs means entities:
+  title: 'Delete Costs means entities'
+
+edit costs means entities:
+  title: 'Edit Costs means entities'
+
+view published costs means entities:
+  title: 'View published Costs means entities'
+
+view unpublished costs means entities:
+  title: 'View unpublished Costs means entities'
+
+add visa requirements entities:
+  title: 'Create new Visa requirements entities'
+
+administer visa requirements entities:
+  title: 'Administer Visa requirements entities'
+  description: 'Allow to access the administration form to configure Visa requirements entities.'
+  restrict access: true
+
+delete visa requirements entities:
+  title: 'Delete Visa requirements entities'
+
+edit visa requirements entities:
+  title: 'Edit Visa requirements entities'
+
+view published visa requirements entities:
+  title: 'View published Visa requirements entities'
+
+view unpublished visa requirements entities:
+  title: 'View unpublished Visa requirements entities'
+

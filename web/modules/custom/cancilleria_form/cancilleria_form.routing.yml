@@ -1,0 +1,14 @@
+cancilleria_form.costs_form:
+  path: '/tramites_servicios/visa/costos-medios-pago-oficinas-atencion'
+  defaults:
+    _form: '\Drupal\cancilleria_form\Form\CostsForm'
+    _title: 'CostsForm'
+  requirements:
+    _access: 'TRUE'
+cancilleria_form.visa_requeriments_form:
+  path: '/cancilleria-form/visa-requeriments'
+  defaults:
+    _form: '\Drupal\cancilleria_form\Form\VisaRequerimentsForm'
+    _title: 'VisaRequerimentsForm'
+  requirements:
+    _access: 'TRUE'
