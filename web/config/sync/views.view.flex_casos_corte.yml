@@ -10,7 +10,7 @@ dependencies:
   content:
     - 'taxonomy_term:secciones:35b9b5eb-df77-4def-a47a-7dab39868b58'
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - link
     - node
@@ -313,7 +313,7 @@ display:
         groups:
           1: AND
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

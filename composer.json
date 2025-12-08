@@ -33,6 +33,7 @@
         "drupal/feeds": "^3.2",
         "drupal/field_group": "^3.4",
         "drupal/focal_point": "^2.1",
+        "drupal/fullcalendar": "^3.0",
         "drupal/fullcalendar_view": "^5.2",
         "drupal/google_analytics": "^4.0",
         "drupal/gtranslate": "^3.0",

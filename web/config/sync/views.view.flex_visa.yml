@@ -9,7 +9,7 @@ dependencies:
   content:
     - 'taxonomy_term:secciones:8d4149d5-00a3-4fcb-a498-b0d542ff0519'
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - taxonomy
@@ -244,7 +244,7 @@ display:
         groups:
           1: AND
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

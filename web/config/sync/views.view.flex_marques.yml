@@ -7,7 +7,7 @@ dependencies:
     - image.style.920x400
     - node.type.flex_casa_marques
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - user
@@ -161,7 +161,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
           flexslider: null

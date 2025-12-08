@@ -7,7 +7,7 @@ dependencies:
     - field.storage.node.field_apost
     - node.type.flex_apostilla
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - text
@@ -242,7 +242,7 @@ display:
         groups:
           1: AND
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_url
     - node.type.enlaces
   module:
-    - flexslider_views
+    - views_slideshow
     - link
     - node
     - user
@@ -315,7 +315,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
           flexslider: null

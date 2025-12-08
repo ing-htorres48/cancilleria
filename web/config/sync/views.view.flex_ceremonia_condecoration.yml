@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_image_condecoraciones
     - node.type.flex_condecoraciones
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - user
@@ -160,7 +160,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

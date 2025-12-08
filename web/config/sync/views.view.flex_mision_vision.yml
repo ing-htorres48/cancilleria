@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.secciones
   module:
-    - flexslider_views
+    - views_slideshow
     - node
     - user
 id: flex_mision_vision
@@ -139,7 +139,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

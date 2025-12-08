@@ -9,7 +9,7 @@ dependencies:
   content:
     - 'taxonomy_term:vocabulary_5:fd383698-b524-4e47-a5f3-e8d8ec9e5c56'
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - taxonomy
@@ -316,7 +316,7 @@ display:
         groups:
           1: AND
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
           flexslider: null

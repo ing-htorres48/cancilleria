@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_imagen_biblioteca
     - node.type.flex_biblioteca
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - user
@@ -295,13 +295,10 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
-          flexslider: null
-          optionset: default
-          captionfield: ''
-          id: ''
+          slideshow_type: views_slideshow_cycle
       row:
         type: fields
         options:

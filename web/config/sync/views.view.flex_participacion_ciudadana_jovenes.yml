@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_imagen_j
     - node.type.f_participacion_ciudadana_j
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - user
@@ -160,7 +160,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
           flexslider: null

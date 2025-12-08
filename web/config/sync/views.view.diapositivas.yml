@@ -21,7 +21,7 @@ dependencies:
     - node.type.video
   module:
     - datetime
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - text
@@ -1120,7 +1120,7 @@ display:
         groups:
           1: AND
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
           flexslider: null

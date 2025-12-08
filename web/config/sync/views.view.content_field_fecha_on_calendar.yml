@@ -7,7 +7,7 @@ dependencies:
     - field.storage.node.field_date
     - node.type.diary
   module:
-    - calendar
+    - fullcalendar
     - datetime
     - node
     - text

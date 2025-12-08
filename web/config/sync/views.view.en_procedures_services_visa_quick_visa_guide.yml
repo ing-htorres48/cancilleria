@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
-    - calendar
+    - fullcalendar
     - cancilleria_form
 id: en_procedures_services_visa_quick_visa_guide
 label: 'quick visa guide'
