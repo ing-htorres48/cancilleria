@@ -1,0 +1,125 @@
+# Gitignore for Drupal 11 Project
+# This file specifies intentionally untracked files that Git should ignore.
+
+# Dependencies managed by Composer
+/vendor/
+web/core/
+web/libraries/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+
+# Ignore configuration files that may contain sensitive information
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content
+web/sites/*/files/
+web/sites/*/private/
+
+# Ignore multi-site test environment
+web/sites/simpletest/
+
+# Ignore backup files
+*.sql
+*.sql.gz
+*.bak
+backup_migrate/
+backups/
+
+# Ignore temporary and cache files
+.tmp/
+tmp/
+.cache/
+*.tmp
+*.temp
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+web/sites/*/logs/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore node.js dependencies (if using for theme development)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build artifacts from themes
+web/themes/custom/*/js/build/
+web/themes/custom/*/dist/
+
+# Ignore Drupal Console configuration
+console/
+
+# Ignore Drush backup directories
+drush-backups/
+
+# Ignore patches directory if not version controlled
+patches/
+
+# Ignore PHPCS/PHPCBF cache
+.phpcs.cache
+
+# Ignore Behat/test files
+behat.yml
+tests/behat/logs/
+
+# Ignore PHPUnit cache
+.phpunit.result.cache
+
+# Ignore local development files
+docker-compose.override.yml
+Dockerfile.local
+
+# Ignore site-specific directories and files
+web/sites/default/files/
+web/sites/default/private/
+web/sites/default/tmp/
+
+# Ignore translation files that can be regenerated
+web/sites/*/translations/
+
+# Ignore config sync directory (adjust path if different)
+config/sync/*
+!config/sync/.htaccess
+
+# Allow important files
+!web/sites/default/default.settings.php
+!web/sites/default/default.services.yml
+!web/sites/example.settings.local.php
+!web/sites/example.sites.php
+!web/sites/.htaccess
+!web/.htaccess
+!web/robots.txt
+
+# Ignore custom uploads directories
+uploads/
+files/
+
+# Ignore development and testing files
+.sass-cache/
+.grunt/
+.gulp/
