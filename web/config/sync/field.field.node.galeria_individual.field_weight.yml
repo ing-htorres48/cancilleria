@@ -1,0 +1,24 @@
+uuid: 928a673d-714a-44ba-afb7-3ea59bb46817
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.galeria_individual
+  module:
+    - weight
+id: node.galeria_individual.field_weight
+field_name: field_weight
+entity_type: node
+bundle: galeria_individual
+label: Peso
+description: 'Peso en el carrusel principal del home'
+required: false
+translatable: true
+default_value:
+  -
+    value: '-16'
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

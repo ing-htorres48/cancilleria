@@ -1,0 +1,24 @@
+uuid: 4e9e2968-4f6b-439c-9c78-4c380cb7d6bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.video
+  module:
+    - weight
+id: node.video.field_weight
+field_name: field_weight
+entity_type: node
+bundle: video
+label: Peso
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

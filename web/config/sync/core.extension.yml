@@ -2,7 +2,6 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 langcode: es
 module:
-  action: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
@@ -11,73 +10,112 @@ module:
   block_content: 0
   book: 0
   breakpoint: 0
+  cancilleria_form: 0
   ckeditor5: 0
+  ckeditor5_plugin_pack: 0
   color: 0
   comment: 0
   config: 0
   config_filter: 0
   contact: 0
   contextual: 0
+  crop: 0
   ctools: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
+  embed_block: 0
+  entity_browser: 0
+  fakeobjects: 0
+  feeds: 0
   field: 0
+  field_gallery: 0
   field_ui: 0
   file: 0
   filter: 0
+  google_analytics: 0
+  gtranslate: 0
   help: 0
   history: 0
   image: 0
+  image_widget_crop: 0
+  imce: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
+  jquery_ui_tabs: 0
   language: 0
   link: 0
   locale: 0
   media: 0
   media_library: 0
+  menu_breadcrumb: 0
+  menu_export: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
   metatag_favicons: 0
+  metatag_google_cse: 0
   metatag_hreflang: 0
+  metatag_mobile: 0
   metatag_open_graph: 0
   metatag_verification: 0
+  metatag_views: 0
   migrate: 0
   migrate_drupal: 0
   migrate_drupal_ui: 0
+  mysql: 0
   node: 0
+  node_export: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
   quickedit: 0
+  quicktabs: 0
+  quicktabs_accordion: 0
   rdf: 0
+  redirect: 0
+  rules: 0
+  scheduler: 0
+  scheduler_rules_integration: 0
   search: 0
   serialization: 0
   shortcut: 0
+  simple_sitemap: 0
+  simple_sitemap_engines: 0
+  simple_sitemap_views: 0
+  sitemap: 0
+  sitemap_book: 0
   system: 0
   taxonomy: 0
+  taxonomy_import: 0
+  taxonomy_term_depth: 0
+  tb_megamenu: 0
+  term_reference_change: 0
   text: 0
+  text_resize: 0
+  token: 0
+  token_filter: 0
   toolbar: 0
   tour: 0
   typed_data: 0
   update: 0
   user: 0
+  views_accordion: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
+  views_templates: 0
   views_ui: 0
+  we_megamenu: 0
+  webform: 0
+  webform_ui: 0
+  weight: 0
+  youtube: 0
   pathauto: 1
-  contact_storage: 1
-  crop: 1
-  focal_point: 1
-  imce: 1
-  jquery_ui: 1
-  jquery_ui_accordion: 1
-  jquery_ui_tabs: 1
-  js_cookie: 1
-  menu_breadcrumb: 1
-  quicktabs: 1
-  scheduler: 1
-  simple_sitemap: 1
+  xmlsitemap: 1
   views: 10
   standard: 1000
 theme:

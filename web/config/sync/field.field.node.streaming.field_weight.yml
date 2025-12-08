@@ -1,0 +1,24 @@
+uuid: 03495bb4-3877-4b67-9929-7b1755069d1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.streaming
+  module:
+    - weight
+id: node.streaming.field_weight
+field_name: field_weight
+entity_type: node
+bundle: streaming
+label: Peso
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

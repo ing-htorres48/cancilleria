@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_image_viceexterior
     - node.type.flex__viceministrorelaciones
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - user
@@ -272,7 +272,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

@@ -10,7 +10,7 @@ dependencies:
     - 'taxonomy_term:secciones:2ef409a6-0726-41c9-8c6a-90b7fca54a19'
   module:
     - contextual
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - taxonomy
@@ -392,7 +392,7 @@ display:
         groups:
           1: AND
       style:
-        type: flexslider
+        type: views_slideshow
       row:
         type: fields
       query:

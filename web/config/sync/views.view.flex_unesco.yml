@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_img_unesco
     - node.type.flex_unesco
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - user
@@ -207,13 +207,10 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
-          flexslider: null
-          optionset: flexslider_default_slider_thumbnail_controlnav
-          captionfield: ''
-          id: ''
+          slideshow_type: views_slideshow_cycle
       row:
         type: fields
       query:

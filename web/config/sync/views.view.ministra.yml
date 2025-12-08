@@ -10,7 +10,7 @@ dependencies:
   content:
     - 'taxonomy_term:secciones:3a4172c6-cefe-46ea-8281-7c41ea3bae5f'
   module:
-    - flexslider_views
+    - views_slideshow
     - image
     - node
     - taxonomy
@@ -290,13 +290,10 @@ display:
           limit: true
           error_message: true
       style:
-        type: flexslider
+        type: views_slideshow
         options:
           grouping: {  }
-          flexslider: null
-          optionset: default
-          captionfield: ''
-          id: ''
+          slideshow_type: views_slideshow_cycle
       row:
         type: fields
       query:
