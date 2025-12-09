@@ -3,7 +3,7 @@
 namespace Drupal\cancilleria_form;
 
 use Drupal\Core\Entity\EntityTypeInterface;
-use Drupal\Core\Entity\Routing\AdminHtmlRouteProvider;
+use Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider;
 use Symfony\Component\Routing\Route;
 
 /**
@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Route;
  * @see \Drupal\Core\Entity\Routing\AdminHtmlRouteProvider
  * @see \Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider
  */
-class CostsMeansHtmlRouteProvider extends AdminHtmlRouteProvider {
+class CostsMeansHtmlRouteProvider extends DefaultHtmlRouteProvider {
 
   /**
    * {@inheritdoc}
