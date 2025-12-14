@@ -154,6 +154,11 @@ class CnuFooterBlock extends BlockBase {
       '#theme' => 'cnu_footer_block',
       '#menu' => $menu,
       '#config' => $this->configuration,
+      '#attached' => [
+        'library' => [
+          'cnu_content_blocks/cnu_content_blocks',
+        ],
+      ],
     ];
   }
 
