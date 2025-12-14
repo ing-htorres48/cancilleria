@@ -1,3 +1,130 @@
+.pg-web-transparency {
+  background-color: #F8F8F8;
+  padding: 40px 20px;
+} 
+
+.pg-web-transparency_container {
+  margin:auto;
+  max-width: 1200px;
+} 
+.pg-web-transparency_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+.pg-web-transparency_top-banner {
+  flex: 1 1 100%;
+  text-align: center;
+  width: 100%;
+      position: relative;
+}
+.pg-web-transparency_top-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.pw-img-senas {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    margin-left: 6%;
+    height: 86%;
+    max-height: 200px;
+    max-width: 200px;
+    width: auto;
+}
+.pg-web-transparency_top-banner:hover .pw-img-senas {
+    display: block;
+    animation: moveUp 1s ease-in-out;
+}
+
+.pg-web-transparency_top-detail {
+  font-size: 16px;
+  line-height: 120%;
+  color: #333333;
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.pg-web-transparency_top-detail a{
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.pg-web-transparency_accordion {
+  border  : none;
+  margin:auto;
+  padding-inline: 100px;
+}
+
+.pg-web-transparency_accordion-item {
+  margin-bottom: 10px;
+}
+
+.pg-web-transparency_accordion-item-header {
+  background-color: #004884;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pg-web-transparency_accordion-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  color: white;
+  margin: 0;
+}
+.pg-web-transparency_accordion-item-detail {
+  padding: 10px;
+  display: none;
+}
+
+.pw-arrow{
+  background-image: url("data:image/svg+xml;utf8, <svg width='7' height='13' viewBox='0 0 7 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 12.5V0L6.25 6.25L0 12.5Z' fill='white'/></svg>");
+  
+  width:7px;
+  height: 13px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-item-detail{
+  display: block;
+}
+
+.accordion-item.active .pw-arrow{
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  } 
+}
+
+
+
+
 /**
  * Estilos principales para el tema Colombianos UNE D11
  */
