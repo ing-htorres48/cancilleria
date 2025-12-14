@@ -1,0 +1,27 @@
+<div class="pg-intra_gallery-videos">
+
+  {% for item in items %}
+    <div class="pg-intra_gallery-item">
+
+      <h2 class="pg-intra_gallery-item-title">
+        Cómo lo Hago: {{ item.title }}
+      </h2>
+
+      <div class="pg-intra_gallery-item-video">
+        <iframe 
+          width="564" 
+          height="317" 
+          class="pg-intra_gallery-item-iframe"
+          src="{{ item.url }}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          title="{{ item.title }}">
+        </iframe>
+      </div>
+
+    </div>
+  {% endfor %}
+
+</div>

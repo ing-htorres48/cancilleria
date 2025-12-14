@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cancilleria_core_theme() {
+  return [
+    'cancilleria_image_block' => [
+      'variables' => [
+        'image_url' => NULL,
+        'alt' => NULL,
+      ],
+    ],
+    'cancilleria_social_block' => [
+      'variables' => ['items' => []],
+    ],
+    'cancilleria_page_title_block' => [
+      'variables' => [
+        'title' => NULL,
+      ],
+    ],
+    'cancilleria_enlaces_interes_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+  ];
+}

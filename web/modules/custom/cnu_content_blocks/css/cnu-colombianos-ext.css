@@ -1,0 +1,135 @@
+.mb-cnu-content_exterior{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    color: black;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+}
+
+.mb-cnu-content_exterior-title{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 35px;
+  text-align: center;
+  padding-block: 20px;
+}
+
+.mb-cnu-content_exterior__carousel{
+  width: 100%;
+  padding-inline: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.mb-cnu-content_exterior__carousel-item{
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel-item-image{
+    width: 100%;
+    overflow: hidden;
+    background-color: #004884;
+}
+
+.carousel-item-image img{
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  object-position: top;
+  transform: scale(1.025);
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+}
+
+.carousel-item-body{
+  border: 2px solid #004884;
+  width: auto;
+  padding: 10px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.carousel-item-title{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    color: #004884;
+    margin-block: 5px;
+}
+
+.carousel-item-meta{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #B08941;
+}
+
+.carousel-item-summary{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-block: 10px;
+}
+
+.carousel-item-actions{
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.carousel-item-link{
+  background-color: #004884;
+  color: white;
+  max-width: 140px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    background-color: #003366;
+    transition: background-color 0.3s ease;
+  }
+}
+
+
+    #btn-swp-ext-next, #btn-swp-ext-prev {
+      position: absolute;
+      top: 30%;
+      width: 24px;
+      height: 24px;
+      z-index: 10;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: drop-shadow(2px 2px 2px white);
+    }
+
+  #btn-swp-ext-next {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M10 14L11.4 12.6L9.8 11H14V9H9.8L11.4 7.4L10 6L6 10L10 14ZM10 20C8.61667 20 7.31667 19.7375 6.1 19.2125C4.88333 18.6875 3.825 17.975 2.925 17.075C2.025 16.175 1.3125 15.1167 0.7875 13.9C0.2625 12.6833 0 11.3833 0 10C0 8.61667 0.2625 7.31667 0.7875 6.1C1.3125 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.3125 6.1 0.7875C7.31667 0.2625 8.61667 0 10 0C11.3833 0 12.6833 0.2625 13.9 0.7875C15.1167 1.3125 16.175 2.025 17.075 2.925C17.975 3.825 18.6875 4.88333 19.2125 6.1C19.7375 7.31667 20 8.61667 20 10C20 11.3833 19.7375 12.6833 19.2125 13.9C18.6875 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6875 13.9 19.2125C12.6833 19.7375 11.3833 20 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z' fill='%23111111'/></svg>");
+  left: 15px;
+}
+
+#btn-swp-ext-prev {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M10 14L14 10L10 6L8.6 7.4L10.2 9H6V11H10.2L8.6 12.6L10 14ZM10 20C8.61667 20 7.31667 19.7375 6.1 19.2125C4.88333 18.6875 3.825 17.975 2.925 17.075C2.025 16.175 1.3125 15.1167 0.7875 13.9C0.2625 12.6833 0 11.3833 0 10C0 8.61667 0.2625 7.31667 0.7875 6.1C1.3125 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.3125 6.1 0.7875C7.31667 0.2625 8.61667 0 10 0C11.3833 0 12.6833 0.2625 13.9 0.7875C15.1167 1.3125 16.175 2.025 17.075 2.925C17.975 3.825 18.6875 4.88333 19.2125 6.1C19.7375 7.31667 20 8.61667 20 10C20 11.3833 19.7375 12.6833 19.2125 13.9C18.6875 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6875 13.9 19.2125C12.6833 19.7375 11.3833 20 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z' fill='%23111111'/></svg>");
+  right: 15px;
+}

@@ -1,0 +1,9 @@
+{% if items %}
+  <div class="cancilleria-social">
+    {% for item in items %}
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="cancilleria-social__item">
+        <img src="{{ item.image }}" alt="{{ item.alt }}">
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

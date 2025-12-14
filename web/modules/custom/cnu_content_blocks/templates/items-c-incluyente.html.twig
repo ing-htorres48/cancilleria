@@ -1,0 +1,12 @@
+<div class="pg-intra_salient">
+  {% for i in 1..5 %}
+    <div class="pg-intra_salient-item">
+      <div class="pg-intra_salient-item_image">
+         <img src="{{ base_path ~ 'modules/custom/cnu_content_blocks/img/img-poblacion-' ~ i ~ '.png' }}" alt="Población" class="img-poblacion">
+      </div>
+      <div class="pg-intra_salient-item_link">
+        <a href="#" target="_blank">Nuestro compromiso {{ i }}</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

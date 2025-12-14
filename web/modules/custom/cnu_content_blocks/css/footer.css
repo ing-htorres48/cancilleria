@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+.mb-cnu_footer {
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+}
+
+.mb-cnu_footer__main {
+    background-color: white;
+    border: 1px solid #3366CC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-inline: auto;
+    max-width: 900px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.mb-cnu_footer__main-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+@media (max-width: 550px) {
+    .mb-cnu_footer__main-top {
+       justify-content: center;
+    }
+}
+
+.mb-cnu_footer__main-top-menu{
+  width: 70%;
+}
+
+@media (max-width: 550px) {
+  .mb-cnu_footer__main-top-menu {
+    width: 100%;
+  }
+}
+
+
+
+.mb-cnu_footer__main-separator{
+  background: #3366CB;
+  min-height: 30px;
+  width: 100%;
+  border-radius: 6px;
+  padding-block: 20px;
+}
+
+.mb-cnu_footer__main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mb-cnu_footer__main-info-detail{
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.mb-cnu_footer__main-info-detail a {
+    color: black;
+    text-decoration: underline;
+}
+
+.mb-cnu_footer__main-info-detail a:hover {
+    color: #141414;
+}
+
+.mb-cnu_footer__main-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-block: 20px;
+}
+
+@media (max-width: 420px) {
+  .mb-cnu_footer__main-contact {
+    padding-block: 10px;
+    gap: 2px;
+  }
+}
+
+.mb-cnu_footer__main-contact-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.mb-cnu_footer__main-contact-item a{
+  color: #004884;
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+
+ul.mb-cnu-menu {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.mb-cnu-menu li {
+    width: 25%;
+}
+
+@media (max-width: 520px) {
+  ul.mb-cnu-menu li {
+    width: 33%;
+  }
+}
+
+@media (max-width: 420px) {
+  ul.mb-cnu-menu li {
+    width: 50%;
+  }
+}
+
+ul.mb-cnu-menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.mb-cnu-menu li a:hover {
+    text-decoration: underline;
+}
+
+.mb-cnu-icon{
+  display: inline-block;
+  width: 22px;
+  height: 23px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mb-cnu-icon--mail{
+  background-image: url('../img/icon-mail.png');
+}
+
+.mb-cnu-icon--facebook{
+  background-image: url('../img/icon-facebook.png');
+}
+
+.mb-cnu-icon--x{
+  background-image: url('../img/icon-x.png');
+}
+
+.mb-cnu-icon--instagram{
+  background-image: url('../img/icon-instagram.png');
+}
+
+.mb-cnu-icon--youtube{
+  background-image: url('../img/icon-youtube.png');
+}
+
+.img-esccol{
+    max-width: 120px;
+    max-height: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.img-iqnet{
+    max-width: 315px;
+    max-height: 160px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 550px) {
+  .img-iqnet {
+    max-width: 250px;
+  }
+}
+
+
+
+.mb-cnu_footer__bg{
+    background-color: #004884;
+    width: 100%;
+    min-height: 200px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.mb-cnu_footer__main-img-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-block: 10px;
+  background-color: white;
+  @media (max-width: 850px) {
+       gap: 15px;
+       justify-content: center;
+  }
+}
+
+.mb-cnu_footer__main-img-info .img-info{
+  height: 36px;
+  width: auto;
+}
+
+.mb-cnu_footer__main-img-info .img-info:last-child{
+  height: 60px;
+  width: auto;
+}
+

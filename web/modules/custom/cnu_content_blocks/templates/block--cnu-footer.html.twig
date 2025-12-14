@@ -1,0 +1,88 @@
+{% set imgLogoColombia = '../modules/custom/cnu_content_blocks/img/escudo-colombia.png' %}
+{% set imgLogoIqnet = '../modules/custom/cnu_content_blocks/img/iqnet.jpg'  %}
+
+
+
+
+<div class="mb-cnu_footer">
+  <div class="mb-cnu_footer__main">
+      <div class="mb-cnu_footer__main-top">
+        <div class="mb-cnu_footer__main-top-logo">
+          <img src="{{ imgLogoColombia }}"  alt="Gobierno de Colombia" class="img-esccol">
+        </div>
+        <div class="mb-cnu_footer__main-top-menu">
+          <ul class="mb-cnu-menu">
+              {% for key, item in menu %}
+                  {% set title = item.link.title %}
+                  {% set url = item.link.getUrlObject().toString() %}
+                  {% if title and url %}
+                      <li> <a href="{{ url }}">{{ title }}</a> </li>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-cnu_footer__main-contact">
+
+          {% if config.email %}
+            <div class="mb-cnu_footer__main-contact-item">
+              <span class="mb-cnu-icon mb-cnu-icon--mail"></span>
+              <a href="mailto:{{ config.email }}">{{ config.email }}</a>
+            </div>
+          {% endif %}
+
+          {% if config.link_x %}
+            <div class="mb-cnu_footer__main-contact-item">
+              <span class="mb-cnu-icon mb-cnu-icon--x"></span>
+              <a href="{{ config.link_x }}" target="_blank">@CancilleriaCol</a>
+            </div>
+          {% endif %}
+
+          {% if config.facebook %}
+            <div class="mb-cnu_footer__main-contact-item">
+              <span class="mb-cnu-icon mb-cnu-icon--facebook"></span>
+              <a href="{{ config.facebook }}" target="_blank">CancilleriaCol</a>
+            </div>
+          {% endif %}
+
+          {% if config.youtube %}
+            <div class="mb-cnu_footer__main-contact-item">
+              <span class="mb-cnu-icon mb-cnu-icon--youtube"></span>
+              <a href="{{ config.youtube }}" target="_blank">@CancilleriaCol</a>
+            </div>
+          {% endif %}
+          {% if config.instagram %}
+            <div class="mb-cnu_footer__main-contact-item">
+              <span class="mb-cnu-icon mb-cnu-icon--instagram"></span>
+              <a href="{{ config.instagram }}" target="_blank">@CancilleriaCol</a>
+            </div>
+          {% endif %}
+
+      </div>
+
+      <div class="mb-cnu_footer__main-separator">
+          <div class="mb-cnu_footer__main-img-info">
+
+              <img src="{{ '../modules/custom/cnu_content_blocks/img/img-info-1.png' }}" alt="Información" class="img-info">
+              <img src="{{ '../modules/custom/cnu_content_blocks/img/img-info-2.png' }}" alt="Información" class="img-info">
+              <img src="{{ '../modules/custom/cnu_content_blocks/img/img-info-3.png' }}" alt="Información" class="img-info">
+              <img src="{{ '../modules/custom/cnu_content_blocks/img/img-info-4.png' }}" alt="Información" class="img-info">
+              <img src="{{ '../modules/custom/cnu_content_blocks/img/img-info-5.png' }}" alt="Información" class="img-info">
+
+          </div>
+      </div>
+      <div class="mb-cnu_footer__main-info">
+          <div class="mb-cnu_footer__main-info-iqnet">
+            <img src="{{ imgLogoIqnet }}" alt="IQNet" class="img-iqnet">
+          </div>
+          <div class="mb-cnu_footer__main-info-detail">
+              Grupo Interno de Trabajo Colombia Nos Une • Calle 12 C #8-27 Piso 9 <br/>
+              Conmutador: (+57-601) 3814000 • Correo institucional: 
+              <a href="mailto:contactenos@cancilleria.gov.co">contactenos@cancilleria.gov.co</a><br>
+              <a href="/politica-de-tratamiento-de-datos-personales">Política de Tratamiento de Datos Personales</a>
+          </div>
+      </div>
+  </div>
+  <div class="mb-cnu_footer__bg"></div>
+</div>

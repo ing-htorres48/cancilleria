@@ -1,0 +1,11 @@
+name: CNU Content Blocks
+type: module
+description: Módulo personalizado para crear bloques de contenido destacado para Colombianos UNE.
+core_version_requirement: ^10 || ^11
+package: ColombianosUNE
+dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:field
+  - drupal:media
+  - drupal:image

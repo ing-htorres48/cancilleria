@@ -1,0 +1,11 @@
+<div class="pg-web_menu-formalities">
+  <h2 class="pg-web_menu-formalities-title">Trámites y servicios más consutados</h2>
+  <div class="pg-web_menu-formalities-wrapper">
+    {% for item in items %}
+      <div class="pg-web_menu-formalities-item">
+        <img src="{{ item.image }}" alt="icon" class="pg-web_menu-formalities-img" />
+        <h3 class="pg-web_menu-formalities-subtitle">{{ item.title }}</h3>
+      </div>
+    {% endfor %}
+  </div>
+</div>
