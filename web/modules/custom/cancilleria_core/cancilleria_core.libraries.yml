@@ -13,3 +13,8 @@ cancilleria_enlaces_interes:
     theme:
       css/cancilleria-enlaces-interes-block.css: {}
 
+cancilleria_home_noticias:
+  css:
+    theme:
+      css/cancilleria-home-noticias.css: {}
+

@@ -24,5 +24,11 @@ function cancilleria_core_theme() {
         'items' => [],
       ],
     ],
+    'cancilleria_ultimas_noticias_block' => [
+      'variables' => [
+        'news' => [],
+        'video' => [],
+      ],
+    ],
   ];
 }
