@@ -8,8 +8,9 @@ global-styling:
   js:
     js/global.js: {}
   dependencies:
-    - core/jquery
     - core/drupal
+    - core/once
+    - core/jquery
 
 bootstrap-icons:
   css:
@@ -32,5 +33,7 @@ components:
   js:
     js/components/navigation.js: {}
   dependencies:
-    - core/jquery
     - core/drupal
+    - core/once
+    - core/jquery
+    
