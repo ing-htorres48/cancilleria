@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Override del bloque de menú del sistema para menú_principal.
+ *
+ * IMPORTANTE:
+ * - Elimina el <nav> wrapper
+ * - Permite que menu.html.twig renderice el <ul> como root
+ * - Necesario para GovCo / Bootstrap header
+ */
+#}
+
+{% if content %}
+  {{ content }}
+{% endif %}
