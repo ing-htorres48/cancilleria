@@ -1,0 +1,19 @@
+<?php
+
+use Drupal\Core\Render\Markup;
+
+/**
+ * Implements hook_theme().
+ */
+function redes_sociales_tabs_theme($existing, $type, $theme, $path) {
+  return [
+    'social_tabs_block' => [
+      'variables' => [
+        'attributes' => [],
+        'content' => [],
+      ],
+      'template' => 'social-tabs-block',
+      'path' => $path . '/templates',
+    ],
+  ];
+}
