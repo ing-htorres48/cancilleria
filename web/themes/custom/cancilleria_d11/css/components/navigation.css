@@ -258,10 +258,12 @@
 }
 
 #block-cancilleria-d11-menurapidocontextual{
-  width: 217px;
+  width: 100%;
+  max-width: 217px;
   margin: 0 0 0 10px;
 }
 #block-cancilleria-d11-system-main{
+  width: 100%;
 }
 #block-cancilleria-d11-system-main .pg-web-transparency{
   padding: 10px 20px 40px 20px;
@@ -343,6 +345,22 @@
 }
 @media (max-width: 480px) {
 
+}
+
+/* Animacion */
+.menu-rapido__list[open] ul {
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /****************************************************** FIN **************/
