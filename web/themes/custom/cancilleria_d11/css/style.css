@@ -547,3 +547,15 @@ a[href="#main-content"],
     font-size: 22px;
   }
 }
+
+.path-frontpage .region-featured-bottom-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    grid-template-rows: auto auto;
+    padding-top: 2rem;
+    max-width: 980px;
+    margin: auto;
+}
