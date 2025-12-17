@@ -245,3 +245,91 @@
     display: block;
   }
 }
+
+
+/************************************** Menu Lateral ******************************************/
+
+/*menu*/
+#block-cancilleria-d11-menurapidocontextual{
+  width: 217px;
+  float: left;
+}
+.menu-rapido__header{
+  background:#3367CC;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+.menu-rapido__list{
+  padding: 10px;
+  margin: 10px 0;
+  list-style: none;
+  background: #004884;
+}
+
+.has-children{
+  border-bottom: 1px solid #5174AB;
+}
+
+
+.has-children a:first-child:before{
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  content: "";
+  background: url(https://sitio-cancilleria.haspe.co/sites/default/files/menu-chevron.svg) 0 0 no-repeat;
+  background-size: contain;
+}
+.menu-item a{
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 10px;
+  font-weight: 700;
+  padding: 5px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+}
+.menu-item a:hover{
+  background:#3367CC;
+}
+.menu-item .menu-rapido__submenu{
+  padding: 0 10px;
+  list-style: none;
+}
+.menu-item .menu-rapido__submenu a:before{
+  display: none;
+}
+.menu-rapido__submenu .menu-item a:hover{
+  background:#3367CC;
+}
+.menu-rapido__submenu{
+  padding: 0 10px;
+  list-style: none;
+}
+
+/*lateral*/
+#block-cancilleria-d11-system-main{
+  float: right;
+}
+
+
+/* Responsive*/
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+/****************************************************** FIN **************/
