@@ -63,5 +63,13 @@ function cnu_content_blocks_theme($existing, $type, $theme, $path) {
       'variables' => ['items' => []],
       'template' => 'como-lo-hago-videos',
     ],
+
+    'menu_rapido_contextual' => [
+      'variables' => [
+        'menu_title' => NULL,
+        'items' => [],
+      ],
+    ],
+
   ];
 }

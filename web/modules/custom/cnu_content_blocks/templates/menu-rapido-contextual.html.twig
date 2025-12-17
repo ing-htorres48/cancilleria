@@ -1,0 +1,19 @@
+<div class="menu-rapido">
+  <div class="menu-rapido__header">
+    <span>Menú Rápido</span>
+  </div>
+
+  {# <div class="menu-rapido__section">
+    {{ menu_title }}
+  </div> #}
+
+  <ul class="menu-rapido__list">
+    {% for item in items %}
+      <li class="menu-rapido__item {{ item.active ? 'is-active' }}">
+        <a href="{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
