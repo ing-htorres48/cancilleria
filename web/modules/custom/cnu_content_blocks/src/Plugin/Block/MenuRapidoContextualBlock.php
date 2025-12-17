@@ -60,7 +60,6 @@ class MenuRapidoContextualBlock extends BlockBase {
 		$parameters = new MenuTreeParameters();
 		$parameters
 			->setRoot($top_level_parent)
-			->setMaxDepth(1)
 			->excludeRoot()
 			->onlyEnabledLinks();
 
@@ -99,7 +98,7 @@ class MenuRapidoContextualBlock extends BlockBase {
 		return [
 			'#theme' => 'menu_rapido_contextual',
 			'#menu_title' => $parent_title,
-			'#items' => $items,
+			'#tree' => $tree,
 			'#cache' => [
 			'contexts' => [
 				'url.path',

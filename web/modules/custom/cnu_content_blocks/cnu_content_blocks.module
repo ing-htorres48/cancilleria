@@ -67,7 +67,7 @@ function cnu_content_blocks_theme($existing, $type, $theme, $path) {
     'menu_rapido_contextual' => [
       'variables' => [
         'menu_title' => NULL,
-        'items' => [],
+        'tree' => NULL,
       ],
     ],
 
