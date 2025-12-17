@@ -9,21 +9,6 @@
 <section class="pg-web-transparency">
   <div class="pg-web-transparency_container">
     <div class="pg-web-transparency_top">
-      <div class="pg-web-transparency_top-banner">
-        {% if node.field_banner_pagina is defined and not node.field_banner_pagina.isEmpty() %}
-          {% set banner = node.field_banner_pagina.entity %}
-          {% if banner %}
-            <img src="{{ file_url(banner.fileuri) }}" alt="{{ banner.alt }}" class="pg-web-transparency_top-img">
-          {% endif %}
-        {% endif %}
-        {% if node.field_gif_banner_pagina is defined and not node.field_gif_banner_pagina.isEmpty() %}
-          {% set banner2 = node.field_gif_banner_pagina.entity %}
-          {% if banner2 %}
-            <img src="{{ file_url(banner2.fileuri) }}" class="pw-img-senas" alt="lenguaje de señas" />
-          {% endif %}
-        {% endif %}
-        
-      </div>
       <div class="pg-web-transparency_top-detail"> 
           {{ content }}
       </div>
