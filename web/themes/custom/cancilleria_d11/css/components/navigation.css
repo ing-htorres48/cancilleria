@@ -259,6 +259,7 @@
 
 #block-cancilleria-d11-menurapidocontextual{
   width: 217px;
+  margin: 0 0 0 10px;
 }
 #block-cancilleria-d11-system-main{
 }
@@ -331,7 +332,9 @@
 
 /* Responsive*/
 @media (max-width: 768px) {
-
+  #block-cancilleria-d11-menurapidocontextual{
+    margin: 0 0 0 20px;
+  }
 }
 @media (max-width: 576px) {
   #block-cancilleria-d11-menurapidocontextual{
