@@ -256,6 +256,16 @@
   display: flex;
   margin: 0 auto;
 }
+
+#block-cancilleria-d11-menurapidocontextual{
+  width: 217px;
+}
+#block-cancilleria-d11-system-main{
+}
+#block-cancilleria-d11-system-main .pg-web-transparency{
+  padding: 10px 20px 40px 20px;
+}
+
 .menu-rapido__header{
   background:#3367CC;
   text-align: center;
@@ -324,9 +334,10 @@
 
 }
 @media (max-width: 576px) {
-
+  #block-cancilleria-d11-menurapidocontextual{
+    display: none;
+  }
 }
-
 @media (max-width: 480px) {
 
 }
