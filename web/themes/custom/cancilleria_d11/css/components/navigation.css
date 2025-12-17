@@ -250,9 +250,11 @@
 /************************************** Menu Lateral ******************************************/
 
 /*menu*/
-#block-cancilleria-d11-menurapidocontextual{
-  width: 217px;
-  float: left;
+.main-content .section{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
 }
 .menu-rapido__header{
   background:#3367CC;
@@ -270,8 +272,11 @@
 
 .has-children{
   border-bottom: 1px solid #5174AB;
+  padding: 5px 0;
 }
-
+.has-children a:first-child:hover{
+  background: none;
+}
 
 .has-children a:first-child:before{
   width: 12px;
@@ -313,12 +318,6 @@
   padding: 0 10px;
   list-style: none;
 }
-
-/*lateral*/
-#block-cancilleria-d11-system-main{
-  float: right;
-}
-
 
 /* Responsive*/
 @media (max-width: 768px) {
