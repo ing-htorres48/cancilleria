@@ -4,6 +4,7 @@ namespace Drupal\cnu_content_blocks\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\Core\Cache\Cache;
 
 /**
  * @Block(
@@ -42,57 +43,47 @@ class MenuRapidoContextualBlock extends BlockBase {
 	public function build() {
 		$menu_name = 'main';
 
+		$menu_tree = \Drupal::menuTree();
+		$menu_link_manager = \Drupal::service('plugin.manager.menu.link');
 		$active_trail = \Drupal::service('menu.active_trail')->getActiveTrailIds($menu_name);
+
 		$top_level_parent = $this->getTopLevelParent($menu_name, $active_trail);
 
+		$parameters = new MenuTreeParameters();
+		$parameters->onlyEnabledLinks();
+
+		// Caso 1: hay contexto → menú contextual
 		if (
-				empty($top_level_parent)||
-				!is_string($top_level_parent)||
-				!\Drupal::service('plugin.manager.menu.link')->hasDefinition($top_level_parent)
-			) 
-		{
-			return [];
+			!empty($top_level_parent) &&
+			is_string($top_level_parent) &&
+			$menu_link_manager->hasDefinition($top_level_parent)
+		) {
+			$parameters
+			->setRoot($top_level_parent)
+			->excludeRoot();
+		}
+		// Caso 2: no hay contexto → fallback (mostrar menú completo)
+		else {
+			$parameters->setMaxDepth(3);
 		}
 
-		$menu_link_manager = \Drupal::service('plugin.manager.menu.link');
-
-		// Cargar SOLO hijos directos del padre
-		$parameters = new MenuTreeParameters();
-		$parameters
-			->setRoot($top_level_parent)
-			->excludeRoot()
-			->onlyEnabledLinks();
-
-		$menu_tree = \Drupal::menuTree();
 		$tree = $menu_tree->load($menu_name, $parameters);
 
-		if (empty($tree)) {
+		if (!$tree) {
 			return [];
 		}
 
-		// Aplicar manipuladores estándar (orden, acceso, etc.)
 		$tree = $menu_tree->transform($tree, [
 			['callable' => 'menu.default_tree_manipulators:checkAccess'],
 			['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
 		]);
 
-		$items = [];
-		foreach ($tree as $element) {
-			$plugin_id = $element->link->getPluginId();
-			$items[] = [
-				'title' => $element->link->getTitle(),
-				'url' => $element->link->getUrlObject()->toString(),
-				'active' => in_array($plugin_id, $active_trail, TRUE),
-			];
-		}
-
-		// Obtener título del padre
+		// Título del bloque (padre si existe)
 		$parent_title = '';
-
 		if (!empty($top_level_parent) && $menu_link_manager->hasDefinition($top_level_parent)) {
 			$parent_title = $menu_link_manager
-				->createInstance($top_level_parent)
-				->getTitle();
+			->createInstance($top_level_parent)
+			->getTitle();
 		}
 
 		return [
@@ -100,12 +91,10 @@ class MenuRapidoContextualBlock extends BlockBase {
 			'#menu_title' => $parent_title,
 			'#tree' => $tree,
 			'#cache' => [
-			'contexts' => [
-				'url.path',
-				'route',
-			],
+				'max-age' => 0,
 			],
 		];
 	}
+
 
 }
