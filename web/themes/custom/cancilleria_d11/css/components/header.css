@@ -248,7 +248,7 @@ a.glink:active {
   background-color: #ffffff;
   position: sticky;
   top: 0;
-  z-index: 77777;
+  z-index: 1;
 }
 .govco-header__middle-inner {
   max-width: 1200px;
