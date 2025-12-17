@@ -333,3 +333,40 @@
 }
 
 /****************************************************** FIN **************/
+
+/************************************** Menu mobile **********************************/
+.govco-header__nav-list li a:hover {
+        color: #000000 !important;
+}
+
+/* Móvil: el primer toque activa focus-within y abre el menú */
+.govco-header__nav-list li.dropdown:focus-within > .dropdown-menu {
+  display: block;
+}
+
+/* Evita que el enlace padre navegue en el primer toque */
+.govco-header__nav-list li.dropdown > a {
+  touch-action: manipulation;
+}
+
+
+
+
+.pg-web-news-list {
+  margin-top: 70px;
+}
+
+.pg-web-news-title {
+    margin: 10px;
+}
+
+.pg-web-news-media-video iframe {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+}
+
+.pg-web-news-media-video figure.youtube-container {
+      padding: 10px;
+}
+/************************************** FIN Menu mobile **********************************/
