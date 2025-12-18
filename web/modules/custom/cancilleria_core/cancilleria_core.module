@@ -30,5 +30,10 @@ function cancilleria_core_theme() {
         'video' => [],
       ],
     ],
+    'cancilleria_noticias_block' => [
+      'variables' => [
+        'news' => [],
+      ],
+    ],
   ];
 }
