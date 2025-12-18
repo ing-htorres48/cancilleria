@@ -559,3 +559,97 @@ a[href="#main-content"],
     max-width: 980px;
     margin: auto;
 }
+
+
+
+.pg-web-news{
+    background-color: white;
+}
+
+.pg-web-news-media-video figure.youtube-container{
+    padding: 10px;
+    margin: 0;
+}
+
+.pg-web_block-links-img {
+    max-width: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.pg-web-news-item-img img {
+    object-fit: cover;
+    min-width: 100px;
+}
+
+
+.pg-web-news-detail-info {
+    @media (max-width:400px){
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+
+
+.region-featured-bottom-second {
+  margin-bottom: 4rem;
+    @media (max-width:750px){
+        display:flex;
+        flex-direction:column;
+        gap: 10px;
+    }
+}
+
+.region-featured-bottom-second h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #004884;
+    margin: 10px;
+    padding: 0;
+}
+
+
+.fc, .fc *, .fc ::after, .fc ::before {
+    background: transparent;
+}
+
+h2.fc-toolbar-title {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    color: black;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: .5em !important;
+}
+
+.fc-scroller-harness > .fc-scroller {
+  overflow-y: auto !important;
+}
+
+.fc table {
+    color: black;
+    font-weight: 600;
+}
+
+.fc .fc-daygrid-day-frame {
+    border: 1px solid #004884;
+}
+
+.fc table thead th div.fc-scrollgrid-sync-inner {
+    border: 1px solid #004884;
+    border-bottom: none;
+    color: black;
+    font-weight: 900;
+}
+
+.social-tabs-content {
+    max-height: 300px;
+    overflow: auto;
+}
