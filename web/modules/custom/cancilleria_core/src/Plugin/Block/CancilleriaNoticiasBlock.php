@@ -6,6 +6,7 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Pager\PagerManagerInterface;
+use Drupal\Core\File\FileUrlGeneratorInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -23,6 +24,7 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
   protected EntityTypeManagerInterface $entityTypeManager;
   protected DateFormatterInterface $dateFormatter;
   protected PagerManagerInterface $pagerManager;
+  protected FileUrlGeneratorInterface $fileUrlGenerator;
 
   public function __construct(
     array $configuration,
@@ -30,12 +32,14 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
     $plugin_definition,
     EntityTypeManagerInterface $entity_type_manager,
     DateFormatterInterface $date_formatter,
-    PagerManagerInterface $pager_manager
+    PagerManagerInterface $pager_manager,
+    FileUrlGeneratorInterface $file_url_generator
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entity_type_manager;
     $this->dateFormatter = $date_formatter;
     $this->pagerManager = $pager_manager;
+    $this->fileUrlGenerator = $file_url_generator;
   }
 
   public static function create(
@@ -50,7 +54,8 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
       $plugin_definition,
       $container->get('entity_type.manager'),
       $container->get('date.formatter'),
-      $container->get('pager.manager')
+      $container->get('pager.manager'),
+      $container->get('file_url_generator')
     );
   }
 
@@ -61,7 +66,7 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
 
     $limit = 8;
 
-    // Query con paginación real.
+    // Query con paginación real (igual que Views).
     $query = $this->entityTypeManager
       ->getStorage('node')
       ->getQuery()
@@ -88,7 +93,7 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
       ) {
         $file = $node->get('field_imagen_news_thumb')->entity;
         if ($file) {
-          $image_url = $this->fileUrlGenerator()
+          $image_url = $this->fileUrlGenerator
             ->generateAbsoluteString($file->getFileUri());
         }
       }
