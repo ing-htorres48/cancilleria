@@ -5,6 +5,7 @@ namespace Drupal\cancilleria_core\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Datetime\DateFormatterInterface;
+use Drupal\Core\Pager\PagerManagerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -21,17 +22,20 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
 
   protected EntityTypeManagerInterface $entityTypeManager;
   protected DateFormatterInterface $dateFormatter;
+  protected PagerManagerInterface $pagerManager;
 
   public function __construct(
     array $configuration,
     $plugin_id,
     $plugin_definition,
     EntityTypeManagerInterface $entity_type_manager,
-    DateFormatterInterface $date_formatter
+    DateFormatterInterface $date_formatter,
+    PagerManagerInterface $pager_manager
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entity_type_manager;
     $this->dateFormatter = $date_formatter;
+    $this->pagerManager = $pager_manager;
   }
 
   public static function create(
@@ -39,40 +43,43 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
     array $configuration,
     $plugin_id,
     $plugin_definition
-  ) {
+  ): static {
     return new static(
       $configuration,
       $plugin_id,
       $plugin_definition,
       $container->get('entity_type.manager'),
-      $container->get('date.formatter')
+      $container->get('date.formatter'),
+      $container->get('pager.manager')
     );
   }
 
   /**
    * {@inheritdoc}
    */
-  public function build() {
+  public function build(): array {
 
-    /* =====================
-     * ÚLTIMAS 2 NOTICIAS
-     * ===================== */
-    $news_nids = $this->entityTypeManager
+    $limit = 8;
+
+    // Query con paginación real.
+    $query = $this->entityTypeManager
       ->getStorage('node')
       ->getQuery()
       ->condition('type', 'news')
       ->condition('status', 1)
       ->sort('created', 'DESC')
-      ->accessCheck(TRUE)
-      ->execute();
+      ->pager($limit)
+      ->accessCheck(TRUE);
 
-    $news_nodes = $this->entityTypeManager
+    $nids = $query->execute();
+
+    $nodes = $this->entityTypeManager
       ->getStorage('node')
-      ->loadMultiple($news_nids);
+      ->loadMultiple($nids);
 
     $news = [];
 
-    foreach ($news_nodes as $node) {
+    foreach ($nodes as $node) {
       $image_url = NULL;
 
       if (
@@ -81,7 +88,7 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
       ) {
         $file = $node->get('field_imagen_news_thumb')->entity;
         if ($file) {
-          $image_url = \Drupal::service('file_url_generator')
+          $image_url = $this->fileUrlGenerator()
             ->generateAbsoluteString($file->getFileUri());
         }
       }
@@ -92,26 +99,30 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
         'date' => $this->dateFormatter->format(
           $node->getCreatedTime(),
           'custom',
-          'M d, Y'
+          'd M Y'
         ),
+        'summary' => $node->hasField('body')
+          ? text_summary($node->get('body')->value, NULL, 160)
+          : '',
         'image' => $image_url,
       ];
     }
 
-
     return [
-      '#theme' => 'cancilleria_ultimas_noticias_block',
+      '#theme' => 'cancilleria_noticias_block',
       '#news' => $news,
+      '#pager' => [
+        '#type' => 'pager',
+      ],
       '#cache' => [
-        'tags' => ['node_list'],
+        'tags' => ['node_list:news'],
+        'contexts' => ['url.query_args:page'],
       ],
       '#attached' => [
         'library' => [
           'cancilleria_core/cancilleria_home_noticias',
         ],
       ],
-      
-    
     ];
   }
 
