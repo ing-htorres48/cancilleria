@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * Contains cnu_content_blocks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cnu_content_blocks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.cnu_content_blocks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('CNU Content Blocks provides custom blocks for displaying featured content in ColombianosUNE website.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cnu_content_blocks_theme($existing, $type, $theme, $path) {
+  return [
+    'cnu_content_prominent_block' => [
+      'variables' => [
+        'content' => [],
+        'block_title' => NULL,
+        'content_type' => NULL,
+        'is_home' => FALSE,
+      ],
+      'template' => 'cnu-content-prominent-block',
+    ],
+     'cnu_footer_block' => [
+      'variables' => [
+        'menu' => NULL,
+        'config' => NULL,
+      ],
+      'template' => 'block--cnu-footer',
+    ],
+    'cnu_colombianos_ext' => [
+      'variables' => [
+        'items' => NULL,
+      ],
+      'template' => 'cnu-colombianos-ext',
+    ],
+    'cnu_enlaces_destacados' => [
+      'variables' => ['items' => NULL],
+      'template' => 'cnu-enlaces-destacados',
+    ],
+    'items_c_incluyente' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+      'template' => 'items-c-incluyente',
+    ],
+    'como_lo_hago_videos' => [
+      'variables' => ['items' => []],
+      'template' => 'como-lo-hago-videos',
+    ],
+
+    'menu_rapido_contextual' => [
+      'variables' => [
+        'menu_title' => NULL,
+        'tree' => NULL,
+      ],
+    ],
+
+  ];
+}

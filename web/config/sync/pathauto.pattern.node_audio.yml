@@ -10,10 +10,10 @@ type: 'canonical_entities:node'
 pattern: 'newsroom/audio/[node:title]'
 selection_criteria:
   -
-    id: node_type
+    id: entity_bundle:node
     negate: false
     context_mapping:
-      node: node
+      entity: node
     bundles:
       audio: audio
 selection_logic: and

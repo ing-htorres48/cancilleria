@@ -10,10 +10,10 @@ type: 'canonical_entities:node'
 pattern: 'procesos-de-contratacion/[node:title]'
 selection_criteria:
   -
-    id: node_type
+    id: entity_bundle:node
     negate: false
     context_mapping:
-      node: node
+      entity: node
     bundles:
       procesos_contratacion: procesos_contratacion
 selection_logic: and

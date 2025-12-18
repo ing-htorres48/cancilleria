@@ -10,11 +10,11 @@ type: 'canonical_entities:node'
 pattern: 'form/[node:title]'
 selection_criteria:
   95ac90d7-b6aa-414d-9990-ba13e48775bb:
-    id: node_type
+    id: entity_bundle:webform_submission
     negate: false
     uuid: 95ac90d7-b6aa-414d-9990-ba13e48775bb
     context_mapping:
-      node: node
+      entity: webform_submission
     bundles:
       webform: webform
 selection_logic: and

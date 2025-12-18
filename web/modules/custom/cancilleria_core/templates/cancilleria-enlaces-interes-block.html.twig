@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<div class="pg-web_block-links">
+<div class="pg-web_block-links-container">
+  <h2 class="pg-web_block-links-title">Enlaces de interés</h2>
+  <div class="swiper" id="carousel-web-links">
+    <div class="swiper-wrapper">
+    {% for item in items %}
+      <div class="pg-web_block-links-item  swiper-slide">
+        <a href="{{ item.url }}" class="pg-web_block-links-link">
+          <img src="{{ item.image }}" alt="enlace interes" class="pg-web_block-links-img  pw-front" loading="lazy"/>
+          <p class="pg-web_block-links-detail  pw-back">{{ item.descripcion }}</p>
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+    <!-- Controles  carousel exterior -->
+    <div  id="btn-swp-web-prev"></div>
+    <div  id="btn-swp-web-next"></div>
+  </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper('#carousel-web-links', {
+      slidesPerView: 1.25,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '#btn-swp-web-next',
+        prevEl: '#btn-swp-web-prev'
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3.5
+        },
+        960: {
+          slidesPerView: 5.5
+        }
+      }
+    });
+  </script>

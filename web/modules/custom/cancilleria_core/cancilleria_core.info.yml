@@ -1,0 +1,7 @@
+name: Cancillería Core
+type: module
+description: Funcionalidades core del sitio Cancillería
+package: Cancillería
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:media

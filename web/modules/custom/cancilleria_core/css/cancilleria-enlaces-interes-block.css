@@ -1,0 +1,111 @@
+.pg-web_block-links {
+  background-color: #F8F8F8;
+}
+
+.pg-web_block-links-container {
+  margin:auto;
+  max-width: 1200px;
+  padding:20px;
+}
+
+.pg-web_block-links-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004884;
+  padding: 40px 20px;
+}
+.pg-web_block-links-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #004884;
+  border-radius: 8px;
+  color: white;
+  height: 200px;
+  width: 200px;
+}
+.pg-web_block-links-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 200px;
+}
+.pg-web_block-links-detail {
+  font-size: 14px;
+  color: white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin
+}
+
+.pw-front {
+  display: block;
+}
+
+.pw-back {
+  display: none;
+}
+
+.pg-web_block-links-item:hover .pw-front {
+  display: none;
+}
+.pg-web_block-links-item:hover .pw-back {
+  display: flex;
+}
+
+.pg-web_block-links #btn-swp-web-prev, .pg-web_block-links #btn-swp-web-next {
+  width: 34px;
+  height: 34px;
+  background-color: #004884;
+  position: absolute;
+  top: calc(50% - 17px);
+  filter: drop-shadow(0px 0px 0px white);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+
+#carousel-web-links{
+  width: calc(100% - 80px);
+  margin: auto;
+  padding:30px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+  #btn-swp-web-next {
+   background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' fill='%23004884'/> <path d='M11 17L19.5 8.5V25.5L11 17Z' fill='white'/> </svg>");
+   left: 0px;
+}
+
+#btn-swp-web-prev {
+  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' transform='matrix(-1 0 0 1 34 0)' fill='%23004884'/> <path d='M23 17L14.5 8.5V25.5L23 17Z' fill='white'/> </svg>");
+  right: 15px;
+}
+
+.pg-web_block-links-link {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

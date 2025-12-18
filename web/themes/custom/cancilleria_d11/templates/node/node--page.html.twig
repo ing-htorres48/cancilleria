@@ -1,0 +1,88 @@
+{#
+/**
+ * @file
+ * Template para nodos tipo Page.
+ */
+#}
+
+
+<section class="pg-web-transparency">
+  <div class="pg-web-transparency_container">
+    <div class="pg-web-transparency_top">
+      <div class="pg-web-transparency_top-detail"> 
+          {{ content }}
+      </div>
+      
+    </div> 
+
+    {% if node.field_acordeon is defined and not node.field_acordeon.isEmpty() %}
+      <div class="pg-web-transparency_accordion accordion">
+
+        {% for item in node.field_acordeon %}
+          {% set paragraph = item.entity %}
+
+          {% if paragraph %}
+            <div class="pg-web-transparency_accordion-item  accordion-item">
+              
+              {% if paragraph.field_titulo is defined and not paragraph.field_titulo.isEmpty() %}
+                <div class="pg-web-transparency_accordion-item-header accordion-item-header">
+                  <h2 class="pg-web-transparency_accordion-item-title">{{ paragraph.field_titulo.value }}</h2>
+                  <span class="pw-arrow"></span>
+                </div>
+              {% endif %}
+
+              {% if paragraph.field_cuerpo is defined and not paragraph.field_cuerpo.isEmpty() %}
+                <div class="acordeon-content">
+                  
+                </div>
+                <div class="pg-web-transparency_accordion-item-detail  accordion-item-detail">
+                    {{ paragraph.field_cuerpo.value|raw }}
+                </div>
+              {% endif %}
+
+            </div>
+          {% endif %}
+
+        {% endfor %}
+
+      </div>
+    {% endif %}
+
+
+  </div>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".accordion-item");
+
+  // Si quieres que el primero inicie abierto:
+  if (items.length > 0) {
+    items[0].classList.add("active");
+    items[0].querySelector(".accordion-item-detail").style.maxHeight =
+      items[0].querySelector(".accordion-item-detail").scrollHeight + "px";
+  }
+
+  items.forEach(item => {
+    const header = item.querySelector(".accordion-item-header");
+    const detail = item.querySelector(".accordion-item-detail");
+
+    header.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // Cerrar todos
+      items.forEach(i => {
+        i.classList.remove("active");
+        i.querySelector(".accordion-item-detail").style.maxHeight = null;
+      });
+
+      // Si no estaba activo, abrirlo
+      if (!isActive) {
+        item.classList.add("active");
+        detail.style.maxHeight = detail.scrollHeight + "px";
+      }
+    });
+  });
+});
+</script>

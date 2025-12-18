@@ -9,7 +9,7 @@ dependencies:
   content:
     - 'taxonomy_term:secciones:1dd9cefc-19c4-4c68-82ee-c910d790e775'
   module:
-    - views_slideshow
+    - slideshow
     - image
     - node
     - taxonomy

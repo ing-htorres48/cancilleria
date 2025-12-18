@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Template for CNU Content Prominent Block.
+ *
+ * Available variables:
+ * - content: Array of content items.
+ * - block_title: The block title.
+ * - content_type: The content type being displayed.
+ * - is_home: Boolean indicating if this is the front page.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+
+<div{{ attributes.addClass('cnu-content-prominent-block', 'content-type-' ~ content_type) }}>
+  {% if block_title %}
+    <h2 class="block-title">{{ block_title }}</h2>
+  {% endif %}
+
+  {% if content %}
+    <div class="content-items">
+      {% for item in content %}
+        <article class="content-item content-item-{{ loop.index }}">
+          {% if item.image_url %}
+            <div class="content-image">
+              <a href="{{ item.url }}" title="{{ item.title }}">
+                <img src="{{ item.image_url }}" alt="{{ item.title }}" loading="lazy">
+              </a>
+            </div>
+          {% endif %}
+
+          <div class="content-body">
+            <h3 class="content-title">
+              <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+            </h3>
+
+            {% if item.created %}
+              <div class="content-meta">
+                <time datetime="{{ item.created_timestamp|date('c') }}">{{ item.created }}</time>
+              </div>
+            {% endif %}
+
+            {% if item.summary %}
+              <div class="content-summary">
+                {{ item.summary|striptags|truncate(150) }}
+              </div>
+            {% endif %}
+
+            <div class="content-actions">
+              <a href="{{ item.url }}" class="read-more-link" title="{{ 'Read more about @title'|t({'@title': item.title}) }}">
+                {{ 'Leer más'|t }}
+              </a>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="no-content">
+      <p>{{ 'No content available.'|t }}</p>
+    </div>
+  {% endif %}
+</div>

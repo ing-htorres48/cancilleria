@@ -1,0 +1,612 @@
+/* CONTENEDOR GENERAL */
+.govco-header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* 1) FRANJA AZUL */
+.govco-header__top {
+  background-color: #3367CC;
+  /* Azul GOV.CO */
+  color: #ffffff;
+}
+
+.govco-header__top-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.govco-header__govco-logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+a.glink {
+  display: inline-block;
+  background: #ffffff;
+  color: #2F6BD8;
+  /* Ajusta según tu paleta */
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+a.glink:hover {
+  background: #f2f2f2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+a.glink:active {
+  transform: scale(0.97);
+}
+
+#block-intranet-d11-gov img {
+  max-height: 25px;
+  max-width: 135px;
+  display: block;
+  top: 16px;
+  left: 74px;
+}
+
+
+/* 2) FRANJA BLANCA */
+.govco-header__middle {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.govco-header__middle-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#block-intranet-d11-logointranet img {
+  max-height: 37px;
+  max-width: 200px;
+  display: block;
+}
+
+#block-intranet-d11-logocancilleria img {
+  max-height: 84px;
+  max-width: 145px;
+  display: block;
+}
+
+.govco-header__search-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.govco-header__search {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  border-radius: 999px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+
+.govco-header__search input {
+  flex: 1;
+  border: none;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.govco-header__search input:focus {
+  outline: none;
+}
+
+.govco-header__search button {
+  border: none;
+  padding: 0 1.1rem;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+/* 3) FRANJA GRIS MENÚ */
+.govco-header__nav {
+  background-color: #F8F8F8;
+  border-top: 1px solid #e5e5e5;
+}
+
+.govco-header__nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 1rem 0.6rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.govco-header__nav-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.78rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+.govco-header__nav-list li span:first-child {
+  font-size: 1.4rem;
+  /* ícono */
+  line-height: 1.2;
+}
+
+.govco-header__nav-list li span:last-child {
+  margin-top: 0.15rem;
+}
+
+/* Responsive básico */
+@media (max-width: 768px) {
+  .govco-header__middle-inner {
+    flex-direction: column;
+  }
+
+  .govco-header__nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+/* SOLO el primer nivel del menú horizontal */
+.govco-header__nav>ul.govco-header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+/* Quita el flex de los ul hijos (dropdown) */
+.govco-header__nav ul.dropdown-menu {
+  display: none;
+  /* oculto por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Los li que tienen submenú deben ser posicionados */
+.govco-header__nav li.dropdown {
+  position: relative;
+}
+
+/* Mostrar submenú al pasar el mouse (si no usas JS de Bootstrap) */
+.govco-header__nav li.dropdown:hover>ul.dropdown-menu {
+  display: block;
+}
+
+/* Estilos básicos de los enlaces del submenú */
+.govco-header__nav ul.dropdown-menu>li>a {
+  display: block;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  color: #333;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.govco-header__nav ul.dropdown-menu>li>a:hover {
+  background: #F5F5F5;
+}
+
+/* Contenedor del menú */
+.govco-header__nav {
+  position: relative;
+  z-index: 1000;
+  /* asegura que quede encima del body */
+}
+
+/* El dropdown debe tener z-index también */
+.govco-header__nav ul.dropdown-menu {
+  position: absolute;
+  z-index: 2000;
+  /* más arriba que el nav */
+}
+
+
+
+/*-----Arreglos------*/
+
+.govco-header__top #block-intranet-d11-gov img{
+  width: auto;
+  height: 25px;
+  margin: 0;
+}
+
+.govco-header__middle {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.govco-header__middle-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+  /*logos search*/
+.govco-header__middle #block-intranet-d11-logointranet{
+  order: 1;
+}
+.govco-header__middle #block-intranet-d11-logointranet img{
+  width: auto;
+  height: 37px;
+}
+
+.govco-header__middle #block-intranet-d11-search{
+  width: 100%;
+  max-width: 433px;
+  order: 2;
+}
+.govco-header__middle #block-intranet-d11-search .content{
+  width: 100%;
+}
+.govco-header__middle #block-intranet-d11-search .form-type-search{
+  width: 100%;
+}
+
+.govco-header__middle  #block-intranet-d11-logocancilleria{
+  order: 3;
+}
+.govco-header__middle  #block-intranet-d11-logocancilleria img{
+  width: 145px;
+  height: 84px;
+}
+.govco-header__search {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  border-radius: 999px;
+  border: 1px solid #EAEAE9;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  flex-flow: nowrap !important;
+}
+
+.govco-header__search input {
+  width: 100%;
+  flex: 1;
+  border: none;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.govco-header__search input:focus {
+  outline: none;
+}
+
+.govco-header__search #edit-actions #edit-submit{
+  width: 34px;
+  height: 34px;
+  font-size: 0;
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/ico-head_lupa.png) center center no-repeat;
+  background-size: 80%;
+  background-color: #FFFFFF;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 70px;
+  color: #D9D9D9;
+}
+.govco-header__search #edit-actions #edit-submit:hover{
+  background-color: #ECEBEB;
+}
+
+
+/*iconos*/
+.govco-header__nav-list .fa-home:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/ico-home.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-trello:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-ministerio.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-th-list:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-planeacion.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-minus-circle:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/ico-servicios.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-feed:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/ico-comunicaciones.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-eye-slash:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/ico-salir.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+.govco-header__nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.govco-header__nav-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+}
+.govco-header__nav-list li a .icon-label{
+  position: relative;
+}
+.govco-header__nav-list li a:last-child .icon-label::before {
+  display: none;
+}
+.govco-header__nav-list .icon-label:before{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #BFBFBF;
+  position: absolute;
+  right: -16px;
+  content: "";
+  bottom: 7px;
+}
+.govco-header__nav {
+  background-color: #F8F8F8;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .govco-header__middle-inner {
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
+  }
+
+  .govco-header__nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .govco-header__top #block-intranet-d11-gov img{
+    height: 16px;
+  }
+  /*logos search*/
+
+  .govco-header__search{
+    width: 90%;
+    padding: 5px 10px;
+  }
+  .govco-header__middle #block-intranet-d11-logointranet{
+    order: 1;
+  }
+   .govco-header__middle #block-intranet-d11-logointranet img{
+    width: auto;
+    height: 50px;
+  }
+  .govco-header__middle #block-intranet-d11-search{
+    order: 3;
+  }
+  .govco-header__middle  #block-intranet-d11-logocancilleria{
+    order: 2;
+  }
+  .govco-header__middle  #block-intranet-d11-logocancilleria img{
+    width: auto;
+    height: 20px;
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .govco-header__nav-list {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .govco-header__nav-list li a{
+    flex-direction: row;
+  }
+  .govco-header__nav-list li a .icon-label{
+    margin: 0 0 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .govco-header__nav-list {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+.pg-web_block-links {
+  background-color: #F8F8F8;
+}
+
+.pg-web_block-links-container {
+  margin:auto;
+  max-width: 1200px;
+  padding:20px;
+}
+
+.pg-web_block-links-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004884;
+  padding: 40px 20px;
+}
+.pg-web_block-links-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #004884;
+  border-radius: 8px;
+  color: white;
+  height: 200px;
+  width: 200px;
+}
+.pg-web_block-links-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 200px;
+}
+.pg-web_block-links-detail {
+  font-size: 14px;
+  color: white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 5px;
+}
+
+.pw-front {
+  display: block;
+}
+
+.pw-back {
+  display: none;
+}
+
+.pg-web_block-links-item:hover .pw-front {
+  display: none;
+}
+.pg-web_block-links-item:hover .pw-back {
+  display: flex;
+}
+
+.pg-web_block-links #btn-swp-web-prev, .pg-web_block-links #btn-swp-web-next {
+  width: 34px;
+  height: 34px;
+  background-color: #004884;
+  position: absolute;
+  top: calc(50% - 17px);
+  filter: drop-shadow(0px 0px 0px white);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+
+#carousel-web-links{
+  width: calc(100% - 80px);
+  margin: auto;
+  padding:30px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+  #btn-swp-web-next {
+   background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' fill='%23004884'/> <path d='M11 17L19.5 8.5V25.5L11 17Z' fill='white'/> </svg>");
+   left: 0px;
+}
+
+#btn-swp-web-prev {
+  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' transform='matrix(-1 0 0 1 34 0)' fill='%23004884'/> <path d='M23 17L14.5 8.5V25.5L23 17Z' fill='white'/> </svg>");
+  right: 15px;
+}
+
+.pg-web_block-links-link {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* cancilleria-social-block.css  linea 15 */
+.cancilleria-social__item {
+  background: transparent !important;
+}
+
+/* header.css  linea 185 */
+.govco-header__nav .dropdown-menu .dropdown-menu{
+  left: 12rem !important;
+  top:0 !important;
+  @media (max-width: 767px) {
+    left: 2.5rem !important;
+    top: inherit !important;
+  }
+}

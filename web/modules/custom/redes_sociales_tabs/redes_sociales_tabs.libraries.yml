@@ -1,0 +1,10 @@
+social_tabs:
+  css:
+    theme:
+      css/social-tabs.css: {}
+  js:
+    js/social-tabs.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once

@@ -1,0 +1,60 @@
+<div{{ attributes.addClass('social-tabs-block') }}>
+
+  {# NAV DE PESTAÑAS #}
+  <ul class="social-tabs-nav">
+    <li class="active" data-tab="tab-facebook">Facebook</li>
+    <li data-tab="tab-instagram">Instagram</li>
+    <li data-tab="tab-x">X</li>
+  </ul>
+
+  <div class="social-tabs-content">
+
+    {# FACEBOOK #}
+    <div id="tab-facebook" class="social-tab-pane active">
+      {# SDK de Facebook #}
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v21.0"
+        nonce="abcd1234"></script>
+
+      <div class="fb-page"
+           data-href="https://www.facebook.com/CancilleriaCol/"  {# TU PÁGINA #}
+           data-tabs="timeline"
+           data-width="400"
+           data-height="600"
+           data-small-header="false"
+           data-adapt-container-width="true"
+           data-hide-cover="false"
+           data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/CancilleriaCol/"
+                    class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/CancilleriaCol/">Cancillería Colombia</a>
+        </blockquote>
+      </div>
+    </div>
+
+    {# INSTAGRAM #}
+    <div id="tab-instagram" class="social-tab-pane">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/cancilleriacol/"
+        data-instgrm-version="14"
+        style="background:#FFF; border:0; margin: 0 auto; max-width:540px; width:100%;">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+
+    {# X (TWITTER) #}
+    <div id="tab-x" class="social-tab-pane">
+      {# Widget oficial de X - Timeline #}
+      <a class="twitter-timeline"
+         href="https://twitter.com/CancilleriaCol?ref_src=twsrc%5Etfw"
+         data-width="400"
+         data-height="600"
+         data-theme="light">
+        Tweets by CancilleriaCol
+      </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+  </div>
+</div>

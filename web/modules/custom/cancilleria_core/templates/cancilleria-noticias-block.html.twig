@@ -1,0 +1,27 @@
+<div class="pg-web-news">
+    <div class="pg-web-news-container">
+        <div class="pg-web-news-news">
+            <h2 class="pg-web-news-title"> Últimas noticias </h2>
+            <div class="pg-web-news-list2">
+            {% for item in news %}
+                <div class="pg-web-news-item">
+                    <div class="pg-web-news-item-img">
+                        <img src="{{ item.image }}" alt="noticia" class="" />
+                    </div>
+                    <div class="pg-web-news-detail">
+                      <div class="pg-web-news-detail-date" datetime="{{ item.date }}">{{ item.date }}</div>
+                      <p class="pg-web-news-detail-info">{{ item.title }}</p>
+                      <div class="pg-web-news-detail-action">
+                        <a href="{{ item.url }}" class="pg-web-news-detail-link"> Leer más... </a>
+                      </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="news-pager">
+  {{ pager }}
+</div>

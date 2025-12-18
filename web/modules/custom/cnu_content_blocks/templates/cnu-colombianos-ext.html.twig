@@ -1,0 +1,32 @@
+<div class="mb-cnu-content_exterior">
+  <h2 class="mb-cnu-content_exterior-title">Colombianos en el exterior</h2>
+
+  <div class="swiper" id="carousel-exterior">
+    <div class="swiper-wrapper">
+      {% for item in items %}
+        <article class="mb-cnu-content_exterior__carousel-item swiper-slide">
+          <div class="carousel-item-image">
+            <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+          </div>
+
+          <div class="carousel-item-body">
+            <h3 class="carousel-item-title">{{ item.title }}</h3>
+            <div class="carousel-item-meta">
+              <time>{{ item.date }}</time>
+            </div>
+            <div class="carousel-item-summary">
+              {{ item.summary }}
+            </div>
+            <div class="carousel-item-actions">
+              <a href="{{ item.url }}" class="carousel-item-link">Conoce más</a>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div id="btn-swp-ext-prev"></div>
+    <div id="btn-swp-ext-next"></div>
+  </div>
+</div>
+

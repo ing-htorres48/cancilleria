@@ -1,0 +1,60 @@
+
+
+.cnu-footer-box {
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #2C69D1;
+}
+
+.cnu-footer ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.cnu-footer li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.cnu-footer a {
+  color: #0A4C80;
+  text-decoration: none;
+}
+
+.cnu-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: #2C69D1 !important;
+}
+
+
+.cnu-footer-box {
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #2C69D1;
+}
+
+.cnu-footer ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.cnu-footer li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.cnu-footer a {
+  color: #0A4C80;
+  text-decoration: none;
+}
+
+.cnu-footer a:hover {
+  text-decoration: underline;
+}
+
+.gov-bar img {
+  vertical-align: middle;
+}

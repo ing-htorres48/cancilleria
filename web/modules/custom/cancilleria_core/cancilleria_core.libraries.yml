@@ -1,0 +1,20 @@
+cancilleria_image_block:
+  css:
+    theme:
+      css/cancilleria-image-block.css: {}
+
+cancilleria_social_block:
+  css:
+    theme:
+      css/cancilleria-social-block.css: {}
+
+cancilleria_enlaces_interes:
+  css:
+    theme:
+      css/cancilleria-enlaces-interes-block.css: {}
+
+cancilleria_home_noticias:
+  css:
+    theme:
+      css/cancilleria-home-noticias.css: {}
+

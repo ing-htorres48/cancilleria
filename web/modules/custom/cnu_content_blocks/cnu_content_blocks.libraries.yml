@@ -1,0 +1,14 @@
+cnu_content_blocks:
+  css:
+    theme:
+      css/cnu-content-blocks.css: {}
+      css/footer.css: {}
+      css/cnu-colombianos-ext.css: {}
+      css/cnu-destacados-enlaces.css: {}
+      https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css: {}
+  js:
+    https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js: {}
+    js/carousel-exterior.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

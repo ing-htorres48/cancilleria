@@ -1,0 +1,403 @@
+/**
+ * @file
+ * Estilos para elementos de navegación
+ */
+
+/* Breadcrumb mejorado */
+.breadcrumb {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem 1rem;
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.875rem;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: var(--color-text-secondary);
+  margin: 0 0.5rem;
+}
+
+.breadcrumb-item a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumb-item.active {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/* Menú lateral */
+.sidebar-menu {
+  background-color: var(--color-bg-primary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-menu .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu .menu-item {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-menu .menu-item a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border-radius: var(--border-radius-md);
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu .menu-item a:hover {
+  background-color: var(--color-bg-secondary);
+  border-left-color: var(--color-primary);
+  transform: translateX(5px);
+}
+
+.sidebar-menu .menu-item a.is-active,
+.sidebar-menu .menu-item.menu-item--active-trail > a {
+  background-color: rgba(30, 64, 175, 0.1);
+  color: var(--color-primary);
+  font-weight: 600;
+  border-left-color: var(--color-primary);
+}
+
+/* Submenús */
+.sidebar-menu .menu .menu {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  border-left: 2px solid var(--color-border-light);
+  padding-left: 1rem;
+}
+
+.sidebar-menu .menu .menu-item a {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Tabs de navegación */
+.nav-tabs {
+  border-bottom: 2px solid var(--color-border-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+  padding: 0.75rem 1.5rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+  margin-bottom: -2px;
+}
+
+.nav-tabs .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active::after {
+  background-color: var(--color-primary);
+}
+
+/* Pills de navegación */
+.nav-pills .nav-link {
+  border-radius: 50px;
+  padding: 0.5rem 1.25rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: rgba(30, 64, 175, 0.1);
+  color: var(--color-primary);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Paginación personalizada */
+.pager {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: var(--spacing-xl) 0;
+}
+
+.pager__item {
+  list-style: none;
+}
+
+.pager__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border: 1px solid var(--color-border-medium);
+  border-radius: var(--border-radius-md);
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  min-width: 2.5rem;
+  justify-content: center;
+}
+
+.pager__link:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.pager__item--current .pager__link {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  font-weight: 600;
+}
+
+.pager__item--first .pager__link,
+.pager__item--last .pager__link,
+.pager__item--previous .pager__link,
+.pager__item--next .pager__link {
+  font-weight: 600;
+}
+
+/* Migas de pan móviles */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .breadcrumb-item {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Menu toggle para móviles */
+.sidebar-menu-toggle {
+  display: none;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem 1rem;
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar-menu-toggle {
+    display: block;
+  }
+
+  .sidebar-menu .menu {
+    display: none;
+  }
+
+  .sidebar-menu.menu-open .menu {
+    display: block;
+  }
+}
+
+
+/************************************** Menu Lateral ******************************************/
+
+/*menu*/
+.main-content .section{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+#block-cancilleria-d11-menurapidocontextual{
+  width: 100%;
+  max-width: 217px;
+  margin: 0 0 0 10px;
+}
+#block-cancilleria-d11-system-main{
+  width: 100%;
+}
+#block-cancilleria-d11-system-main .pg-web-transparency{
+  padding: 10px 20px 40px 20px;
+}
+
+.menu-rapido__header{
+  background:#3367CC;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+.menu-rapido__list{
+  padding: 10px;
+  margin: 10px 0;
+  list-style: none;
+  background: #004884;
+}
+
+.has-children{
+  border-bottom: 1px solid #5174AB;
+  padding: 5px 0;
+}
+.has-children a:first-child:hover{
+  background: none;
+}
+
+.has-children a:first-child:before{
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  content: "";
+  background: url(https://sitio-cancilleria.haspe.co/sites/default/files/menu-chevron.svg) 0 0 no-repeat;
+  background-size: contain;
+}
+.menu-item a{
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 10px;
+  font-weight: 700;
+  padding: 5px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+}
+.menu-item a:hover{
+  background:#3367CC;
+}
+.menu-item .menu-rapido__submenu{
+  padding: 0 10px;
+  list-style: none;
+}
+.menu-item .menu-rapido__submenu a:before{
+  display: none;
+}
+.menu-rapido__submenu .menu-item a:hover{
+  background:#3367CC;
+}
+.menu-rapido__submenu{
+  padding: 0 10px;
+  list-style: none;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  #block-cancilleria-d11-menurapidocontextual{
+    margin: 0 0 0 20px;
+  }
+}
+@media (max-width: 576px) {
+  #block-cancilleria-d11-menurapidocontextual{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+
+}
+
+/* Animacion */
+.menu-rapido__list[open] ul {
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/****************************************************** FIN **************/
+
+/************************************** Menu mobile **********************************/
+.govco-header__nav-list li a:hover {
+        color: #000000 !important;
+}
+
+/* Móvil: el primer toque activa focus-within y abre el menú */
+.govco-header__nav-list li.dropdown:focus-within > .dropdown-menu {
+  display: block;
+}
+
+/* Evita que el enlace padre navegue en el primer toque */
+.govco-header__nav-list li.dropdown > a {
+  touch-action: manipulation;
+}
+
+
+
+
+.pg-web-news-list {
+  margin-top: 70px;
+}
+
+.pg-web-news-title {
+    margin: 10px;
+}
+
+.pg-web-news-media-video iframe {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+}
+
+.pg-web-news-media-video figure.youtube-container {
+      padding: 10px;
+}
+/************************************** FIN Menu mobile **********************************/

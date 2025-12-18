@@ -5,44 +5,60 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
-    - ckeditor
+    - ckeditor5
 _core:
   default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
 format: basic_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
-  plugins: {  }
+    items:
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - '|'
+      - sourceEditing
+  plugins:
+    ckeditor5_autoformat:
+      enabled: true
+    ckeditor5_blockQuote:
+      enabled: true
+    ckeditor5_codeBlock:
+      enabled: true
+    ckeditor5_html5MediaEmbed:
+      enabled: true
+    ckeditor5_indent:
+      enabled: true
+    ckeditor5_link:
+      enabled: true
+    ckeditor5_list:
+      enabled: true
+    ckeditor5_sourceEditing:
+      enabled: true
+      allowed_tags:
+        - a
+        - abbr
+        - b
+        - bdi
+        - bdo
+        - blockquote
+        - br
+        - cite
+        - code
+        - em
+        - i
+        - li
+        - ol
+        - p
+        - strong
+        - u
+        - ul
 image_upload:
   status: true
   scheme: public

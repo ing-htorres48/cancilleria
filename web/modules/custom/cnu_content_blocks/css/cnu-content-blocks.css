@@ -1,0 +1,110 @@
+/**
+ * @file
+ * Styles for CNU Content Prominent Block.
+ */
+
+.cnu-content-prominent-block {
+  margin-bottom: 2rem;
+}
+
+.cnu-content-prominent-block .block-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.cnu-content-prominent-block .content-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cnu-content-prominent-block .content-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cnu-content-prominent-block .content-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cnu-content-prominent-block .content-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.cnu-content-prominent-block .content-body {
+  padding: 1.5rem;
+}
+
+.cnu-content-prominent-block .content-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.cnu-content-prominent-block .content-title a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cnu-content-prominent-block .content-title a:hover {
+  color: #007acc;
+}
+
+.cnu-content-prominent-block .content-meta {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.cnu-content-prominent-block .content-summary {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.cnu-content-prominent-block .read-more-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cnu-content-prominent-block .read-more-link:hover {
+  background-color: #005999;
+  color: white;
+}
+
+.cnu-content-prominent-block .no-content {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cnu-content-prominent-block .content-items {
+    grid-template-columns: 1fr;
+  }
+
+  .cnu-content-prominent-block .block-title {
+    font-size: 1.5rem;
+  }
+}
