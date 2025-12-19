@@ -67,7 +67,7 @@ class CnuEnlacesDestacadosBlock extends BlockBase implements ContainerFactoryPlu
       ->condition('type', 'imagen_tramites_y_servicios')
       ->condition('status', 1)
       ->condition('field_destacado', 1) // 👈 SOLO los destacados
-      ->sort('created', 'DESC')
+      ->sort('field_orden', 'ASC')
       ->range(0, $limit)
       ->accessCheck(TRUE)
       ->execute();

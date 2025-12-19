@@ -657,3 +657,52 @@ h2.fc-toolbar-title {
 .node__title {
     text-align: center;
 }
+
+.page-node-24824 #block-cancilleria-d11-system-main{
+  display: none;
+}
+
+
+/* Navigation arrows */
+
+div#block-cancilleria-d11-sliderhome {
+    position: relative;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .slick-arrow {
+  width: 34px;
+  height: 34px;
+}
+
+ .slick-prev{
+  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' fill='%23004884'/> <path d='M11 17L19.5 8.5V25.5L11 17Z' fill='white'/></svg>");
+  left: 20px;
+  &:before{
+    content: none;
+  }
+}
+
+.slick-next{
+  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' transform='matrix(-1 0 0 1 34 0)' fill='%23004884'/> <path d='M23 17L14.5 8.5V25.5L23 17Z' fill='white'/> </svg>");
+  right: 20px;
+  &:before{
+    content: none;
+  }
+}
