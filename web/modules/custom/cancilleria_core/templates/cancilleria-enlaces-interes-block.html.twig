@@ -27,10 +27,15 @@
     new Swiper('#carousel-web-links', {
       slidesPerView: 1.25,
       spaceBetween: 20,
+      loop: true,
       navigation: {
         nextEl: '#btn-swp-web-next',
         prevEl: '#btn-swp-web-prev'
       },
+      autoplay: {
+          delay: 5000, // Wait 5 seconds before switching slides
+          disableOnInteraction: false, // Keep autoplay running after user interaction
+       },
       breakpoints: {
         640: {
           slidesPerView: 3.5
