@@ -611,7 +611,15 @@ a.glink:active {
   }
 }
 
-
+/* home */
+.govco-header__nav-list .fa-home:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(../../ico/icon-home.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
 
 
 /* transparencia */
@@ -619,7 +627,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-transparencia.png) 0 0 no-repeat;
+  background: url(../../ico/icon-transparencia.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
@@ -629,7 +637,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-atencion-servicio.png) 0 0 no-repeat;
+  background: url(../../ico/icon-atencion-servicio.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
@@ -639,7 +647,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-ministerio.png) 0 0 no-repeat;
+  background: url(../../ico/icon-ministerio.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
@@ -649,7 +657,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-politica-experior.png) 0 0 no-repeat;
+  background: url(../../ico/icon-politica-experior.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
@@ -659,7 +667,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-sala-prensa.png) 0 0 no-repeat;
+  background: url(../../ico/icon-sala-prensa.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
@@ -669,7 +677,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-ministra.png) 0 0 no-repeat;
+  background: url(../../ico/icon-ministra.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
@@ -679,7 +687,7 @@ a.glink:active {
   width: 30px;
   height: 30px;
   content: "";
-  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-participa.png) 0 0 no-repeat;
+  background: url(../../ico/icon-participa.png) 0 0 no-repeat;
   background-size: contain;
   display: flex;
 }
