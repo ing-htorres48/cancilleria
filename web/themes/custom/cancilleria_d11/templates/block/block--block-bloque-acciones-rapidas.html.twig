@@ -1,0 +1,22 @@
+{{ attach_library('cancilleria_d11/acciones-rapidas') }}
+{% set data = content['#block_content'] %}
+
+<div class="category">
+	<ul class="category-list">
+		{% for item in data.field_elementos_bldestacados %}
+			<li class="category-item">
+				<div class="category-card">
+					<div class="category-img">
+						<img 
+							src="{{ file_url(item.entity.field_imagen_pgdestacado.entity.uri.value) }}" 
+							alt="{{ item.entity.field_imagen_pgdestacado.alt }}"
+						>
+					</div>
+					<div class="category-btn">
+						<a href="{{ item.entity.field_enlace_pgdestacado.value }}">{{ item.entity.field_titulo_pgdestacado.value }}</a>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

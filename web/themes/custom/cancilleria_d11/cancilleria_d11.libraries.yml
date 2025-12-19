@@ -36,4 +36,12 @@ components:
     - core/drupal
     - core/once
     - core/jquery
+
+acciones-rapidas:
+  css:
+    theme:
+      css/components/acciones-rapidas.css: {}
+  dependencies:
+    - core/drupal
+    - core/once    
     
