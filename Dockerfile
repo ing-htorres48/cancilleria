@@ -27,7 +27,8 @@ ENV DRUPAL_ROOT=/var/www/html \
     OPCACHE_MEMORY_CONSUMPTION=256 \
     OPCACHE_MAX_ACCELERATED_FILES=10000 \
     OPCACHE_VALIDATE_TIMESTAMPS=0 \
-    OPCACHE_REVALIDATE_FREQ=2
+    OPCACHE_REVALIDATE_FREQ=2 \
+    DRUSH_LAUNCHER_VERSION=0.10.2
 
 # Configuración del sistema y hardening
 RUN set -eux; \
@@ -82,6 +83,14 @@ RUN set -eux; \
     # Instalar Composer
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; \
     chmod +x /usr/local/bin/composer;
+
+RUN set -eux; \
+    # Descargar e instalar Drush Launcher
+    curl -OL https://github.com/drush-ops/drush-launcher/releases/download/${DRUSH_LAUNCHER_VERSION}/drush.phar; \
+    chmod +x drush.phar; \
+    mv drush.phar /usr/local/bin/drush; \
+    # Verificar instalación
+    drush --version;
 
 # Configuración de extensiones PHP
 RUN set -eux; \
