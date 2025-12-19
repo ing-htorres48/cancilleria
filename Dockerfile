@@ -315,7 +315,7 @@ RUN set -eux; \
     rm -rf /tmp/* /var/tmp/* ${DRUPAL_ROOT}/.git;
 
 # Configurar volumen para archivos de Drupal
-VOLUME ["${DRUPAL_ROOT}/web/sites/default/files"]
+VOLUME ["${DRUPAL_ROOT}/web/sites/default/files", "/var/log/apache2", "/var/log/php"]
 
 # Exponer puerto
 EXPOSE 80
