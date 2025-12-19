@@ -27,8 +27,7 @@ ENV DRUPAL_ROOT=/var/www/html \
     OPCACHE_MEMORY_CONSUMPTION=256 \
     OPCACHE_MAX_ACCELERATED_FILES=10000 \
     OPCACHE_VALIDATE_TIMESTAMPS=0 \
-    OPCACHE_REVALIDATE_FREQ=2 \
-    DRUSH_LAUNCHER_VERSION=0.10.2
+    OPCACHE_REVALIDATE_FREQ=2
 
 # Configuración del sistema y hardening
 RUN set -eux; \
@@ -84,13 +83,17 @@ RUN set -eux; \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; \
     chmod +x /usr/local/bin/composer;
 
+# Instalar Drush Launcher sin warnings
 RUN set -eux; \
-    # Descargar e instalar Drush Launcher
-    curl -OL https://github.com/drush-ops/drush-launcher/releases/download/${DRUSH_LAUNCHER_VERSION}/drush.phar; \
+    # Descargar Drush Launcher
+    curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.10.2/drush.phar; \
     chmod +x drush.phar; \
     mv drush.phar /usr/local/bin/drush; \
-    # Verificar instalación
-    drush --version;
+    # Verificar instalación SIN ejecutar drush (que busca Drupal)
+    echo "Drush Launcher Version: 0.10.2 instalado correctamente"; \
+    # Opcional: verificar que el archivo existe y es ejecutable
+    ls -la /usr/local/bin/drush; \
+    file /usr/local/bin/drush;
 
 # Configuración de extensiones PHP
 RUN set -eux; \
