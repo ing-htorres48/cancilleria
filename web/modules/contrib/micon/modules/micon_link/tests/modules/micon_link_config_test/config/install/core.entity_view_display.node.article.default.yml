@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_link
+    - node.type.article
+  module:
+    - micon
+    - micon_link
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  field_link:
+    type: micon_link
+    label: above
+    settings:
+      trim_length: 100
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+      title: ''
+      icon: fa-asterisk
+      position: after
+      text_only: TRUE
+    third_party_settings: {  }
+    weight: 112
+    region: content
+hidden: {  }

@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Standard installation functions for micon.
+ */
+
+/**
+ * Upgrade to new storage format.
+ */
+function micon_update_8001() {
+  $entities = \Drupal::entityTypeManager()
+    ->getStorage('micon')
+    ->loadMultiple();
+
+  foreach ($entities as $entity) {
+    $dataArray = $entity->get('archive');
+    if (empty($dataArray)) {
+      continue;
+    }
+    $data = implode('', $dataArray);
+    $zip_archive = unserialize(gzuncompress(stripslashes(base64_decode(strtr($data, '-_,', '+/=')))), ['allowed_classes' => FALSE]);
+    $entity->set('archive', $zip_archive);
+    $entity->save();
+  }
+
+  drupal_flush_all_caches();
+}
+
+/**
+ * Do not allow to override settings.
+ *
+ * Settings "max_length", "is_ascii" and "case_sensitive" should never be
+ * allowed to be overriden by the user. Remove any overrides, as these settings
+ * are now hardcoded in "StringMiconItem".
+ */
+function micon_update_10001() {
+  $fieldStorages = \Drupal::entityTypeManager()
+    ->getStorage('field_storage_config')
+    ->loadByProperties([
+      'type' => 'string_micon',
+    ]);
+  foreach ($fieldStorages as $fieldStorage) {
+    $fieldStorage->set('settings', [])->save();
+  }
+}

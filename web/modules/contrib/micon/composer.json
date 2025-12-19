@@ -1,0 +1,22 @@
+{
+    "name": "drupal/micon",
+    "type": "drupal-module",
+    "description": "An IcoMoon-based icon manager for Drupal.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/micon",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/micon",
+        "source": "http://cgit.drupalcode.org/micon"
+    },
+    "require-dev": {
+      "drupal/paragraphs": "^1",
+      "drupal/linkit": "^7",
+      "drupal/link_attributes": "^2"
+    },
+    "suggest": {
+        "drupal/paragraphs": "Needed for micon_paragraphs.",
+        "drupal/linkit": "Needed for micon_linkit and micon_linkit_attributes.",
+        "drupal/link_attributes": "Needed for micon_linkit_attributes."
+    }
+}

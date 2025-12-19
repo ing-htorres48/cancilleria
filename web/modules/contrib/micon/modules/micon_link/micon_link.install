@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Standard installation functions for micon_link.
+ */
+
+/**
+ * Reset the packages setting to its default value.
+ *
+ * The schema was incorrect and the setting didn't save properly because of it.
+ */
+function micon_link_update_9001() {
+  if ($form_displays = \Drupal::entityTypeManager()->getStorage('entity_form_display')->loadMultiple(NULL)) {
+    // Reset the string micon "packages" settings to its default value:
+    foreach ($form_displays as $form_display) {
+      $components = $form_display->getComponents();
+
+      foreach ($components as $componentName => $component) {
+        if (!isset($component['type']) || $component['type'] !== 'micon_link') {
+          // Our widget is not used, skip this component:
+          continue;
+        }
+        // Simply reset the packages again to its original value. The old
+        // applied schema didn't make sense anyway and the old definitions
+        // are useless.
+        $component['settings']['packages'] = [];
+
+        // Save changes:
+        $form_display->setComponent($componentName, $component)->save();
+      }
+    }
+  }
+}
+
+/**
+ * Update the micon_link formatter "text_only" setting.
+ */
+function micon_link_update_9002() {
+  if ($view_displays = \Drupal::entityTypeManager()->getStorage('entity_view_display')->loadMultiple(NULL)) {
+    foreach ($view_displays as $view_display) {
+      $components = $view_display->getComponents();
+
+      foreach ($components as $componentName => $component) {
+        if (isset($component['type']) && $component['type'] === 'micon_link' && isset($component['settings']['text_only'])) {
+          $component['settings']['text_only'] = !empty($component['settings']['text_only']);
+
+          // Save changes:
+          $view_display->setComponent($componentName, $component)->save();
+        }
+      }
+    }
+  }
+}

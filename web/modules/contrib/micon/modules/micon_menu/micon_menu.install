@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Standard installation functions for micon_menu.
+ */
+
+/**
+ * Reset the packages setting to its default value.
+ *
+ * The schema was incorrect and the setting didn't save properly because of it.
+ */
+function micon_menu_update_9001() {
+  \Drupal::configFactory()->getEditable('micon_menu.config')
+    ->set('packages', [])
+    ->save();
+}

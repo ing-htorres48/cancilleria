@@ -1,0 +1,32 @@
+micon.micon.*:
+  type: config_entity
+  label: 'Micon config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    status:
+      type: boolean
+      label: 'Status'
+    type:
+      type: string
+      label: 'Type'
+    archive:
+      type: string
+      label: 'Archive'
+
+field.widget.settings.micon_string:
+  type: mapping
+  label: 'Micon String widget settings'
+  mapping:
+    packages:
+      type: sequence
+      label: 'Packages'
+      sequence:
+        type: string
+        label: 'Micon ID'

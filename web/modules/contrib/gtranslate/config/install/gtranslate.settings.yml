@@ -1,0 +1,22 @@
+source_lang: 'en'
+widget_look: 'float'
+url_structure: 'none'
+flag_size: 32
+flag_style: '2d'
+globe_size: 60
+color_scheme: 'light'
+alt_flags: ''
+wrapper_selector: '.gtranslate_wrapper'
+float_position: 'bottom-left'
+float_switcher_open_direction: 'top'
+position: 'inline'
+switcher_open_direction: 'bottom'
+native_language_names: 1
+detect_browser_language: 0
+enable_cdn: 1
+add_new_line: 1
+select_language_label: 'Select Language'
+custom_domains: 0
+custom_domains_config: ''
+custom_css: ''
+languages: ['en', 'es', 'de', 'it', 'fr']

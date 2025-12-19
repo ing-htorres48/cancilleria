@@ -1,0 +1,6 @@
+micon_local_task.config:
+  type: config_object
+  mapping:
+    icon_only:
+      type: boolean
+      label: 'Icon Only'

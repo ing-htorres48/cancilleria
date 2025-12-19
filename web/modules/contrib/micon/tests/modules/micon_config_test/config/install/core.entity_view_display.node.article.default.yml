@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_icon
+    - node.type.article
+  module:
+    - micon
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  field_icon:
+    type: string_micon
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+hidden: {  }

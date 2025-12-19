@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains micon_ckeditor.module.
+ */
+
+use Drupal\editor\Entity\Editor;
+use Drupal\micon\Entity\Micon;
+
+/**
+ * Implements hook_ckeditor_css_alter().
+ */
+function micon_ckeditor_ckeditor_css_alter(array &$css, Editor $editor) {
+  foreach (Micon::loadActive() as $micon) {
+    $relativePath = \Drupal::service('file_url_generator')->generateString($micon->getStylesheet());
+    $css[] = $relativePath;
+  }
+}

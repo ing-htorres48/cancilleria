@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains micon_linkit.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function micon_linkit_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the micon_linkit module.
+    case 'help.page.micon_linkit':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Micon link module provides a linkit widget that allows users to add icons to link fields.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,13 @@
+name: Micon Link
+type: module
+description: Provides an alternate widget for the link field that allows setting icons.
+core_version_requirement: ^10.3 || ^11
+package: Micon
+dependencies:
+  - drupal:link
+  - micon:micon
+
+# Information added by Drupal.org packaging script on 2025-07-24
+version: '2.1.8'
+project: 'micon'
+datestamp: 1753353690

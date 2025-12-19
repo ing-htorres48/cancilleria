@@ -1,0 +1,7 @@
+services:
+  micon.commands:
+    class: \Drupal\micon\Commands\MiconCommands
+    arguments:
+      - '@micon.icon.manager'
+    tags:
+      - { name: drush.command }

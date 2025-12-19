@@ -1,0 +1,14 @@
+name: Micon Linkit Attributes
+type: module
+description: Provides an alternate linkit widget (using link_attributes) for the link field that allows setting icons and attributes.
+core_version_requirement: ^10.3 || ^11
+package: Micon
+dependencies:
+  - micon:micon_link
+  - linkit:linkit
+  - link_attributes:linkit_attributes
+
+# Information added by Drupal.org packaging script on 2025-07-24
+version: '2.1.8'
+project: 'micon'
+datestamp: 1753353690

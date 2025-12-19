@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - micon
+  module:
+    - node
+id: node.field_icon
+field_name: field_icon
+entity_type: node
+type: string_micon
+settings: {  }
+module: micon
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
