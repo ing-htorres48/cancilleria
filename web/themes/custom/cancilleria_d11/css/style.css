@@ -653,3 +653,7 @@ h2.fc-toolbar-title {
     max-height: 300px;
     overflow: auto;
 }
+
+.node__title {
+    text-align: center;
+}
