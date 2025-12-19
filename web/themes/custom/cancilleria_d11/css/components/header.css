@@ -610,3 +610,76 @@ a.glink:active {
     top: inherit !important;
   }
 }
+
+
+
+
+/* transparencia */
+.govco-header__nav-list .fa-dollar:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-transparencia.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+/* atencion-servicio */
+.govco-header__nav-list .fa-cut:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-atencion-servicio.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+/* icon-ministerio */
+.govco-header__nav-list .fa-search:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-ministerio.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+/* politica-experior */
+.govco-header__nav-list .fa-minus:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-politica-experior.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+/* sala-prensa */
+.govco-header__nav-list .fa-glass:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-sala-prensa.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+/* ministra*/
+.govco-header__nav-list .fa-th:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-ministra.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+/*  participa  */
+.govco-header__nav-list .fa-star-o:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://intranet-cancilleria.haspe.co/themes/custom/intranet_d11/ico/icon-participa.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
