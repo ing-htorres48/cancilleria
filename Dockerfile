@@ -75,6 +75,9 @@ RUN sed -i "s/\${MEMORY_LIMIT}/${MEMORY_LIMIT}/g" /usr/local/etc/php/conf.d/cust
 COPY . ${DRUPAL_ROOT}/
 WORKDIR ${DRUPAL_ROOT}
 
+# COMPOSE
+RUN composer install --no-interaction --no-progress --optimize-autoloader
+
 # Configurar permisos - solo carpeta files
 RUN mkdir -p ${DRUPAL_ROOT}/web/sites/default/files \
     && chown -R www-data:www-data ${DRUPAL_ROOT}/web/sites/default/files \
