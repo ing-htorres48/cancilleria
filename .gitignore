@@ -46,7 +46,7 @@ Thumbs.db
 web/sites/*/logs/
 
 # Ignore environment files
-.env
+#.env
 .env.local
 .env.*.local
 
