@@ -45,7 +45,7 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: ${VOLUME_PATH:-./files}s
+      device: ${VOLUME_PATH:-./files
   apache_logs:
     driver: local
   php_logs:
