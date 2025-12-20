@@ -84,9 +84,6 @@ RUN mkdir -p ${DRUPAL_ROOT}/web/sites/default/files \
 # SUPERVISOR Y ENTRYPOINT
 # ============================================
 
-# Configuración de supervisor
-COPY supervisor.conf /etc/supervisor/conf.d/supervisord.conf
-
 # Script de entrypoint
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
