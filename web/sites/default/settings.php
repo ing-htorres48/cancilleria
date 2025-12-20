@@ -857,9 +857,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$settings['trusted_host_patterns'] = [
-  '^sitio-cancilleria\.haspe\.co$',
-];
 
 $settings['file_private_path'] = 'sites/default/files/private';
 $databases['default']['default'] = [
