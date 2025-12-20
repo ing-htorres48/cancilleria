@@ -6,6 +6,7 @@
 .social-tabs-nav {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 0 8px 0;
   padding: 0;
   border-bottom: 1px solid #ccc;
@@ -17,6 +18,13 @@
   font-weight: 600;
   background: #e0e0e0;
   margin-right: 2px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+  border-radius: 4px 4px 0 0;
+}
+
+.social-tabs-nav li:hover {
+  background: #d0d0d0;
 }
 
 .social-tabs-nav li.active {
@@ -27,15 +35,26 @@
 
 .social-tabs-content {
   background: #ffffff;
-  padding: 8px;
+  padding: 16px;
+  min-height: 400px;
 }
 
 .social-tab-pane {
   display: none;
+  animation: fadeIn 0.3s ease;
 }
 
 .social-tab-pane.active {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .x-embed-container {
@@ -46,4 +65,25 @@
 .x-embed-container iframe {
   max-width: 100%;
   height: auto;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+  .social-tabs-nav {
+    flex-direction: column;
+  }
+
+  .social-tabs-nav li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+
+  .social-tabs-block {
+    padding: 8px;
+  }
+
+  .social-tabs-content {
+    padding: 8px;
+  }
 }

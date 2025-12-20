@@ -1,8 +1,8 @@
 name: 'Redes Sociales Tabs'
 type: module
-description: 'Bloque con pestañas para Facebook, Instagram y X.'
+description: 'Bloque con pestañas para Facebook, Instagram, X y TikTok con administración dinámmica de URLs.'
 core_version_requirement: ^10 || ^11
 package: 'Custom'
-version: 1.x
+version: 1.1
 dependencies:
   - drupal:block

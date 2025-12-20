@@ -1,60 +1,87 @@
-<div{{ attributes.addClass('social-tabs-block') }}>
-
+<div class="social-tabs-block"{{ attributes }}>
   {# NAV DE PESTAÑAS #}
   <ul class="social-tabs-nav">
-    <li class="active" data-tab="tab-facebook">Facebook</li>
-    <li data-tab="tab-instagram">Instagram</li>
-    <li data-tab="tab-x">X</li>
+    {% if enable_facebook %}
+      <li class="tab-nav-item active" data-tab="tab-facebook">Facebook</li>
+    {% endif %}
+    {% if enable_instagram %}
+      <li class="tab-nav-item" data-tab="tab-instagram">Instagram</li>
+    {% endif %}
+    {% if enable_twitter %}
+      <li class="tab-nav-item" data-tab="tab-x">X</li>
+    {% endif %}
+    {% if enable_tiktok %}
+      <li class="tab-nav-item" data-tab="tab-tiktok">TikTok</li>
+    {% endif %}
   </ul>
 
   <div class="social-tabs-content">
-
     {# FACEBOOK #}
-    <div id="tab-facebook" class="social-tab-pane active">
-      {# SDK de Facebook #}
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v21.0"
-        nonce="abcd1234"></script>
+    {% if enable_facebook %}
+      <div id="tab-facebook" class="social-tab-pane active">
+        {# SDK de Facebook #}
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+          src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v21.0"
+          nonce="abcd1234"></script>
 
-      <div class="fb-page"
-           data-href="https://www.facebook.com/CancilleriaCol/"  {# TU PÁGINA #}
-           data-tabs="timeline"
+        <div class="fb-page"
+             data-href="{{ facebook_url }}"
+             data-tabs="timeline"
+             data-width="400"
+             data-height="600"
+             data-small-header="false"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="false">
+          <blockquote cite="{{ facebook_url }}"
+                      class="fb-xfbml-parse-ignore">
+            <a href="{{ facebook_url }}">{{ facebook_url }}</a>
+          </blockquote>
+        </div>
+      </div>
+    {% endif %}
+    {# INSTAGRAM #}
+    {% if enable_instagram %}
+      <div id="tab-instagram" class="social-tab-pane">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="{{ instagram_url }}"
+          data-instgrm-version="14"
+          style="background:#FFF; border:0; margin: 0 auto; max-width:540px; width:100%;">
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+    {% endif %}
+    {# X (TWITTER) #}
+    {% if enable_twitter %}
+      <div id="tab-x" class="social-tab-pane">
+        {# Widget oficial de X - Timeline #}
+        <a class="twitter-timeline"
+           href="{{ twitter_url }}?ref_src=twsrc%5Etfw"
            data-width="400"
            data-height="600"
-           data-small-header="false"
-           data-adapt-container-width="true"
-           data-hide-cover="false"
-           data-show-facepile="false">
-        <blockquote cite="https://www.facebook.com/CancilleriaCol/"
-                    class="fb-xfbml-parse-ignore">
-          <a href="https://www.facebook.com/CancilleriaCol/">Cancillería Colombia</a>
-        </blockquote>
+           data-theme="light">
+          Tweets by {{ twitter_url|replace({'https://twitter.com/': '', 'https://x.com/': ''}) }}
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-    </div>
-
-    {# INSTAGRAM #}
-    <div id="tab-instagram" class="social-tab-pane">
-      <blockquote class="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/cancilleriacol/"
-        data-instgrm-version="14"
-        style="background:#FFF; border:0; margin: 0 auto; max-width:540px; width:100%;">
-      </blockquote>
-      <script async src="//www.instagram.com/embed.js"></script>
-    </div>
-
-    {# X (TWITTER) #}
-    <div id="tab-x" class="social-tab-pane">
-      {# Widget oficial de X - Timeline #}
-      <a class="twitter-timeline"
-         href="https://twitter.com/CancilleriaCol?ref_src=twsrc%5Etfw"
-         data-width="400"
-         data-height="600"
-         data-theme="light">
-        Tweets by CancilleriaCol
-      </a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-
+    {% endif %}
+    {# TIKTOK #}
+    {% if enable_tiktok %}
+      <div id="tab-tiktok" class="social-tab-pane">
+        <div style="display: flex; justify-content: center; align-items: center; min-height: 600px;">
+          <blockquote class="tiktok-embed"
+            cite="{{ tiktok_url }}"
+            data-unique-id="{{ tiktok_url|replace({'https://www.tiktok.com/@': '', 'https://tiktok.com/@': ''}) }}"
+            data-embed-type="creator"
+            style="max-width: 540px; min-width: 325px;">
+            <section>
+              <a target="_blank" href="{{ tiktok_url }}">{{ tiktok_url }}</a>
+            </section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+      </div>
+    {% endif %}
   </div>
 </div>

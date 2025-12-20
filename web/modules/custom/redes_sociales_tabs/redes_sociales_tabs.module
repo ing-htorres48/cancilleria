@@ -9,8 +9,15 @@ function redes_sociales_tabs_theme($existing, $type, $theme, $path) {
   return [
     'social_tabs_block' => [
       'variables' => [
-        'attributes' => [],
-        'content' => [],
+        'attributes' => NULL,
+        'facebook_url' => NULL,
+        'enable_facebook' => FALSE,
+        'instagram_url' => NULL,
+        'enable_instagram' => FALSE,
+        'twitter_url' => NULL,
+        'enable_twitter' => FALSE,
+        'tiktok_url' => NULL,
+        'enable_tiktok' => FALSE,
       ],
       'template' => 'social-tabs-block',
       'path' => $path . '/templates',
