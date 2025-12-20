@@ -24,8 +24,8 @@ fi
 
 # Asegurar permisos de carpeta files
 if [ -d "${DRUPAL_ROOT}/web/sites/default/files" ]; then
-    sudo chown -R www-data:www-data "${DRUPAL_ROOT}/web/sites/default/files"
-    sudo chmod 775 "${DRUPAL_ROOT}/web/sites/default/files"
+    chown -R www-data:www-data "${DRUPAL_ROOT}/web/sites/default/files"
+    chmod 775 "${DRUPAL_ROOT}/web/sites/default/files"
 fi
 
 echo "=== Listo ==="
