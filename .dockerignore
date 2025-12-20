@@ -1,0 +1,55 @@
+# =========================
+# Control de versiones
+# =========================
+.git
+.gitignore
+.gitattributes
+
+# =========================
+# Entornos locales / dev
+# =========================
+.ddev
+.env
+.env.*
+.editorconfig
+
+# =========================
+# Docker / CI que no se necesita en runtime
+# =========================
+docker-compose.yml
+docker-update.sh
+Dockerfile
+
+# =========================
+# Documentación y metadata
+# =========================
+README*
+*.md
+
+# =========================
+# Cache / temporales
+# =========================
+*.log
+*.tmp
+*.cache
+tmp/
+cache/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Dependencias que se regeneran
+# (ajusta según tu build)
+# =========================
+node_modules
+vendor
+
+# =========================
+# Configs que NO deben ir a la imagen
+# (si se montan como volumen)
+# =========================
+files
