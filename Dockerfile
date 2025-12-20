@@ -55,8 +55,7 @@ COPY apache-config/mpm.conf /etc/apache2/conf-available/mpm.conf
 COPY apache-config/000-default.conf /etc/apache2/sites-available/000-default.conf
 
 # Configurar Apache
-RUN a2dismod autoindex cgi cgid status \
-    && a2enmod rewrite headers expires deflate ssl http2 \
+RUN a2enmod rewrite headers expires deflate ssl http2 \
     && a2enconf security mpm \
     # Reemplazar DocumentRoot en todas las configuraciones
     && sed -ri "s!/var/www/html!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/sites-available/*.conf \
