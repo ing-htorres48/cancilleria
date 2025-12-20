@@ -7,4 +7,3 @@ social_tabs:
   dependencies:
     - core/drupal
     - core/jquery
-    - core/once

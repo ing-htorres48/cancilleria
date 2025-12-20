@@ -1,23 +1,31 @@
-(function ($, Drupal, once) {
+/**
+ * @file
+ * Social Tabs block behavior.
+ */
+
+(function ($) {
   'use strict';
-
-  Drupal.behaviors.socialTabs = {
-    attach: function (context, settings) {
-      once('social-tabs', '.social-tabs-block', context).forEach(function (element) {
-        var $block = $(element);
-
-        $block.find('.social-tabs-nav li').on('click', function () {
-          var tabId = $(this).data('tab');
-
-          // cambiar estado en nav
-          $block.find('.social-tabs-nav li').removeClass('active');
-          $(this).addClass('active');
-
-          // cambiar contenido
-          $block.find('.social-tab-pane').removeClass('active');
-          $block.find('#' + tabId).addClass('active');
+  if (typeof Drupal !== 'undefined') {
+    Drupal.behaviors.socialTabsBlock = {
+      attach: function (context) {
+        var $blocks = $('.social-tabs-block', context);
+        $blocks.each(function () {
+          var $thisBlock = $(this);
+          var $tabs = $thisBlock.find('.tab-nav-item');
+          var $panes = $thisBlock.find('.social-tab-pane');
+          // Click handler
+          $tabs.click(function (e) {
+            e.preventDefault();
+            var tabId = $(this).data('tab');
+            // Remove active from all
+            $tabs.removeClass('active');
+            $panes.removeClass('active');
+            // Add active to clicked and corresponding pane
+            $(this).addClass('active');
+            $('#' + tabId).addClass('active');
+          });
         });
-      });
-    }
-  };
-})(jQuery, Drupal, once);
+      }
+    };
+  }
+})(jQuery);
