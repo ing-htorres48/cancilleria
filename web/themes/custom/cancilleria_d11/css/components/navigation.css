@@ -253,7 +253,7 @@
 .main-content .section{
   width: 100%;
   max-width: 1200px;
-  display: flex;
+
   margin: 0 auto;
 }
 
@@ -401,3 +401,82 @@
       padding: 10px;
 }
 /************************************** FIN Menu mobile **********************************/
+
+
+/*  ajuste  abnner noticias */
+.slider-item-wrapper {
+    width: 100%;
+}
+
+.slider-item-inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 420px;
+  min-height: 272px;
+}
+
+@media (max-width: 600px) {
+    .slider-item-inner {
+        flex-direction: column;
+    }
+  .slider-left {
+        width: 100%;
+    height: 100% !important;
+        min-height: 270px;
+    }
+  .slider-right {
+        width: 100%;
+    height: 100% !important;
+        min-height: 270px;
+    }
+}
+
+.slider-left .field--type-entity-reference {
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+
+.slider-left img {
+    margin: 0;
+    padding: 0;
+  max-height: 420px;
+}
+
+
+.slider-left .field--type-entity-reference, .slider-left .field--image-responsive{
+    margin: 0 !important;
+}
+
+
+.slider-left div {
+  height: 100% !important;
+}
+
+
+/*  ajuste  scroll x tramites */
+.pg-web_menu-formalities-wrapper > a {
+    text-decoration: none;
+}
+
+.pg-web_menu-formalities-wrapper {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  justify-content: center;
+    align-items: center;
+}
+
+
+/*  ajuste  iconos redes sociales */
+@media (max-width: 700px) {
+  .subtitle-wrapper {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .govco-header__middle-inner {
+        flex-direction: column !important;
+  }
+}
