@@ -70,6 +70,8 @@ else
     fi
 fi
 
+exec supervisord -n -c /etc/supervisor/conf.d/supervisord.conf
+
 echo "=== Listo ==="
 
 # Ejecutar supervisor

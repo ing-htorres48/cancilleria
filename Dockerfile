@@ -31,12 +31,6 @@ RUN apt-get update && apt-get install -y \
 RUN curl -sS https://getcomposer.org/installer | php -- \
     --install-dir=/usr/local/bin --filename=composer
 
-# Instalar Drush Launcher
-RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.10.2/drush.phar \
-    && chmod +x drush.phar \
-    && mv drush.phar /usr/local/bin/drush \
-    && echo "Drush Launcher 0.10.2 instalado"
-
 # Instalar extensiones PHP
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && docker-php-ext-install -j$(nproc) \
@@ -106,4 +100,4 @@ VOLUME ["${DRUPAL_ROOT}/web/sites/default/files"]
 EXPOSE 80
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["supervisord", "-n", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+CMD ["apache2-foreground"]
