@@ -70,11 +70,6 @@ else
     fi
 fi
 
-echo "=== Cambiando a usuario www-data ==="
-
-# CAMBIAR A USUARIO WWW-DATA Y EJECUTAR SUPERVISOR
-exec gosu www-data "$@"
-
 echo "=== Listo ==="
 
 # Ejecutar supervisor
