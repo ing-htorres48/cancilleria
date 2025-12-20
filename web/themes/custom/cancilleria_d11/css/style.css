@@ -706,3 +706,56 @@ div#block-cancilleria-d11-sliderhome {
     content: none;
   }
 }
+
+
+.slider-item-wrapper {
+    width: 100%;
+}
+
+.slider-item-inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 420px;
+}
+
+@media (max-width: 600px) {
+    .slider-item-inner {
+        flex-direction: column;
+    }
+  .slider-left {
+        width: 100%;
+    height: 100% !important;
+        min-height: 270px;
+    }
+  .slider-right {
+        width: 100%;
+    height: 100% !important;
+        min-height: 270px;
+    }
+}
+
+.slider-left .field--type-entity-reference {
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+
+.slider-left img {
+    margin: 0;
+    padding: 0;
+  max-height: 420px;
+}
+
+
+.slider-left .field--type-entity-reference, .slider-left .field--image-responsive{
+    margin: 0 !important;
+}
+
+
+.slider-left div {
+  height: 100% !important;
+}
+
+
+
