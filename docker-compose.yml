@@ -4,7 +4,7 @@ services:
     container_name: cancilleria_app
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "81:80"
     environment:
       # Variables de entorno para conexión a DB externa
       - DB_HOST=${DB_HOST}
