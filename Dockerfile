@@ -98,7 +98,7 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Cambiar a usuario www-data
-USER www-data
+#USER www-data
 
 # Volumen solo para archivos
 VOLUME ["${DRUPAL_ROOT}/web/sites/default/files"]
