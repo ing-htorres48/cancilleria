@@ -762,4 +762,11 @@ div#block-cancilleria-d11-sliderhome {
   height: auto;
 }
 
-
+#block-cancilleria-d11-sliderhome-2{
+    position:relative;
+  }
+  
+ #block-cancilleria-d11-sliderhome-2 .slick-slide img {
+    display: block;
+    min-height: 270px;
+}
