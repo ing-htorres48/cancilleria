@@ -33,6 +33,7 @@ function cancilleria_core_theme() {
     'cancilleria_noticias_block' => [
       'variables' => [
         'news' => [],
+         'pager' => NULL,
       ],
     ],
   ];

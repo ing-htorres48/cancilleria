@@ -64,7 +64,7 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
    */
   public function build(): array {
 
-    $limit = 8;
+    $limit = 10;
 
     // Query con paginación real (igual que Views).
     $query = $this->entityTypeManager
@@ -73,7 +73,7 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
       ->condition('type', 'news')
       ->condition('status', 1)
       ->sort('created', 'DESC')
-      ->pager($limit)
+      ->pager($limit, 0)
       ->accessCheck(TRUE);
 
     $nids = $query->execute();
@@ -118,10 +118,11 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
       '#news' => $news,
       '#pager' => [
         '#type' => 'pager',
+        '#element' => 0,
       ],
       '#cache' => [
-        'tags' => ['node_list:news'],
-        'contexts' => ['url.query_args:page'],
+        'max-age' => 0,
+      ],
       ],
       '#attached' => [
         'library' => [
