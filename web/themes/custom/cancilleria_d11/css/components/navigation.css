@@ -480,3 +480,7 @@
         flex-direction: column !important;
   }
 }
+
+.menu-rapido__submenu {
+  display: none;
+}
