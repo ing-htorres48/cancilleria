@@ -929,3 +929,8 @@ div#block-cancilleria-d11-sliderhome {
 .row-offcanvas-left .main-content .section{
       max-width: 900px;
 }
+
+.fc .fc-view-harness
+{
+    min-height: 475px;
+}
