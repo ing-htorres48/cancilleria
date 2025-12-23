@@ -879,12 +879,42 @@ div#block-cancilleria-d11-sliderhome {
   min-height: 280px;
 }
 
-div#block-cancilleria-d11-menudinamicopornombredesistema ul {
+#block-cancilleria-d11-menudinamicopornombredesistema {
+    background: transparent;
+    border-color: transparent;
+}
+
+#block-cancilleria-d11-menudinamicopornombredesistema ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
     justify-content: flex-start;
     align-items: baseline;
+    gap: 4px;
+  background-color: #004884;
+    border-color: #004884;
+}
+
+#block-cancilleria-d11-menudinamicopornombredesistema ul li {
+    width: 100%;
+    display: block;
+}
+
+#block-cancilleria-d11-menudinamicopornombredesistema ul li a {
+    display: inline-block;
+    padding: 2px 4px;
+  color: white !important;
+    &:hover {
+    color: #018fe2 !important;
+    background: #3367CC;
+    text-decoration: none;
+    width: 100% !important;
+  }
+}
+
+.pg-web-transparency .pg-web-transparency_top-detail img {
+  width: auto !important;
+  max-width:100%
 }
