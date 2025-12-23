@@ -109,3 +109,20 @@
     justify-content: center;
     align-items: center;
 }
+
+.pg-web_block-links-item {
+  background-color: white !important;
+  color: #004884 !important;
+  border: 2px solid #004884 !important;
+}
+
+.pg-web_block-links-detail {
+  margin: 0 !important;
+  color: #004884 !important;
+  height: 197px !important;
+}
+
+.pg-web_block-links-img{
+  border: none  !important;
+  transform: scale(1.4);
+}
