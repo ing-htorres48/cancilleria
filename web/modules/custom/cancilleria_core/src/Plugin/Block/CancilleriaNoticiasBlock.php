@@ -123,7 +123,6 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
       '#cache' => [
         'max-age' => 0,
       ],
-      ],
       '#attached' => [
         'library' => [
           'cancilleria_core/cancilleria_home_noticias',
