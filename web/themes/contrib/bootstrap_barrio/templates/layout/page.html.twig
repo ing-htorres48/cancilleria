@@ -149,12 +149,6 @@
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
-              <main{{ content_attributes }}>
-                <section class="section">
-                  <a href="#main-content" id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
-                </section>
-              </main>
             {% if sidebar_first_exists %}
               <div{{ sidebar_first_attributes }}>
                 <aside class="section" role="complementary">
@@ -162,6 +156,13 @@
                 </aside>
               </div>
             {% endif %}
+              <main{{ content_attributes }}>
+                <section class="section">
+                  <a href="#main-content" id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+                </section>
+              </main>
+            
             {% if sidebar_second_exists %}
               <div{{ sidebar_second_attributes }}>
                 <aside class="section" role="complementary">
