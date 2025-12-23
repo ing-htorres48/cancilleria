@@ -874,3 +874,7 @@ div#block-cancilleria-d11-sliderhome {
     max-width: 200px;
   }
 }
+
+#block-cancilleria-d11-politicaexteriorslider .slider-left img {
+  min-height: 280px;
+}
