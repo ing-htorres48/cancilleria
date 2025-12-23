@@ -812,7 +812,7 @@ div#block-cancilleria-d11-sliderhome {
 }
 
 
-#block-cancilleria-d11-bannerpaginasaladeprensa-2 + .row-offcanvas-left{
+.row-offcanvas-left{
   display: flex;
   position: relative;
   @media (max-width:740px){
@@ -820,7 +820,7 @@ div#block-cancilleria-d11-sliderhome {
   }
 }
 
-#block-cancilleria-d11-bannerpaginasaladeprensa-2 + .row-offcanvas-left nav.tabs {
+.row-offcanvas-left nav.tabs {
     position: absolute;
     top: 0;
     right: 0;
@@ -837,4 +837,34 @@ div#block-cancilleria-d11-sliderhome {
   width: 100%;
   object-fit:cover;
   object-position:top;
+}
+
+
+
+
+.mb-cnu_footer__main-separator-row {
+    background: white;
+    display: flex;
+    padding-inline: 1rem;
+  
+  .col-md-4 {
+    width: 33%;
+  }
+  
+  @media (max-width:740px){
+    display: block;
+    .col-md-4 {
+      width: 100%;
+    }
+  }
+}
+
+
+.mb-cnu_footer__main-separator-row .imagen-icontec {
+    padding: 0;
+    margin: 0;
+  img {
+    width: 100%;
+    max-width: 200px;
+  }
 }
