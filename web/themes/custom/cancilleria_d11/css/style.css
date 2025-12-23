@@ -813,11 +813,17 @@ div#block-cancilleria-d11-sliderhome {
 
 
 .row-offcanvas-left{
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   position: relative;
   @media (max-width:740px){
   display: block;
   }
+}
+
+.row-offcanvas-left .sidebar_first {
+  max-width: 300px;
 }
 
 .row-offcanvas-left nav.tabs {
