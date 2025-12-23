@@ -918,3 +918,14 @@ div#block-cancilleria-d11-sliderhome {
   width: auto !important;
   max-width:100%
 }
+#block-cancilleria-d11-politicaexteriorslider  .slick--initialized{
+  position: relative;
+}
+
+#block-cancilleria-d11-politicaexteriorslider .slider-left img {
+  min-height: 280px;
+}
+
+.row-offcanvas-left .main-content .section{
+      max-width: 900px;
+}
