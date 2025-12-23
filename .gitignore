@@ -4,7 +4,7 @@
 # Dependencies managed by Composer
 /vendor/
 web/core/
-web/libraries/
+# web/libraries/
 web/profiles/contrib/
 
 # Ignore configuration files that may contain sensitive information
