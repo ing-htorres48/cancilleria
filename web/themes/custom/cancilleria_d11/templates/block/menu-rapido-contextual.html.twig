@@ -1,0 +1,38 @@
+<div class="menu-rapido">
+	<div class="menu-rapido__header">
+		<span>Menú Rápido</span>
+	</div>
+
+	<nav class="menu-rapido">
+		<ul class="menu-rapido__list">
+			{% for item in tree %}
+				{{ _self.menu_item(item) }}
+			{% endfor %}
+		</ul>
+	</nav>
+
+	{% macro menu_item(item) %}
+		{% set link = item.link %}
+		{% set has_children = item.subtree is not empty %}
+
+		<li class="
+			menu-item
+			{{ item.inActiveTrail ? 'is-active' }}
+			{{ has_children ? 'has-children' }}
+			
+		">
+			<a href="{{ item.link.getUrlObject().toString() }}">
+				{{ link.title }}
+			</a>
+
+			{% if has_children %}
+				<ul class="menu-rapido__submenu">
+					{% for child in item.subtree %}
+						{{ _self.menu_item(child) }}
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</li>
+	{% endmacro %}
+
+</div>
