@@ -934,3 +934,7 @@ div#block-cancilleria-d11-sliderhome {
 {
     min-height: 475px;
 }
+
+.row-offcanvas-left:not(:has(.sidebar_first)) .main-content .section {
+    max-width: none;
+}
