@@ -114,12 +114,13 @@
   background-color: white !important;
   color: #004884 !important;
   border: 2px solid #004884 !important;
+  overflow: hidden !important;;
 }
 
 .pg-web_block-links-detail {
   margin: 0 !important;
   color: #004884 !important;
-  height: 197px !important;
+  height: 210px !important;
 }
 
 .pg-web_block-links-img{
