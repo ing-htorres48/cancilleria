@@ -1,0 +1,3 @@
+services:
+  cancilleria_menu_blocks.menu_builder:
+    class: Drupal\cancilleria_menu_blocks\Service\MenuBuilder

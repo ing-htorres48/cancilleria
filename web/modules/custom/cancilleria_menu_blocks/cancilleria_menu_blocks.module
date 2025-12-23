@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains cancilleria_menu_blocks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cancilleria_menu_blocks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.cancilleria_menu_blocks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('cancilleria_menu_blocks provides custom blocks for displaying menus in the website.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cancilleria_menu_blocks_theme($existing, $type, $theme, $path) {
+  return [
+
+    'menu_rapido_contextual' => [
+      'variables' => [
+        'menu_title' => NULL,
+        'tree' => NULL,
+      ],
+	  'template' => 'menu-rapido-contextual',
+      'path' => $path . '/templates',
+    ],
+
+  ];
+}

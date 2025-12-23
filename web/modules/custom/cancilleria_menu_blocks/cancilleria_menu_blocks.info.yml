@@ -1,0 +1,7 @@
+name: 'Cancillería – Menu Blocks'
+type: module
+description: 'Bloques personalizados para renderizar menús institucionales.'
+core_version_requirement: ^11
+package: 'Cancillería'
+dependencies:
+  - drupal:system
