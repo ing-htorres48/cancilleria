@@ -9,6 +9,7 @@ use Drupal\Core\Pager\PagerManagerInterface;
 use Drupal\Core\File\FileUrlGeneratorInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Provides a "Cancillería - Noticias" block.
