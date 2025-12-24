@@ -977,3 +977,28 @@ div#block-cancilleria-d11-sliderhome {
 .pg-web-transparency_top-detail .field--name-body .field__item p{
   text-align: left !important;
 }
+
+/*************** bloque noticias *********************/
+.pg-web-news-item{
+  align-items: stretch;
+}
+
+.pg-web-news-item-img{
+  flex: 0 0 260px;
+  width: 260px;
+  height: 176px;
+  overflow: hidden;
+}
+
+.pg-web-news-item-img img{
+  width: 260px;
+  height: 176px;
+  object-fit: contain;   /* clave: muestra completa */
+  display: block;
+}
+
+.pg-web-news-detail{
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 16px 20px;
+}
