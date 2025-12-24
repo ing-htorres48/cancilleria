@@ -940,7 +940,7 @@ div#block-cancilleria-d11-sliderhome {
 }
 
  /************* 1. Menú sticky en el menú principal *******************/
-.govco-header {
+.govco-header{
   position: sticky;
   top: 0;
   z-index: 10000;
@@ -948,17 +948,17 @@ div#block-cancilleria-d11-sliderhome {
 }
 
  /************* 8. Titulos de los item de atención y servicios colocarlos en blanco ****************/
-.category-btn a {
+.category-btn a{
   color: #FFFF; 
   text-align: left;
 }
 
  /************* 10. *********************/
-.pg-web_menu-formalities-subtitle {
+.pg-web_menu-formalities-subtitle{
   text-align: left;
 }
 
-.mb-cnu_footer__main-info-detail {
+.mb-cnu_footer__main-info-detail{
   text-align: left;
 }
 
