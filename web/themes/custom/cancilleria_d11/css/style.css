@@ -938,3 +938,42 @@ div#block-cancilleria-d11-sliderhome {
 .row-offcanvas-left:not(:has(.sidebar_first)) .main-content .section {
     max-width: none;
 }
+
+ /************* 1. Menú sticky en el menú principal *******************/
+.govco-header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: #fff;
+}
+
+ /************* 8. Titulos de los item de atención y servicios colocarlos en blanco ****************/
+.category-btn a {
+  color: #FFFF; 
+  text-align: left;
+}
+
+ /************* 10. *********************/
+.pg-web_menu-formalities-subtitle {
+  text-align: left;
+}
+
+.mb-cnu_footer__main-info-detail {
+  text-align: left;
+}
+
+#myDiv{
+  text-align: left !important;
+}
+
+.pg-web-transparency_top-detail .field__item p{
+  text-align: left !important;
+}
+
+.pg-web-transparency_top-detail .field-text-content .field__item p{
+  text-align: left !important;
+}
+
+.pg-web-transparency_top-detail .field--name-body .field__item p{
+  text-align: left !important;
+}
