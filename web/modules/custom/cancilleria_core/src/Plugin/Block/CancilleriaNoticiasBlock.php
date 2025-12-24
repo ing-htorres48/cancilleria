@@ -92,9 +92,13 @@ class CancilleriaNoticiasBlock extends BlockBase implements ContainerFactoryPlug
         !$node->get('field_imagen_news_thumb')->isEmpty()
       ) {
         $file = $node->get('field_imagen_news_thumb')->entity;
+
         if ($file) {
-          $image_url = $this->fileUrlGenerator
-            ->generateAbsoluteString($file->getFileUri());
+          $style = ImageStyle::load('260x176_2');
+
+          if ($style) {
+            $image_url = $style->buildUrl($file->getFileUri());
+          }
         }
       }
 
