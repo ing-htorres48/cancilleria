@@ -85,7 +85,7 @@ class CancilleriaUltimasNoticiasBlock extends BlockBase implements ContainerFact
         $file = $node->get('field_imagen_news_thumb')->entity;
 
         if ($file) {
-          $style = ImageStyle::load('260x176');
+          $style = ImageStyle::load('260x176_2');
 
           if ($style) {
             $image_url = $style->buildUrl($file->getFileUri());
