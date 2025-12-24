@@ -7,6 +7,8 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\image\Entity\ImageStyle;
+
 
 /**
  * Provides a "Cancillería - Últimas Noticias" block.
@@ -81,9 +83,13 @@ class CancilleriaUltimasNoticiasBlock extends BlockBase implements ContainerFact
         !$node->get('field_imagen_news_thumb')->isEmpty()
       ) {
         $file = $node->get('field_imagen_news_thumb')->entity;
+
         if ($file) {
-          $image_url = \Drupal::service('file_url_generator')
-            ->generateAbsoluteString($file->getFileUri());
+          $style = ImageStyle::load('260x176');
+
+          if ($style) {
+            $image_url = $style->buildUrl($file->getFileUri());
+          }
         }
       }
 
