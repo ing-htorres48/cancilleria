@@ -1,32 +1,9 @@
 {#
-  Paragraph type: slider
-  Drupal 11 – Render directo desde Media
+  Paragraph type: slider (WRAPPER)
 #}
 
 {{ attach_library('cancilleria_d11/slider') }}
 
-{% set link_item = paragraph.field_link_slider|first %}
-{% set media = paragraph.field_img_slider.entity %}
-
-{% if media and media.field_media_image.entity %}
-  {% set image_file = media.field_media_image.entity %}
-  {% set alt = media.field_media_image.alt|default('') %}
-
-  <div class="slider-item">
-    {% if link_item and link_item.url %}
-      <a href="{{ link_item.url.toString() }}" class="slider-link">
-        <img
-          src="{{ file_url(image_file.uri.value) }}"
-          alt="{{ alt }}"
-          loading="lazy"
-        >
-      </a>
-    {% else %}
-      <img
-        src="{{ file_url(image_file.uri.value) }}"
-        alt="{{ alt }}"
-        loading="lazy"
-      >
-    {% endif %}
-  </div>
-{% endif %}
+<div class="slick-slider">
+  {{ content.field_slides }}
+</div>

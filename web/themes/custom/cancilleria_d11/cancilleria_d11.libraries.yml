@@ -47,8 +47,12 @@ acciones-rapidas:
     - core/once    
     
 slider:
+  css:
+    theme:
+      vendor/slick/slick.css: {}
+      vendor/slick/slick-theme.css: {}
   js:
+    vendor/slick/slick.min.js: {}
     js/slider.js: {}
   dependencies:
     - core/jquery
-    - core/once
