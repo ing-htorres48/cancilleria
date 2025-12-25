@@ -1,7 +1,7 @@
 {#
   Paragraph type: slider
-  Campos:
-  - field_img_slider (Media: Image)
+  Fields:
+  - field_img_slider (Media Image)
   - field_link_slider (Link)
 #}
 
@@ -10,13 +10,7 @@
 
 {% if image %}
   {% if link_item and link_item.url %}
-    <a
-      href="{{ link_item.url.toString() }}"
-      {% if link_item.options.attributes.target is defined %}
-        target="{{ link_item.options.attributes.target }}"
-      {% endif %}
-      class="slider-item"
-    >
+    <a href="{{ link_item.url.toString() }}" class="slider-item">
       {{ image }}
     </a>
   {% else %}
