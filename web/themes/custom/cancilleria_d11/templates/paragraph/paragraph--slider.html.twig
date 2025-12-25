@@ -1,26 +1,29 @@
 {#
   Paragraph type: slider
-  Drupal 11 – control total desde el paragraph
-  Campos:
-  - field_img_slider (Media Image)
-  - field_link_slider (Link)
+  Drupal 11 – Opción A definitiva
 #}
 
 {% set link_item = paragraph.field_link_slider|first %}
 {% set media = paragraph.field_img_slider.entity %}
 
-{% if media %}
-  {% set image = media.field_media_image %}
+{% if media and media.field_media_image.entity %}
+  {% set image_file = media.field_media_image.entity %}
 
   <div class="slider-item">
-
     {% if link_item and link_item.url %}
       <a href="{{ link_item.url.toString() }}" class="slider-link">
-        {{ image|view }}
+        <img
+          src="{{ file_url(image_file.uri.value) }}"
+          alt="{{ media.field_media_image.alt|default('') }}"
+          loading="lazy"
+        >
       </a>
     {% else %}
-      {{ image|view }}
+      <img
+        src="{{ file_url(image_file.uri.value) }}"
+        alt="{{ media.field_media_image.alt|default('') }}"
+        loading="lazy"
+      >
     {% endif %}
-
   </div>
 {% endif %}
