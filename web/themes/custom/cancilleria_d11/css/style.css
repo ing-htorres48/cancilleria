@@ -940,17 +940,33 @@ div#block-cancilleria-d11-sliderhome {
 }
 
  /************* 1. Menú sticky en el menú principal *******************/
-.govco-header__top{
-  position: sticky;
-  top: 0;
-  z-index: 10010;
+.govco-header__top {
+    position: fixed;
+    z-index: 10010;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
+
 .govco-header__nav{
-  position: sticky;
-  top: 48px;             
-  z-index: 10000;
-  background: #fff;     
+  position: relative;
+  min-height: 70px;
+  top: 0;   
+}
+
+.govco-header__nav.fixed {
+   position: fixed;
+   top: 50px;
+   left: 0;
+   right: 0;
+   z-index: 10010;
+}
+  
+.govco-header__middle {
+    position: relative;
+    margin-top: 50px;
+  min-height: 120px;
 }
 
  /************* 8. Titulos de los item de atención y servicios colocarlos en blanco ****************/
