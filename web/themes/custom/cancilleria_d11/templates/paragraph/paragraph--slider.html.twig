@@ -3,6 +3,8 @@
   Drupal 11 – Render directo desde Media
 #}
 
+{{ attach_library('cancilleria_d11/slider') }}
+
 {% set link_item = paragraph.field_link_slider|first %}
 {% set media = paragraph.field_img_slider.entity %}
 
