@@ -46,3 +46,9 @@ acciones-rapidas:
     - core/drupal
     - core/once    
     
+slider:
+  js:
+    js/slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/once

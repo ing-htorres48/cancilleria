@@ -1,0 +1,21 @@
+{#
+  Paragraph: Slider
+  Campos:
+  - field_img_slider (Media Image)
+  - field_link_slider (Link)
+#}
+
+{% set link = content.field_link_slider.0['#url'] ?? null %}
+{% set target = content.field_link_slider.0['#options'].attributes.target ?? '_self' %}
+
+{% if content.field_img_slider %}
+  {% if link %}
+    <a href="{{ link }}" target="{{ target }}" class="slider-item">
+      {{ content.field_img_slider }}
+    </a>
+  {% else %}
+    <div class="slider-item">
+      {{ content.field_img_slider }}
+    </div>
+  {% endif %}
+{% endif %}

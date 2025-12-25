@@ -1,0 +1,9 @@
+{{ attach_library('yourtheme/slider') }}
+
+<div class="slick-slider slider-wrapper">
+  {% for item in content.field_slides %}
+    <div class="slide">
+      {{ item }}
+    </div>
+  {% endfor %}
+</div>
