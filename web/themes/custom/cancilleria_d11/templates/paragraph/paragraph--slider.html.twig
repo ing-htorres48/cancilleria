@@ -1,21 +1,26 @@
 {#
   Paragraph type: slider
-  Fields:
+  Drupal 11 – control total desde el paragraph
+  Campos:
   - field_img_slider (Media Image)
   - field_link_slider (Link)
 #}
 
-{% set image = content.field_img_slider %}
 {% set link_item = paragraph.field_link_slider|first %}
+{% set media = paragraph.field_img_slider.entity %}
 
-{% if image %}
-  {% if link_item and link_item.url %}
-    <a href="{{ link_item.url.toString() }}" class="slider-item">
-      {{ image }}
-    </a>
-  {% else %}
-    <div class="slider-item">
-      {{ image }}
-    </div>
-  {% endif %}
+{% if media %}
+  {% set image = media.field_media_image %}
+
+  <div class="slider-item">
+
+    {% if link_item and link_item.url %}
+      <a href="{{ link_item.url.toString() }}" class="slider-link">
+        {{ image|view }}
+      </a>
+    {% else %}
+      {{ image|view }}
+    {% endif %}
+
+  </div>
 {% endif %}

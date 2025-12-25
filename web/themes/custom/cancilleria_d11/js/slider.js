@@ -1,15 +1,12 @@
 (function (Drupal, once) {
-  Drupal.behaviors.sliderSlick = {
+  Drupal.behaviors.sliderInterno = {
     attach(context) {
-      once('slider-slick', '.slick-slider', context).forEach((slider) => {
-        jQuery(slider).slick({
+      once('slider-interno', '.slick-slider', context).forEach((el) => {
+        jQuery(el).slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          dots: true,
-          autoplay: true,
-          autoplaySpeed: 4000,
-          adaptiveHeight: false
+          dots: true
         });
       });
     }
