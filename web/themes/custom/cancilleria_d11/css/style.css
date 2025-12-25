@@ -1015,3 +1015,59 @@ div#block-cancilleria-d11-sliderhome {
   width: 100%;
   height: auto;
 }
+
+.slick--view--noticias-destacadas {
+  
+  position: relative;
+  
+  .slide__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+        background:#004884;
+        color:grey;
+  }
+  
+  .slide__description .views-field-title { 
+    width: 50%;
+    order:2;
+        min-height:150px;
+        a {
+            color:white;
+            text-decoration:none;
+            font-size: 18px;
+            line-height: 1;
+            padding-inline: 1rem;
+            margin:0;
+            text-align:center;
+            display:inline-block;
+        }
+  }
+  
+  .slide__description .views-field-field-imagen-news-thumb { 
+    width: 50%;
+    order:1;
+        img {
+             width:100%;
+             height: 400px;
+             object-fit:cover;
+             object-position:center;
+         }
+  }
+
+   @media (max-width:600px) {
+      .slide__description {
+         flex-direction:column;
+      }
+     .slide_description .views-field-title, .slide_description .views-field-field-imagen-news-thumb  {
+        width: 100%;
+      }
+   }
+  
+}
+
+.block-views-blocknoticias-destacadas-block-2 {
+    max-width: 900px;
+    margin: auto;
+}
