@@ -1153,3 +1153,7 @@ table, tr, td {
     background: transparent;
     border: none;
 }
+
+#toolbar-administration, #toolbar-administration * {
+    z-index: 999999;
+}
