@@ -73,18 +73,20 @@ class DynamicMenuBlock extends BlockBase {
     $parameters = new MenuTreeParameters();
     $parameters->setMaxDepth($this->configuration['menu_depth']);
 
+    // 1️⃣ Cargar árbol crudo
     $tree = $menu_tree->load($menu_name, $parameters);
 
+    // 2️⃣ Aplicar manipuladores (MUY IMPORTANTE)
     $manipulators = [
       ['callable' => 'menu.default_tree_manipulators:checkAccess'],
       ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
     ];
+    $tree = $menu_tree->transform($tree, $manipulators);
 
-    $build = $menu_tree->build($tree);
-    $menu_build = $menu_tree->build($tree);
-    $build = [
+    // 3️⃣ Pasar el árbol al Twig (NO build())
+    return [
       '#theme' => 'menu_rapido_contextual',
-      '#menu' => $menu_build,
+      '#tree' => $tree,
       '#cache' => [
         'contexts' => [
           'url.path',
@@ -95,12 +97,7 @@ class DynamicMenuBlock extends BlockBase {
         ],
       ],
     ];
-
-    $build['#cache']['contexts'][] = 'url.path';
-    $build['#cache']['contexts'][] = 'user.roles';
-    $build['#cache']['tags'][] = "config:system.menu.$menu_name";
-
-    return $build;
   }
+
 
 }
