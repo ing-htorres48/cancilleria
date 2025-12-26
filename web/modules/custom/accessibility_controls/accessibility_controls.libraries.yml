@@ -1,0 +1,7 @@
+controls:
+  version: 1.0
+  css:
+    theme:
+      css/accessibility_controls.css: {}
+  js:
+    js/accessibility_controls.js: {}

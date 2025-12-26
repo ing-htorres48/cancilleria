@@ -1,0 +1,5 @@
+name: Accessibility Controls
+type: module
+description: Controles de accesibilidad: contraste alto y tamaño de texto.
+core_version_requirement: ^10 || ^11
+package: Accessibility
