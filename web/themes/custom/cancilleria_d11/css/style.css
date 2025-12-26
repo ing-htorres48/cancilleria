@@ -1076,7 +1076,7 @@ div#block-cancilleria-d11-sliderhome {
       .slide__description {
          flex-direction:column;
       }
-     .slide_description .views-field-title, .slide_description .views-field-field-imagen-news-thumb  {
+     .slide__description .views-field-field-imagen-news-thumb, .slide__description .views-field-title {
         width: 100%;
       }
    }
