@@ -57,3 +57,38 @@
     </ul>
   {% endif %}
 {% endmacro %}
+
+<script>
+  const nav = document.querySelector('.govco-header__nav');
+  const middle = document.querySelector('.govco-header__middle');
+
+  function handleScroll() {
+    const middleBottom = middle.offsetTop + middle.offsetHeight;
+    if (window.scrollY >= middleBottom - 50) {
+      nav.classList.add('fixed');
+    } else {
+      nav.classList.remove('fixed');
+    }
+  }
+
+  function enableScrollBehavior() {
+    window.addEventListener('scroll', handleScroll);
+  }
+
+  function disableScrollBehavior() {
+    window.removeEventListener('scroll', handleScroll);
+    nav.classList.remove('fixed');
+  }
+
+  // Detecta si es móvil (ejemplo: menos de 768px)
+  function checkDevice() {
+    if (window.innerWidth >= 768) {
+      enableScrollBehavior();
+    } else {
+      disableScrollBehavior();
+    }
+  }
+
+  window.addEventListener('load', checkDevice);
+  window.addEventListener('resize', checkDevice);
+</script>
