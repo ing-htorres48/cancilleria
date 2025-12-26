@@ -1,0 +1,8 @@
+{% set data = content['#block_content'] %}
+{% for item in data.field_contenido %}
+	<img src="{{ file_url(item.entity.field_slide.entity.uri.value) }}" alt="{{ item.entity.field_slide.alt }}">
+	<br>
+	<a href="{{ item.entity.field_enlace_del_slide.0.url }}">
+		{{ item.entity.field_enlace_del_slide.0.title }}
+	</a>
+{% endfor %}
