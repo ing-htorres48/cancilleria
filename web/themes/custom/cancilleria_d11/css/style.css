@@ -1148,3 +1148,8 @@ div#block-cancilleria-d11-sliderhome {
       color: #004884;
     }
 }
+
+table, tr, td {
+    background: transparent;
+    border: none;
+}
