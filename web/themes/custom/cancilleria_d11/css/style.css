@@ -879,12 +879,12 @@ div#block-cancilleria-d11-sliderhome {
   min-height: 280px;
 }
 
-#block-cancilleria-d11-menudinamicopornombredesistema {
-    background: transparent;
-    border-color: transparent;
+.block--cancilleria-dynamic-menu-block, {
+    background: transparent !important;
+    border-color: transparent !important;
 }
 
-#block-cancilleria-d11-menudinamicopornombredesistema ul {
+.block--cancilleria-dynamic-menu-block ul {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -897,12 +897,12 @@ div#block-cancilleria-d11-sliderhome {
     border-color: #004884;
 }
 
-#block-cancilleria-d11-menudinamicopornombredesistema ul li {
+.block--cancilleria-dynamic-menu-block ul li {
     width: 100%;
     display: block;
 }
 
-#block-cancilleria-d11-menudinamicopornombredesistema ul li a {
+.block--cancilleria-dynamic-menu-block ul li a {
     display: inline-block;
     padding: 2px 4px;
   color: white !important;
