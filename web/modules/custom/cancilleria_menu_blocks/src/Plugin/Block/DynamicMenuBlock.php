@@ -81,6 +81,21 @@ class DynamicMenuBlock extends BlockBase {
     ];
 
     $build = $menu_tree->build($tree);
+    $menu_build = $menu_tree->build($tree);
+    $build = [
+      '#theme' => 'menu_rapido_contextual',
+      '#menu' => $menu_build,
+      '#cache' => [
+        'contexts' => [
+          'url.path',
+          'user.roles',
+        ],
+        'tags' => [
+          "config:system.menu.$menu_name",
+        ],
+      ],
+    ];
+
     $build['#cache']['contexts'][] = 'url.path';
     $build['#cache']['contexts'][] = 'user.roles';
     $build['#cache']['tags'][] = "config:system.menu.$menu_name";
