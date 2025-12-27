@@ -110,9 +110,6 @@
 {% block content %}
         <div id="main" class="{{ container }}">
           <div class="hasp3"></div>
-          <pre>
-{{ dump(menu_breadcrumb) }}
-</pre>
           {% if menu_breadcrumb %}
             <nav class="breadcrumb" aria-label="Breadcrumb">
               {{ menu_breadcrumb }}
