@@ -44,7 +44,7 @@ body.a11y-contrast button {
 }
 
 body.a11y-contrast {
-  filter: contrast(160%) brightness(110%);
+  filter: contrast(140%) brightness(110%);
 }
 
 body.a11y-contrast img,
