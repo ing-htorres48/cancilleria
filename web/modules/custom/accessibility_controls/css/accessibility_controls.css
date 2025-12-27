@@ -1,73 +1,104 @@
-/* Toolbar container */
-#a11y-toolbar {
-  position: fixed;
-  top: 40%;
-  right: 0;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 6px 0 0 6px;
-}
-
-/* Buttons */
-#a11y-toolbar button {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  background: #f5f5f5;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-
-#a11y-toolbar button:hover,
-#a11y-toolbar button:focus {
-  background: #e0e0e0;
-  outline: 2px solid #005fcc;
-}
-
-/* High contrast mode */
-body.a11y-contrast {
-  background: #000 !important;
-  color: #fff !important;
-}
-
-body.a11y-contrast a {
-  color: #00ffff !important;
-}
-
-body.a11y-contrast button {
-  background: #000;
-  color: #fff;
-  border-color: #fff;
-}
-
-body.a11y-contrast {
-  filter: contrast(140%) brightness(110%);
-}
-
-body.a11y-contrast img,
-body.a11y-contrast picture,
-body.a11y-contrast svg {
-  filter: contrast(140%) brightness(110%) saturate(120%);
-}
-body.a11y-contrast img {
-  filter: grayscale(100%) contrast(150%);
-}
+/* ===============================
+ * MODO ALTO CONTRASTE EXTREMO
+ * =============================== */
 
 body.a11y-contrast {
   background-color: #000 !important;
   color: #fff !important;
-  filter: contrast(150%) brightness(110%);
+
+  /* Fuerza contraste global */
+  filter: contrast(180%) brightness(115%);
 }
 
-body.a11y-contrast img,
-body.a11y-contrast svg {
-  filter: contrast(140%) brightness(110%);
+/* ===============================
+ * TEXTO Y CONTENEDORES
+ * =============================== */
+
+body.a11y-contrast *,
+body.a11y-contrast *::before,
+body.a11y-contrast *::after {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
 }
 
+/* Links muy visibles */
 body.a11y-contrast a {
   color: #00ffff !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
+  font-weight: 600;
 }
+
+/* Botones */
+body.a11y-contrast button,
+body.a11y-contrast input,
+body.a11y-contrast select,
+body.a11y-contrast textarea {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+/* ===============================
+ * IMÁGENES EN NEGATIVO
+ * =============================== */
+
+body.a11y-contrast img,
+body.a11y-contrast picture,
+body.a11y-contrast video,
+body.a11y-contrast svg {
+  filter: invert(100%) contrast(160%) brightness(120%) !important;
+}
+
+/* Evitar fondos con imágenes */
+body.a11y-contrast * {
+  background-image: none !important;
+}
+
+/* ===============================
+ * ICONOS SVG INLINE
+ * =============================== */
+
+body.a11y-contrast svg path,
+body.a11y-contrast svg rect,
+body.a11y-contrast svg circle {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* ===============================
+ * TABLAS
+ * =============================== */
+
+body.a11y-contrast table {
+  border-collapse: collapse;
+}
+
+body.a11y-contrast th,
+body.a11y-contrast td {
+  border: 2px solid #ffffff !important;
+  padding: 0.5rem;
+}
+
+/* ===============================
+ * FORMULARIOS
+ * =============================== */
+
+body.a11y-contrast ::placeholder {
+  color: #cccccc !important;
+  opacity: 1;
+}
+
+/* ===============================
+ * EXCEPCIONES ÚTILES
+ * (logos que NO quieres invertir)
+ * =============================== */
+
+/*
+body.a11y-contrast .no-invert,
+body.a11y-contrast .logo {
+  filter: none !important;
+}
+*/
