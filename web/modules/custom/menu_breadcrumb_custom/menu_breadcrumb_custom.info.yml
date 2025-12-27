@@ -1,5 +1,8 @@
+
 name: Menu Breadcrumb Custom
 type: module
 description: "Breadcrumb basado en un menú configurable con fallback Inicio + Página."
 core_version_requirement: ^11
 package: Custom
+dependencies:
+  - drupal:system

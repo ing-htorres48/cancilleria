@@ -1,3 +1,4 @@
+
 <?php
 
 declare(strict_types=1);
@@ -18,12 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 final class MenuBreadcrumbBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
-  public function __construct(
-    array $configuration,
-    $plugin_id,
-    $plugin_definition,
-    private readonly MenuBreadcrumbBuilder $builder
-  ) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, private readonly MenuBreadcrumbBuilder $builder) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
   }
 
@@ -32,11 +28,15 @@ final class MenuBreadcrumbBlock extends BlockBase implements ContainerFactoryPlu
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('menu_breadcrumb_custom.builder')
+      $container->get('menu_breadcrumb_custom.builder'),
     );
   }
 
   public function build(): array {
+    $path = \Drupal::service('path.current')->getPath();
+    if (str_starts_with($path, '/admin')) {
+      return [];
+    }
     return $this->builder->buildRenderArray();
   }
 

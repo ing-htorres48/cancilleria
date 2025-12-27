@@ -1,4 +1,6 @@
+
 menu_breadcrumb_custom.settings:
   title: 'Menu Breadcrumb Custom'
+  description: 'Configura el menú fuente del breadcrumb.'
   parent: system.admin_config_user_interface
   route_name: menu_breadcrumb_custom.settings

@@ -1,3 +1,4 @@
+
 menu_breadcrumb_custom.settings:
   path: '/admin/config/user-interface/menu-breadcrumb-custom'
   defaults:

@@ -1,12 +1,17 @@
+
 menu_breadcrumb_custom.settings:
   type: config_object
   label: 'Menu Breadcrumb Custom settings'
   mapping:
     menu_name:
       type: string
+      label: 'Menu machine name'
     show_home:
       type: boolean
+      label: 'Show Home link'
     always_show_current_page:
       type: boolean
+      label: 'Always show current page'
     home_label:
       type: string
+      label: 'Home label'
