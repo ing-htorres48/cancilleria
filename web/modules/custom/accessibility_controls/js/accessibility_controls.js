@@ -4,6 +4,12 @@
 
       once('a11y-controls', 'body', context).forEach(() => {
 
+        // No ejecutar en el admin de Drupal
+          if (document.body.classList.contains('path-admin')) {
+            return;
+          }
+
+
         /* ===============================
          * Create toolbar
          * =============================== */
