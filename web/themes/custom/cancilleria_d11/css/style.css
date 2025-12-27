@@ -551,7 +551,7 @@ a[href="#main-content"],
 .region-featured-bottom-second {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
     padding: 1rem;
     padding-top: 2rem;
     grid-template-rows: auto auto;
@@ -1156,4 +1156,26 @@ table, tr, td {
 
 #toolbar-administration, #toolbar-administration * {
     z-index: 999999;
+}
+.fc .fc-scroller { overflow-y: auto !important; }
+.fc .fc-scroller-liquid-absolute { 
+	overflow-y: auto !important; 
+	min-height: 375px;
+}
+.fc .fc-daygrid-day-frame {
+    height: 60px;
+    overflow: hidden;
+    padding: 1px;
+}
+.fc-daygrid-day-events a {
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+    line-height: 1;
+}
+.fc .fc-event {
+    background: #b48a31;
+}
+.fc-scroller-harness table, .fc-daygrid-body {
+    width: 100% !important;
 }
