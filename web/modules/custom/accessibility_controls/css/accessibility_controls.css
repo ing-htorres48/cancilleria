@@ -42,3 +42,32 @@ body.a11y-contrast button {
   color: #fff;
   border-color: #fff;
 }
+
+body.a11y-contrast {
+  filter: contrast(160%) brightness(110%);
+}
+
+body.a11y-contrast img,
+body.a11y-contrast picture,
+body.a11y-contrast svg {
+  filter: contrast(140%) brightness(110%) saturate(120%);
+}
+body.a11y-contrast img {
+  filter: grayscale(100%) contrast(150%);
+}
+
+body.a11y-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+  filter: contrast(150%) brightness(110%);
+}
+
+body.a11y-contrast img,
+body.a11y-contrast svg {
+  filter: contrast(140%) brightness(110%);
+}
+
+body.a11y-contrast a {
+  color: #00ffff !important;
+  text-decoration: underline;
+}
