@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Menu Breadcrumb Custom.
+ */
+
+use Drupal\menu_breadcrumb_custom\MenuBreadcrumbBuilder;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function menu_breadcrumb_custom_preprocess_page(array &$variables): void {
+  /** @var \Drupal\Core\Router\AdminContext $admin_context */
+  $admin_context = \Drupal::service('router.admin_context');
+  if ($admin_context->isAdminRoute()) {
+    return;
+  }
+
+  /** @var \Drupal\menu_breadcrumb_custom\MenuBreadcrumbBuilder $builder */
+  $builder = \Drupal::service('menu_breadcrumb_custom.builder');
+  $variables['menu_breadcrumb'] = $builder->buildRenderArray();
+}
