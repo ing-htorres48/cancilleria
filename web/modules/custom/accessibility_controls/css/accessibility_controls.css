@@ -1,4 +1,50 @@
 /* ===============================
+ * STICKY TOOLBAR ACCESIBILIDAD
+ * =============================== */
+
+#a11y-toolbar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 99999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding: 4px;
+  background-color: #ffffff;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+
+  isolation: isolate; /* evita que filtros globales lo afecten */
+}
+
+/* Botones */
+#a11y-toolbar button {
+  min-width: 44px;
+  min-height: 44px;
+
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hover y focus accesibles */
+#a11y-toolbar button:hover,
+#a11y-toolbar button:focus {
+  background-color: #000000;
+  color: #ffffff;
+  outline: 2px solid #00ffff;
+  outline-offset: 2px;
+}
+
+/* ===============================
  * MODO ALTO CONTRASTE EXTREMO
  * =============================== */
 
