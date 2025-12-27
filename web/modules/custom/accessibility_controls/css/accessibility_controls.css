@@ -102,3 +102,32 @@ body.a11y-contrast .logo {
   filter: none !important;
 }
 */
+
+/* ===============================
+ * EXCLUIR TOOLBAR DE ACCESIBILIDAD
+ * =============================== */
+
+body.a11y-contrast #a11y-toolbar,
+body.a11y-contrast #a11y-toolbar * {
+  filter: none !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+  background-image: none !important;
+}
+
+/* Botones visibles y claros */
+body.a11y-contrast #a11y-toolbar button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+/* Hover/focus accesible */
+body.a11y-contrast #a11y-toolbar button:hover,
+body.a11y-contrast #a11y-toolbar button:focus {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  outline: 2px solid #00ffff;
+}
+
