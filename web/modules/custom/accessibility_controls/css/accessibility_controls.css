@@ -43,16 +43,14 @@
   outline: 2px solid #00ffff;
   outline-offset: 2px;
 }
-
 /* ===============================
  * MODO ALTO CONTRASTE EXTREMO
+ * (SOLO FRONTEND – NO ADMIN)
  * =============================== */
 
-body.a11y-contrast {
+body.a11y-contrast:not(.path-admin) {
   background-color: #000 !important;
   color: #fff !important;
-
-  /* Fuerza contraste global */
   filter: contrast(180%) brightness(115%);
 }
 
@@ -60,9 +58,9 @@ body.a11y-contrast {
  * TEXTO Y CONTENEDORES
  * =============================== */
 
-body.a11y-contrast *,
-body.a11y-contrast *::before,
-body.a11y-contrast *::after {
+body.a11y-contrast:not(.path-admin) *,
+body.a11y-contrast:not(.path-admin) *::before,
+body.a11y-contrast:not(.path-admin) *::after {
   background-color: transparent !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
@@ -71,17 +69,17 @@ body.a11y-contrast *::after {
 }
 
 /* Links muy visibles */
-body.a11y-contrast a {
+body.a11y-contrast:not(.path-admin) a {
   color: #00ffff !important;
   text-decoration: underline !important;
   font-weight: 600;
 }
 
 /* Botones */
-body.a11y-contrast button,
-body.a11y-contrast input,
-body.a11y-contrast select,
-body.a11y-contrast textarea {
+body.a11y-contrast:not(.path-admin) button,
+body.a11y-contrast:not(.path-admin) input,
+body.a11y-contrast:not(.path-admin) select,
+body.a11y-contrast:not(.path-admin) textarea {
   background-color: #000 !important;
   color: #fff !important;
   border: 2px solid #fff !important;
@@ -91,15 +89,15 @@ body.a11y-contrast textarea {
  * IMÁGENES EN NEGATIVO
  * =============================== */
 
-body.a11y-contrast img,
-body.a11y-contrast picture,
-body.a11y-contrast video,
-body.a11y-contrast svg {
+body.a11y-contrast:not(.path-admin) img,
+body.a11y-contrast:not(.path-admin) picture,
+body.a11y-contrast:not(.path-admin) video,
+body.a11y-contrast:not(.path-admin) svg {
   filter: invert(100%) contrast(160%) brightness(120%) !important;
 }
 
 /* Evitar fondos con imágenes */
-body.a11y-contrast * {
+body.a11y-contrast:not(.path-admin) * {
   background-image: none !important;
 }
 
@@ -107,9 +105,9 @@ body.a11y-contrast * {
  * ICONOS SVG INLINE
  * =============================== */
 
-body.a11y-contrast svg path,
-body.a11y-contrast svg rect,
-body.a11y-contrast svg circle {
+body.a11y-contrast:not(.path-admin) svg path,
+body.a11y-contrast:not(.path-admin) svg rect,
+body.a11y-contrast:not(.path-admin) svg circle {
   fill: #ffffff !important;
   stroke: #ffffff !important;
 }
@@ -118,12 +116,12 @@ body.a11y-contrast svg circle {
  * TABLAS
  * =============================== */
 
-body.a11y-contrast table {
+body.a11y-contrast:not(.path-admin) table {
   border-collapse: collapse;
 }
 
-body.a11y-contrast th,
-body.a11y-contrast td {
+body.a11y-contrast:not(.path-admin) th,
+body.a11y-contrast:not(.path-admin) td {
   border: 2px solid #ffffff !important;
   padding: 0.5rem;
 }
@@ -132,48 +130,20 @@ body.a11y-contrast td {
  * FORMULARIOS
  * =============================== */
 
-body.a11y-contrast ::placeholder {
+body.a11y-contrast:not(.path-admin) ::placeholder {
   color: #cccccc !important;
   opacity: 1;
 }
 
 /* ===============================
- * EXCEPCIONES ÚTILES
- * (logos que NO quieres invertir)
- * =============================== */
-
-/*
-body.a11y-contrast .no-invert,
-body.a11y-contrast .logo {
-  filter: none !important;
-}
-*/
-
-/* ===============================
  * EXCLUIR TOOLBAR DE ACCESIBILIDAD
  * =============================== */
 
-body.a11y-contrast #a11y-toolbar,
-body.a11y-contrast #a11y-toolbar * {
+body.a11y-contrast:not(.path-admin) #a11y-toolbar,
+body.a11y-contrast:not(.path-admin) #a11y-toolbar * {
   filter: none !important;
   background-color: #ffffff !important;
   color: #000000 !important;
   border-color: #000000 !important;
   background-image: none !important;
 }
-
-/* Botones visibles y claros */
-body.a11y-contrast #a11y-toolbar button {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  border: 2px solid #000000 !important;
-}
-
-/* Hover/focus accesible */
-body.a11y-contrast #a11y-toolbar button:hover,
-body.a11y-contrast #a11y-toolbar button:focus {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  outline: 2px solid #00ffff;
-}
-
