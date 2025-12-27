@@ -9,4 +9,3 @@ services:
       - '@current_route_match'
       - '@request_stack'
       - '@title_resolver'
-      - '@router.admin_context'
