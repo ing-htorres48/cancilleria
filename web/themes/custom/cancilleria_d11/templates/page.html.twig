@@ -109,7 +109,11 @@
 
 {% block content %}
         <div id="main" class="{{ container }}">
-          {{ page.breadcrumb }}
+          {% if breadcrumb %}
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              {{ breadcrumb }}
+            </nav>
+          {% endif %}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
             {% if sidebar_first_exists %}
               <div{{ sidebar_first_attributes }}>
