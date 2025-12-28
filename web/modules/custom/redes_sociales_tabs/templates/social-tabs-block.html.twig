@@ -1,15 +1,17 @@
 <div class="social-tabs-block"{{ attributes }}>
   {# NAV DE PESTAÑAS #}
   <ul class="social-tabs-nav">
-    {% if enable_facebook %}
-      <li class="tab-nav-item active" data-tab="tab-facebook">Facebook</li>
-    {% endif %}
-    {% if enable_instagram %}
-      <li class="tab-nav-item" data-tab="tab-instagram">Instagram</li>
-    {% endif %}
     {% if enable_twitter %}
       <li class="tab-nav-item" data-tab="tab-x">X</li>
     {% endif %}
+   {% if enable_instagram %}
+      <li class="tab-nav-item" data-tab="tab-instagram">Instagram</li>
+    {% endif %}
+    {% if enable_facebook %}
+      <li class="tab-nav-item active" data-tab="tab-facebook">Facebook</li>
+    {% endif %}
+   
+    
     {% if enable_tiktok %}
       <li class="tab-nav-item" data-tab="tab-tiktok">TikTok</li>
     {% endif %}
