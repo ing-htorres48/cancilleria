@@ -1179,3 +1179,12 @@ table, tr, td {
 .fc-scroller-harness table, .fc-daygrid-body {
     width: 100% !important;
 }
+nav.breadcrumb {
+    max-width: 1200px;
+    margin: auto;
+	
+	nav.breadcrumb ul {
+		display: flex;
+		gap: 1rem;
+	}
+}
