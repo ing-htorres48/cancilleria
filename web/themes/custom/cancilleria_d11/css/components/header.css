@@ -691,3 +691,26 @@ a.glink:active {
   background-size: contain;
   display: flex;
 }
+form.user-login-form {
+	max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: .5rem;
+	
+	.js-form-item {
+		display: flex;
+		flex-direction: column;
+		gap: .25rem;
+	}
+	
+	input[type=text], input[type=password] {
+		padding: 8px 6px;
+		border-radius: 6px;
+	}
+
+}
