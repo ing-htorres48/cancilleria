@@ -714,3 +714,13 @@ form.user-login-form {
 	}
 
 }
+
+nav.breadcrumb {
+    max-width: 1200px;
+    margin: auto;
+	
+	nav.breadcrumb ul {
+		display: flex;
+		gap: 1rem;
+	}
+}
