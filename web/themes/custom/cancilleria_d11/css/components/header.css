@@ -207,13 +207,14 @@ a.glink:active {
 }
 
 /* Estilos básicos de los enlaces del submenú */
-.govco-header__nav ul.dropdown-menu>li>a {
+.govco-header__nav ul.dropdown-menu>li>a, .govco-header__nav ul.dropdown-menu>li>span {
   display: block;
   padding: 0.35rem 0.9rem;
   font-size: 0.85rem;
   color: #333;
   text-decoration: none;
   white-space: normal;
+  font-weight: 600;
 }
 
 .govco-header__nav ul.dropdown-menu>li>a:hover {
