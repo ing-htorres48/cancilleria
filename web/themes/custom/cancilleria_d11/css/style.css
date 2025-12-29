@@ -1188,3 +1188,36 @@ nav.breadcrumb {
 		gap: 1rem;
 	}
 }
+
+
+
+.page-view-sala-de-prensa-noticas img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+#block-cancilleria-d11-saladeprensanoticiasimg img{
+	max-width: 100% !important;
+}
+
+
+.pagination{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+	margin-block:2rem;
+	
+	.page-item.active .page-link {
+    background-color: #f8f8f8;
+    border-color: #898989;
+	}
+
+	.page-link, .page-link:hover {
+		color: #0071b3;
+		padding: 4px 6px;
+	}
+}
+
