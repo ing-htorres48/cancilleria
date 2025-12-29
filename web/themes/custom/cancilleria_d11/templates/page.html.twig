@@ -105,16 +105,17 @@
         {{ page.primary_menu }}
     </nav>
   </header>
-{% endblock %}
-
-{% block content %}
-        <div id="main" class="{{ container }}">
-          <div class="hasp3"></div>
+ <div class="hasp3"></div>
           {% if menu_breadcrumb %}
             <nav class="breadcrumb" aria-label="Breadcrumb">
               {{ menu_breadcrumb }}
             </nav>
           {% endif %}
+{% endblock %}
+
+{% block content %}
+        <div id="main" class="{{ container }}">
+         
           <div class="row row-offcanvas row-offcanvas-left clearfix">
             {% if sidebar_first_exists %}
               <div{{ sidebar_first_attributes }}>
