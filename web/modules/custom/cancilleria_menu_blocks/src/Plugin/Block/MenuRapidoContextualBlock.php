@@ -19,7 +19,9 @@ class MenuRapidoContextualBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    \Drupal::logger('system')->warning('MENU CONTEXTUAL BUILD EJECUTADO');
+    $aaa = "Hola"
+    var_dump($aaa);
+    \Drupal::logger('test')->info('MENU CONTEXTUAL BUILD EJECUTADO');
     $menu_name = 'main';
 
     $menu_tree = \Drupal::menuTree();
