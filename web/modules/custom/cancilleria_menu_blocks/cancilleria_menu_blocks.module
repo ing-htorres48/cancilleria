@@ -32,7 +32,9 @@ function cancilleria_menu_blocks_theme($existing, $type, $theme, $path) {
       'variables' => [
         'menu_title' => NULL,
         'tree' => NULL,
+        'menu' => NULL,
       ],
+    ],
 
   ];
 }
