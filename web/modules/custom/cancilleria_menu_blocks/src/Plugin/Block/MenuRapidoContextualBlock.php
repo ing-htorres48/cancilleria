@@ -25,10 +25,8 @@ class MenuRapidoContextualBlock extends BlockBase {
     $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
     $route_match = \Drupal::routeMatch();
 
-    \Drupal::logger('menu_debug')->warning('Route: @route | Params: @params', [
-      '@route' => $route_match->getRouteName(),
-      '@params' => json_encode($route_match->getRawParameters()->all()),
-    ]);
+    \Drupal::logger('system')->warning('PRUEBA SYSTEM LOG');
+    \Drupal::logger('menu_debug')->warning('PRUEBA MENU DEBUG');
 
     $route_name = $route_match->getRouteName();
     $route_parameters = $route_match->getRawParameters()->all();
