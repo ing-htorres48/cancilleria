@@ -19,17 +19,17 @@ class MenuRapidoContextualBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $aaa = "Hola"
-    var_dump($aaa);
-    \Drupal::logger('test')->info('MENU CONTEXTUAL BUILD EJECUTADO');
+    // $aaa = "Hola"
+    // var_dump($aaa);
+    // \Drupal::logger('test')->info('MENU CONTEXTUAL BUILD EJECUTADO');
     $menu_name = 'main';
 
     $menu_tree = \Drupal::menuTree();
     $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
     $route_match = \Drupal::routeMatch();
 
-    \Drupal::logger('system')->warning('PRUEBA SYSTEM LOG');
-    \Drupal::logger('menu_debug')->warning('PRUEBA MENU DEBUG');
+    // \Drupal::logger('system')->warning('PRUEBA SYSTEM LOG');
+    // \Drupal::logger('menu_debug')->warning('PRUEBA MENU DEBUG');
 
     $route_name = $route_match->getRouteName();
     $route_parameters = $route_match->getRawParameters()->all();
