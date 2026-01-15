@@ -106,5 +106,14 @@
       {% endif %}
     {% endif %}
     {{ content }}
+<div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+  {% if content.field_galeria is not empty %}
+    <div class="gallery-slick js-gallery-slick">
+      {{ content.field_galeria }}
+    </div>
+  {% endif %}
+
+  {{ content|without('field_galeria') }}
+</div>
   </div>
 </article>
