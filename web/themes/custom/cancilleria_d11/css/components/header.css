@@ -725,3 +725,10 @@ nav.breadcrumb {
 		gap: 1rem;
 	}
 }
+
+.govco-header__top-left img{
+    width: 115px !important;
+    height: auto;
+    object-fit: fill;
+    object-position: center;
+}
