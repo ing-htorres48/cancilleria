@@ -1274,3 +1274,67 @@ ul.quicktabs-tabs {
 details#edit-advanced {
   display: none;
 }
+
+
+
+/*  Ajuste grid-diplomacia */
+
+.row-grid-diplomacia {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+	
+}
+
+.row-grid-diplomacia > div {
+    width: 24%;
+	@media (max-width: 775px) {  width: 32%; }
+	@media (max-width: 550px) {  width: 48%; }
+	@media (max-width: 425px) {  width: 100%; }
+}
+
+.col-block-diesise {
+    background-color: #2E96C8;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-block-diesise img{
+	width: 34px;
+    height: 34px;
+}
+.col-block-diesise a{
+    text-decoration: none !important;
+    font-size: 10px;
+    line-height: 1.5;
+    display: block;
+    padding-inline: 5px;
+}
+.col-block-diplomacia div{
+	width:0;
+}
+.col-block-diplomacia div:first-child{
+	width:20%;
+	
+}
+.col-block-diplomacia div:last-child{
+	width:80%;
+	text-align: center;
+}
+
+.col-block-diplomacia {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 65px;
+    background-color: #F2F2F1;
+    -webkit-box-shadow: -2px 10px 15px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 10px 15px -8px rgba(0,0,0,0.75);
+    box-shadow: -2px 10px 15px -8px rgba(0, 0, 0, 0.75);
+}
+
+
