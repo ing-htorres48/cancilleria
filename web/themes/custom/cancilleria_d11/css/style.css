@@ -1271,6 +1271,6 @@ ul.quicktabs-tabs {
     list-style: none;
 }
 
-#search-advanced {
+details#edit-advanced {
   display: none;
 }
