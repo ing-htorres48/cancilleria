@@ -1270,3 +1270,7 @@ ul.quicktabs-tabs {
 .view-flex-politica-asuntos-migratorios ul {
     list-style: none;
 }
+
+#search-advanced {
+  display: none;
+}
