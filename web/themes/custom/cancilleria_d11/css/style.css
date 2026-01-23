@@ -1149,6 +1149,13 @@ table, tr, td {
 #toolbar-administration, #toolbar-administration * {
     z-index: 999999;
 }
+.claro-toolbar-menu a {
+    color: initial;
+}
+.claro-toolbar-menu a:hover {
+    background: initial;
+}
+
 .fc .fc-scroller { overflow-y: auto !important; }
 .fc .fc-scroller-liquid-absolute { 
 	overflow-y: auto !important; 
